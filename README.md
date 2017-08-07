@@ -1,18 +1,19 @@
-# mandarina
+# mandarina #
 CSS modular library
 
-### Setup
-Install sass
+### Setup ###
+Require npm gulp and sass
+Install dependencies
 ```sh
-gem install sass
+npm install
 ```
 
-Run sass to get css file
+Run this to get dist css file
 ```sh
-sass src/mandarina.scss:dist/mandarina.min.css --style compressed
+gulp dist
 ```
 
-Or run this if you are changing something
+Or this if you are changing something
 ```sh
-sass --watc src/mandarina.scss:dev/mandarina.css --style expanded
+gulp dev
 ```
