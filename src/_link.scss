@@ -1,0 +1,23 @@
+/* link */
+a,
+.link {
+    background: transparent;
+    border: none;
+    color: rgba($color-link,0.8);
+    cursor: pointer;
+    display: inline-block;
+    font-family: $font-link-family;
+    font-size: $font-size;
+    font-weight: $font-link-weight;
+    letter-spacing: $font-link-space;
+    line-height: $font-line;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $color-link;
+        text-decoration: underline;
+    }
+}
