@@ -1,0 +1,94 @@
+/* table */
+table {
+    margin: $layout-space 0;
+    thead {
+        tr {
+            border-bottom: 1px solid rgba($color-font,0.1);
+            th {
+                color: rgba($color-font,0.4);
+                text-align: left;
+                font-size: 1em;
+                font-weight: normal;
+                line-height: 1em;
+                padding: 1.5em 0.8em 0.2em;
+            }
+        }
+    }
+    tbody {
+        tr {
+            border-bottom: 1px solid rgba($color-font,0.1);
+            td {
+                text-align: left;
+                padding: 0.2em 0.8em;
+            }
+        }
+    }
+}
+
+table.trhover {
+    tbody {
+        tr {
+            background: rgba($color-font,0);
+        }
+        tr:hover {
+            background: rgba($color-font,0.15);
+        }
+    }
+}
+
+table.responsive {
+    thead {
+        display: none;
+    }
+    tbody {
+        tr {
+            border-bottom: 1px solid rgba($color-font,0.1);
+            tdh {
+                color: rgba($color-font,0.4);
+                text-align: left;
+                display: block;
+                font-size: 0.8em;
+                font-weight: normal;
+                line-height: 1em;
+                padding-top: 1.5em;
+            }
+            td {
+                text-align: left;
+                padding: 0.2em 0.8em;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    table.responsive {
+        thead {
+            display: table-header-group;
+            vertical-align: middle;
+            border-color: inherit;
+            tr {
+                border-bottom: 1px solid rgba($color-font,0.1);
+                th {
+                    color: rgba($color-font,0.4);
+                    text-align: left;
+                    font-size: 1em;
+                    font-weight: normal;
+                    line-height: 1em;
+                    padding: 1.5em 0.8em 0.2em;
+                }
+            }
+        }
+        tbody {
+            tr {
+                border-bottom: 1px solid rgba($color-font,0.1);
+                tdh {
+                    display: none;
+                }
+                td {
+                    text-align: left;
+                    padding: 0.2em 0.8em;
+                }
+            }
+        }
+    }
+}
