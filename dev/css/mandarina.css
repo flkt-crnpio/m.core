@@ -760,8 +760,8 @@ samp {
 kbd,
 mark,
 samp {
-  margin: 0 0.2em;
-  padding: 0 1em;
+  margin: 2.1px 0;
+  padding: 0 0.5em;
 }
 
 kbd {
