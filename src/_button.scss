@@ -1,5 +1,4 @@
 /* button */
-
 button,
 input[type="button"],
 input[type="submit"],
@@ -19,6 +18,7 @@ input[type="reset"],
     -ms-touch-action: manipulation;
     touch-action: manipulation;
     text-decoration: none;
+    height: $form-height;
 
     &:hover,
     &:focus {
