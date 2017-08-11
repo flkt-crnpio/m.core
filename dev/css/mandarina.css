@@ -350,7 +350,7 @@ input[type="reset"],
   font-weight: 300;
   letter-spacing: 0.01em;
   line-height: 1.6em;
-  margin: 0;
+  margin: 2.1px 0;
   padding: 4px 16px;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
@@ -394,6 +394,7 @@ form [type="week"],
 form select,
 form textarea {
   border-radius: 0;
+  margin: 2.1px 0;
   resize: none;
 }
 
@@ -437,7 +438,6 @@ form .block {
 
 form .block label {
   display: block;
-  margin: 0 0 0.2em;
 }
 
 form .block input,
