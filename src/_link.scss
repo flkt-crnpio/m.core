@@ -17,6 +17,7 @@ a,
 
     &:hover,
     &:focus {
+        background: transparent;
         color: $color-link;
         text-decoration: underline;
     }
