@@ -19,6 +19,7 @@ input[type="reset"],
     touch-action: manipulation;
     text-decoration: none;
     height: $form-height;
+    vertical-align: middle;
 
     &:hover,
     &:focus {
