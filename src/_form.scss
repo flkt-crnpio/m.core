@@ -1,81 +1,78 @@
 /* form */
-form {
-    button,
-    [type="button"],
-    [type="date"],
-    [type="datetime"],
-    [type="datetime-local"],
-    [type="email"],
-    [type="month"],
-    [type="number"],
-    [type="password"],
-    [type="reset"],
-    [type="search"],
-    [type="submit"],
-    [type="tel"],
-    [type="text"],
-    [type="time"],
-    [type="url"],
-    [type="week"],
+button,
+[type="button"],
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="reset"],
+[type="search"],
+[type="submit"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
+select,
+textarea {
+    border-radius: 0;
+    margin: 2.1px 0;
+    resize: none;
+}
+
+[type="button"],
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="reset"],
+[type="search"],
+[type="submit"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
+select {
+    height: $form-height;
+    overflow: hidden;
+}
+select,
+select:hover,
+select:focus,
+select:active {
+    border: 0;
+    height: $form-height - 2px;
+    outline: 1px solid rgba($color-font,0.2);
+}
+
+textarea {
+    overflow: auto;
+}
+
+.form-section-block {
+    margin: $layout-space/2 0;
+    label {
+        display: block;
+    }
+    input,
     select,
     textarea {
-        border-radius: 0;
-        margin: 2.1px 0;
-        resize: none;
+        display: block;
+        min-width: 300px;
     }
+}
 
-    [type="button"],
-    [type="date"],
-    [type="datetime"],
-    [type="datetime-local"],
-    [type="email"],
-    [type="month"],
-    [type="number"],
-    [type="password"],
-    [type="reset"],
-    [type="search"],
-    [type="submit"],
-    [type="tel"],
-    [type="text"],
-    [type="time"],
-    [type="url"],
-    [type="week"],
-    select {
-        height: $form-height;
-        overflow: hidden;
-    }
-    select,
-    select:hover,
-    select:focus,
-    select:active {
-        border: 0;
-        height: $form-height - 2px;
-        outline: 1px solid rgba($color-font,0.2);
-    }
+.form-section-inline {
+    margin: $layout-space/2 0;
+}
 
-    textarea {
-        overflow: auto;
-    }
-
-    .block {
-        margin: $layout-space/2 0;
-        label {
-            display: block;
-        }
-        input,
-        select,
-        textarea {
-            display: block;
-            min-width: 300px;
-        }
-
-    }
-
-    .inline {
-        margin: $layout-space/2 0;
-    }
-
-    .title {
-        color: rgba($color-font,0.5);
-    }
+.form-section-title {
+    color: rgba($color-font,0.5);
 }
