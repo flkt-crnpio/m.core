@@ -1,4 +1,9 @@
 /* text */
+p {
+    margin: $layout-space 0;
+    padding: 0;
+}
+
 b,
 strong,
 var,

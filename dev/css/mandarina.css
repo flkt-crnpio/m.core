@@ -51,7 +51,7 @@ summary {
 }
 
 figure {
-  margin: 2em;
+  margin: 35px;
 }
 
 audio,
@@ -160,7 +160,7 @@ hr {
   border-top: 1px solid rgba(51, 51, 51, 0.2);
   box-sizing: content-box;
   height: 0;
-  margin: 2em 0;
+  margin: 35px 0;
   overflow: visible;
 }
 
@@ -375,84 +375,84 @@ input[type="reset"]:focus,
 }
 
 /* form */
-form button,
-form [type="button"],
-form [type="date"],
-form [type="datetime"],
-form [type="datetime-local"],
-form [type="email"],
-form [type="month"],
-form [type="number"],
-form [type="password"],
-form [type="reset"],
-form [type="search"],
-form [type="submit"],
-form [type="tel"],
-form [type="text"],
-form [type="time"],
-form [type="url"],
-form [type="week"],
-form select,
-form textarea {
+button,
+[type="button"],
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="reset"],
+[type="search"],
+[type="submit"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
+select,
+textarea {
   border-radius: 0;
   margin: 2.1px 0;
   resize: none;
 }
 
-form [type="button"],
-form [type="date"],
-form [type="datetime"],
-form [type="datetime-local"],
-form [type="email"],
-form [type="month"],
-form [type="number"],
-form [type="password"],
-form [type="reset"],
-form [type="search"],
-form [type="submit"],
-form [type="tel"],
-form [type="text"],
-form [type="time"],
-form [type="url"],
-form [type="week"],
-form select {
+[type="button"],
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="reset"],
+[type="search"],
+[type="submit"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
+select {
   height: 35px;
   overflow: hidden;
 }
 
-form select,
-form select:hover,
-form select:focus,
-form select:active {
+select,
+select:hover,
+select:focus,
+select:active {
   border: 0;
   height: 33px;
   outline: 1px solid rgba(51, 51, 51, 0.2);
 }
 
-form textarea {
+textarea {
   overflow: auto;
 }
 
-form .block {
-  margin: 1em 0;
+.form-section-block {
+  margin: 17.5px 0;
 }
 
-form .block label {
+.form-section-block label {
   display: block;
 }
 
-form .block input,
-form .block select,
-form .block textarea {
+.form-section-block input,
+.form-section-block select,
+.form-section-block textarea {
   display: block;
   min-width: 300px;
 }
 
-form .inline {
-  margin: 1em 0;
+.form-section-inline {
+  margin: 17.5px 0;
 }
 
-form .title {
+.form-section-title {
   color: rgba(51, 51, 51, 0.5);
 }
 
@@ -561,20 +561,20 @@ a:hover, a:focus,
 /* list */
 ul,
 ol {
-  margin: 2em;
+  margin: 35px;
   padding: 0;
 }
 
 ul.list-clean,
 ol.list-clean {
   list-style: none;
-  margin: 2em 0;
+  margin: 35px 0;
 }
 
 ul.list-inline,
 ol.list-inline {
   list-style: none;
-  margin: 1em 0;
+  margin: 17.5px 0;
 }
 
 ul.list-inline li,
@@ -585,12 +585,12 @@ ol.list-inline li {
 
 ul.list-inline li:not(:last-child),
 ol.list-inline li:not(:last-child) {
-  margin-right: 0.5em;
+  margin-right: 8.75px;
 }
 
 dl {
   display: block;
-  margin: 2em 0;
+  margin: 35px 0;
   padding: 0;
 }
 
@@ -603,13 +603,13 @@ dl dt {
 
 dl dd {
   display: block;
-  margin: 0 0 1em;
+  margin: 0 0 17.5px;
   padding: 0;
 }
 
 /* table */
 table {
-  margin: 2em 0;
+  margin: 35px 0;
 }
 
 table thead tr {
@@ -695,6 +695,11 @@ table.responsive tbody tr td {
 }
 
 /* text */
+p {
+  margin: 35px 0;
+  padding: 0;
+}
+
 b,
 strong,
 var,
@@ -706,7 +711,7 @@ var,
 
 blockquote {
   font-size: 1.2em;
-  margin: 2em;
+  margin: 35px;
   padding: 0;
 }
 
@@ -779,7 +784,7 @@ kbd,
 mark,
 samp {
   margin: 2.1px 0;
-  padding: 0 0.5em;
+  padding: 0 8.75px;
 }
 
 kbd {
@@ -795,4 +800,32 @@ mark {
 samp {
   background: rgba(51, 51, 51, 0.2);
   color: rgba(51, 51, 51, 0.8);
+}
+
+/* containers */
+.main {
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  overflow-x: visible;
+  width: 90%;
+}
+
+.page {
+  min-height: 100vh;
+}
+
+/* margins */
+.margin-top {
+  margin-top: 35px;
+}
+
+.padding-top {
+  padding-top: 35px;
 }
