@@ -76,6 +76,12 @@ samp {
     font-style: normal;
     line-height: $font-line;
 }
+ins {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: rgba($color-font,0.3);
+}
 
 kbd,
 mark,
