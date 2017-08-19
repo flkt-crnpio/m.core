@@ -1,16 +1,16 @@
 @charset "UTF-8";
 
-@import "_vars";
-@import "_normalize";
+@import "___vars";
+@import "___normalize";
 
-@import "_button";
-@import "_form";
-@import "_heading";
-@import "_image";
-@import "_link";
-@import "_list";
-@import "_table";
-@import "_text";
+@import "__button";
+@import "__form";
+@import "__heading";
+@import "__image";
+@import "__link";
+@import "__list";
+@import "__table";
+@import "__text";
 
-@import "_containers";
-@import "_margins";
+@import "_layout_containers";
+@import "_layout_margins";
