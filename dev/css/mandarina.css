@@ -836,34 +836,34 @@ samp {
 }
 
 /* containers */
-.main-container {
+.main {
   min-height: 100vh;
   max-width: 100vw;
   overflow-x: hidden;
   width: 100%;
 }
 
-.medium-container {
+.container {
   margin: 0 auto;
   max-width: 1000px;
   width: 90%;
 }
 
-.page-container {
+.page {
   min-height: 100vh;
 }
 
-.full-container {
+.full {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-.full-container .full {
+.full .full {
   flex: 1 0;
 }
 
-.full-container *:not(.full) {
+.full *:not(.full) {
   flex: 0 1;
 }
 
@@ -879,148 +879,4 @@ samp {
 .margins-lead {
   margin: 0;
   padding-top: 70vh;
-}
-
-/* columns */
-.columns-container {
-  column-width: 100%;
-  column-gap: 35px;
-  column-count: 2;
-  margin: 0;
-  padding: 0;
-}
-
-.columns-container .cc {
-  display: inline-block;
-  margin: 0 0 23.33333px;
-  overflow: hidden;
-  margin-top: 0;
-  padding: 0;
-  position: relative;
-  column-break-inside: avoid;
-}
-
-@media only screen and (min-width: 768px) {
-  .columns-container {
-    column-count: 4;
-  }
-}
-
-/* side menu */
-.nav-sidemenu {
-  position: absolute;
-  z-index: 99;
-}
-
-.nav-sidemenu .nav-trigger {
-  display: none;
-}
-
-.nav-sidemenu .nav-trigger:checked ~ .nav-icon .icon {
-  transform: rotate(45deg);
-}
-
-.nav-sidemenu .nav-trigger:checked ~ .nav-icon .icon::after {
-  margin-top: 0;
-  margin-left: 0;
-  transform: rotate(-90deg);
-  width: 20px;
-}
-
-.nav-sidemenu .nav-trigger:checked ~ .nav-icon .icon::before {
-  margin-top: 0;
-  margin-left: 0;
-  transform: rotate(90deg);
-  width: 20px;
-}
-
-.nav-sidemenu .nav-trigger:checked ~ .nav-icon:hover, .nav-sidemenu .nav-trigger:checked ~ .nav-icon:focus {
-  transform: rotate(-45deg);
-}
-
-.nav-sidemenu .nav-trigger:checked ~ .nav-icon:hover .icon::after, .nav-sidemenu .nav-trigger:checked ~ .nav-icon:focus .icon::after {
-  margin-top: 5px;
-  margin-left: 0px;
-  transform: rotate(35deg);
-  width: 15px;
-}
-
-.nav-sidemenu .nav-trigger:checked ~ .nav-icon:hover .icon::before, .nav-sidemenu .nav-trigger:checked ~ .nav-icon:focus .icon::before {
-  margin-top: -5px;
-  margin-left: 0px;
-  transform: rotate(-35deg);
-  width: 15px;
-}
-
-.nav-sidemenu .nav-trigger:checked ~ .nav-menu {
-  left: 0;
-  opacity: 1;
-}
-
-.nav-sidemenu .nav-icon {
-  cursor: pointer;
-  display: inline-block;
-  padding: 35px 23.33333px;
-  position: absolute;
-  z-index: 12;
-}
-
-.nav-sidemenu .nav-icon .icon,
-.nav-sidemenu .nav-icon .icon::after,
-.nav-sidemenu .nav-icon .icon::before {
-  background: #333;
-  display: block;
-  height: 1px;
-  width: 20px;
-  transition: all 0.3s ease-in-out;
-}
-
-.nav-sidemenu .nav-icon .icon::after, .nav-sidemenu .nav-icon .icon::before {
-  content: "";
-  position: absolute;
-}
-
-.nav-sidemenu .nav-icon .icon::after {
-  margin-top: 5px;
-}
-
-.nav-sidemenu .nav-icon .icon::before {
-  margin-top: -5px;
-}
-
-.nav-sidemenu .nav-icon:hover .icon::after, .nav-sidemenu .nav-icon:focus .icon::after {
-  margin-left: 5px;
-  transform: rotate(-35deg);
-  width: 15px;
-}
-
-.nav-sidemenu .nav-icon:hover .icon::before, .nav-sidemenu .nav-icon:focus .icon::before {
-  margin-left: 5px;
-  transform: rotate(35deg);
-  width: 15px;
-}
-
-.nav-sidemenu .nav-menu {
-  background: rgba(238, 238, 238, 0.3);
-  height: 100vh;
-  left: -100vw;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  width: 100vw;
-  z-index: 11;
-  transition: all 0.3s ease-in-out;
-}
-
-.nav-sidemenu .nav-menu .menu {
-  background: #eee;
-  display: inline-block;
-  height: 100vh;
-  margin: 0;
-  padding: 70px;
-}
-
-.nav-sidemenu .nav-menu .menu a {
-  display: block;
-  padding: 8.75px;
 }
