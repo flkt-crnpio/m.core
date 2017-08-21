@@ -1,0 +1,123 @@
+/* side menu */
+.nav-sidemenu {
+    position: absolute;
+    z-index: 99;
+
+    .nav-trigger {
+        display: none;
+    }
+    .nav-trigger:checked ~ .nav-icon {
+        .icon {
+            transform: rotate(45deg);
+            &::after{
+                margin-top: 0;
+                margin-left: 0;
+                transform: rotate(-90deg);
+                width: 20px;
+            }
+            &::before {
+                margin-top: 0;
+                margin-left: 0;
+                transform: rotate(90deg);
+                width: 20px;
+            }
+        }
+
+        &:hover,
+        &:focus {
+            transform: rotate(-45deg);
+            .icon {
+                &::after {
+                    margin-top: 5px;
+                    margin-left: 0px;
+                    transform: rotate(35deg);
+                    width: 15px;
+                }
+                &::before {
+                    margin-top: -5px;
+                    margin-left: 0px;
+                    transform: rotate(-35deg);
+                    width: 15px;
+                }
+            }
+        }
+    }
+
+    .nav-trigger:checked ~ .nav-menu {
+        left: 0;
+        opacity: 1;
+    }
+
+    .nav-icon {
+        cursor: pointer;
+        display: inline-block;
+        padding: $layout-space $layout-space/1.5;
+        position: absolute;
+        z-index: 12;
+
+        .icon,
+        .icon::after,
+        .icon::before {
+            background: $color-font;
+            display: block;
+            height: 1px;
+            width: 20px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .icon {
+            &::after,
+            &::before {
+                content: "";
+                position: absolute;
+            }
+            &::after {
+                margin-top: 5px
+            }
+            &::before {
+                margin-top: -5px;
+            }
+        }
+
+        &:hover,
+        &:focus {
+            .icon {
+                &::after {
+                    margin-left: 5px;
+                    transform: rotate(-35deg);
+                    width: 15px;
+                }
+
+                &::before {
+                    margin-left: 5px;
+                    transform: rotate(35deg);
+                    width: 15px;
+                }
+            }
+        }
+    }
+
+    .nav-menu {
+        background: rgba($color-background, 0.3);
+        height: 100vh;
+        left: -100vw;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        width: 100vw;
+        z-index: 11;
+        transition: all 0.3s ease-in-out;
+
+        .menu {
+            background: $color-background;
+            display: inline-block;
+            height: 100vh;
+            margin: 0;
+            padding: $layout-space*2;
+            a {
+                display: block;
+                padding: $layout-space/4
+            }
+        }
+    }
+}
