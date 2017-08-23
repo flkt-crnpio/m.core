@@ -1,0 +1,52 @@
+/* colors */
+
+body {
+    background: $color-background-gradient;
+}
+
+a,
+.link {
+    &.accent {
+        background: transparent;
+        color: $color-accent;
+        &:hover,
+        &:focus {
+            background: transparent;
+            color: $color-accent-focus;
+        }
+    }
+    &.emphasis {
+        background: transparent;
+        color: $color-emphasis;
+        &:hover,
+        &:focus {
+            background: transparent;
+            color: $color-emphasis-focus;
+        }
+    }
+}
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.button {
+    &.accent {
+        background: $color-accent;
+        color: $color-font;
+        &:hover,
+        &:focus {
+            background: $color-accent-focus;
+            color: $color-font;
+        }
+    }
+    &.emphasis {
+        background: $color-emphasis;
+        color: $color-font;
+        &:hover,
+        &:focus {
+            background: $color-emphasis-focus;
+            color: $color-font;
+        }
+    }
+}
