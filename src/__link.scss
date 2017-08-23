@@ -3,7 +3,7 @@ a,
 .link {
     background: transparent;
     border: none;
-    color: rgba($color-link,0.8);
+    color: $color-accent;
     cursor: pointer;
     display: inline-block;
     font-family: $font-link-family;
@@ -14,11 +14,12 @@ a,
     margin: 0;
     padding: 0;
     text-decoration: none;
-    
+    transition: all 0.5s cubic-bezier(0.465, 0.240, 0.370, 0.825);
+
     &:hover,
     &:focus {
         background: transparent;
-        color: $color-link;
+        color: $color-accent-focus;
         text-decoration: underline;
         text-decoration-skip: ink;
     }
