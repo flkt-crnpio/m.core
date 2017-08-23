@@ -4,8 +4,8 @@ input[type="button"],
 input[type="submit"],
 input[type="reset"],
 .button {
-    background: $color-background;
-    border: 1px solid rgba($color-font,0.2);
+    background: $color-accent;
+    border: none;
     color: $color-font;
     cursor: pointer;
     font-family: $font-family;
@@ -20,11 +20,11 @@ input[type="reset"],
     text-decoration: none;
     height: $form-height;
     vertical-align: middle;
+    transition: all 0.5s cubic-bezier(0.465, 0.240, 0.370, 0.825);
 
     &:hover,
     &:focus {
-        background: rgba($color-font,0.2);
-        border-color: rgba($color-font,0.1);
+        background: $color-accent-focus;
         color: $color-font;
         text-decoration: none;
     }
