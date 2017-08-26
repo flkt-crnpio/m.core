@@ -1,13 +1,8 @@
 // colors
-$color-background: #eee;
-$color-font: #333;
+$color-primary: #FF5D00;
 
-$color-background-gradient: linear-gradient(90deg, #eee, #eee);
-
-$color-accent: #0ea;
-$color-accent-focus: #0ea;
-$color-emphasis: #3ad;
-$color-emphasis-focus: #3ad;
+$color-background: mix(white, $color-primary, 99.99%);
+$color-font: mix(black, $color-primary, 90%);
 
 // fonts
 $font-family: sans-serif;
@@ -15,15 +10,18 @@ $font-line: 1.6em;
 $font-size: 16px;
 $font-space: 0.01em;
 $font-weight: 300;
+
 $font-code-family: monospace;
 $font-code-line: 1em;
 $font-code-size: 1em;
 $font-code-space: 0;
 $font-code-weight: 400;
+
 $font-title-family: Georgia, serif;
 $font-title-line: 1em;
 $font-title-space: 0;
 $font-title-weight: 400;
+
 $font-link-family: sans-serif;
 $font-link-space: 0;
 $font-link-weight: 400;

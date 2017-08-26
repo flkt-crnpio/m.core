@@ -4,9 +4,9 @@ input[type="button"],
 input[type="submit"],
 input[type="reset"],
 .button {
-    background: $color-accent;
+    background: $color-primary;
     border: none;
-    color: $color-font;
+    color: mix($color-font, $color-primary, 60%);
     cursor: pointer;
     font-family: $font-family;
     font-size: $font-size;
@@ -24,8 +24,8 @@ input[type="reset"],
 
     &:hover,
     &:focus {
-        background: $color-accent-focus;
-        color: $color-font;
+        background: mix($color-font, $color-primary, 30%);
+        color:  mix($color-background, $color-primary, 90%);
         text-decoration: none;
     }
 }

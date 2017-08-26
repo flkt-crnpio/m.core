@@ -3,7 +3,7 @@ a,
 .link {
     background: transparent;
     border: none;
-    color: $color-accent;
+    color: $color-primary;
     cursor: pointer;
     display: inline-block;
     font-family: $font-link-family;
@@ -19,7 +19,7 @@ a,
     &:hover,
     &:focus {
         background: transparent;
-        color: $color-accent-focus;
+        color: mix($color-font, $color-primary, 50%);
         text-decoration: underline;
         text-decoration-skip: ink;
     }
