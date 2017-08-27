@@ -1,21 +1,67 @@
 /* margins */
-.margin {
-    margin: $layout-space*2;
-}
+@for $i from 0 through 3 {
+    .m-#{$i} {
+        margin: $layout-space * $i;
+    }
 
-.margin-top {
-    margin-top: $layout-space*4;
-}
+    .m-x-#{$i} {
+        margin-left: $layout-space * $i;
+        margin-right: $layout-space * $i;
+    }
+    .m-y-#{$i} {
+        margin-top: $layout-space * $i;
+        margin-bottom: $layout-space * $i;
+    }
 
-.padding {
-    padding: $layout-space $layout-space*2;
-}
+    .m-l-#{$i} {
+        margin-left: $layout-space * $i;
+    }
+    .m-r-#{$i} {
+        margin-right: $layout-space * $i;
+    }
+    .m-t-#{$i} {
+        margin-top: $layout-space * $i;
+    }
+    .m-b-#{$i} {
+        margin-bottom: $layout-space * $i;
+    }
 
-.padding-top {
-    padding-top: $layout-space*2;
-}
+    .m--l-#{$i} {
+        margin-left: -($layout-space) * $i * 2;
+    }
+    .m--r-#{$i} {
+        margin-right: -($layout-space) * $i * 2;
+    }
+    .m--t-#{$i} {
+        margin-top: -($layout-space) * $i * 2;
+    }
+    .m--b-#{$i} {
+        margin-bottom: -($layout-space) * $i * 2;
+    }
 
-.margins-lead {
-    margin: 0;
-    padding-top: 60vh;
+    .p-#{$i} {
+        padding: $layout-space * $i;
+    }
+
+    .p-x-#{$i} {
+        padding-left: $layout-space * $i;
+        padding-right: $layout-space * $i;
+    }
+    .p-y-#{$i} {
+        padding-top: $layout-space * $i;
+        padding-bottom: $layout-space * $i;
+    }
+
+    .p-l-#{$i} {
+        padding-left: $layout-space * $i;
+    }
+    .p-r-#{$i} {
+        padding-right: $layout-space * $i;
+    }
+    .p-t-#{$i} {
+        padding-top: $layout-space * $i;
+    }
+    .p-b-#{$i} {
+        padding-bottom: $layout-space * $i;
+    }
 }
