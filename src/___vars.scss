@@ -1,6 +1,14 @@
 // colors
-$color-primary: #e65c00;
-$color-primary-dark: #EA384D;
+$color-primary: #ff7200;
+$color-secondary: #f1a400;
+$color-accent: #0897e2;
+
+$color-success: mix(#28b515, $color-primary, 99%);
+$color-warning: mix(#ffd800, $color-primary, 99%);
+$color-error: mix(#ff4949, $color-primary, 99%);
+
+$color-info: mix(#0897e2, $color-primary, 99%);
+$color-highlight: mix(#fd0, $color-primary, 99%);
 
 $color-background: mix(#fff, $color-primary, 99%);
 $color-font: mix(#333, $color-primary, 99%);

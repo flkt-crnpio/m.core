@@ -1,52 +1,23 @@
 /* colors */
+$c: (primary, $color-primary),
+    (secondary, $color-secondary),
+    (accent, $color-accent),
+    (success, $color-success),
+    (warning, $color-warning),
+    (error, $color-error),
+    (info, $color-info),
+    (highlight, $color-highlight);
 
-body {
-    background: $color-background-gradient;
-}
-
-a,
-.link {
-    &.accent {
-        background: transparent;
-        color: $color-accent;
-        &:hover,
-        &:focus {
-            background: transparent;
-            color: $color-accent-focus;
-        }
-    }
-    &.emphasis {
-        background: transparent;
-        color: $color-emphasis;
-        &:hover,
-        &:focus {
-            background: transparent;
-            color: $color-emphasis-focus;
-        }
+// text
+@each $name, $color in $c {
+    .text-#{$name} {
+        color: $color;
     }
 }
 
-button,
-input[type="button"],
-input[type="submit"],
-input[type="reset"],
-.button {
-    &.accent {
-        background: $color-accent;
-        color: $color-font;
-        &:hover,
-        &:focus {
-            background: $color-accent-focus;
-            color: $color-font;
-        }
-    }
-    &.emphasis {
-        background: $color-emphasis;
-        color: $color-font;
-        &:hover,
-        &:focus {
-            background: $color-emphasis-focus;
-            color: $color-font;
-        }
+// background
+@each $name, $color in $c {
+    .background-#{$name} {
+        background: $color;
     }
 }
