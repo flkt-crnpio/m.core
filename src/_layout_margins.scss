@@ -1,5 +1,5 @@
 /* margins */
-@for $i from 0 through 3 {
+@for $i from 0 through 5 {
     .m-#{$i} {
         margin: $layout-space * $i;
     }
