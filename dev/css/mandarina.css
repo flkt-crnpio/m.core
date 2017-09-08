@@ -6,12 +6,10 @@ html {
 }
 
 body {
-  background: #eee;
   color: #333;
   font-family: sans-serif;
   font-size: 16px;
-  font-weight: 300;
-  letter-spacing: 0.01em;
+  font-weight: normal;
   line-height: 1.6em;
   margin: 0;
   padding: 0;
@@ -30,9 +28,7 @@ h4,
 h5,
 h6 {
   font-family: Georgia, serif;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1em;
+  font-weight: normal;
 }
 
 article,
@@ -51,7 +47,7 @@ summary {
 }
 
 figure {
-  margin: 35px;
+  margin: 1.6em;
 }
 
 audio,
@@ -88,12 +84,12 @@ ins {
 }
 
 abbr {
-  border-bottom: 1px dotted rgba(51, 51, 51, 0.5);
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
   cursor: help;
 }
 
 ins {
-  border-bottom: 1px dashed rgba(51, 51, 51, 0.5);
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.5);
 }
 
 b,
@@ -131,10 +127,9 @@ pre,
 samp,
 var {
   font-family: monospace;
-  font-size: 1em;
-  font-weight: 400;
-  line-height: 1em;
-  letter-spacing: 0;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.6em;
 }
 
 pre {
@@ -157,10 +152,10 @@ a:active, a:hover, a:focus {
 
 hr {
   border: none;
-  border-top: 1px solid rgba(51, 51, 51, 0.2);
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
   box-sizing: content-box;
   height: 0;
-  margin: 35px 0;
+  margin: 1.6em 0;
   overflow: visible;
 }
 
@@ -203,16 +198,13 @@ button,
 input,
 select,
 textarea {
-  background: #eee;
-  border: 1px solid rgba(51, 51, 51, 0.2);
-  color: #333;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   font-family: sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  letter-spacing: 0.01em;
-  line-height: 1.6em;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1em;
   margin: 0;
-  padding: 4px 8px;
+  padding: .4em .6em;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
@@ -271,7 +263,7 @@ select:focus {
 }
 
 fieldset {
-  border: 1px solid rgba(51, 51, 51, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
   margin: 0;
   padding: 0.35em 0.7em 0.7em;
 }
@@ -318,21 +310,402 @@ table {
 }
 
 ::-webkit-selection {
-  background-color: rgba(51, 51, 51, 0.5);
-  color: #eee;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.5);
   text-shadow: none;
 }
 
 ::-moz-selection {
-  background-color: rgba(51, 51, 51, 0.5);
-  color: #eee;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.5);
   text-shadow: none;
 }
 
 ::selection {
-  background-color: rgba(51, 51, 51, 0.5);
-  color: #eee;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.5);
   text-shadow: none;
+}
+
+/* colors */
+.btn-primary {
+  background: #FF4533;
+  border: 1px solid #FF4533;
+  color: #fff;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background: #ff5c4d;
+  border: 1px solid #FF4533;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled]:active:hover, .btn-primary[disabled]:active:focus, .btn-primary[disabled]:focus:hover, .btn-primary[disabled]:focus:focus, .btn-primary[disabled]:hover:hover, .btn-primary[disabled]:hover:focus, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled:active:hover, .btn-primary.disabled:active:focus, .btn-primary.disabled:focus:hover, .btn-primary.disabled:focus:focus, .btn-primary.disabled:hover:hover, .btn-primary.disabled:hover:focus {
+  background: #FF4533;
+  border: 1px solid #FF4533;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #FF7C4C;
+  border: 1px solid #FF7C4C;
+  color: #A3421F;
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+  background: #ff8f66;
+  border: 1px solid #FF7C4C;
+  color: #A3421F;
+  text-decoration: none;
+}
+
+.btn-secondary[disabled]:hover, .btn-secondary[disabled]:focus, .btn-secondary[disabled]:active:hover, .btn-secondary[disabled]:active:focus, .btn-secondary[disabled]:focus:hover, .btn-secondary[disabled]:focus:focus, .btn-secondary[disabled]:hover:hover, .btn-secondary[disabled]:hover:focus, .btn-secondary.disabled:hover, .btn-secondary.disabled:focus, .btn-secondary.disabled:active:hover, .btn-secondary.disabled:active:focus, .btn-secondary.disabled:focus:hover, .btn-secondary.disabled:focus:focus, .btn-secondary.disabled:hover:hover, .btn-secondary.disabled:hover:focus {
+  background: #FF7C4C;
+  border: 1px solid #FF7C4C;
+  color: #A3421F;
+}
+
+.btn-accent {
+  background: #00A875;
+  border: 1px solid #00A875;
+  color: #fff;
+}
+
+.btn-accent:hover, .btn-accent:focus {
+  background: #00c287;
+  border: 1px solid #00A875;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-accent[disabled]:hover, .btn-accent[disabled]:focus, .btn-accent[disabled]:active:hover, .btn-accent[disabled]:active:focus, .btn-accent[disabled]:focus:hover, .btn-accent[disabled]:focus:focus, .btn-accent[disabled]:hover:hover, .btn-accent[disabled]:hover:focus, .btn-accent.disabled:hover, .btn-accent.disabled:focus, .btn-accent.disabled:active:hover, .btn-accent.disabled:active:focus, .btn-accent.disabled:focus:hover, .btn-accent.disabled:focus:focus, .btn-accent.disabled:hover:hover, .btn-accent.disabled:hover:focus {
+  background: #00A875;
+  border: 1px solid #00A875;
+  color: #fff;
+}
+
+.btn-success {
+  background: #2ab415;
+  border: 1px solid #2ab415;
+  color: #15590a;
+}
+
+.btn-success:hover, .btn-success:focus {
+  background: #2fcb18;
+  border: 1px solid #2ab415;
+  color: #15590a;
+  text-decoration: none;
+}
+
+.btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled]:active:hover, .btn-success[disabled]:active:focus, .btn-success[disabled]:focus:hover, .btn-success[disabled]:focus:focus, .btn-success[disabled]:hover:hover, .btn-success[disabled]:hover:focus, .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled:active:hover, .btn-success.disabled:active:focus, .btn-success.disabled:focus:hover, .btn-success.disabled:focus:focus, .btn-success.disabled:hover:hover, .btn-success.disabled:hover:focus {
+  background: #2ab415;
+  border: 1px solid #2ab415;
+  color: #15590a;
+}
+
+.btn-warning {
+  background: #ffd701;
+  border: 1px solid #ffd701;
+  color: #816c00;
+}
+
+.btn-warning:hover, .btn-warning:focus {
+  background: #ffdb1b;
+  border: 1px solid #ffd701;
+  color: #816c00;
+  text-decoration: none;
+}
+
+.btn-warning[disabled]:hover, .btn-warning[disabled]:focus, .btn-warning[disabled]:active:hover, .btn-warning[disabled]:active:focus, .btn-warning[disabled]:focus:hover, .btn-warning[disabled]:focus:focus, .btn-warning[disabled]:hover:hover, .btn-warning[disabled]:hover:focus, .btn-warning.disabled:hover, .btn-warning.disabled:focus, .btn-warning.disabled:active:hover, .btn-warning.disabled:active:focus, .btn-warning.disabled:focus:hover, .btn-warning.disabled:focus:focus, .btn-warning.disabled:hover:hover, .btn-warning.disabled:hover:focus {
+  background: #ffd701;
+  border: 1px solid #ffd701;
+  color: #816c00;
+}
+
+.btn-error {
+  background: #ff4949;
+  border: 1px solid #ff4949;
+  color: #960000;
+}
+
+.btn-error:hover, .btn-error:focus {
+  background: #ff6363;
+  border: 1px solid #ff4949;
+  color: #960000;
+  text-decoration: none;
+}
+
+.btn-error[disabled]:hover, .btn-error[disabled]:focus, .btn-error[disabled]:active:hover, .btn-error[disabled]:active:focus, .btn-error[disabled]:focus:hover, .btn-error[disabled]:focus:focus, .btn-error[disabled]:hover:hover, .btn-error[disabled]:hover:focus, .btn-error.disabled:hover, .btn-error.disabled:focus, .btn-error.disabled:active:hover, .btn-error.disabled:active:focus, .btn-error.disabled:focus:hover, .btn-error.disabled:focus:focus, .btn-error.disabled:hover:hover, .btn-error.disabled:hover:focus {
+  background: #ff4949;
+  border: 1px solid #ff4949;
+  color: #960000;
+}
+
+.btn-info {
+  background: #0a96e0;
+  border: 1px solid #0a96e0;
+  color: #054466;
+}
+
+.btn-info:hover, .btn-info:focus {
+  background: #0fa5f4;
+  border: 1px solid #0a96e0;
+  color: #054466;
+  text-decoration: none;
+}
+
+.btn-info[disabled]:hover, .btn-info[disabled]:focus, .btn-info[disabled]:active:hover, .btn-info[disabled]:active:focus, .btn-info[disabled]:focus:hover, .btn-info[disabled]:focus:focus, .btn-info[disabled]:hover:hover, .btn-info[disabled]:hover:focus, .btn-info.disabled:hover, .btn-info.disabled:focus, .btn-info.disabled:active:hover, .btn-info.disabled:active:focus, .btn-info.disabled:focus:hover, .btn-info.disabled:focus:focus, .btn-info.disabled:hover:hover, .btn-info.disabled:hover:focus {
+  background: #0a96e0;
+  border: 1px solid #0a96e0;
+  color: #054466;
+}
+
+.btn-lightgray {
+  background: #eeecec;
+  border: 1px solid #eeecec;
+  color: #9f9393;
+}
+
+.btn-lightgray:hover, .btn-lightgray:focus {
+  background: #faf9f9;
+  border: 1px solid #eeecec;
+  color: #9f9393;
+  text-decoration: none;
+}
+
+.btn-lightgray[disabled]:hover, .btn-lightgray[disabled]:focus, .btn-lightgray[disabled]:active:hover, .btn-lightgray[disabled]:active:focus, .btn-lightgray[disabled]:focus:hover, .btn-lightgray[disabled]:focus:focus, .btn-lightgray[disabled]:hover:hover, .btn-lightgray[disabled]:hover:focus, .btn-lightgray.disabled:hover, .btn-lightgray.disabled:focus, .btn-lightgray.disabled:active:hover, .btn-lightgray.disabled:active:focus, .btn-lightgray.disabled:focus:hover, .btn-lightgray.disabled:focus:focus, .btn-lightgray.disabled:hover:hover, .btn-lightgray.disabled:hover:focus {
+  background: #eeecec;
+  border: 1px solid #eeecec;
+  color: #9f9393;
+}
+
+.btn-midgray {
+  background: #aba9a9;
+  border: 1px solid #aba9a9;
+  color: #575555;
+}
+
+.btn-midgray:hover, .btn-midgray:focus {
+  background: #b8b6b6;
+  border: 1px solid #aba9a9;
+  color: #575555;
+  text-decoration: none;
+}
+
+.btn-midgray[disabled]:hover, .btn-midgray[disabled]:focus, .btn-midgray[disabled]:active:hover, .btn-midgray[disabled]:active:focus, .btn-midgray[disabled]:focus:hover, .btn-midgray[disabled]:focus:focus, .btn-midgray[disabled]:hover:hover, .btn-midgray[disabled]:hover:focus, .btn-midgray.disabled:hover, .btn-midgray.disabled:focus, .btn-midgray.disabled:active:hover, .btn-midgray.disabled:active:focus, .btn-midgray.disabled:focus:hover, .btn-midgray.disabled:focus:focus, .btn-midgray.disabled:hover:hover, .btn-midgray.disabled:hover:focus {
+  background: #aba9a9;
+  border: 1px solid #aba9a9;
+  color: #575555;
+}
+
+.btn-darkgray {
+  background: #575555;
+  border: 1px solid #575555;
+  color: #fefefe;
+}
+
+.btn-darkgray:hover, .btn-darkgray:focus {
+  background: #646262;
+  border: 1px solid #575555;
+  color: #fefefe;
+  text-decoration: none;
+}
+
+.btn-darkgray[disabled]:hover, .btn-darkgray[disabled]:focus, .btn-darkgray[disabled]:active:hover, .btn-darkgray[disabled]:active:focus, .btn-darkgray[disabled]:focus:hover, .btn-darkgray[disabled]:focus:focus, .btn-darkgray[disabled]:hover:hover, .btn-darkgray[disabled]:hover:focus, .btn-darkgray.disabled:hover, .btn-darkgray.disabled:focus, .btn-darkgray.disabled:active:hover, .btn-darkgray.disabled:active:focus, .btn-darkgray.disabled:focus:hover, .btn-darkgray.disabled:focus:focus, .btn-darkgray.disabled:hover:hover, .btn-darkgray.disabled:hover:focus {
+  background: #575555;
+  border: 1px solid #575555;
+  color: #fefefe;
+}
+
+.btn-line-primary {
+  background: transparent;
+  border: 1px solid #FF4533;
+  color: #FF4533;
+}
+
+.btn-line-primary:hover, .btn-line-primary:focus {
+  background: #FF4533;
+  border: 1px solid #ff2e1a;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-line-primary[disabled]:hover, .btn-line-primary[disabled]:focus, .btn-line-primary[disabled]:active:hover, .btn-line-primary[disabled]:active:focus, .btn-line-primary[disabled]:focus:hover, .btn-line-primary[disabled]:focus:focus, .btn-line-primary[disabled]:hover:hover, .btn-line-primary[disabled]:hover:focus, .btn-line-primary.disabled:hover, .btn-line-primary.disabled:focus, .btn-line-primary.disabled:active:hover, .btn-line-primary.disabled:active:focus, .btn-line-primary.disabled:focus:hover, .btn-line-primary.disabled:focus:focus, .btn-line-primary.disabled:hover:hover, .btn-line-primary.disabled:hover:focus {
+  background: transparent;
+  border: 1px solid #FF4533;
+  color: #FF4533;
+}
+
+.btn-line-secondary {
+  background: transparent;
+  border: 1px solid #FF7C4C;
+  color: #FF7C4C;
+}
+
+.btn-line-secondary:hover, .btn-line-secondary:focus {
+  background: #FF7C4C;
+  border: 1px solid #ff6933;
+  color: #A3421F;
+  text-decoration: none;
+}
+
+.btn-line-secondary[disabled]:hover, .btn-line-secondary[disabled]:focus, .btn-line-secondary[disabled]:active:hover, .btn-line-secondary[disabled]:active:focus, .btn-line-secondary[disabled]:focus:hover, .btn-line-secondary[disabled]:focus:focus, .btn-line-secondary[disabled]:hover:hover, .btn-line-secondary[disabled]:hover:focus, .btn-line-secondary.disabled:hover, .btn-line-secondary.disabled:focus, .btn-line-secondary.disabled:active:hover, .btn-line-secondary.disabled:active:focus, .btn-line-secondary.disabled:focus:hover, .btn-line-secondary.disabled:focus:focus, .btn-line-secondary.disabled:hover:hover, .btn-line-secondary.disabled:hover:focus {
+  background: transparent;
+  border: 1px solid #FF7C4C;
+  color: #FF7C4C;
+}
+
+.btn-line-accent {
+  background: transparent;
+  border: 1px solid #00A875;
+  color: #00A875;
+}
+
+.btn-line-accent:hover, .btn-line-accent:focus {
+  background: #00A875;
+  border: 1px solid #008f63;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-line-accent[disabled]:hover, .btn-line-accent[disabled]:focus, .btn-line-accent[disabled]:active:hover, .btn-line-accent[disabled]:active:focus, .btn-line-accent[disabled]:focus:hover, .btn-line-accent[disabled]:focus:focus, .btn-line-accent[disabled]:hover:hover, .btn-line-accent[disabled]:hover:focus, .btn-line-accent.disabled:hover, .btn-line-accent.disabled:focus, .btn-line-accent.disabled:active:hover, .btn-line-accent.disabled:active:focus, .btn-line-accent.disabled:focus:hover, .btn-line-accent.disabled:focus:focus, .btn-line-accent.disabled:hover:hover, .btn-line-accent.disabled:hover:focus {
+  background: transparent;
+  border: 1px solid #00A875;
+  color: #00A875;
+}
+
+.btn-line-success {
+  background: transparent;
+  border: 1px solid #2ab415;
+  color: #2ab415;
+}
+
+.btn-line-success:hover, .btn-line-success:focus {
+  background: #2ab415;
+  border: 1px solid #259d12;
+  color: #15590a;
+  text-decoration: none;
+}
+
+.btn-line-success[disabled]:hover, .btn-line-success[disabled]:focus, .btn-line-success[disabled]:active:hover, .btn-line-success[disabled]:active:focus, .btn-line-success[disabled]:focus:hover, .btn-line-success[disabled]:focus:focus, .btn-line-success[disabled]:hover:hover, .btn-line-success[disabled]:hover:focus, .btn-line-success.disabled:hover, .btn-line-success.disabled:focus, .btn-line-success.disabled:active:hover, .btn-line-success.disabled:active:focus, .btn-line-success.disabled:focus:hover, .btn-line-success.disabled:focus:focus, .btn-line-success.disabled:hover:hover, .btn-line-success.disabled:hover:focus {
+  background: transparent;
+  border: 1px solid #2ab415;
+  color: #2ab415;
+}
+
+.btn-line-warning {
+  background: transparent;
+  border: 1px solid #ffd701;
+  color: #ffd701;
+}
+
+.btn-line-warning:hover, .btn-line-warning:focus {
+  background: #ffd701;
+  border: 1px solid #e7c200;
+  color: #816c00;
+  text-decoration: none;
+}
+
+.btn-line-warning[disabled]:hover, .btn-line-warning[disabled]:focus, .btn-line-warning[disabled]:active:hover, .btn-line-warning[disabled]:active:focus, .btn-line-warning[disabled]:focus:hover, .btn-line-warning[disabled]:focus:focus, .btn-line-warning[disabled]:hover:hover, .btn-line-warning[disabled]:hover:focus, .btn-line-warning.disabled:hover, .btn-line-warning.disabled:focus, .btn-line-warning.disabled:active:hover, .btn-line-warning.disabled:active:focus, .btn-line-warning.disabled:focus:hover, .btn-line-warning.disabled:focus:focus, .btn-line-warning.disabled:hover:hover, .btn-line-warning.disabled:hover:focus {
+  background: transparent;
+  border: 1px solid #ffd701;
+  color: #ffd701;
+}
+
+.btn-line-error {
+  background: transparent;
+  border: 1px solid #ff4949;
+  color: #ff4949;
+}
+
+.btn-line-error:hover, .btn-line-error:focus {
+  background: #ff4949;
+  border: 1px solid #ff3030;
+  color: #960000;
+  text-decoration: none;
+}
+
+.btn-line-error[disabled]:hover, .btn-line-error[disabled]:focus, .btn-line-error[disabled]:active:hover, .btn-line-error[disabled]:active:focus, .btn-line-error[disabled]:focus:hover, .btn-line-error[disabled]:focus:focus, .btn-line-error[disabled]:hover:hover, .btn-line-error[disabled]:hover:focus, .btn-line-error.disabled:hover, .btn-line-error.disabled:focus, .btn-line-error.disabled:active:hover, .btn-line-error.disabled:active:focus, .btn-line-error.disabled:focus:hover, .btn-line-error.disabled:focus:focus, .btn-line-error.disabled:hover:hover, .btn-line-error.disabled:hover:focus {
+  background: transparent;
+  border: 1px solid #ff4949;
+  color: #ff4949;
+}
+
+.btn-line-info {
+  background: transparent;
+  border: 1px solid #0a96e0;
+  color: #0a96e0;
+}
+
+.btn-line-info:hover, .btn-line-info:focus {
+  background: #0a96e0;
+  border: 1px solid #0986c8;
+  color: #054466;
+  text-decoration: none;
+}
+
+.btn-line-info[disabled]:hover, .btn-line-info[disabled]:focus, .btn-line-info[disabled]:active:hover, .btn-line-info[disabled]:active:focus, .btn-line-info[disabled]:focus:hover, .btn-line-info[disabled]:focus:focus, .btn-line-info[disabled]:hover:hover, .btn-line-info[disabled]:hover:focus, .btn-line-info.disabled:hover, .btn-line-info.disabled:focus, .btn-line-info.disabled:active:hover, .btn-line-info.disabled:active:focus, .btn-line-info.disabled:focus:hover, .btn-line-info.disabled:focus:focus, .btn-line-info.disabled:hover:hover, .btn-line-info.disabled:hover:focus {
+  background: transparent;
+  border: 1px solid #0a96e0;
+  color: #0a96e0;
+}
+
+.btn-line-lightgray {
+  background: transparent;
+  border: 1px solid #eeecec;
+  color: #eeecec;
+}
+
+.btn-line-lightgray:hover, .btn-line-lightgray:focus {
+  background: #eeecec;
+  border: 1px solid #e2dfdf;
+  color: #9f9393;
+  text-decoration: none;
+}
+
+.btn-line-lightgray[disabled]:hover, .btn-line-lightgray[disabled]:focus, .btn-line-lightgray[disabled]:active:hover, .btn-line-lightgray[disabled]:active:focus, .btn-line-lightgray[disabled]:focus:hover, .btn-line-lightgray[disabled]:focus:focus, .btn-line-lightgray[disabled]:hover:hover, .btn-line-lightgray[disabled]:hover:focus, .btn-line-lightgray.disabled:hover, .btn-line-lightgray.disabled:focus, .btn-line-lightgray.disabled:active:hover, .btn-line-lightgray.disabled:active:focus, .btn-line-lightgray.disabled:focus:hover, .btn-line-lightgray.disabled:focus:focus, .btn-line-lightgray.disabled:hover:hover, .btn-line-lightgray.disabled:hover:focus {
+  background: transparent;
+  border: 1px solid #eeecec;
+  color: #eeecec;
+}
+
+.btn-line-midgray {
+  background: transparent;
+  border: 1px solid #aba9a9;
+  color: #aba9a9;
+}
+
+.btn-line-midgray:hover, .btn-line-midgray:focus {
+  background: #aba9a9;
+  border: 1px solid #9e9c9c;
+  color: #575555;
+  text-decoration: none;
+}
+
+.btn-line-midgray[disabled]:hover, .btn-line-midgray[disabled]:focus, .btn-line-midgray[disabled]:active:hover, .btn-line-midgray[disabled]:active:focus, .btn-line-midgray[disabled]:focus:hover, .btn-line-midgray[disabled]:focus:focus, .btn-line-midgray[disabled]:hover:hover, .btn-line-midgray[disabled]:hover:focus, .btn-line-midgray.disabled:hover, .btn-line-midgray.disabled:focus, .btn-line-midgray.disabled:active:hover, .btn-line-midgray.disabled:active:focus, .btn-line-midgray.disabled:focus:hover, .btn-line-midgray.disabled:focus:focus, .btn-line-midgray.disabled:hover:hover, .btn-line-midgray.disabled:hover:focus {
+  background: transparent;
+  border: 1px solid #aba9a9;
+  color: #aba9a9;
+}
+
+.btn-line-darkgray {
+  background: transparent;
+  border: 1px solid #575555;
+  color: #575555;
+}
+
+.btn-line-darkgray:hover, .btn-line-darkgray:focus {
+  background: #575555;
+  border: 1px solid #4a4848;
+  color: #fefefe;
+  text-decoration: none;
+}
+
+.btn-line-darkgray[disabled]:hover, .btn-line-darkgray[disabled]:focus, .btn-line-darkgray[disabled]:active:hover, .btn-line-darkgray[disabled]:active:focus, .btn-line-darkgray[disabled]:focus:hover, .btn-line-darkgray[disabled]:focus:focus, .btn-line-darkgray[disabled]:hover:hover, .btn-line-darkgray[disabled]:hover:focus, .btn-line-darkgray.disabled:hover, .btn-line-darkgray.disabled:focus, .btn-line-darkgray.disabled:active:hover, .btn-line-darkgray.disabled:active:focus, .btn-line-darkgray.disabled:focus:hover, .btn-line-darkgray.disabled:focus:focus, .btn-line-darkgray.disabled:hover:hover, .btn-line-darkgray.disabled:hover:focus {
+  background: transparent;
+  border: 1px solid #575555;
+  color: #575555;
 }
 
 /* button */
@@ -340,18 +713,21 @@ button,
 input[type="button"],
 input[type="submit"],
 input[type="reset"],
-.button {
-  background: #0ea;
-  border: none;
-  color: #333;
+.btn {
+  background: #FF4533;
+  border: 1px solid #FF4533;
+  border-radius: 2px;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.24), 0 0 0 0 rgba(0, 0, 0, 0.19);
+  color: #fff;
   cursor: pointer;
+  display: inline-block;
   font-family: sans-serif;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 0.01em;
-  line-height: 1.6em;
-  margin: 2.1px 0;
-  padding: 4px 16px;
+  line-height: 35px;
+  margin: 2px 0;
+  padding: 0 20px;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
   text-decoration: none;
@@ -367,602 +743,577 @@ input[type="submit"]:hover,
 input[type="submit"]:focus,
 input[type="reset"]:hover,
 input[type="reset"]:focus,
-.button:hover,
-.button:focus {
-  background: #0ea;
-  color: #333;
+.btn:hover,
+.btn:focus {
+  background: #ff5c4d;
+  border: 1px solid #FF4533;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  color: #fff;
   text-decoration: none;
 }
 
-/* form */
-button,
-[type="button"],
-[type="date"],
-[type="datetime"],
-[type="datetime-local"],
-[type="email"],
-[type="month"],
-[type="number"],
-[type="password"],
-[type="reset"],
-[type="search"],
-[type="submit"],
-[type="tel"],
-[type="text"],
-[type="time"],
-[type="url"],
-[type="week"],
-select,
-textarea {
-  border-radius: 0;
-  margin: 2.1px 0;
-  resize: none;
-}
-
-[type="button"],
-[type="date"],
-[type="datetime"],
-[type="datetime-local"],
-[type="email"],
-[type="month"],
-[type="number"],
-[type="password"],
-[type="reset"],
-[type="search"],
-[type="submit"],
-[type="tel"],
-[type="text"],
-[type="time"],
-[type="url"],
-[type="week"],
-select {
-  height: 35px;
-  overflow: hidden;
-}
-
-select,
-select:hover,
-select:focus,
-select:active {
-  border: 0;
-  height: 33px;
-  outline: 1px solid rgba(51, 51, 51, 0.2);
-}
-
-textarea {
-  overflow: auto;
-}
-
-.form-section-block {
-  margin: 17.5px 0;
-}
-
-.form-section-block label {
-  display: block;
-}
-
-.form-section-block input,
-.form-section-block select,
-.form-section-block textarea {
-  display: block;
-  min-width: 300px;
-}
-
-.form-section-inline {
-  margin: 17.5px 0;
-}
-
-.form-section-title {
-  color: rgba(51, 51, 51, 0.5);
-}
-
-/* heading */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-family: Georgia, serif;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1em;
-}
-
-h1,
-.h1 {
-  font-size: 4em;
-}
-
-h2,
-.h2 {
-  font-size: 3em;
-}
-
-h3,
-.h3 {
-  font-size: 2em;
-}
-
-h4,
-.h4 {
-  font-size: 1.4em;
-}
-
-h5,
-.h5 {
-  font-size: 1.2em;
-}
-
-h6,
-.h6 {
-  font-size: 1em;
-}
-
-.title-sub {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-.title-sub + * {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-.title-underline {
-  display: block;
-  box-shadow: inset 0 -1px 0 rgba(51, 51, 51, 0.2);
-  padding-bottom: 0;
-}
-
-.title-underline h1,
-.title-underline .h1,
-.title-underline h2,
-.title-underline .h2,
-.title-underline h3,
-.title-underline .h3,
-.title-underline h4,
-.title-underline .h4,
-.title-underline h5,
-.title-underline .h5,
-.title-underline h6,
-.title-underline .h6 {
-  box-shadow: inset 0 -1px 0 #333;
-  display: inline-block;
-  margin-bottom: 0;
-  padding-bottom: 3px;
-}
-
-/* image */
-a img {
-  max-width: 100%;
-  max-height: 100%;
-  vertical-align: baseline;
-}
-
-button img {
-  max-width: 100%;
-  max-height: 90%;
-  vertical-align: middle;
-}
-
-.img-responsive {
-  max-width: 100%;
-}
-
-/* link */
-a,
-.link {
-  background: transparent;
-  border: none;
-  color: #0ea;
-  cursor: pointer;
-  display: inline-block;
-  font-family: sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.6em;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  transition: all 0.5s cubic-bezier(0.465, 0.24, 0.37, 0.825);
-}
-
-a:hover, a:focus,
-.link:hover,
-.link:focus {
-  background: transparent;
-  color: #0ea;
-  text-decoration: underline;
-  text-decoration-skip: ink;
-}
-
-/* list */
-ul,
-ol {
-  margin: 35px;
-  padding: 0;
-}
-
-ul.list-clean,
-ol.list-clean {
-  list-style: none;
-  margin: 35px 0;
-}
-
-ul.list-inline,
-ol.list-inline {
-  list-style: none;
-  margin: 17.5px 0;
-}
-
-ul.list-inline li,
-ol.list-inline li {
-  display: inline-block;
-  margin: 0;
-}
-
-ul.list-inline li:not(:last-child),
-ol.list-inline li:not(:last-child) {
-  margin-right: 8.75px;
-}
-
-dl {
-  display: block;
-  margin: 35px 0;
-  padding: 0;
-}
-
-dl dt {
-  display: block;
-  font-size: 1.2em;
-  margin: 0;
-  padding: 0;
-}
-
-dl dd {
-  display: block;
-  margin: 0 0 17.5px;
-  padding: 0;
-}
-
-/* table */
-table {
-  margin: 35px 0;
-}
-
-table thead tr {
-  border-bottom: 1px solid rgba(51, 51, 51, 0.1);
-}
-
-table thead tr th {
-  color: rgba(51, 51, 51, 0.4);
-  text-align: left;
-  font-size: 1em;
-  font-weight: normal;
-  line-height: 1em;
-  padding: 1.5em 0.8em 0.2em;
-}
-
-table tbody tr {
-  border-bottom: 1px solid rgba(51, 51, 51, 0.1);
-}
-
-table tbody tr td {
-  text-align: left;
-  padding: 0.2em 0.8em;
-}
-
-table.trhover tbody tr {
-  background: rgba(51, 51, 51, 0);
-}
-
-table.trhover tbody tr:hover {
-  background: rgba(51, 51, 51, 0.15);
-}
-
-table.responsive thead {
-  display: none;
-}
-
-table.responsive tbody tr {
-  border-bottom: 1px solid rgba(51, 51, 51, 0.1);
-}
-
-table.responsive tbody tr tdh {
-  color: rgba(51, 51, 51, 0.4);
-  text-align: left;
-  display: block;
-  font-size: 0.8em;
-  font-weight: normal;
-  line-height: 1em;
-  padding-top: 1.5em;
-}
-
-table.responsive tbody tr td {
-  text-align: left;
-  padding: 0.2em 0.8em;
-}
-
-@media only screen and (min-width: 768px) {
-  table.responsive thead {
-    display: table-header-group;
-    vertical-align: middle;
-    border-color: inherit;
-  }
-  table.responsive thead tr {
-    border-bottom: 1px solid rgba(51, 51, 51, 0.1);
-  }
-  table.responsive thead tr th {
-    color: rgba(51, 51, 51, 0.4);
-    text-align: left;
-    font-size: 1em;
-    font-weight: normal;
-    line-height: 1em;
-    padding: 1.5em 0.8em 0.2em;
-  }
-  table.responsive tbody tr {
-    border-bottom: 1px solid rgba(51, 51, 51, 0.1);
-  }
-  table.responsive tbody tr tdh {
-    display: none;
-  }
-  table.responsive tbody tr td {
-    text-align: left;
-    padding: 0.2em 0.8em;
-  }
-}
-
-/* text */
-p {
-  margin: 35px 0;
-  padding: 0;
-}
-
-b,
-strong,
-var,
-.bold {
-  font-style: normal;
-  font-weight: bold;
-  display: inline-block;
-}
-
-blockquote {
-  font-size: 1.2em;
-  margin: 35px;
-  padding: 0;
-}
-
-blockquote::before {
-  content: "\201C";
-  font-family: Georgia, serif;
-}
-
-blockquote cite {
-  display: block;
-  font-size: 0.8em;
-}
-
-blockquote cite::before {
-  content: "- ";
-}
-
-blockquote cite::after {
-  content: "";
-}
-
-cite,
-q {
-  color: rgba(51, 51, 51, 0.8);
-  display: inline-block;
-  font-style: italic;
-}
-
-cite::before,
-q::before {
-  content: "\201C";
-  font-family: Georgia, serif;
-}
-
-cite::after,
-q::after {
-  content: "\201D";
-  font-family: Georgia, serif;
-}
-
-i,
-.italic {
-  font-style: italic;
-}
-
-em {
-  font-style: italic;
-  font-weight: bold;
-}
-
-del {
-  color: rgba(51, 51, 51, 0.5);
-}
-
-abbr,
-ins,
-small,
-sub,
-sup,
-code,
-kbd,
-mark,
-samp {
-  display: inline-block;
-  font-style: normal;
-  line-height: 1.6em;
-}
-
-ins {
-  border-bottom: none;
-  text-decoration: underline;
-  text-decoration-style: wavy;
-  text-decoration-color: rgba(51, 51, 51, 0.3);
-}
-
-kbd,
-mark,
-samp {
-  margin: 2.1px 0;
-  padding: 0 8.75px;
-}
-
-kbd {
-  background: rgba(51, 51, 51, 0.8);
-  color: rgba(238, 238, 238, 0.8);
-}
-
-mark {
-  background: #fd2;
-  color: #333333;
-}
-
-samp {
-  background: rgba(51, 51, 51, 0.2);
-  color: rgba(51, 51, 51, 0.8);
-}
-
-/* colors */
-body {
-  background: linear-gradient(90deg, #eee, #eee);
-}
-
-a.accent,
-.link.accent {
-  background: transparent;
-  color: #0ea;
-}
-
-a.accent:hover, a.accent:focus,
-.link.accent:hover,
-.link.accent:focus {
-  background: transparent;
-  color: #0ea;
-}
-
-a.emphasis,
-.link.emphasis {
-  background: transparent;
-  color: #3ad;
-}
-
-a.emphasis:hover, a.emphasis:focus,
-.link.emphasis:hover,
-.link.emphasis:focus {
-  background: transparent;
-  color: #3ad;
-}
-
-button.accent,
-input[type="button"].accent,
-input[type="submit"].accent,
-input[type="reset"].accent,
-.button.accent {
-  background: #0ea;
-  color: #333;
-}
-
-button.accent:hover, button.accent:focus,
-input[type="button"].accent:hover,
-input[type="button"].accent:focus,
-input[type="submit"].accent:hover,
-input[type="submit"].accent:focus,
-input[type="reset"].accent:hover,
-input[type="reset"].accent:focus,
-.button.accent:hover,
-.button.accent:focus {
-  background: #0ea;
-  color: #333;
-}
-
-button.emphasis,
-input[type="button"].emphasis,
-input[type="submit"].emphasis,
-input[type="reset"].emphasis,
-.button.emphasis {
-  background: #3ad;
-  color: #333;
-}
-
-button.emphasis:hover, button.emphasis:focus,
-input[type="button"].emphasis:hover,
-input[type="button"].emphasis:focus,
-input[type="submit"].emphasis:hover,
-input[type="submit"].emphasis:focus,
-input[type="reset"].emphasis:hover,
-input[type="reset"].emphasis:focus,
-.button.emphasis:hover,
-.button.emphasis:focus {
-  background: #3ad;
-  color: #333;
-}
-
-/* containers */
-.main {
-  min-height: 100vh;
-  max-width: 100vw;
-  overflow-x: hidden;
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+.btn:active {
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+button[disabled]:hover, button[disabled]:focus, button[disabled]:active:hover, button[disabled]:active:focus, button[disabled]:focus:hover, button[disabled]:focus:focus, button[disabled]:hover:hover, button[disabled]:hover:focus, button.disabled:hover, button.disabled:focus, button.disabled:active:hover, button.disabled:active:focus, button.disabled:focus:hover, button.disabled:focus:focus, button.disabled:hover:hover, button.disabled:hover:focus,
+input[type="button"][disabled]:hover,
+input[type="button"][disabled]:focus,
+input[type="button"][disabled]:active:hover,
+input[type="button"][disabled]:active:focus,
+input[type="button"][disabled]:focus:hover,
+input[type="button"][disabled]:focus:focus,
+input[type="button"][disabled]:hover:hover,
+input[type="button"][disabled]:hover:focus,
+input[type="button"].disabled:hover,
+input[type="button"].disabled:focus,
+input[type="button"].disabled:active:hover,
+input[type="button"].disabled:active:focus,
+input[type="button"].disabled:focus:hover,
+input[type="button"].disabled:focus:focus,
+input[type="button"].disabled:hover:hover,
+input[type="button"].disabled:hover:focus,
+input[type="submit"][disabled]:hover,
+input[type="submit"][disabled]:focus,
+input[type="submit"][disabled]:active:hover,
+input[type="submit"][disabled]:active:focus,
+input[type="submit"][disabled]:focus:hover,
+input[type="submit"][disabled]:focus:focus,
+input[type="submit"][disabled]:hover:hover,
+input[type="submit"][disabled]:hover:focus,
+input[type="submit"].disabled:hover,
+input[type="submit"].disabled:focus,
+input[type="submit"].disabled:active:hover,
+input[type="submit"].disabled:active:focus,
+input[type="submit"].disabled:focus:hover,
+input[type="submit"].disabled:focus:focus,
+input[type="submit"].disabled:hover:hover,
+input[type="submit"].disabled:hover:focus,
+input[type="reset"][disabled]:hover,
+input[type="reset"][disabled]:focus,
+input[type="reset"][disabled]:active:hover,
+input[type="reset"][disabled]:active:focus,
+input[type="reset"][disabled]:focus:hover,
+input[type="reset"][disabled]:focus:focus,
+input[type="reset"][disabled]:hover:hover,
+input[type="reset"][disabled]:hover:focus,
+input[type="reset"].disabled:hover,
+input[type="reset"].disabled:focus,
+input[type="reset"].disabled:active:hover,
+input[type="reset"].disabled:active:focus,
+input[type="reset"].disabled:focus:hover,
+input[type="reset"].disabled:focus:focus,
+input[type="reset"].disabled:hover:hover,
+input[type="reset"].disabled:hover:focus,
+.btn[disabled]:hover,
+.btn[disabled]:focus,
+.btn[disabled]:active:hover,
+.btn[disabled]:active:focus,
+.btn[disabled]:focus:hover,
+.btn[disabled]:focus:focus,
+.btn[disabled]:hover:hover,
+.btn[disabled]:hover:focus,
+.btn.disabled:hover,
+.btn.disabled:focus,
+.btn.disabled:active:hover,
+.btn.disabled:active:focus,
+.btn.disabled:focus:hover,
+.btn.disabled:focus:focus,
+.btn.disabled:hover:hover,
+.btn.disabled:hover:focus {
+  background: #FF4533;
+  border: 1px solid #FF4533;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.24), 0 0 0 0 rgba(0, 0, 0, 0.19);
+  color: #fff;
+}
+
+button.btn-sm,
+input[type="button"].btn-sm,
+input[type="submit"].btn-sm,
+input[type="reset"].btn-sm,
+.btn.btn-sm {
+  font-size: 12px;
+  height: 26.25px;
+  line-height: 26.25px;
+  padding: 0 7.5px;
+}
+
+button.btn-lg,
+input[type="button"].btn-lg,
+input[type="submit"].btn-lg,
+input[type="reset"].btn-lg,
+.btn.btn-lg {
+  font-size: 24px;
+  height: 52.5px;
+  line-height: 52.5px;
+  padding: 0 50px;
+}
+
+button.btn-block,
+input[type="button"].btn-block,
+input[type="submit"].btn-block,
+input[type="reset"].btn-block,
+.btn.btn-block {
   width: 100%;
 }
 
-.container {
-  max-width: 1000px;
-  width: 90%;
-}
-
-.container.center {
-  margin: 0 auto;
-}
-
-.page {
-  min-height: 100vh;
-}
-
-.full {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.full .full {
-  flex: 1 0;
-}
-
-.full *:not(.full) {
-  flex: 0 1;
-}
-
 /* margins */
-.margin {
-  margin: 70px;
+.m-0 {
+  margin: 0vw;
 }
 
-.margin-top {
-  margin-top: 140px;
+.m-x-0 {
+  margin-left: 0vw;
+  margin-right: 0vw;
 }
 
-.padding {
-  padding: 35px 70px;
+.m-y-0 {
+  margin-top: 0vw;
+  margin-bottom: 0vw;
 }
 
-.padding-top {
-  padding-top: 70px;
+.m-l-0 {
+  margin-left: 0vw;
 }
 
-.margins-lead {
-  margin: 0;
-  padding-top: 60vh;
+.m-r-0 {
+  margin-right: 0vw;
+}
+
+.m-t-0 {
+  margin-top: 0vw;
+}
+
+.m-b-0 {
+  margin-bottom: 0vw;
+}
+
+.m--l-0 {
+  margin-left: 0vw;
+}
+
+.m--r-0 {
+  margin-right: 0vw;
+}
+
+.m--t-0 {
+  margin-top: 0vw;
+}
+
+.m--b-0 {
+  margin-bottom: 0vw;
+}
+
+.p-0 {
+  padding: 0vw;
+}
+
+.p-x-0 {
+  padding-left: 0vw;
+  padding-right: 0vw;
+}
+
+.p-y-0 {
+  padding-top: 0vw;
+  padding-bottom: 0vw;
+}
+
+.p-l-0 {
+  padding-left: 0vw;
+}
+
+.p-r-0 {
+  padding-right: 0vw;
+}
+
+.p-t-0 {
+  padding-top: 0vw;
+}
+
+.p-b-0 {
+  padding-bottom: 0vw;
+}
+
+.m-1 {
+  margin: 7vw;
+}
+
+.m-x-1 {
+  margin-left: 7vw;
+  margin-right: 7vw;
+}
+
+.m-y-1 {
+  margin-top: 7vw;
+  margin-bottom: 7vw;
+}
+
+.m-l-1 {
+  margin-left: 7vw;
+}
+
+.m-r-1 {
+  margin-right: 7vw;
+}
+
+.m-t-1 {
+  margin-top: 7vw;
+}
+
+.m-b-1 {
+  margin-bottom: 7vw;
+}
+
+.m--l-1 {
+  margin-left: -14vw;
+}
+
+.m--r-1 {
+  margin-right: -14vw;
+}
+
+.m--t-1 {
+  margin-top: -14vw;
+}
+
+.m--b-1 {
+  margin-bottom: -14vw;
+}
+
+.p-1 {
+  padding: 7vw;
+}
+
+.p-x-1 {
+  padding-left: 7vw;
+  padding-right: 7vw;
+}
+
+.p-y-1 {
+  padding-top: 7vw;
+  padding-bottom: 7vw;
+}
+
+.p-l-1 {
+  padding-left: 7vw;
+}
+
+.p-r-1 {
+  padding-right: 7vw;
+}
+
+.p-t-1 {
+  padding-top: 7vw;
+}
+
+.p-b-1 {
+  padding-bottom: 7vw;
+}
+
+.m-2 {
+  margin: 14vw;
+}
+
+.m-x-2 {
+  margin-left: 14vw;
+  margin-right: 14vw;
+}
+
+.m-y-2 {
+  margin-top: 14vw;
+  margin-bottom: 14vw;
+}
+
+.m-l-2 {
+  margin-left: 14vw;
+}
+
+.m-r-2 {
+  margin-right: 14vw;
+}
+
+.m-t-2 {
+  margin-top: 14vw;
+}
+
+.m-b-2 {
+  margin-bottom: 14vw;
+}
+
+.m--l-2 {
+  margin-left: -28vw;
+}
+
+.m--r-2 {
+  margin-right: -28vw;
+}
+
+.m--t-2 {
+  margin-top: -28vw;
+}
+
+.m--b-2 {
+  margin-bottom: -28vw;
+}
+
+.p-2 {
+  padding: 14vw;
+}
+
+.p-x-2 {
+  padding-left: 14vw;
+  padding-right: 14vw;
+}
+
+.p-y-2 {
+  padding-top: 14vw;
+  padding-bottom: 14vw;
+}
+
+.p-l-2 {
+  padding-left: 14vw;
+}
+
+.p-r-2 {
+  padding-right: 14vw;
+}
+
+.p-t-2 {
+  padding-top: 14vw;
+}
+
+.p-b-2 {
+  padding-bottom: 14vw;
+}
+
+.m-3 {
+  margin: 21vw;
+}
+
+.m-x-3 {
+  margin-left: 21vw;
+  margin-right: 21vw;
+}
+
+.m-y-3 {
+  margin-top: 21vw;
+  margin-bottom: 21vw;
+}
+
+.m-l-3 {
+  margin-left: 21vw;
+}
+
+.m-r-3 {
+  margin-right: 21vw;
+}
+
+.m-t-3 {
+  margin-top: 21vw;
+}
+
+.m-b-3 {
+  margin-bottom: 21vw;
+}
+
+.m--l-3 {
+  margin-left: -42vw;
+}
+
+.m--r-3 {
+  margin-right: -42vw;
+}
+
+.m--t-3 {
+  margin-top: -42vw;
+}
+
+.m--b-3 {
+  margin-bottom: -42vw;
+}
+
+.p-3 {
+  padding: 21vw;
+}
+
+.p-x-3 {
+  padding-left: 21vw;
+  padding-right: 21vw;
+}
+
+.p-y-3 {
+  padding-top: 21vw;
+  padding-bottom: 21vw;
+}
+
+.p-l-3 {
+  padding-left: 21vw;
+}
+
+.p-r-3 {
+  padding-right: 21vw;
+}
+
+.p-t-3 {
+  padding-top: 21vw;
+}
+
+.p-b-3 {
+  padding-bottom: 21vw;
+}
+
+.m-4 {
+  margin: 28vw;
+}
+
+.m-x-4 {
+  margin-left: 28vw;
+  margin-right: 28vw;
+}
+
+.m-y-4 {
+  margin-top: 28vw;
+  margin-bottom: 28vw;
+}
+
+.m-l-4 {
+  margin-left: 28vw;
+}
+
+.m-r-4 {
+  margin-right: 28vw;
+}
+
+.m-t-4 {
+  margin-top: 28vw;
+}
+
+.m-b-4 {
+  margin-bottom: 28vw;
+}
+
+.m--l-4 {
+  margin-left: -56vw;
+}
+
+.m--r-4 {
+  margin-right: -56vw;
+}
+
+.m--t-4 {
+  margin-top: -56vw;
+}
+
+.m--b-4 {
+  margin-bottom: -56vw;
+}
+
+.p-4 {
+  padding: 28vw;
+}
+
+.p-x-4 {
+  padding-left: 28vw;
+  padding-right: 28vw;
+}
+
+.p-y-4 {
+  padding-top: 28vw;
+  padding-bottom: 28vw;
+}
+
+.p-l-4 {
+  padding-left: 28vw;
+}
+
+.p-r-4 {
+  padding-right: 28vw;
+}
+
+.p-t-4 {
+  padding-top: 28vw;
+}
+
+.p-b-4 {
+  padding-bottom: 28vw;
+}
+
+.m-5 {
+  margin: 35vw;
+}
+
+.m-x-5 {
+  margin-left: 35vw;
+  margin-right: 35vw;
+}
+
+.m-y-5 {
+  margin-top: 35vw;
+  margin-bottom: 35vw;
+}
+
+.m-l-5 {
+  margin-left: 35vw;
+}
+
+.m-r-5 {
+  margin-right: 35vw;
+}
+
+.m-t-5 {
+  margin-top: 35vw;
+}
+
+.m-b-5 {
+  margin-bottom: 35vw;
+}
+
+.m--l-5 {
+  margin-left: -70vw;
+}
+
+.m--r-5 {
+  margin-right: -70vw;
+}
+
+.m--t-5 {
+  margin-top: -70vw;
+}
+
+.m--b-5 {
+  margin-bottom: -70vw;
+}
+
+.p-5 {
+  padding: 35vw;
+}
+
+.p-x-5 {
+  padding-left: 35vw;
+  padding-right: 35vw;
+}
+
+.p-y-5 {
+  padding-top: 35vw;
+  padding-bottom: 35vw;
+}
+
+.p-l-5 {
+  padding-left: 35vw;
+}
+
+.p-r-5 {
+  padding-right: 35vw;
+}
+
+.p-t-5 {
+  padding-top: 35vw;
+}
+
+.p-b-5 {
+  padding-bottom: 35vw;
 }

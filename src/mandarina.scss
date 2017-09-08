@@ -1,19 +1,20 @@
 @charset "UTF-8";
 
-@import "___vars";
 @import "___normalize";
 
-@import "__button";
-@import "__form";
-@import "__heading";
-@import "__image";
-@import "__link";
-@import "__list";
-@import "__table";
-@import "__text";
-
+@import "__vars_core";
 @import "__colors";
+@import "__button";
+// @import "__form";
+// @import "__heading";
+// @import "__image";
+// @import "__link";
+// @import "__list";
+// @import "__table";
+// @import "__text";
+//
 
-@import "_layout_align";
-@import "_layout_containers";
-@import "_layout_margins";
+//
+// @import "_layout_align";
+// @import "_layout_containers";
+@import "__margins";

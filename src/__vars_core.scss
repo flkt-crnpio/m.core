@@ -1,0 +1,43 @@
+// button
+$btn-height: 35px;
+$btn-padding: 10px;
+$btn-margin-y: 2px;
+$btn-border-radius: 2px;
+
+// color
+$color-font: #333;
+
+$color-primary: #FF4533;
+$color-font-primary: #fff;
+$color-secondary: #FF7C4C;
+$color-font-secondary: #A3421F;
+$color-accent: #00A875;
+$color-font-accent: #fff;
+
+$color-success: mix(#28b515, $color-primary, 99%);
+$color-font-success: darken($color-success, 20);
+$color-warning: mix(#ffd800, $color-primary, 99%);
+$color-font-warning: darken($color-warning, 25);
+$color-error: mix(#ff4949, $color-primary, 99%);
+$color-font-error: darken($color-error, 35);
+$color-info: mix(#0897e2, $color-primary, 99%);
+$color-font-info: darken($color-info, 25);
+
+$color-lightgray: mix(#eee, $color-primary, 99%);
+$color-font-lightgray: darken($color-lightgray, 33);
+$color-midgray: mix(#aaa, $color-primary, 99%);
+$color-font-midgray: darken($color-midgray, 33);
+$color-darkgray: mix(#555, $color-primary, 99%);
+$color-font-darkgray: lighten($color-darkgray, 66);
+
+$color-highlight: mix(#fd0, $color-primary, 99%);
+
+// fonts
+$font-family: sans-serif;
+$font-line: 1.6em;
+$font-size: 16px;
+$font-space: 0.01em;
+$font-weight: 300;
+
+// margins
+$layout-space: 7vw;

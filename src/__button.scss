@@ -3,29 +3,72 @@ button,
 input[type="button"],
 input[type="submit"],
 input[type="reset"],
-.button {
+.btn {
     background: $color-primary;
-    border: none;
-    color: mix($color-font, $color-primary, 60%);
+    border: 1px solid $color-primary;
+    border-radius: $btn-border-radius;
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.24), 0 0 0 0 rgba(0,0,0,0.19);
+    color: $color-font-primary;
     cursor: pointer;
+    display: inline-block;
     font-family: $font-family;
     font-size: $font-size;
     font-weight: $font-weight;
     letter-spacing: $font-space;
-    line-height: $font-line;
-    margin: 2.1px 0;
-    padding: $font-size/4 $font-size;
+    line-height: $btn-height;
+    margin: $btn-margin-y 0;
+    padding: 0 $btn-padding * 2;
     -ms-touch-action: manipulation;
     touch-action: manipulation;
     text-decoration: none;
-    height: $form-height;
+    height: $btn-height;
     vertical-align: middle;
     transition: all 0.5s cubic-bezier(0.465, 0.240, 0.370, 0.825);
 
     &:hover,
     &:focus {
-        background: mix($color-font, $color-primary, 30%);
-        color:  mix($color-background, $color-primary, 90%);
+        background: lighten($color-primary, 5);
+        border: 1px solid $color-primary;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        color: $color-font-primary;
         text-decoration: none;
+    }
+
+    &:active {
+        box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2), 0 5px 10px 0 rgba(0,0,0,0.1);
+    }
+
+    &[disabled],
+    &[disabled]:active,
+    &[disabled]:focus,
+    &[disabled]:hover,
+    &.disabled,
+    &.disabled:active,
+    &.disabled:focus,
+    &.disabled:hover {
+        &:hover,
+        &:focus {
+            background: $color-primary;
+            border: 1px solid $color-primary;
+            box-shadow: 0 0 0 0 rgba(0,0,0,0.24), 0 0 0 0 rgba(0,0,0,0.19);
+            color: $color-font-primary;
+        }
+    }
+
+    &.btn-sm {
+        font-size: $font-size * .75;
+        height: $btn-height * .75;
+        line-height: $btn-height * .75;
+        padding: 0 $btn-padding * .75;
+    }
+    &.btn-lg {
+        font-size: $font-size * 1.5;
+        height: $btn-height * 1.5;
+        line-height: $btn-height * 1.5;
+        padding: 0 $btn-padding * 5;
+    }
+
+    &.btn-block {
+        width: 100%;
     }
 }
