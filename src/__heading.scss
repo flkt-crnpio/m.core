@@ -52,133 +52,53 @@ h6,
     padding-top: 0;
 }
 
-.title-underline {
-    display: block;
-    box-shadow: inset 0 (-$font-title-line-weight) 0 rgba($color-font,0.2);
-    padding-bottom: 0;
-
-    h1,
-    .h1,
-    h2,
-    .h2,
-    h3,
-    .h3,
-    h4,
-    .h4,
-    h5,
-    .h5,
-    h6,
-    .h6 {
-        box-shadow: inset 0 (-$font-title-line-weight) 0 $color-font;
-        display: inline-block;
-        margin-bottom: 0;
-        padding-bottom: 3px;
-    }
-}
-
 .title-leftline {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 
-    h1,
-    .h1,
-    h2,
-    .h2,
-    h3,
-    .h3,
-    h4,
-    .h4,
-    h5,
-    .h5,
-    h6,
-    .h6 {
-        display: block;
-        padding-left: 10px;
-    }
     &:before {
         background: $color-font;
         display: block;
         content: "";
         height: $font-title-line-weight;
         width: $font-title-line-width;
+        margin-right: 10px;
     }
 }
 
 .title-rightline {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
 
-    h1,
-    .h1,
-    h2,
-    .h2,
-    h3,
-    .h3,
-    h4,
-    .h4,
-    h5,
-    .h5,
-    h6,
-    .h6 {
-        display: block;
-        padding-right: 10px;
-    }
     &:after {
         background: $color-font;
         display: block;
         content: "";
         height: $font-title-line-weight;
         width: $font-title-line-width;
+        margin-left: 10px;
     }
 }
 
 .title-topline {
-    h1,
-    .h1,
-    h2,
-    .h2,
-    h3,
-    .h3,
-    h4,
-    .h4,
-    h5,
-    .h5,
-    h6,
-    .h6 {
-        &:before {
-            background: $color-font;
-            display: block;
-            content: "";
-            height: $font-title-line-weight;
-            width: $font-title-line-width;
-            margin-bottom: 5px;
-        }
+    &:before {
+        background: $color-font;
+        display: block;
+        content: "";
+        height: $font-title-line-weight;
+        width: $font-title-line-width;
+        margin-bottom: 5px;
     }
-
 }
 
 .title-bottomline {
-    h1,
-    .h1,
-    h2,
-    .h2,
-    h3,
-    .h3,
-    h4,
-    .h4,
-    h5,
-    .h5,
-    h6,
-    .h6 {
-        &:after {
-            background: $color-font;
-            display: block;
-            content: "";
-            height: $font-title-line-weight;
-            width: $font-title-line-width;
-            margin-top: 5px;
-        }
+    &:after {
+        background: $color-font;
+        display: block;
+        content: "";
+        height: $font-title-line-weight;
+        width: $font-title-line-width;
+        margin-top: 5px;
     }
 }
