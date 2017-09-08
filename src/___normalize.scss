@@ -1,5 +1,4 @@
 /* Custom normalize based on normalize.css v4.0.0 and sanitize.css v3.3.0 */
-
 html {
     box-sizing: border-box;
     -ms-text-size-adjust: 100%;
@@ -7,13 +6,11 @@ html {
 }
 
 body {
-    background: $color-background;
-    color: $color-font;
-    font-family: $font-family;
-    font-size: $font-size;
-    font-weight: $font-weight;
-    letter-spacing: $font-space;
-    line-height: $font-line;
+    color: #333;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.6em;
     margin: 0;
     padding: 0;
 }
@@ -30,10 +27,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $font-title-family;
-    font-weight: $font-title-weight;
-    letter-spacing: $font-title-space;
-    line-height: $font-title-line;
+    font-family: Georgia, serif;
+    font-weight: normal;
 }
 
 article,
@@ -52,7 +47,7 @@ summary {
 }
 
 figure {
-    margin: $layout-space;
+    margin: 1.6em;
 }
 
 audio,
@@ -88,12 +83,12 @@ ins {
 }
 
 abbr {
-    border-bottom: 1px dotted rgba($color-font,0.5);
+    border-bottom: 1px dotted rgba(0,0,0,0.5);
     cursor: help;
 }
 
 ins {
-    border-bottom: 1px dashed rgba($color-font,0.5);
+    border-bottom: 1px dashed rgba(0,0,0,0.5);
 }
 
 b,
@@ -129,11 +124,10 @@ kbd,
 pre,
 samp,
 var {
-    font-family: $font-code-family;
-    font-size: $font-code-size;
-    font-weight: $font-code-weight;
-    line-height: $font-code-line;
-    letter-spacing: $font-code-space;
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.6em;
 }
 
 pre {
@@ -157,10 +151,10 @@ a {
 
 hr {
     border: none;
-    border-top: 1px solid rgba($color-font,0.2);
+    border-top: 1px solid rgba(0,0,0,0.2);
     box-sizing: content-box;
     height: 0;
-    margin: $layout-space 0;
+    margin: 1.6em 0;
     overflow: visible;
 }
 
@@ -203,16 +197,13 @@ button,
 input,
 select,
 textarea {
-    background: $color-background;
-    border: 1px solid rgba($color-font,0.2);
-    color: $color-font;
-    font-family: $font-family;
-    font-size: $font-size;
-    font-weight: $font-weight;
-    letter-spacing: $font-space;
-    line-height: $font-line;
+    border: 1px solid rgba(0,0,0,0.2);
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1em;
     margin: 0;
-    padding: $font-size/4 $font-size/2;
+    padding: .4em .6em;
     -ms-touch-action: manipulation;
     touch-action: manipulation;
 }
@@ -271,7 +262,7 @@ select:focus {
 }
 
 fieldset {
-    border: 1px solid rgba($color-font,0.5);
+    border: 1px solid rgba(0,0,0,0.5);
     margin: 0;
     padding: 0.35em 0.7em 0.7em;
 }
@@ -318,19 +309,19 @@ table {
 }
 
 ::-webkit-selection {
-    background-color: rgba($color-font,0.5);
-    color: $color-background;
+    background-color: rgba(0,0,0,0.1);
+    color: rgba(0,0,0,0.5);
     text-shadow: none;
 }
 
 ::-moz-selection {
-    background-color: rgba($color-font,0.5);
-    color: $color-background;
+    background-color: rgba(0,0,0,0.1);
+    color: rgba(0,0,0,0.5);
     text-shadow: none;
 }
 
 ::selection {
-    background-color: rgba($color-font,0.5);
-    color: $color-background;
+    background-color: rgba(0,0,0,0.1);
+    color: rgba(0,0,0,0.5);
     text-shadow: none;
 }
