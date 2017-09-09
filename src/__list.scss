@@ -22,6 +22,12 @@ ol.list-inline, {
             margin-right: $element-space;
         }
     }
+
+    &::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
 }
 
 dl {
