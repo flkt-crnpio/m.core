@@ -74,3 +74,22 @@ $c: (primary, $color-primary, $color-font-primary),
         }
     }
 }
+
+// text
+@each $name, $color, $font in $c {
+    .text-#{$name} {
+        color: $color;
+    }
+}
+
+// link
+@each $name, $color, $font in $c {
+    .link-#{$name} {
+        color: $color;
+
+        &:hover,
+        &:focus {
+            color: mix($color, $color-primary, 80%);
+        }
+    }
+}

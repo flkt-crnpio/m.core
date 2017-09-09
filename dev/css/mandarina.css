@@ -708,6 +708,126 @@ table {
   color: #575555;
 }
 
+.text-primary {
+  color: #FF4533;
+}
+
+.text-secondary {
+  color: #FF7C4C;
+}
+
+.text-accent {
+  color: #00A875;
+}
+
+.text-success {
+  color: #2ab415;
+}
+
+.text-warning {
+  color: #ffd701;
+}
+
+.text-error {
+  color: #ff4949;
+}
+
+.text-info {
+  color: #0a96e0;
+}
+
+.text-lightgray {
+  color: #eeecec;
+}
+
+.text-midgray {
+  color: #aba9a9;
+}
+
+.text-darkgray {
+  color: #575555;
+}
+
+.link-primary {
+  color: #FF4533;
+}
+
+.link-primary:hover, .link-primary:focus {
+  color: #ff4533;
+}
+
+.link-secondary {
+  color: #FF7C4C;
+}
+
+.link-secondary:hover, .link-secondary:focus {
+  color: #ff7147;
+}
+
+.link-accent {
+  color: #00A875;
+}
+
+.link-accent:hover, .link-accent:focus {
+  color: #339468;
+}
+
+.link-success {
+  color: #2ab415;
+}
+
+.link-success:hover, .link-success:focus {
+  color: #559e1b;
+}
+
+.link-warning {
+  color: #ffd701;
+}
+
+.link-warning:hover, .link-warning:focus {
+  color: #ffba0b;
+}
+
+.link-error {
+  color: #ff4949;
+}
+
+.link-error:hover, .link-error:focus {
+  color: #ff4845;
+}
+
+.link-info {
+  color: #0a96e0;
+}
+
+.link-info:hover, .link-info:focus {
+  color: #3b86bd;
+}
+
+.link-lightgray {
+  color: #eeecec;
+}
+
+.link-lightgray:hover, .link-lightgray:focus {
+  color: #f1cbc7;
+}
+
+.link-midgray {
+  color: #aba9a9;
+}
+
+.link-midgray:hover, .link-midgray:focus {
+  color: #bc9591;
+}
+
+.link-darkgray {
+  color: #575555;
+}
+
+.link-darkgray:hover, .link-darkgray:focus {
+  color: #79524e;
+}
+
 /* button */
 button,
 input[type="button"],
@@ -968,6 +1088,37 @@ h6,
   margin-top: 5px;
 }
 
+/* link */
+a,
+.link {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  color: #FF4533;
+  cursor: pointer;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 1.6em;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  transition: all 0.5s cubic-bezier(0.465, 0.24, 0.37, 0.825);
+}
+
+a:hover, a:focus,
+.link:hover,
+.link:focus {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  color: #993c33;
+  text-decoration: underline;
+  text-decoration-skip: ink;
+}
+
 /* list */
 ul,
 ol {
@@ -996,6 +1147,13 @@ ol.list-inline > li {
 ul.list-inline > li:not(:last-child),
 ol.list-inline > li:not(:last-child) {
   margin-right: 24px;
+}
+
+ul.list-inline::after,
+ol.list-inline::after {
+  content: "";
+  clear: both;
+  display: block;
 }
 
 dl {
