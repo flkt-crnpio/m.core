@@ -1,42 +1,42 @@
 /* list */
 ul,
 ol {
-    margin: $layout-space;
+    list-style-position: inside;
+    margin: $element-space 0;
     padding: 0;
 }
 
 ul.list-clean,
 ol.list-clean {
     list-style: none;
-    margin: 0;
 }
 
 ul.list-inline,
 ol.list-inline, {
     list-style: none;
-    margin: $layout-space/2 0;
     > li {
         display: inline-block;
         margin: 0;
         &:not(:last-child) {
-            margin-right: $layout-space/4;
+            margin-right: $element-space;
         }
     }
 }
 
 dl {
     display: block;
-    margin: $layout-space 0;
+    margin: $element-space 0;
     padding: 0;
     dt {
         display: block;
-        font-size: 1.2em;
+        font-size: 1em;
         margin: 0;
         padding: 0;
     }
     dd {
         display: block;
-        margin: 0 0 $layout-space/2;
+        font-size: 0.9em;
+        margin: 0 0 $element-space * .4;
         padding: 0;
     }
 }

@@ -968,6 +968,55 @@ h6,
   margin-top: 5px;
 }
 
+/* list */
+ul,
+ol {
+  list-style-position: inside;
+  margin: 24px 0;
+  padding: 0;
+}
+
+ul.list-clean,
+ol.list-clean {
+  list-style: none;
+}
+
+ul.list-inline,
+ol.list-inline {
+  list-style: none;
+}
+
+ul.list-inline > li,
+ol.list-inline > li {
+  display: inline-block;
+  margin: 0;
+}
+
+ul.list-inline > li:not(:last-child),
+ol.list-inline > li:not(:last-child) {
+  margin-right: 24px;
+}
+
+dl {
+  display: block;
+  margin: 24px 0;
+  padding: 0;
+}
+
+dl dt {
+  display: block;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+dl dd {
+  display: block;
+  font-size: 0.9em;
+  margin: 0 0 9.6px;
+  padding: 0;
+}
+
 /* margins */
 .m-0 {
   margin: 0vw;
