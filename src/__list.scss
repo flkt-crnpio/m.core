@@ -2,7 +2,7 @@
 ul,
 ol {
     list-style-position: inside;
-    margin: $element-space 0;
+    margin: $element-space 0 $element-space * 2;
     padding: 0;
 }
 
