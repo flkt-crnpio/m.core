@@ -16,6 +16,7 @@ ol.list-inline, {
     list-style: none;
     > li {
         display: inline-block;
+        float: left;
         margin: 0;
         &:not(:last-child) {
             margin-right: $element-space;

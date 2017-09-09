@@ -1,12 +1,11 @@
 /* text */
 p {
-    margin: $layout-space 0;
+    margin: $element-space 0;
     padding: 0;
 }
 
 b,
 strong,
-var,
 .bold {
     font-style: normal;
     font-weight: bold;
@@ -15,13 +14,12 @@ var,
 
 blockquote {
     font-size: 1.2em;
-    margin: $layout-space;
+    margin: $element-space;
     padding: 0;
     &::before {
         content: "\201C";
         font-family: Georgia, serif;
     }
-
     cite {
         display: block;
         font-size: 0.8em;
@@ -86,28 +84,31 @@ ins {
 code,
 kbd,
 mark,
-samp {
-    border-radius: 2px;
-    margin: 2.1px 0;
-    padding: 0 $font-code-line/2;
+samp,
+var {
+    font-family: $font-code-family;
+    font-weight: $font-code-weight;
+    border-radius: $font-code-radius;
+    letter-spacing: $font-code-space;
+    margin: 0;
+    padding: 0 $element-space/2;
 }
 
 code {
-    background: rgba(mix($color-primary,$color-background,90),0.2);
-    color: rgba(mix($color-primary,$color-font,50),0.9);
-}
-
-kbd {
-    background: rgba($color-font,0.5);
-    color: rgba($color-background,0.9);
+    background: rgba(mix($color-primary, $color-font, 70), 0.1);
+    color: rgba(mix($color-primary, $color-font, 50), 0.9);
 }
 
 mark {
-    background: rgba(mix($color-highlight,$color-background,90),0.9);
-    color: rgba($color-font,1);
+    background: rgba(mix($color-highlight, $color-background, 90), 0.9);
+    color: rgba(mix($color-highlight, $color-font, 30), 0.9);
 }
 
+kbd {
+    background: rgba($color-font, 0.7);
+    color: rgba($color-font, 1);
+}
 samp {
-    background: rgba($color-font,0.2);
-    color: rgba($color-font,0.9);
+    background: rgba($color-font, 0.1);
+    color: rgba($color-font, 0.7);
 }

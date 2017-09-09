@@ -989,6 +989,7 @@ ol.list-inline {
 ul.list-inline > li,
 ol.list-inline > li {
   display: inline-block;
+  float: left;
   margin: 0;
 }
 
@@ -1015,6 +1016,131 @@ dl dd {
   font-size: 0.9em;
   margin: 0 0 9.6px;
   padding: 0;
+}
+
+/* text */
+p {
+  margin: 24px 0;
+  padding: 0;
+}
+
+b,
+strong,
+.bold {
+  font-style: normal;
+  font-weight: bold;
+  display: inline-block;
+}
+
+blockquote {
+  font-size: 1.2em;
+  margin: 24px;
+  padding: 0;
+}
+
+blockquote::before {
+  content: "\201C";
+  font-family: Georgia, serif;
+}
+
+blockquote cite {
+  display: block;
+  font-size: 0.8em;
+}
+
+blockquote cite::before {
+  content: "- ";
+}
+
+blockquote cite::after {
+  content: "";
+}
+
+cite,
+q {
+  color: rgba(51, 51, 51, 0.8);
+  display: inline-block;
+  font-style: italic;
+}
+
+cite::before,
+q::before {
+  content: "\201C";
+  font-family: Georgia, serif;
+}
+
+cite::after,
+q::after {
+  content: "\201D";
+  font-family: Georgia, serif;
+}
+
+i,
+.italic {
+  font-style: italic;
+}
+
+em {
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  color: rgba(51, 51, 51, 0.5);
+}
+
+abbr,
+ins,
+small,
+sub,
+sup,
+code,
+kbd,
+mark,
+samp {
+  display: inline-block;
+  font-style: normal;
+  line-height: 1.6em;
+}
+
+ins {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: rgba(51, 51, 51, 0.3);
+}
+
+code,
+kbd,
+mark,
+samp,
+var {
+  font-family: monospace;
+  font-weight: 400;
+  border-radius: 2px;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0 12px;
+}
+
+code {
+  background: rgba(194, 64, 51, 0.1);
+  color: rgba(153, 60, 51, 0.9);
+}
+
+mark {
+  background: rgba(253, 221, 25, 0.9);
+  color: rgba(112, 101, 36, 0.9);
+}
+
+kbd {
+  background: rgba(51, 51, 51, 0.7);
+  color: #333333;
+}
+
+samp {
+  background: rgba(51, 51, 51, 0.1);
+  color: rgba(51, 51, 51, 0.7);
 }
 
 /* margins */

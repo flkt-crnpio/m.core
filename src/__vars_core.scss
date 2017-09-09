@@ -5,6 +5,7 @@ $btn-margin-y: 2px;
 $btn-border-radius: 2px;
 
 // color
+$color-background: #eee;
 $color-font: #333;
 
 $color-primary: #FF4533;
@@ -46,6 +47,11 @@ $font-title-weight: 400;
 $font-title-style: normal;
 $font-title-line-weight: 2px;
 $font-title-line-width: 3vw;
+
+$font-code-family: monospace;
+$font-code-space: 0;
+$font-code-weight: 400;
+$font-code-radius: $btn-border-radius;
 
 // margins
 $layout-space: 7vw;
