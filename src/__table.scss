@@ -1,6 +1,8 @@
 /* table */
 table {
-    margin: $layout-space 0;
+    margin: $element-space 0;
+    width: 100%;
+
     thead {
         tr {
             border-bottom: 1px solid rgba($color-font,0.1);
