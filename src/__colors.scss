@@ -1,4 +1,9 @@
 /* colors */
+body {
+    background: $color-background;
+    color: $color-font;
+}
+
 $c: (primary, $color-primary, $color-font-primary),
     (secondary, $color-secondary, $color-font-secondary),
     (accent, $color-accent, $color-font-accent),
@@ -41,9 +46,7 @@ $c: (primary, $color-primary, $color-font-primary),
             }
         }
     }
-}
 
-@each $name, $color, $font in $c {
     .btn-line-#{$name} {
         background: transparent;
         border: 1px solid $color;
@@ -91,5 +94,41 @@ $c: (primary, $color-primary, $color-font-primary),
         &:focus {
             color: mix($color, $color-primary, 80%);
         }
+    }
+}
+
+// form
+@each $name, $color, $font in $c {
+    .form-#{$name} {
+        input,
+        select,
+        textarea {
+            border-color: $color;
+            color: $font;
+
+            &:hover,
+            &:focus,
+            &:active {
+                border-color: $color;
+            }
+        }
+
+        label {
+            color: $font;
+        }
+    }
+
+    .input-#{$name} {
+        border-color: $color;
+        color: $font;
+
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: $color;
+        }
+    }
+    .label-#{$name} {
+        color: $font;
     }
 }

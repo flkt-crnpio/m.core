@@ -18,12 +18,12 @@ button,
 [type="week"],
 select,
 textarea {
-    border-radius: 0;
-    margin: 2.1px 0;
+    border-radius: $form-border-radius;
+    height: $form-height;
+    margin: $form-margin-y 0;
     resize: none;
 }
 
-[type="button"],
 [type="date"],
 [type="datetime"],
 [type="datetime-local"],
@@ -31,17 +31,49 @@ textarea {
 [type="month"],
 [type="number"],
 [type="password"],
-[type="reset"],
 [type="search"],
-[type="submit"],
 [type="tel"],
 [type="text"],
 [type="time"],
 [type="url"],
 [type="week"],
-select {
-    height: $form-height;
+select,
+textarea {
+    background: rgba($color-background,0.7);
+    border-color: rgba($color-font,0.2);
+    color: rgba($color-font, 0.9);
+    font-size: $font-form-size;
+    line-height: $font-form-line;
     overflow: hidden;
+    padding: $form-padding;
+    transition: all 0.5s cubic-bezier(0.465, 0.240, 0.370, 0.825);
+
+    &:hover {
+        border-color: rgba(mix($color-primary, $color-font, 50), 0.5);
+    }
+    &:focus,
+    &:active {
+        border-color: lighten(mix($color-primary, $color-font, 90), 10);
+    }
+
+    &.input-sm {
+        font-size: $font-form-size * .75;
+        height: $form-height * .75;
+        line-height: $font-form-line * .75;
+        padding: $form-padding * .75;
+    }
+
+    &.input-lg {
+        font-size: $font-form-size * 1.5;
+        height: $form-height * 1.5;
+        line-height: $font-form-line * 1.5;
+        padding: $form-padding * 1.5;
+    }
+
+    &.input-block {
+        display: block;
+        width: 100%;
+    }
 }
 select,
 select:hover,
@@ -49,15 +81,62 @@ select:focus,
 select:active {
     border: 0;
     height: $form-height - 2px;
+}
+select {
     outline: 1px solid rgba($color-font,0.2);
+}
+select:hover {
+    outline: 1px solid rgba(mix($color-primary, $color-font, 40), 0.4);
+}
+select:focus,
+select:active {
+    outline: 1px solid rgba(mix($color-primary, $color-font, 80), 0.8);
 }
 
 textarea {
+    height: auto;
     overflow: auto;
 }
 
+label {
+    font-family: $font-form-family;
+    font-size: $font-form-size;
+    font-weight: $font-form-weight;
+    letter-spacing: $font-form-space;
+    line-height: $font-form-line;
+
+    &.label-sm {
+        font-size: $font-form-size * .75;
+        line-height: $font-form-line * .75;
+    }
+    &.label-lg {
+        font-size: $font-form-size * 1.5;
+        line-height: $font-form-line * 1.5;
+    }
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px $color-background inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+::-webkit-input-placeholder {
+    color: rgba($color-font, 0.5);
+}
+::-moz-placeholder {
+    color: rgba($color-font, 0.5);
+}
+:-ms-input-placeholder {
+    color: rgba($color-font, 0.5);
+}
+:-moz-placeholder {
+    color: rgba($color-font, 0.5);
+}
+
 .form-section-block {
-    margin: $layout-space/2 0;
+    margin: $element-space/2 0;
     label {
         display: block;
     }
@@ -70,9 +149,11 @@ textarea {
 }
 
 .form-section-inline {
-    margin: $layout-space/2 0;
+    margin: $element-space/2 0;
 }
 
-.form-section-title {
-    color: rgba($color-font,0.5);
+.form-title {
+    font-size: $font-form-size;
+    color: rgba($color-font, 0.7);
+    display: block;
 }

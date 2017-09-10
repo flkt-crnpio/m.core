@@ -4,8 +4,14 @@ $btn-padding: 10px;
 $btn-margin-y: 2px;
 $btn-border-radius: 2px;
 
+// form
+$form-height: $btn-height;
+$form-padding: $btn-padding;
+$form-margin-y: $btn-margin-y;
+$form-border-radius: $btn-border-radius;
+
 // color
-$color-background: #eee;
+$color-background: #fff;
 $color-font: #333;
 
 $color-primary: #FF4533;
@@ -53,11 +59,17 @@ $font-code-space: 0;
 $font-code-weight: 400;
 $font-code-radius: $btn-border-radius;
 
-$font-link-family: sans-serif;
-$font-link-line: 1.6em;
-$font-link-size: 16px;
-$font-link-space: 0.01em;
-$font-link-weight: 300;
+$font-link-family: $font-title-family;
+$font-link-line: $font-line;
+$font-link-size: $font-size;
+$font-link-space: $font-title-space;
+$font-link-weight: $font-title-weight;
+
+$font-form-family: $font-family;
+$font-form-line: $font-line;
+$font-form-size: $font-size * .77;
+$font-form-space: $font-space;
+$font-form-weight: $font-weight;
 
 // margins
 $layout-space: 7vw;
