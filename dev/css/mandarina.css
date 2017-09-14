@@ -865,7 +865,7 @@ textarea {
   padding: 9px;
   max-width: 100%;
   min-width: auto;
-  width: 300px;
+  width: auto;
   display: inline-block;
   resize: none;
   vertical-align: middle;
@@ -1227,6 +1227,42 @@ select.input-block {
   width: 100%;
 }
 
+.select.input-sm select {
+  font-size: 12px;
+  line-height: 12px;
+  padding: 3px 7.5px;
+  padding-right: 32px;
+}
+
+.select.input-sm::after {
+  top: 10px;
+  font-size: 12px;
+  line-height: 4.8px;
+}
+
+.select.input-lg select {
+  font-size: 24px;
+  line-height: 1.6em;
+  padding: 8px 15px;
+  padding-right: 48px;
+}
+
+.select.input-lg::after {
+  top: 10px;
+  font-size: 24px;
+  line-height: 48px;
+}
+
+.select.input-block {
+  display: block;
+  width: 100%;
+}
+
+.select.input-block select {
+  display: block;
+  width: 100%;
+}
+
 [type="file"].input-sm {
   font-size: 12px;
   line-height: 1.2em;
@@ -1243,6 +1279,78 @@ select.input-block {
 [type="file"].input-block {
   display: block;
   width: 100%;
+}
+
+.file.input-sm [type="file"] {
+  font-size: 8px;
+  line-height: 0.8em;
+  padding: 0 7.5px;
+}
+
+.file.input-sm::after {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.file.input-lg [type="file"] {
+  font-size: 16px;
+  line-height: 3.52em;
+  padding: 0;
+}
+
+.file.input-lg::after {
+  font-size: 16px;
+  line-height: 3.52em;
+}
+
+.file.input-block {
+  display: block;
+  width: 100%;
+}
+
+.file.input-block [type="file"] {
+  display: block;
+  width: 100%;
+}
+
+.checkbox.input-lg [type="checkbox"] + label {
+  font-size: 24px;
+  line-height: 2.4em;
+  padding-left: 48px;
+}
+
+.checkbox.input-lg [type="checkbox"] + label::before {
+  height: 32px;
+  width: 32px;
+  top: 12px;
+  left: 4px;
+}
+
+.checkbox.input-lg [type="checkbox"] + label::after {
+  width: 32px;
+  height: 16px;
+  top: 12px;
+  left: 12px;
+}
+
+.radio.input-lg [type="radio"] + label {
+  font-size: 24px;
+  line-height: 2.4em;
+  padding-left: 48px;
+}
+
+.radio.input-lg [type="radio"] + label::before {
+  height: 32px;
+  width: 32px;
+  top: 12px;
+  left: 12px;
+}
+
+.radio.input-lg [type="radio"] + label::after {
+  width: 16px;
+  height: 16px;
+  top: 20px;
+  left: 20px;
 }
 
 label.label-sm,

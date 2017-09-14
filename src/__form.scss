@@ -310,6 +310,7 @@ textarea {
         width: 100%;
     }
 }
+
 select {
     &.input-sm {
         height: $font-size * .75 + $form-padding * .75;
@@ -330,6 +331,45 @@ select {
         width: 100%;
     }
 }
+.select {
+    &.input-sm {
+        select {
+            font-size: $font-size * .75;
+            line-height: $font-size * .75;
+            padding: $form-padding * .3 $form-padding * .75;
+            padding-right: $font-size * 2;
+        }
+        &::after {
+            top: $form-padding;
+            font-size: $font-size * .75;
+            line-height: $font-size * .3;
+        }
+    }
+
+    &.input-lg {
+        select {
+            font-size: $font-size * 1.5;
+            line-height: $font-line;
+            padding: $form-padding - 2px $form-padding * 1.5;
+            padding-right: $font-size * 3;
+        }
+        &::after {
+            top: $form-padding;
+            font-size: $font-size * 1.5;
+            line-height: $font-size * 3;
+        }
+    }
+
+    &.input-block {
+        display: block;
+        width: 100%;
+        select {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
 [type="file"] {
     &.input-sm {
         font-size: $font-size * .75;
@@ -349,6 +389,89 @@ select {
         width: 100%;
     }
 }
+.file {
+    &.input-sm {
+        [type="file"] {
+            font-size: $font-size * .5;
+            line-height: $font-line * .5;
+            padding: 0 $form-padding * .75;
+        }
+        &::after {
+            font-size: $font-size * .75;
+            line-height: $font-size;
+        }
+    }
+
+    &.input-lg {
+        [type="file"] {
+            font-size: $font-size;
+            line-height: $font-line * 2.2;
+            padding: 0;
+        }
+        &::after {
+            font-size: $font-size;
+            line-height: $font-line * 2.2;
+        }
+    }
+
+    &.input-block {
+        display: block;
+        width: 100%;
+        [type="file"] {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+.checkbox {
+    &.input-lg {
+        [type="checkbox"] + label {
+            font-size: $font-size * 1.5;
+            line-height: $font-line * 1.5;
+            padding-left: $font-size * 3;
+
+            &::before {
+                height: $font-size * 2;
+                width: $font-size * 2;
+                top: $font-size * .75;
+                left: $font-size * .25;
+            }
+
+            &::after {
+                width: $font-size * 2;
+                height: $font-size * 1;
+                top: $font-size * .75;
+                left: $font-size * .75;
+            }
+        }
+    }
+}
+
+.radio {
+    &.input-lg {
+        [type="radio"] + label {
+            font-size: $font-size * 1.5;
+            line-height: $font-line * 1.5;
+            padding-left: $font-size * 3;
+
+            &::before {
+                height: $font-size * 2;
+                width: $font-size * 2;
+                top: $font-size * .75;
+                left: $font-size * .75;
+            }
+
+            &::after {
+                width: $font-size * 1;
+                height: $font-size * 1;
+                top: $font-size * 1.25;
+                left: $font-size * 1.25;
+            }
+        }
+    }
+}
+
 label,
 .label {
     &.label-sm {
