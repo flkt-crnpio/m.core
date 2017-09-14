@@ -27,3 +27,15 @@ a,
         text-decoration-skip: ink;
     }
 }
+
+// colors
+@each $name, $color, $font in $c {
+    .link-#{$name} {
+        color: $color;
+
+        &:hover,
+        &:focus {
+            color: mix($color, $color-primary, 80%);
+        }
+    }
+}
