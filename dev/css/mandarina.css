@@ -1377,21 +1377,65 @@ label.label-inline,
   width: auto;
 }
 
+.form-primary .file,
 .form-primary input,
 .form-primary select,
+.form-primary .select,
 .form-primary textarea {
   border-color: #FF4533;
   color: #fff;
 }
 
-.form-primary input:hover, .form-primary input:focus, .form-primary input:active,
+.form-primary .file::after, .form-primary .file::before,
+.form-primary input::after,
+.form-primary input::before,
+.form-primary select::after,
+.form-primary select::before,
+.form-primary .select::after,
+.form-primary .select::before,
+.form-primary textarea::after,
+.form-primary textarea::before {
+  color: #fff;
+}
+
+.form-primary .file:hover, .form-primary .file:focus, .form-primary .file:active,
+.form-primary input:hover,
+.form-primary input:focus,
+.form-primary input:active,
 .form-primary select:hover,
 .form-primary select:focus,
 .form-primary select:active,
+.form-primary .select:hover,
+.form-primary .select:focus,
+.form-primary .select:active,
 .form-primary textarea:hover,
 .form-primary textarea:focus,
 .form-primary textarea:active {
   border-color: #FF4533;
+}
+
+.form-primary .checkbox [type="checkbox"] + label::before {
+  border-color: #fff;
+}
+
+.form-primary .checkbox [type="checkbox"]:checked + label::after, .form-primary .checkbox [type="checkbox"]:checked + label::before {
+  border-color: #FF4533;
+}
+
+.form-primary .radio [type="radio"] + label::before {
+  border-color: #fff;
+}
+
+.form-primary .radio [type="radio"] + label::after {
+  background: rgba(255, 69, 51, 0);
+}
+
+.form-primary .radio [type="radio"]:checked + label::before {
+  border-color: #FF4533;
+}
+
+.form-primary .radio [type="radio"]:checked + label::after {
+  background: #ff4533;
 }
 
 .form-primary label,
@@ -1412,21 +1456,65 @@ label.label-inline,
   color: #fff;
 }
 
+.form-secondary .file,
 .form-secondary input,
 .form-secondary select,
+.form-secondary .select,
 .form-secondary textarea {
   border-color: #FF7C4C;
   color: #A3421F;
 }
 
-.form-secondary input:hover, .form-secondary input:focus, .form-secondary input:active,
+.form-secondary .file::after, .form-secondary .file::before,
+.form-secondary input::after,
+.form-secondary input::before,
+.form-secondary select::after,
+.form-secondary select::before,
+.form-secondary .select::after,
+.form-secondary .select::before,
+.form-secondary textarea::after,
+.form-secondary textarea::before {
+  color: #A3421F;
+}
+
+.form-secondary .file:hover, .form-secondary .file:focus, .form-secondary .file:active,
+.form-secondary input:hover,
+.form-secondary input:focus,
+.form-secondary input:active,
 .form-secondary select:hover,
 .form-secondary select:focus,
 .form-secondary select:active,
+.form-secondary .select:hover,
+.form-secondary .select:focus,
+.form-secondary .select:active,
 .form-secondary textarea:hover,
 .form-secondary textarea:focus,
 .form-secondary textarea:active {
   border-color: #FF7C4C;
+}
+
+.form-secondary .checkbox [type="checkbox"] + label::before {
+  border-color: #A3421F;
+}
+
+.form-secondary .checkbox [type="checkbox"]:checked + label::after, .form-secondary .checkbox [type="checkbox"]:checked + label::before {
+  border-color: #FF7C4C;
+}
+
+.form-secondary .radio [type="radio"] + label::before {
+  border-color: #A3421F;
+}
+
+.form-secondary .radio [type="radio"] + label::after {
+  background: rgba(255, 124, 76, 0);
+}
+
+.form-secondary .radio [type="radio"]:checked + label::before {
+  border-color: #FF7C4C;
+}
+
+.form-secondary .radio [type="radio"]:checked + label::after {
+  background: #ff7c4c;
 }
 
 .form-secondary label,
@@ -1447,21 +1535,65 @@ label.label-inline,
   color: #A3421F;
 }
 
+.form-accent .file,
 .form-accent input,
 .form-accent select,
+.form-accent .select,
 .form-accent textarea {
   border-color: #00A875;
   color: #fff;
 }
 
-.form-accent input:hover, .form-accent input:focus, .form-accent input:active,
+.form-accent .file::after, .form-accent .file::before,
+.form-accent input::after,
+.form-accent input::before,
+.form-accent select::after,
+.form-accent select::before,
+.form-accent .select::after,
+.form-accent .select::before,
+.form-accent textarea::after,
+.form-accent textarea::before {
+  color: #fff;
+}
+
+.form-accent .file:hover, .form-accent .file:focus, .form-accent .file:active,
+.form-accent input:hover,
+.form-accent input:focus,
+.form-accent input:active,
 .form-accent select:hover,
 .form-accent select:focus,
 .form-accent select:active,
+.form-accent .select:hover,
+.form-accent .select:focus,
+.form-accent .select:active,
 .form-accent textarea:hover,
 .form-accent textarea:focus,
 .form-accent textarea:active {
   border-color: #00A875;
+}
+
+.form-accent .checkbox [type="checkbox"] + label::before {
+  border-color: #fff;
+}
+
+.form-accent .checkbox [type="checkbox"]:checked + label::after, .form-accent .checkbox [type="checkbox"]:checked + label::before {
+  border-color: #00A875;
+}
+
+.form-accent .radio [type="radio"] + label::before {
+  border-color: #fff;
+}
+
+.form-accent .radio [type="radio"] + label::after {
+  background: rgba(0, 168, 117, 0);
+}
+
+.form-accent .radio [type="radio"]:checked + label::before {
+  border-color: #00A875;
+}
+
+.form-accent .radio [type="radio"]:checked + label::after {
+  background: #00a875;
 }
 
 .form-accent label,
@@ -1482,21 +1614,65 @@ label.label-inline,
   color: #fff;
 }
 
+.form-success .file,
 .form-success input,
 .form-success select,
+.form-success .select,
 .form-success textarea {
   border-color: #2ab415;
   color: #15590a;
 }
 
-.form-success input:hover, .form-success input:focus, .form-success input:active,
+.form-success .file::after, .form-success .file::before,
+.form-success input::after,
+.form-success input::before,
+.form-success select::after,
+.form-success select::before,
+.form-success .select::after,
+.form-success .select::before,
+.form-success textarea::after,
+.form-success textarea::before {
+  color: #15590a;
+}
+
+.form-success .file:hover, .form-success .file:focus, .form-success .file:active,
+.form-success input:hover,
+.form-success input:focus,
+.form-success input:active,
 .form-success select:hover,
 .form-success select:focus,
 .form-success select:active,
+.form-success .select:hover,
+.form-success .select:focus,
+.form-success .select:active,
 .form-success textarea:hover,
 .form-success textarea:focus,
 .form-success textarea:active {
   border-color: #2ab415;
+}
+
+.form-success .checkbox [type="checkbox"] + label::before {
+  border-color: #15590a;
+}
+
+.form-success .checkbox [type="checkbox"]:checked + label::after, .form-success .checkbox [type="checkbox"]:checked + label::before {
+  border-color: #2ab415;
+}
+
+.form-success .radio [type="radio"] + label::before {
+  border-color: #15590a;
+}
+
+.form-success .radio [type="radio"] + label::after {
+  background: rgba(42, 180, 21, 0);
+}
+
+.form-success .radio [type="radio"]:checked + label::before {
+  border-color: #2ab415;
+}
+
+.form-success .radio [type="radio"]:checked + label::after {
+  background: #2ab415;
 }
 
 .form-success label,
@@ -1517,21 +1693,65 @@ label.label-inline,
   color: #15590a;
 }
 
+.form-warning .file,
 .form-warning input,
 .form-warning select,
+.form-warning .select,
 .form-warning textarea {
   border-color: #ffd701;
   color: #816c00;
 }
 
-.form-warning input:hover, .form-warning input:focus, .form-warning input:active,
+.form-warning .file::after, .form-warning .file::before,
+.form-warning input::after,
+.form-warning input::before,
+.form-warning select::after,
+.form-warning select::before,
+.form-warning .select::after,
+.form-warning .select::before,
+.form-warning textarea::after,
+.form-warning textarea::before {
+  color: #816c00;
+}
+
+.form-warning .file:hover, .form-warning .file:focus, .form-warning .file:active,
+.form-warning input:hover,
+.form-warning input:focus,
+.form-warning input:active,
 .form-warning select:hover,
 .form-warning select:focus,
 .form-warning select:active,
+.form-warning .select:hover,
+.form-warning .select:focus,
+.form-warning .select:active,
 .form-warning textarea:hover,
 .form-warning textarea:focus,
 .form-warning textarea:active {
   border-color: #ffd701;
+}
+
+.form-warning .checkbox [type="checkbox"] + label::before {
+  border-color: #816c00;
+}
+
+.form-warning .checkbox [type="checkbox"]:checked + label::after, .form-warning .checkbox [type="checkbox"]:checked + label::before {
+  border-color: #ffd701;
+}
+
+.form-warning .radio [type="radio"] + label::before {
+  border-color: #816c00;
+}
+
+.form-warning .radio [type="radio"] + label::after {
+  background: rgba(255, 215, 1, 0);
+}
+
+.form-warning .radio [type="radio"]:checked + label::before {
+  border-color: #ffd701;
+}
+
+.form-warning .radio [type="radio"]:checked + label::after {
+  background: #ffd701;
 }
 
 .form-warning label,
@@ -1552,21 +1772,65 @@ label.label-inline,
   color: #816c00;
 }
 
+.form-error .file,
 .form-error input,
 .form-error select,
+.form-error .select,
 .form-error textarea {
   border-color: #ff4949;
   color: #960000;
 }
 
-.form-error input:hover, .form-error input:focus, .form-error input:active,
+.form-error .file::after, .form-error .file::before,
+.form-error input::after,
+.form-error input::before,
+.form-error select::after,
+.form-error select::before,
+.form-error .select::after,
+.form-error .select::before,
+.form-error textarea::after,
+.form-error textarea::before {
+  color: #960000;
+}
+
+.form-error .file:hover, .form-error .file:focus, .form-error .file:active,
+.form-error input:hover,
+.form-error input:focus,
+.form-error input:active,
 .form-error select:hover,
 .form-error select:focus,
 .form-error select:active,
+.form-error .select:hover,
+.form-error .select:focus,
+.form-error .select:active,
 .form-error textarea:hover,
 .form-error textarea:focus,
 .form-error textarea:active {
   border-color: #ff4949;
+}
+
+.form-error .checkbox [type="checkbox"] + label::before {
+  border-color: #960000;
+}
+
+.form-error .checkbox [type="checkbox"]:checked + label::after, .form-error .checkbox [type="checkbox"]:checked + label::before {
+  border-color: #ff4949;
+}
+
+.form-error .radio [type="radio"] + label::before {
+  border-color: #960000;
+}
+
+.form-error .radio [type="radio"] + label::after {
+  background: rgba(255, 73, 73, 0);
+}
+
+.form-error .radio [type="radio"]:checked + label::before {
+  border-color: #ff4949;
+}
+
+.form-error .radio [type="radio"]:checked + label::after {
+  background: #ff4949;
 }
 
 .form-error label,
@@ -1587,21 +1851,65 @@ label.label-inline,
   color: #960000;
 }
 
+.form-info .file,
 .form-info input,
 .form-info select,
+.form-info .select,
 .form-info textarea {
   border-color: #0a96e0;
   color: #054466;
 }
 
-.form-info input:hover, .form-info input:focus, .form-info input:active,
+.form-info .file::after, .form-info .file::before,
+.form-info input::after,
+.form-info input::before,
+.form-info select::after,
+.form-info select::before,
+.form-info .select::after,
+.form-info .select::before,
+.form-info textarea::after,
+.form-info textarea::before {
+  color: #054466;
+}
+
+.form-info .file:hover, .form-info .file:focus, .form-info .file:active,
+.form-info input:hover,
+.form-info input:focus,
+.form-info input:active,
 .form-info select:hover,
 .form-info select:focus,
 .form-info select:active,
+.form-info .select:hover,
+.form-info .select:focus,
+.form-info .select:active,
 .form-info textarea:hover,
 .form-info textarea:focus,
 .form-info textarea:active {
   border-color: #0a96e0;
+}
+
+.form-info .checkbox [type="checkbox"] + label::before {
+  border-color: #054466;
+}
+
+.form-info .checkbox [type="checkbox"]:checked + label::after, .form-info .checkbox [type="checkbox"]:checked + label::before {
+  border-color: #0a96e0;
+}
+
+.form-info .radio [type="radio"] + label::before {
+  border-color: #054466;
+}
+
+.form-info .radio [type="radio"] + label::after {
+  background: rgba(10, 150, 224, 0);
+}
+
+.form-info .radio [type="radio"]:checked + label::before {
+  border-color: #0a96e0;
+}
+
+.form-info .radio [type="radio"]:checked + label::after {
+  background: #0a96e0;
 }
 
 .form-info label,
@@ -1622,21 +1930,65 @@ label.label-inline,
   color: #054466;
 }
 
+.form-lightgray .file,
 .form-lightgray input,
 .form-lightgray select,
+.form-lightgray .select,
 .form-lightgray textarea {
   border-color: #eeecec;
   color: #9f9393;
 }
 
-.form-lightgray input:hover, .form-lightgray input:focus, .form-lightgray input:active,
+.form-lightgray .file::after, .form-lightgray .file::before,
+.form-lightgray input::after,
+.form-lightgray input::before,
+.form-lightgray select::after,
+.form-lightgray select::before,
+.form-lightgray .select::after,
+.form-lightgray .select::before,
+.form-lightgray textarea::after,
+.form-lightgray textarea::before {
+  color: #9f9393;
+}
+
+.form-lightgray .file:hover, .form-lightgray .file:focus, .form-lightgray .file:active,
+.form-lightgray input:hover,
+.form-lightgray input:focus,
+.form-lightgray input:active,
 .form-lightgray select:hover,
 .form-lightgray select:focus,
 .form-lightgray select:active,
+.form-lightgray .select:hover,
+.form-lightgray .select:focus,
+.form-lightgray .select:active,
 .form-lightgray textarea:hover,
 .form-lightgray textarea:focus,
 .form-lightgray textarea:active {
   border-color: #eeecec;
+}
+
+.form-lightgray .checkbox [type="checkbox"] + label::before {
+  border-color: #9f9393;
+}
+
+.form-lightgray .checkbox [type="checkbox"]:checked + label::after, .form-lightgray .checkbox [type="checkbox"]:checked + label::before {
+  border-color: #eeecec;
+}
+
+.form-lightgray .radio [type="radio"] + label::before {
+  border-color: #9f9393;
+}
+
+.form-lightgray .radio [type="radio"] + label::after {
+  background: rgba(238, 236, 236, 0);
+}
+
+.form-lightgray .radio [type="radio"]:checked + label::before {
+  border-color: #eeecec;
+}
+
+.form-lightgray .radio [type="radio"]:checked + label::after {
+  background: #eeecec;
 }
 
 .form-lightgray label,
@@ -1657,21 +2009,65 @@ label.label-inline,
   color: #9f9393;
 }
 
+.form-midgray .file,
 .form-midgray input,
 .form-midgray select,
+.form-midgray .select,
 .form-midgray textarea {
   border-color: #aba9a9;
   color: #575555;
 }
 
-.form-midgray input:hover, .form-midgray input:focus, .form-midgray input:active,
+.form-midgray .file::after, .form-midgray .file::before,
+.form-midgray input::after,
+.form-midgray input::before,
+.form-midgray select::after,
+.form-midgray select::before,
+.form-midgray .select::after,
+.form-midgray .select::before,
+.form-midgray textarea::after,
+.form-midgray textarea::before {
+  color: #575555;
+}
+
+.form-midgray .file:hover, .form-midgray .file:focus, .form-midgray .file:active,
+.form-midgray input:hover,
+.form-midgray input:focus,
+.form-midgray input:active,
 .form-midgray select:hover,
 .form-midgray select:focus,
 .form-midgray select:active,
+.form-midgray .select:hover,
+.form-midgray .select:focus,
+.form-midgray .select:active,
 .form-midgray textarea:hover,
 .form-midgray textarea:focus,
 .form-midgray textarea:active {
   border-color: #aba9a9;
+}
+
+.form-midgray .checkbox [type="checkbox"] + label::before {
+  border-color: #575555;
+}
+
+.form-midgray .checkbox [type="checkbox"]:checked + label::after, .form-midgray .checkbox [type="checkbox"]:checked + label::before {
+  border-color: #aba9a9;
+}
+
+.form-midgray .radio [type="radio"] + label::before {
+  border-color: #575555;
+}
+
+.form-midgray .radio [type="radio"] + label::after {
+  background: rgba(171, 169, 169, 0);
+}
+
+.form-midgray .radio [type="radio"]:checked + label::before {
+  border-color: #aba9a9;
+}
+
+.form-midgray .radio [type="radio"]:checked + label::after {
+  background: #aba9a9;
 }
 
 .form-midgray label,
@@ -1692,21 +2088,65 @@ label.label-inline,
   color: #575555;
 }
 
+.form-darkgray .file,
 .form-darkgray input,
 .form-darkgray select,
+.form-darkgray .select,
 .form-darkgray textarea {
   border-color: #575555;
   color: #fefefe;
 }
 
-.form-darkgray input:hover, .form-darkgray input:focus, .form-darkgray input:active,
+.form-darkgray .file::after, .form-darkgray .file::before,
+.form-darkgray input::after,
+.form-darkgray input::before,
+.form-darkgray select::after,
+.form-darkgray select::before,
+.form-darkgray .select::after,
+.form-darkgray .select::before,
+.form-darkgray textarea::after,
+.form-darkgray textarea::before {
+  color: #fefefe;
+}
+
+.form-darkgray .file:hover, .form-darkgray .file:focus, .form-darkgray .file:active,
+.form-darkgray input:hover,
+.form-darkgray input:focus,
+.form-darkgray input:active,
 .form-darkgray select:hover,
 .form-darkgray select:focus,
 .form-darkgray select:active,
+.form-darkgray .select:hover,
+.form-darkgray .select:focus,
+.form-darkgray .select:active,
 .form-darkgray textarea:hover,
 .form-darkgray textarea:focus,
 .form-darkgray textarea:active {
   border-color: #575555;
+}
+
+.form-darkgray .checkbox [type="checkbox"] + label::before {
+  border-color: #fefefe;
+}
+
+.form-darkgray .checkbox [type="checkbox"]:checked + label::after, .form-darkgray .checkbox [type="checkbox"]:checked + label::before {
+  border-color: #575555;
+}
+
+.form-darkgray .radio [type="radio"] + label::before {
+  border-color: #fefefe;
+}
+
+.form-darkgray .radio [type="radio"] + label::after {
+  background: rgba(87, 85, 85, 0);
+}
+
+.form-darkgray .radio [type="radio"]:checked + label::before {
+  border-color: #575555;
+}
+
+.form-darkgray .radio [type="radio"]:checked + label::after {
+  background: #575555;
 }
 
 .form-darkgray label,

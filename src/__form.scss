@@ -495,16 +495,55 @@ label,
 // colors
 @each $name, $color, $font in $c {
     .form-#{$name} {
+        .file,
         input,
         select,
+        .select,
         textarea {
             border-color: $color;
             color: $font;
+            &::after,
+            &::before {
+                color: $font;
+            }
 
             &:hover,
             &:focus,
             &:active {
                 border-color: $color;
+            }
+        }
+
+        .checkbox {
+            [type="checkbox"] + label {
+                &::before {
+                    border-color: $font;
+                }
+            }
+            [type="checkbox"]:checked + label {
+                &::after,
+                &::before {
+                    border-color: $color;
+                }
+            }
+        }
+
+        .radio {
+            [type="radio"] + label {
+                &::before {
+                    border-color: $font;
+                }
+                &::after {
+                    background: rgba($color, 0);
+                }
+            }
+            [type="radio"]:checked + label {
+                &::before {
+                    border-color: $color;
+                }
+                &::after {
+                    background: rgba($color, 1);
+                }
             }
         }
 

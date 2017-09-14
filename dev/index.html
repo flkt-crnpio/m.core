@@ -368,28 +368,6 @@
                         </div>
 
                         <div class="">
-                            <p>Select input</p>
-                            <div class="form-section-inline">
-                                <select name="select">
-                                    <option disabled value=""> Select one option </option>
-                                    <option value="">option 1</option>
-                                    <option value="">option 2</option>
-                                    <optgroup label="group title">
-                                        <option value="">option group 3</option>
-                                        <option value="">option group 4</option>
-                                    </optgroup>
-                                </select>
-                                <div class="select">
-                                    <select placeholder="Select">
-                                        <option disabled hidden value=""> Select </option>
-                                        <option>option</option>
-                                        <option>option</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="">
                             <p>Block form</p>
 
                             <div class="form-section-block">
@@ -471,19 +449,73 @@
 
                         <div class="">
                             <p>Colors</p>
-                            <div class="form-section-block form-error">
+                            <div class="form-section-inline form-error">
                                 <label for="error">Error</label>
                                 <input id ="error" type="text" name="error" value="error" placeholder="error">
+                                <div class="select">
+                                    <select placeholder="Select">
+                                        <option disabled hidden value=""> Select </option>
+                                        <option>option</option>
+                                        <option>option</option>
+                                    </select>
+                                </div>
+                                <div class="file">
+                                    <input type="file" name="file" value="" placeholder="file">
+                                </div>
+                                <div class="checkbox">
+                                    <input id ="checkboxerror" type="checkbox" name="checkbox" value="checkbox">
+                                    <label for="checkboxerror" class="label-inline">checkbox</label>
+                                </div>
+                                <div class="radio">
+                                    <input id ="radioerror" type="radio" name="radio" value="radio2">
+                                    <label for="radioerror" class="label-inline">radio</label>
+                                </div>
                             </div>
 
-                            <div class="form-section-block form-warning">
+                            <div class="form-section-inline form-warning">
                                 <label for="warning">Warning</label>
                                 <input id ="warning" type="text" name="warning" value="warning" placeholder="warning">
+                                <div class="select">
+                                    <select placeholder="Select">
+                                        <option disabled hidden value=""> Select </option>
+                                        <option>option</option>
+                                        <option>option</option>
+                                    </select>
+                                </div>
+                                <div class="file">
+                                    <input type="file" name="file" value="" placeholder="file">
+                                </div>
+                                <div class="checkbox">
+                                    <input id ="checkboxwarning" type="checkbox" name="checkbox" value="checkbox">
+                                    <label for="checkboxwarning" class="label-inline">checkbox</label>
+                                </div>
+                                <div class="radio">
+                                    <input id ="radiowarning" type="radio" name="radio" value="radio2">
+                                    <label for="radiowarning" class="label-inline">radio</label>
+                                </div>
                             </div>
 
-                            <div class="form-section-block form-success">
+                            <div class="form-section-inline form-success">
                                 <label for="success">Success</label>
                                 <input id ="success" type="text" name="success" value="success" placeholder="success">
+                                <div class="select">
+                                    <select placeholder="Select">
+                                        <option disabled hidden value=""> Select </option>
+                                        <option>option</option>
+                                        <option>option</option>
+                                    </select>
+                                </div>
+                                <div class="file">
+                                    <input type="file" name="file" value="" placeholder="file">
+                                </div>
+                                <div class="checkbox">
+                                    <input id ="checkboxsuccess" type="checkbox" name="checkbox" value="checkbox">
+                                    <label for="checkboxsuccess" class="label-inline">checkbox</label>
+                                </div>
+                                <div class="radio">
+                                    <input id ="radiosuccess" type="radio" name="radio" value="radio2">
+                                    <label for="radiosuccess" class="label-inline">radio</label>
+                                </div>
                             </div>
                         </div>
 
@@ -492,7 +524,8 @@
 
                             <div class="form-section-inline">
                                 <input class="input-sm" id ="small" type="text" name="small" value="small" placeholder="small">
-                                <!-- <button type="button" class="btn-sm">button small</button> -->
+                                <button type="button" class="btn-sm">button small</button>
+                                <br>
                                 <select class="input-sm" name="select">
                                     <option disabled value=""> Select one option </option>
                                     <option value="">option 1</option>
@@ -509,6 +542,7 @@
                                         <option>option</option>
                                     </select>
                                 </div>
+                                <br>
                                 <div class="file input-sm">
                                     <input type="file" name="file" value="" placeholder="file">
                                 </div>
@@ -516,6 +550,7 @@
                                     <input type="file" name="file" value="" placeholder="file">
                                 </div>
                                 <input class="input-sm" type="file" name="file" value="" placeholder="file">
+                                <br>
                                 <div class="checkbox input-sm">
                                     <input id ="checkboxsm" type="checkbox" name="checkbox" value="checkbox">
                                     <label for="checkboxsm" class="label-inline">checkbox</label>
@@ -525,11 +560,11 @@
                                     <label for="radiosm" class="label-inline">radio</label>
                                 </div>
                                 <br>
-                                <input id ="normal" type="text" name="normal" value="normal" placeholder="normal">
-                                <button type="button" class="">button</button>
+                                <br>
                                 <br>
                                 <input class="input-lg" id ="big" type="text" name="big" value="big" placeholder="big">
-                                <!-- <button type="button" class="btn-lg">button large</button> -->
+                                <button type="button" class="btn-lg">button large</button>
+                                <br>
                                 <select class="input-lg" name="select">
                                     <option disabled value=""> Select one option </option>
                                     <option value="">option 1</option>
@@ -546,6 +581,7 @@
                                         <option>option</option>
                                     </select>
                                 </div>
+                                <br>
                                 <input class="input-lg" type="file" name="file" value="" placeholder="file">
                                 <div class="file input-lg">
                                     <input type="file" name="file" value="" placeholder="file">
@@ -553,6 +589,7 @@
                                 <div class="file attached input-lg">
                                     <input type="file" name="file" value="" placeholder="file">
                                 </div>
+                                <br>
                                 <div class="checkbox input-lg">
                                     <input id ="checkboxlg" type="checkbox" name="checkbox" value="checkbox">
                                     <label for="checkboxlg" class="label-inline">checkbox</label>
@@ -561,6 +598,8 @@
                                     <input id ="radiolg" type="radio" name="radio" value="radio2">
                                     <label for="radiolg" class="label-inline">radio</label>
                                 </div>
+                                <br>
+                                <br>
                                 <br>
                                 <input class="input-block" id ="block" type="text" name="block" value="block" placeholder="block">
                                 <div class="select input-block">
