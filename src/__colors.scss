@@ -4,17 +4,6 @@ body {
     color: $color-font;
 }
 
-// $c: (primary, $color-primary, $color-font-primary),
-//     (secondary, $color-secondary, $color-font-secondary),
-//     (accent, $color-accent, $color-font-accent),
-//     (success, $color-success, $color-font-success),
-//     (warning, $color-warning, $color-font-warning),
-//     (error, $color-error, $color-font-error),
-//     (info, $color-info, $color-font-info),
-//     (lightgray, $color-lightgray, $color-font-lightgray),
-//     (midgray, $color-midgray, $color-font-midgray),
-//     (darkgray, $color-darkgray, $color-font-darkgray);
-
 // text
 @each $name, $color, $font in $c {
     .text-#{$name} {
