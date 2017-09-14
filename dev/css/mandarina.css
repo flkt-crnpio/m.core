@@ -828,30 +828,6 @@ input[type="reset"].btn-block,
 }
 
 /* form */
-button,
-[type="button"],
-[type="date"],
-[type="datetime"],
-[type="datetime-local"],
-[type="email"],
-[type="month"],
-[type="number"],
-[type="password"],
-[type="reset"],
-[type="search"],
-[type="submit"],
-[type="tel"],
-[type="text"],
-[type="time"],
-[type="url"],
-[type="week"],
-select,
-textarea {
-  border-radius: 2px;
-  margin: 2px 0;
-  resize: none;
-}
-
 [type="date"],
 [type="datetime"],
 [type="datetime-local"],
@@ -870,9 +846,18 @@ textarea {
   background: rgba(255, 255, 255, 0.7);
   border-color: rgba(51, 51, 51, 0.2);
   color: rgba(51, 51, 51, 0.9);
+  border-radius: 2px;
+  font-family: sans-serif;
   font-size: 16px;
+  letter-spacing: 0.01em;
+  font-weight: 300;
   line-height: 16px;
+  margin: 2px 0;
   padding: 9px;
+  max-width: 100%;
+  min-width: auto;
+  width: auto;
+  resize: none;
   vertical-align: middle;
   transition: all 0.5s cubic-bezier(0.465, 0.24, 0.37, 0.825);
 }
@@ -925,6 +910,37 @@ select:active,
 textarea:focus,
 textarea:active {
   border-color: #f06e61;
+}
+
+select,
+select:hover,
+select:focus,
+select:active {
+  border: 0;
+  height: 36px;
+}
+
+select {
+  outline: 1px solid rgba(51, 51, 51, 0.2);
+}
+
+select:hover {
+  outline: 1px solid rgba(133, 58, 51, 0.4);
+}
+
+select:focus,
+select:active {
+  outline: 1px solid rgba(214, 65, 51, 0.8);
+}
+
+label,
+.label {
+  display: block;
+  font-family: sans-serif;
+  font-size: 12.32px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 1.6em;
 }
 
 [type="date"].input-sm,
@@ -986,43 +1002,390 @@ textarea.input-block {
   width: 100%;
 }
 
-select,
-select:hover,
-select:focus,
-select:active {
-  border: 0;
-  height: 36px;
-}
-
-select {
-  outline: 1px solid rgba(51, 51, 51, 0.2);
-}
-
-select:hover {
-  outline: 1px solid rgba(133, 58, 51, 0.4);
-}
-
-select:focus,
-select:active {
-  outline: 1px solid rgba(214, 65, 51, 0.8);
-}
-
-label {
-  font-family: sans-serif;
-  font-size: 12.32px;
-  font-weight: 300;
-  letter-spacing: 0.01em;
-  line-height: 1.6em;
-}
-
-label.label-sm {
+label.label-sm,
+.label.label-sm {
   font-size: 9.24px;
   line-height: 1.2em;
 }
 
-label.label-lg {
+label.label-lg,
+.label.label-lg {
   font-size: 18.48px;
   line-height: 2.4em;
+}
+
+.form-primary input,
+.form-primary select,
+.form-primary textarea {
+  border-color: #FF4533;
+  color: #fff;
+}
+
+.form-primary input:hover, .form-primary input:focus, .form-primary input:active,
+.form-primary select:hover,
+.form-primary select:focus,
+.form-primary select:active,
+.form-primary textarea:hover,
+.form-primary textarea:focus,
+.form-primary textarea:active {
+  border-color: #FF4533;
+}
+
+.form-primary label,
+.form-primary .label {
+  color: #fff;
+}
+
+.input-primary {
+  border-color: #FF4533;
+  color: #fff;
+}
+
+.input-primary:hover, .input-primary:focus, .input-primary:active {
+  border-color: #FF4533;
+}
+
+.label-primary {
+  color: #fff;
+}
+
+.form-secondary input,
+.form-secondary select,
+.form-secondary textarea {
+  border-color: #FF7C4C;
+  color: #A3421F;
+}
+
+.form-secondary input:hover, .form-secondary input:focus, .form-secondary input:active,
+.form-secondary select:hover,
+.form-secondary select:focus,
+.form-secondary select:active,
+.form-secondary textarea:hover,
+.form-secondary textarea:focus,
+.form-secondary textarea:active {
+  border-color: #FF7C4C;
+}
+
+.form-secondary label,
+.form-secondary .label {
+  color: #A3421F;
+}
+
+.input-secondary {
+  border-color: #FF7C4C;
+  color: #A3421F;
+}
+
+.input-secondary:hover, .input-secondary:focus, .input-secondary:active {
+  border-color: #FF7C4C;
+}
+
+.label-secondary {
+  color: #A3421F;
+}
+
+.form-accent input,
+.form-accent select,
+.form-accent textarea {
+  border-color: #00A875;
+  color: #fff;
+}
+
+.form-accent input:hover, .form-accent input:focus, .form-accent input:active,
+.form-accent select:hover,
+.form-accent select:focus,
+.form-accent select:active,
+.form-accent textarea:hover,
+.form-accent textarea:focus,
+.form-accent textarea:active {
+  border-color: #00A875;
+}
+
+.form-accent label,
+.form-accent .label {
+  color: #fff;
+}
+
+.input-accent {
+  border-color: #00A875;
+  color: #fff;
+}
+
+.input-accent:hover, .input-accent:focus, .input-accent:active {
+  border-color: #00A875;
+}
+
+.label-accent {
+  color: #fff;
+}
+
+.form-success input,
+.form-success select,
+.form-success textarea {
+  border-color: #2ab415;
+  color: #15590a;
+}
+
+.form-success input:hover, .form-success input:focus, .form-success input:active,
+.form-success select:hover,
+.form-success select:focus,
+.form-success select:active,
+.form-success textarea:hover,
+.form-success textarea:focus,
+.form-success textarea:active {
+  border-color: #2ab415;
+}
+
+.form-success label,
+.form-success .label {
+  color: #15590a;
+}
+
+.input-success {
+  border-color: #2ab415;
+  color: #15590a;
+}
+
+.input-success:hover, .input-success:focus, .input-success:active {
+  border-color: #2ab415;
+}
+
+.label-success {
+  color: #15590a;
+}
+
+.form-warning input,
+.form-warning select,
+.form-warning textarea {
+  border-color: #ffd701;
+  color: #816c00;
+}
+
+.form-warning input:hover, .form-warning input:focus, .form-warning input:active,
+.form-warning select:hover,
+.form-warning select:focus,
+.form-warning select:active,
+.form-warning textarea:hover,
+.form-warning textarea:focus,
+.form-warning textarea:active {
+  border-color: #ffd701;
+}
+
+.form-warning label,
+.form-warning .label {
+  color: #816c00;
+}
+
+.input-warning {
+  border-color: #ffd701;
+  color: #816c00;
+}
+
+.input-warning:hover, .input-warning:focus, .input-warning:active {
+  border-color: #ffd701;
+}
+
+.label-warning {
+  color: #816c00;
+}
+
+.form-error input,
+.form-error select,
+.form-error textarea {
+  border-color: #ff4949;
+  color: #960000;
+}
+
+.form-error input:hover, .form-error input:focus, .form-error input:active,
+.form-error select:hover,
+.form-error select:focus,
+.form-error select:active,
+.form-error textarea:hover,
+.form-error textarea:focus,
+.form-error textarea:active {
+  border-color: #ff4949;
+}
+
+.form-error label,
+.form-error .label {
+  color: #960000;
+}
+
+.input-error {
+  border-color: #ff4949;
+  color: #960000;
+}
+
+.input-error:hover, .input-error:focus, .input-error:active {
+  border-color: #ff4949;
+}
+
+.label-error {
+  color: #960000;
+}
+
+.form-info input,
+.form-info select,
+.form-info textarea {
+  border-color: #0a96e0;
+  color: #054466;
+}
+
+.form-info input:hover, .form-info input:focus, .form-info input:active,
+.form-info select:hover,
+.form-info select:focus,
+.form-info select:active,
+.form-info textarea:hover,
+.form-info textarea:focus,
+.form-info textarea:active {
+  border-color: #0a96e0;
+}
+
+.form-info label,
+.form-info .label {
+  color: #054466;
+}
+
+.input-info {
+  border-color: #0a96e0;
+  color: #054466;
+}
+
+.input-info:hover, .input-info:focus, .input-info:active {
+  border-color: #0a96e0;
+}
+
+.label-info {
+  color: #054466;
+}
+
+.form-lightgray input,
+.form-lightgray select,
+.form-lightgray textarea {
+  border-color: #eeecec;
+  color: #9f9393;
+}
+
+.form-lightgray input:hover, .form-lightgray input:focus, .form-lightgray input:active,
+.form-lightgray select:hover,
+.form-lightgray select:focus,
+.form-lightgray select:active,
+.form-lightgray textarea:hover,
+.form-lightgray textarea:focus,
+.form-lightgray textarea:active {
+  border-color: #eeecec;
+}
+
+.form-lightgray label,
+.form-lightgray .label {
+  color: #9f9393;
+}
+
+.input-lightgray {
+  border-color: #eeecec;
+  color: #9f9393;
+}
+
+.input-lightgray:hover, .input-lightgray:focus, .input-lightgray:active {
+  border-color: #eeecec;
+}
+
+.label-lightgray {
+  color: #9f9393;
+}
+
+.form-midgray input,
+.form-midgray select,
+.form-midgray textarea {
+  border-color: #aba9a9;
+  color: #575555;
+}
+
+.form-midgray input:hover, .form-midgray input:focus, .form-midgray input:active,
+.form-midgray select:hover,
+.form-midgray select:focus,
+.form-midgray select:active,
+.form-midgray textarea:hover,
+.form-midgray textarea:focus,
+.form-midgray textarea:active {
+  border-color: #aba9a9;
+}
+
+.form-midgray label,
+.form-midgray .label {
+  color: #575555;
+}
+
+.input-midgray {
+  border-color: #aba9a9;
+  color: #575555;
+}
+
+.input-midgray:hover, .input-midgray:focus, .input-midgray:active {
+  border-color: #aba9a9;
+}
+
+.label-midgray {
+  color: #575555;
+}
+
+.form-darkgray input,
+.form-darkgray select,
+.form-darkgray textarea {
+  border-color: #575555;
+  color: #fefefe;
+}
+
+.form-darkgray input:hover, .form-darkgray input:focus, .form-darkgray input:active,
+.form-darkgray select:hover,
+.form-darkgray select:focus,
+.form-darkgray select:active,
+.form-darkgray textarea:hover,
+.form-darkgray textarea:focus,
+.form-darkgray textarea:active {
+  border-color: #575555;
+}
+
+.form-darkgray label,
+.form-darkgray .label {
+  color: #fefefe;
+}
+
+.input-darkgray {
+  border-color: #575555;
+  color: #fefefe;
+}
+
+.input-darkgray:hover, .input-darkgray:focus, .input-darkgray:active {
+  border-color: #575555;
+}
+
+.label-darkgray {
+  color: #fefefe;
+}
+
+.form-section-block {
+  margin: 15px 0;
+}
+
+.form-section-block label,
+.form-section-block .label,
+.form-section-block input,
+.form-section-block select,
+.form-section-block textarea {
+  display: block;
+}
+
+.form-section-inline {
+  margin: 15px 0;
+}
+
+.form-section-inline label,
+.form-section-inline .label,
+.form-section-inline input,
+.form-section-inline select,
+.form-section-inline textarea {
+  display: inline-block;
 }
 
 input:-webkit-autofill,
@@ -1046,31 +1409,6 @@ select:-webkit-autofill {
 
 :-moz-placeholder {
   color: rgba(51, 51, 51, 0.5);
-}
-
-.form-section-block {
-  margin: 12px 0;
-}
-
-.form-section-block label {
-  display: block;
-}
-
-.form-section-block input,
-.form-section-block select,
-.form-section-block textarea {
-  display: block;
-  min-width: 300px;
-}
-
-.form-section-inline {
-  margin: 12px 0;
-}
-
-.form-title {
-  font-size: 12.32px;
-  color: rgba(51, 51, 51, 0.7);
-  display: block;
 }
 
 /* heading */
@@ -1215,7 +1553,7 @@ a:hover, a:focus,
 ul,
 ol {
   list-style-position: inside;
-  margin: 24px 0 48px;
+  margin: 30px 0 60px;
   padding: 0;
 }
 
@@ -1238,7 +1576,7 @@ ol.list-inline > li {
 
 ul.list-inline > li:not(:last-child),
 ol.list-inline > li:not(:last-child) {
-  margin-right: 24px;
+  margin-right: 30px;
 }
 
 ul.list-inline::after,
@@ -1250,7 +1588,7 @@ ol.list-inline::after {
 
 dl {
   display: block;
-  margin: 24px 0;
+  margin: 30px 0;
   padding: 0;
 }
 
@@ -1264,13 +1602,13 @@ dl dt {
 dl dd {
   display: block;
   font-size: 0.9em;
-  margin: 0 0 9.6px;
+  margin: 0 0 12px;
   padding: 0;
 }
 
 /* table */
 table {
-  margin: 24px 0;
+  margin: 30px 0;
   width: 100%;
 }
 
@@ -1358,7 +1696,7 @@ table.responsive tbody tr td {
 
 /* text */
 p {
-  margin: 24px 0;
+  margin: 30px 0;
   padding: 0;
 }
 
@@ -1372,7 +1710,7 @@ strong,
 
 blockquote {
   font-size: 1.2em;
-  margin: 24px;
+  margin: 30px;
   padding: 0;
 }
 
@@ -1458,7 +1796,7 @@ var {
   border-radius: 2px;
   letter-spacing: 0;
   margin: 0;
-  padding: 0 12px;
+  padding: 0 15px;
 }
 
 code {
@@ -1622,346 +1960,6 @@ body {
 
 .link-darkgray:hover, .link-darkgray:focus {
   color: #79524e;
-}
-
-.form-primary input,
-.form-primary select,
-.form-primary textarea {
-  border-color: #FF4533;
-  color: #fff;
-}
-
-.form-primary input:hover, .form-primary input:focus, .form-primary input:active,
-.form-primary select:hover,
-.form-primary select:focus,
-.form-primary select:active,
-.form-primary textarea:hover,
-.form-primary textarea:focus,
-.form-primary textarea:active {
-  border-color: #FF4533;
-}
-
-.form-primary label {
-  color: #fff;
-}
-
-.input-primary {
-  border-color: #FF4533;
-  color: #fff;
-}
-
-.input-primary:hover, .input-primary:focus, .input-primary:active {
-  border-color: #FF4533;
-}
-
-.label-primary {
-  color: #fff;
-}
-
-.form-secondary input,
-.form-secondary select,
-.form-secondary textarea {
-  border-color: #FF7C4C;
-  color: #A3421F;
-}
-
-.form-secondary input:hover, .form-secondary input:focus, .form-secondary input:active,
-.form-secondary select:hover,
-.form-secondary select:focus,
-.form-secondary select:active,
-.form-secondary textarea:hover,
-.form-secondary textarea:focus,
-.form-secondary textarea:active {
-  border-color: #FF7C4C;
-}
-
-.form-secondary label {
-  color: #A3421F;
-}
-
-.input-secondary {
-  border-color: #FF7C4C;
-  color: #A3421F;
-}
-
-.input-secondary:hover, .input-secondary:focus, .input-secondary:active {
-  border-color: #FF7C4C;
-}
-
-.label-secondary {
-  color: #A3421F;
-}
-
-.form-accent input,
-.form-accent select,
-.form-accent textarea {
-  border-color: #00A875;
-  color: #fff;
-}
-
-.form-accent input:hover, .form-accent input:focus, .form-accent input:active,
-.form-accent select:hover,
-.form-accent select:focus,
-.form-accent select:active,
-.form-accent textarea:hover,
-.form-accent textarea:focus,
-.form-accent textarea:active {
-  border-color: #00A875;
-}
-
-.form-accent label {
-  color: #fff;
-}
-
-.input-accent {
-  border-color: #00A875;
-  color: #fff;
-}
-
-.input-accent:hover, .input-accent:focus, .input-accent:active {
-  border-color: #00A875;
-}
-
-.label-accent {
-  color: #fff;
-}
-
-.form-success input,
-.form-success select,
-.form-success textarea {
-  border-color: #2ab415;
-  color: #15590a;
-}
-
-.form-success input:hover, .form-success input:focus, .form-success input:active,
-.form-success select:hover,
-.form-success select:focus,
-.form-success select:active,
-.form-success textarea:hover,
-.form-success textarea:focus,
-.form-success textarea:active {
-  border-color: #2ab415;
-}
-
-.form-success label {
-  color: #15590a;
-}
-
-.input-success {
-  border-color: #2ab415;
-  color: #15590a;
-}
-
-.input-success:hover, .input-success:focus, .input-success:active {
-  border-color: #2ab415;
-}
-
-.label-success {
-  color: #15590a;
-}
-
-.form-warning input,
-.form-warning select,
-.form-warning textarea {
-  border-color: #ffd701;
-  color: #816c00;
-}
-
-.form-warning input:hover, .form-warning input:focus, .form-warning input:active,
-.form-warning select:hover,
-.form-warning select:focus,
-.form-warning select:active,
-.form-warning textarea:hover,
-.form-warning textarea:focus,
-.form-warning textarea:active {
-  border-color: #ffd701;
-}
-
-.form-warning label {
-  color: #816c00;
-}
-
-.input-warning {
-  border-color: #ffd701;
-  color: #816c00;
-}
-
-.input-warning:hover, .input-warning:focus, .input-warning:active {
-  border-color: #ffd701;
-}
-
-.label-warning {
-  color: #816c00;
-}
-
-.form-error input,
-.form-error select,
-.form-error textarea {
-  border-color: #ff4949;
-  color: #960000;
-}
-
-.form-error input:hover, .form-error input:focus, .form-error input:active,
-.form-error select:hover,
-.form-error select:focus,
-.form-error select:active,
-.form-error textarea:hover,
-.form-error textarea:focus,
-.form-error textarea:active {
-  border-color: #ff4949;
-}
-
-.form-error label {
-  color: #960000;
-}
-
-.input-error {
-  border-color: #ff4949;
-  color: #960000;
-}
-
-.input-error:hover, .input-error:focus, .input-error:active {
-  border-color: #ff4949;
-}
-
-.label-error {
-  color: #960000;
-}
-
-.form-info input,
-.form-info select,
-.form-info textarea {
-  border-color: #0a96e0;
-  color: #054466;
-}
-
-.form-info input:hover, .form-info input:focus, .form-info input:active,
-.form-info select:hover,
-.form-info select:focus,
-.form-info select:active,
-.form-info textarea:hover,
-.form-info textarea:focus,
-.form-info textarea:active {
-  border-color: #0a96e0;
-}
-
-.form-info label {
-  color: #054466;
-}
-
-.input-info {
-  border-color: #0a96e0;
-  color: #054466;
-}
-
-.input-info:hover, .input-info:focus, .input-info:active {
-  border-color: #0a96e0;
-}
-
-.label-info {
-  color: #054466;
-}
-
-.form-lightgray input,
-.form-lightgray select,
-.form-lightgray textarea {
-  border-color: #eeecec;
-  color: #9f9393;
-}
-
-.form-lightgray input:hover, .form-lightgray input:focus, .form-lightgray input:active,
-.form-lightgray select:hover,
-.form-lightgray select:focus,
-.form-lightgray select:active,
-.form-lightgray textarea:hover,
-.form-lightgray textarea:focus,
-.form-lightgray textarea:active {
-  border-color: #eeecec;
-}
-
-.form-lightgray label {
-  color: #9f9393;
-}
-
-.input-lightgray {
-  border-color: #eeecec;
-  color: #9f9393;
-}
-
-.input-lightgray:hover, .input-lightgray:focus, .input-lightgray:active {
-  border-color: #eeecec;
-}
-
-.label-lightgray {
-  color: #9f9393;
-}
-
-.form-midgray input,
-.form-midgray select,
-.form-midgray textarea {
-  border-color: #aba9a9;
-  color: #575555;
-}
-
-.form-midgray input:hover, .form-midgray input:focus, .form-midgray input:active,
-.form-midgray select:hover,
-.form-midgray select:focus,
-.form-midgray select:active,
-.form-midgray textarea:hover,
-.form-midgray textarea:focus,
-.form-midgray textarea:active {
-  border-color: #aba9a9;
-}
-
-.form-midgray label {
-  color: #575555;
-}
-
-.input-midgray {
-  border-color: #aba9a9;
-  color: #575555;
-}
-
-.input-midgray:hover, .input-midgray:focus, .input-midgray:active {
-  border-color: #aba9a9;
-}
-
-.label-midgray {
-  color: #575555;
-}
-
-.form-darkgray input,
-.form-darkgray select,
-.form-darkgray textarea {
-  border-color: #575555;
-  color: #fefefe;
-}
-
-.form-darkgray input:hover, .form-darkgray input:focus, .form-darkgray input:active,
-.form-darkgray select:hover,
-.form-darkgray select:focus,
-.form-darkgray select:active,
-.form-darkgray textarea:hover,
-.form-darkgray textarea:focus,
-.form-darkgray textarea:active {
-  border-color: #575555;
-}
-
-.form-darkgray label {
-  color: #fefefe;
-}
-
-.input-darkgray {
-  border-color: #575555;
-  color: #fefefe;
-}
-
-.input-darkgray:hover, .input-darkgray:focus, .input-darkgray:active {
-  border-color: #575555;
-}
-
-.label-darkgray {
-  color: #fefefe;
 }
 
 /* margins */

@@ -1,28 +1,4 @@
 /* form */
-button,
-[type="button"],
-[type="date"],
-[type="datetime"],
-[type="datetime-local"],
-[type="email"],
-[type="month"],
-[type="number"],
-[type="password"],
-[type="reset"],
-[type="search"],
-[type="submit"],
-[type="tel"],
-[type="text"],
-[type="time"],
-[type="url"],
-[type="week"],
-select,
-textarea {
-    border-radius: $form-border-radius;
-    margin: $form-margin-y 0;
-    resize: none;
-}
-
 [type="date"],
 [type="datetime"],
 [type="datetime-local"],
@@ -38,12 +14,26 @@ textarea {
 [type="week"],
 select,
 textarea {
+    //color
     background: rgba($color-background,0.7);
     border-color: rgba($color-font,0.2);
     color: rgba($color-font, 0.9);
+    //border
+    border-radius: $form-border-radius;
+    //font
+    font-family: $font-family;
     font-size: $font-size;
+    letter-spacing: $font-space;
+    font-weight: $font-weight;
+    //layout
     line-height: $font-size;
+    margin: $form-margin-y 0;
     padding: $form-padding - 1px;
+    max-width: $input-max-width;
+    min-width: $input-min-width;
+    width: $input-width;
+    //default
+    resize: none;
     vertical-align: middle;
     transition: all 0.5s cubic-bezier(0.465, 0.240, 0.370, 0.825);
 
@@ -54,7 +44,54 @@ textarea {
     &:active {
         border-color: lighten(mix($color-primary, $color-font, 90), 10);
     }
+}
 
+// select
+select,
+select:hover,
+select:focus,
+select:active {
+    border: 0;
+    height: $font-size + $form-padding * 2;
+}
+select {
+    outline: 1px solid rgba($color-font,0.2);
+}
+select:hover {
+    outline: 1px solid rgba(mix($color-primary, $color-font, 40), 0.4);
+}
+select:focus,
+select:active {
+    outline: 1px solid rgba(mix($color-primary, $color-font, 80), 0.8);
+}
+
+// label
+label,
+.label {
+    display: block;
+    font-family: $font-form-family;
+    font-size: $font-form-size;
+    font-weight: $font-form-weight;
+    letter-spacing: $font-form-space;
+    line-height: $font-form-line;
+}
+
+// sizes
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="search"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
+select,
+textarea {
     &.input-sm {
         font-size: $font-size * .75;
         line-height: $font-line * .75;
@@ -72,39 +109,9 @@ textarea {
         width: 100%;
     }
 }
-select,
-select:hover,
-select:focus,
-select:active {
-    border: 0;
-    height: $font-size + $form-padding * 2;
-    // font-size: $font-size;
-    // line-height: $font-size;
-    // padding: $form-padding;
-}
-select {
-    outline: 1px solid rgba($color-font,0.2);
-}
-select:hover {
-    outline: 1px solid rgba(mix($color-primary, $color-font, 40), 0.4);
-}
-select:focus,
-select:active {
-    outline: 1px solid rgba(mix($color-primary, $color-font, 80), 0.8);
-}
 
-// textarea {
-//     height: auto;
-//     overflow: auto;
-// }
-
-label {
-    font-family: $font-form-family;
-    font-size: $font-form-size;
-    font-weight: $font-form-weight;
-    letter-spacing: $font-form-space;
-    line-height: $font-form-line;
-
+label,
+.label {
     &.label-sm {
         font-size: $font-form-size * .75;
         line-height: $font-form-line * .75;
@@ -115,6 +122,70 @@ label {
     }
 }
 
+// colors
+@each $name, $color, $font in $c {
+    .form-#{$name} {
+        input,
+        select,
+        textarea {
+            border-color: $color;
+            color: $font;
+
+            &:hover,
+            &:focus,
+            &:active {
+                border-color: $color;
+            }
+        }
+
+        label,
+        .label {
+            color: $font;
+        }
+    }
+
+    .input-#{$name} {
+        border-color: $color;
+        color: $font;
+
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: $color;
+        }
+    }
+
+    .label-#{$name} {
+        color: $font;
+    }
+}
+
+// form layout
+.form-section-block {
+    margin: $element-space/2 0;
+
+    label,
+    .label,
+    input,
+    select,
+    textarea {
+        display: block;
+    }
+}
+
+.form-section-inline {
+    margin: $element-space/2 0;
+
+    label,
+    .label,
+    input,
+    select,
+    textarea {
+        display: inline-block;
+    }
+}
+
+// autofill
 input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
@@ -122,6 +193,7 @@ select:-webkit-autofill {
     transition: background-color 5000s ease-in-out 0s;
 }
 
+//placeholder
 ::-webkit-input-placeholder {
     color: rgba($color-font, 0.5);
 }
@@ -133,27 +205,4 @@ select:-webkit-autofill {
 }
 :-moz-placeholder {
     color: rgba($color-font, 0.5);
-}
-
-.form-section-block {
-    margin: $element-space/2 0;
-    label {
-        display: block;
-    }
-    input,
-    select,
-    textarea {
-        display: block;
-        min-width: 300px;
-    }
-}
-
-.form-section-inline {
-    margin: $element-space/2 0;
-}
-
-.form-title {
-    font-size: $font-form-size;
-    color: rgba($color-font, 0.7);
-    display: block;
 }

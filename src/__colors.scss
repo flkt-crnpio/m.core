@@ -33,39 +33,3 @@ body {
         }
     }
 }
-
-// form
-@each $name, $color, $font in $c {
-    .form-#{$name} {
-        input,
-        select,
-        textarea {
-            border-color: $color;
-            color: $font;
-
-            &:hover,
-            &:focus,
-            &:active {
-                border-color: $color;
-            }
-        }
-
-        label {
-            color: $font;
-        }
-    }
-
-    .input-#{$name} {
-        border-color: $color;
-        color: $font;
-
-        &:hover,
-        &:focus,
-        &:active {
-            border-color: $color;
-        }
-    }
-    .label-#{$name} {
-        color: $font;
-    }
-}
