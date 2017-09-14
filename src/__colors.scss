@@ -4,79 +4,16 @@ body {
     color: $color-font;
 }
 
-$c: (primary, $color-primary, $color-font-primary),
-    (secondary, $color-secondary, $color-font-secondary),
-    (accent, $color-accent, $color-font-accent),
-    (success, $color-success, $color-font-success),
-    (warning, $color-warning, $color-font-warning),
-    (error, $color-error, $color-font-error),
-    (info, $color-info, $color-font-info),
-    (lightgray, $color-lightgray, $color-font-lightgray),
-    (midgray, $color-midgray, $color-font-midgray),
-    (darkgray, $color-darkgray, $color-font-darkgray);
-
-// buttons
-@each $name, $color, $font in $c {
-    .btn-#{$name} {
-        background: $color;
-        border: 1px solid $color;
-        color: $font;
-
-        &:hover,
-        &:focus {
-            background: lighten($color, 5);
-            border: 1px solid $color;
-            color: $font;
-            text-decoration: none;
-        }
-
-        &[disabled],
-        &[disabled]:active,
-        &[disabled]:focus,
-        &[disabled]:hover,
-        &.disabled,
-        &.disabled:active,
-        &.disabled:focus,
-        &.disabled:hover {
-            &:hover,
-            &:focus {
-                background: $color;
-                border: 1px solid $color;
-                color: $font;
-            }
-        }
-    }
-
-    .btn-line-#{$name} {
-        background: transparent;
-        border: 1px solid $color;
-        color: $color;
-
-        &:hover,
-        &:focus {
-            background: $color;
-            border: 1px solid darken($color, 5);
-            color: $font;
-            text-decoration: none;
-        }
-
-        &[disabled],
-        &[disabled]:active,
-        &[disabled]:focus,
-        &[disabled]:hover,
-        &.disabled,
-        &.disabled:active,
-        &.disabled:focus,
-        &.disabled:hover {
-            &:hover,
-            &:focus {
-                background: transparent;
-                border: 1px solid $color;
-                color: $color;
-            }
-        }
-    }
-}
+// $c: (primary, $color-primary, $color-font-primary),
+//     (secondary, $color-secondary, $color-font-secondary),
+//     (accent, $color-accent, $color-font-accent),
+//     (success, $color-success, $color-font-success),
+//     (warning, $color-warning, $color-font-warning),
+//     (error, $color-error, $color-font-error),
+//     (info, $color-info, $color-font-info),
+//     (lightgray, $color-lightgray, $color-font-lightgray),
+//     (midgray, $color-midgray, $color-font-midgray),
+//     (darkgray, $color-darkgray, $color-font-darkgray);
 
 // text
 @each $name, $color, $font in $c {

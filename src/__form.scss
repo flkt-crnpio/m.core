@@ -19,7 +19,6 @@ button,
 select,
 textarea {
     border-radius: $form-border-radius;
-    height: $form-height;
     margin: $form-margin-y 0;
     resize: none;
 }
@@ -42,10 +41,10 @@ textarea {
     background: rgba($color-background,0.7);
     border-color: rgba($color-font,0.2);
     color: rgba($color-font, 0.9);
-    font-size: $font-form-size;
-    line-height: $font-form-line;
-    overflow: hidden;
-    padding: $form-padding;
+    font-size: $font-size;
+    line-height: $font-size;
+    padding: $form-padding - 1px;
+    vertical-align: middle;
     transition: all 0.5s cubic-bezier(0.465, 0.240, 0.370, 0.825);
 
     &:hover {
@@ -57,17 +56,15 @@ textarea {
     }
 
     &.input-sm {
-        font-size: $font-form-size * .75;
-        height: $form-height * .75;
-        line-height: $font-form-line * .75;
-        padding: $form-padding * .75;
+        font-size: $font-size * .75;
+        line-height: $font-line * .75;
+        padding: ($form-padding * .3) - 1px $form-padding * .75;
     }
 
     &.input-lg {
-        font-size: $font-form-size * 1.5;
-        height: $form-height * 1.5;
-        line-height: $font-form-line * 1.5;
-        padding: $form-padding * 1.5;
+        font-size: $font-size * 1.5;
+        line-height: $font-line;
+        padding: $form-padding - 2px $form-padding * 1.5;
     }
 
     &.input-block {
@@ -80,7 +77,10 @@ select:hover,
 select:focus,
 select:active {
     border: 0;
-    height: $form-height - 2px;
+    height: $font-size + $form-padding * 2;
+    // font-size: $font-size;
+    // line-height: $font-size;
+    // padding: $form-padding;
 }
 select {
     outline: 1px solid rgba($color-font,0.2);
@@ -93,10 +93,10 @@ select:active {
     outline: 1px solid rgba(mix($color-primary, $color-font, 80), 0.8);
 }
 
-textarea {
-    height: auto;
-    overflow: auto;
-}
+// textarea {
+//     height: auto;
+//     overflow: auto;
+// }
 
 label {
     font-family: $font-form-family;
