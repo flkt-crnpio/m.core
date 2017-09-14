@@ -22,14 +22,14 @@ body {
     }
 }
 
-// link
+// background
 @each $name, $color, $font in $c {
-    .link-#{$name} {
-        color: $color;
+    .background-#{$name} {
+        background: $color;
+    }
 
-        &:hover,
-        &:focus {
-            color: mix($color, $color-primary, 80%);
-        }
+    .background-color-#{$name} {
+        background: $color;
+        color: $font;
     }
 }
