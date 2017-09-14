@@ -4,56 +4,64 @@ input[type="button"],
 input[type="submit"],
 input[type="reset"],
 .btn {
+    //color
     background: $color-primary;
-    border: 1px solid $color-primary;
-    border-radius: $form-border-radius;
-    box-shadow: 0 0 0 0 rgba(0,0,0,0.24), 0 0 0 0 rgba(0,0,0,0.19);
+    border-color: $color-primary;
+    box-shadow: $btn-box-shadow;
     color: $color-font-primary;
-    cursor: pointer;
-    display: inline-block;
+    //border
+    border-style: $btn-border-style;
+    border-width: $btn-border-width;
+    border-radius: $btn-border-radius;
+    //font
     font-family: $font-family;
     font-size: $font-size;
-    font-weight: $font-weight;
     letter-spacing: $font-space;
+    font-weight: $font-weight;
+    //layout
     line-height: $font-size;
     margin: $form-margin-y 0;
     padding: $form-padding $form-padding * 2;
+    //default
+    cursor: pointer;
+    display: inline-block;
     -ms-touch-action: manipulation;
     touch-action: manipulation;
     text-decoration: none;
     vertical-align: middle;
     transition: all 0.5s cubic-bezier(0.465, 0.240, 0.370, 0.825);
 
+    &:active,
     &:hover,
     &:focus {
         background: lighten($color-primary, 5);
-        border: 1px solid $color-primary;
-        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        border-color: $color-primary;
+        box-shadow: $btn-box-shadow-hover;
         color: $color-font-primary;
         text-decoration: none;
     }
 
-    &:active {
-        box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2), 0 5px 10px 0 rgba(0,0,0,0.1);
-    }
-
     &[disabled],
-    &[disabled]:active,
-    &[disabled]:focus,
-    &[disabled]:hover,
-    &.disabled,
-    &.disabled:active,
-    &.disabled:focus,
-    &.disabled:hover {
+    &.disabled {
+        &:active,
         &:hover,
         &:focus {
             background: $color-primary;
-            border: 1px solid $color-primary;
-            box-shadow: 0 0 0 0 rgba(0,0,0,0.24), 0 0 0 0 rgba(0,0,0,0.19);
+            border-color: $color-primary;
+            box-shadow: $btn-box-shadow;
             color: $color-font-primary;
+            cursor: default;
+            text-decoration: none;
         }
     }
+}
 
+// sizes
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.btn {
     &.btn-sm {
         font-size: $font-size * .75;
         line-height: $font-size * .75;
@@ -64,41 +72,32 @@ input[type="reset"],
         line-height: $font-size * 1.5;
         padding: $form-padding * 1.5 $form-padding * 5;
     }
-
     &.btn-block {
         width: 100%;
     }
-
 }
-
 
 // colors
 @each $name, $color, $font in $c {
     .btn-#{$name} {
         background: $color;
-        border: 1px solid $color;
+        border-color: $color;
         color: $font;
 
         &:hover,
         &:focus {
             background: lighten($color, 5);
-            border: 1px solid $color;
+            border-color: $color;
             color: $font;
-            text-decoration: none;
         }
 
         &[disabled],
-        &[disabled]:active,
-        &[disabled]:focus,
-        &[disabled]:hover,
-        &.disabled,
-        &.disabled:active,
-        &.disabled:focus,
-        &.disabled:hover {
+        &.disabled {
+            &:active,
             &:hover,
             &:focus {
                 background: $color;
-                border: 1px solid $color;
+                border-color: $color;
                 color: $font;
             }
         }
@@ -107,30 +106,25 @@ input[type="reset"],
     .btn-line-#{$name} {
         background: transparent;
         box-shadow: none;
-        border: 1px solid $color;
+        border-color: $color;
         color: $color;
 
         &:hover,
         &:focus {
             background: rgba($color, .3);
             box-shadow: none;
-            border: 1px solid $color;
+            border-color: $color;
             color: $color;
-            text-decoration: none;
         }
 
         &[disabled],
-        &[disabled]:active,
-        &[disabled]:focus,
-        &[disabled]:hover,
-        &.disabled,
-        &.disabled:active,
-        &.disabled:focus,
-        &.disabled:hover {
-            &:hover,
-            &:focus {
+        &.disabled {
+            &:active,
+            &:focus,
+            &:hover {
                 background: transparent;
-                border: 1px solid $color;
+                box-shadow: none;
+                border-color: $color;
                 color: $color;
             }
         }

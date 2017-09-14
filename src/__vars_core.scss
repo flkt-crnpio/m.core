@@ -70,10 +70,21 @@ $font-form-size: $font-size * .77;
 $font-form-space: $font-space;
 $font-form-weight: $font-weight;
 
-// inputs and buttons
+// buttons & form elements
+$btn-box-shadow: 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0);
+$btn-box-shadow-hover: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+$btn-border-radius: 2px;
+$btn-border-style: solid;
+$btn-border-width: 1px;
+
+$form-border-radius: 2px;
+$form-border-style: solid;
+$form-border-width: 1px;
+
 $form-padding: 10px;
 $form-margin-y: 2px;
-$form-border-radius: 2px;
+
 
 // margins
 $layout-space: 7vw;

@@ -334,19 +334,21 @@ input[type="submit"],
 input[type="reset"],
 .btn {
   background: #FF4533;
-  border: 1px solid #FF4533;
-  border-radius: 2px;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.24), 0 0 0 0 rgba(0, 0, 0, 0.19);
+  border-color: #FF4533;
+  box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent;
   color: #fff;
-  cursor: pointer;
-  display: inline-block;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
   font-family: sans-serif;
   font-size: 16px;
-  font-weight: 300;
   letter-spacing: 0.01em;
+  font-weight: 300;
   line-height: 16px;
   margin: 2px 0;
   padding: 10px 20px;
+  cursor: pointer;
+  display: inline-block;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
   text-decoration: none;
@@ -354,99 +356,57 @@ input[type="reset"],
   transition: all 0.5s cubic-bezier(0.465, 0.24, 0.37, 0.825);
 }
 
-button:hover, button:focus,
+button:active, button:hover, button:focus,
+input[type="button"]:active,
 input[type="button"]:hover,
 input[type="button"]:focus,
+input[type="submit"]:active,
 input[type="submit"]:hover,
 input[type="submit"]:focus,
+input[type="reset"]:active,
 input[type="reset"]:hover,
 input[type="reset"]:focus,
+.btn:active,
 .btn:hover,
 .btn:focus {
   background: #ff5c4d;
-  border: 1px solid #FF4533;
+  border-color: #FF4533;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   color: #fff;
   text-decoration: none;
 }
 
-button:active,
-input[type="button"]:active,
-input[type="submit"]:active,
-input[type="reset"]:active,
-.btn:active {
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.1);
-}
-
-button[disabled]:hover, button[disabled]:focus, button[disabled]:active:hover, button[disabled]:active:focus, button[disabled]:focus:hover, button[disabled]:focus:focus, button[disabled]:hover:hover, button[disabled]:hover:focus, button.disabled:hover, button.disabled:focus, button.disabled:active:hover, button.disabled:active:focus, button.disabled:focus:hover, button.disabled:focus:focus, button.disabled:hover:hover, button.disabled:hover:focus,
+button[disabled]:active, button[disabled]:hover, button[disabled]:focus, button.disabled:active, button.disabled:hover, button.disabled:focus,
+input[type="button"][disabled]:active,
 input[type="button"][disabled]:hover,
 input[type="button"][disabled]:focus,
-input[type="button"][disabled]:active:hover,
-input[type="button"][disabled]:active:focus,
-input[type="button"][disabled]:focus:hover,
-input[type="button"][disabled]:focus:focus,
-input[type="button"][disabled]:hover:hover,
-input[type="button"][disabled]:hover:focus,
+input[type="button"].disabled:active,
 input[type="button"].disabled:hover,
 input[type="button"].disabled:focus,
-input[type="button"].disabled:active:hover,
-input[type="button"].disabled:active:focus,
-input[type="button"].disabled:focus:hover,
-input[type="button"].disabled:focus:focus,
-input[type="button"].disabled:hover:hover,
-input[type="button"].disabled:hover:focus,
+input[type="submit"][disabled]:active,
 input[type="submit"][disabled]:hover,
 input[type="submit"][disabled]:focus,
-input[type="submit"][disabled]:active:hover,
-input[type="submit"][disabled]:active:focus,
-input[type="submit"][disabled]:focus:hover,
-input[type="submit"][disabled]:focus:focus,
-input[type="submit"][disabled]:hover:hover,
-input[type="submit"][disabled]:hover:focus,
+input[type="submit"].disabled:active,
 input[type="submit"].disabled:hover,
 input[type="submit"].disabled:focus,
-input[type="submit"].disabled:active:hover,
-input[type="submit"].disabled:active:focus,
-input[type="submit"].disabled:focus:hover,
-input[type="submit"].disabled:focus:focus,
-input[type="submit"].disabled:hover:hover,
-input[type="submit"].disabled:hover:focus,
+input[type="reset"][disabled]:active,
 input[type="reset"][disabled]:hover,
 input[type="reset"][disabled]:focus,
-input[type="reset"][disabled]:active:hover,
-input[type="reset"][disabled]:active:focus,
-input[type="reset"][disabled]:focus:hover,
-input[type="reset"][disabled]:focus:focus,
-input[type="reset"][disabled]:hover:hover,
-input[type="reset"][disabled]:hover:focus,
+input[type="reset"].disabled:active,
 input[type="reset"].disabled:hover,
 input[type="reset"].disabled:focus,
-input[type="reset"].disabled:active:hover,
-input[type="reset"].disabled:active:focus,
-input[type="reset"].disabled:focus:hover,
-input[type="reset"].disabled:focus:focus,
-input[type="reset"].disabled:hover:hover,
-input[type="reset"].disabled:hover:focus,
+.btn[disabled]:active,
 .btn[disabled]:hover,
 .btn[disabled]:focus,
-.btn[disabled]:active:hover,
-.btn[disabled]:active:focus,
-.btn[disabled]:focus:hover,
-.btn[disabled]:focus:focus,
-.btn[disabled]:hover:hover,
-.btn[disabled]:hover:focus,
+.btn.disabled:active,
 .btn.disabled:hover,
-.btn.disabled:focus,
-.btn.disabled:active:hover,
-.btn.disabled:active:focus,
-.btn.disabled:focus:hover,
-.btn.disabled:focus:focus,
-.btn.disabled:hover:hover,
-.btn.disabled:hover:focus {
+.btn.disabled:focus {
   background: #FF4533;
-  border: 1px solid #FF4533;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.24), 0 0 0 0 rgba(0, 0, 0, 0.19);
+  border-color: #FF4533;
+  box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent;
   color: #fff;
+  cursor: default;
+  text-decoration: none;
 }
 
 button.btn-sm,
@@ -479,401 +439,391 @@ input[type="reset"].btn-block,
 
 .btn-primary {
   background: #FF4533;
-  border: 1px solid #FF4533;
+  border-color: #FF4533;
   color: #fff;
 }
 
 .btn-primary:hover, .btn-primary:focus {
   background: #ff5c4d;
-  border: 1px solid #FF4533;
+  border-color: #FF4533;
   color: #fff;
-  text-decoration: none;
 }
 
-.btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled]:active:hover, .btn-primary[disabled]:active:focus, .btn-primary[disabled]:focus:hover, .btn-primary[disabled]:focus:focus, .btn-primary[disabled]:hover:hover, .btn-primary[disabled]:hover:focus, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled:active:hover, .btn-primary.disabled:active:focus, .btn-primary.disabled:focus:hover, .btn-primary.disabled:focus:focus, .btn-primary.disabled:hover:hover, .btn-primary.disabled:hover:focus {
+.btn-primary[disabled]:active, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary.disabled:active, .btn-primary.disabled:hover, .btn-primary.disabled:focus {
   background: #FF4533;
-  border: 1px solid #FF4533;
+  border-color: #FF4533;
   color: #fff;
 }
 
 .btn-line-primary {
   background: transparent;
   box-shadow: none;
-  border: 1px solid #FF4533;
+  border-color: #FF4533;
   color: #FF4533;
 }
 
 .btn-line-primary:hover, .btn-line-primary:focus {
   background: rgba(255, 69, 51, 0.3);
   box-shadow: none;
-  border: 1px solid #FF4533;
+  border-color: #FF4533;
   color: #FF4533;
-  text-decoration: none;
 }
 
-.btn-line-primary[disabled]:hover, .btn-line-primary[disabled]:focus, .btn-line-primary[disabled]:active:hover, .btn-line-primary[disabled]:active:focus, .btn-line-primary[disabled]:focus:hover, .btn-line-primary[disabled]:focus:focus, .btn-line-primary[disabled]:hover:hover, .btn-line-primary[disabled]:hover:focus, .btn-line-primary.disabled:hover, .btn-line-primary.disabled:focus, .btn-line-primary.disabled:active:hover, .btn-line-primary.disabled:active:focus, .btn-line-primary.disabled:focus:hover, .btn-line-primary.disabled:focus:focus, .btn-line-primary.disabled:hover:hover, .btn-line-primary.disabled:hover:focus {
+.btn-line-primary[disabled]:active, .btn-line-primary[disabled]:focus, .btn-line-primary[disabled]:hover, .btn-line-primary.disabled:active, .btn-line-primary.disabled:focus, .btn-line-primary.disabled:hover {
   background: transparent;
-  border: 1px solid #FF4533;
+  box-shadow: none;
+  border-color: #FF4533;
   color: #FF4533;
 }
 
 .btn-secondary {
   background: #FF7C4C;
-  border: 1px solid #FF7C4C;
+  border-color: #FF7C4C;
   color: #A3421F;
 }
 
 .btn-secondary:hover, .btn-secondary:focus {
   background: #ff8f66;
-  border: 1px solid #FF7C4C;
+  border-color: #FF7C4C;
   color: #A3421F;
-  text-decoration: none;
 }
 
-.btn-secondary[disabled]:hover, .btn-secondary[disabled]:focus, .btn-secondary[disabled]:active:hover, .btn-secondary[disabled]:active:focus, .btn-secondary[disabled]:focus:hover, .btn-secondary[disabled]:focus:focus, .btn-secondary[disabled]:hover:hover, .btn-secondary[disabled]:hover:focus, .btn-secondary.disabled:hover, .btn-secondary.disabled:focus, .btn-secondary.disabled:active:hover, .btn-secondary.disabled:active:focus, .btn-secondary.disabled:focus:hover, .btn-secondary.disabled:focus:focus, .btn-secondary.disabled:hover:hover, .btn-secondary.disabled:hover:focus {
+.btn-secondary[disabled]:active, .btn-secondary[disabled]:hover, .btn-secondary[disabled]:focus, .btn-secondary.disabled:active, .btn-secondary.disabled:hover, .btn-secondary.disabled:focus {
   background: #FF7C4C;
-  border: 1px solid #FF7C4C;
+  border-color: #FF7C4C;
   color: #A3421F;
 }
 
 .btn-line-secondary {
   background: transparent;
   box-shadow: none;
-  border: 1px solid #FF7C4C;
+  border-color: #FF7C4C;
   color: #FF7C4C;
 }
 
 .btn-line-secondary:hover, .btn-line-secondary:focus {
   background: rgba(255, 124, 76, 0.3);
   box-shadow: none;
-  border: 1px solid #FF7C4C;
+  border-color: #FF7C4C;
   color: #FF7C4C;
-  text-decoration: none;
 }
 
-.btn-line-secondary[disabled]:hover, .btn-line-secondary[disabled]:focus, .btn-line-secondary[disabled]:active:hover, .btn-line-secondary[disabled]:active:focus, .btn-line-secondary[disabled]:focus:hover, .btn-line-secondary[disabled]:focus:focus, .btn-line-secondary[disabled]:hover:hover, .btn-line-secondary[disabled]:hover:focus, .btn-line-secondary.disabled:hover, .btn-line-secondary.disabled:focus, .btn-line-secondary.disabled:active:hover, .btn-line-secondary.disabled:active:focus, .btn-line-secondary.disabled:focus:hover, .btn-line-secondary.disabled:focus:focus, .btn-line-secondary.disabled:hover:hover, .btn-line-secondary.disabled:hover:focus {
+.btn-line-secondary[disabled]:active, .btn-line-secondary[disabled]:focus, .btn-line-secondary[disabled]:hover, .btn-line-secondary.disabled:active, .btn-line-secondary.disabled:focus, .btn-line-secondary.disabled:hover {
   background: transparent;
-  border: 1px solid #FF7C4C;
+  box-shadow: none;
+  border-color: #FF7C4C;
   color: #FF7C4C;
 }
 
 .btn-accent {
   background: #00A875;
-  border: 1px solid #00A875;
+  border-color: #00A875;
   color: #fff;
 }
 
 .btn-accent:hover, .btn-accent:focus {
   background: #00c287;
-  border: 1px solid #00A875;
+  border-color: #00A875;
   color: #fff;
-  text-decoration: none;
 }
 
-.btn-accent[disabled]:hover, .btn-accent[disabled]:focus, .btn-accent[disabled]:active:hover, .btn-accent[disabled]:active:focus, .btn-accent[disabled]:focus:hover, .btn-accent[disabled]:focus:focus, .btn-accent[disabled]:hover:hover, .btn-accent[disabled]:hover:focus, .btn-accent.disabled:hover, .btn-accent.disabled:focus, .btn-accent.disabled:active:hover, .btn-accent.disabled:active:focus, .btn-accent.disabled:focus:hover, .btn-accent.disabled:focus:focus, .btn-accent.disabled:hover:hover, .btn-accent.disabled:hover:focus {
+.btn-accent[disabled]:active, .btn-accent[disabled]:hover, .btn-accent[disabled]:focus, .btn-accent.disabled:active, .btn-accent.disabled:hover, .btn-accent.disabled:focus {
   background: #00A875;
-  border: 1px solid #00A875;
+  border-color: #00A875;
   color: #fff;
 }
 
 .btn-line-accent {
   background: transparent;
   box-shadow: none;
-  border: 1px solid #00A875;
+  border-color: #00A875;
   color: #00A875;
 }
 
 .btn-line-accent:hover, .btn-line-accent:focus {
   background: rgba(0, 168, 117, 0.3);
   box-shadow: none;
-  border: 1px solid #00A875;
+  border-color: #00A875;
   color: #00A875;
-  text-decoration: none;
 }
 
-.btn-line-accent[disabled]:hover, .btn-line-accent[disabled]:focus, .btn-line-accent[disabled]:active:hover, .btn-line-accent[disabled]:active:focus, .btn-line-accent[disabled]:focus:hover, .btn-line-accent[disabled]:focus:focus, .btn-line-accent[disabled]:hover:hover, .btn-line-accent[disabled]:hover:focus, .btn-line-accent.disabled:hover, .btn-line-accent.disabled:focus, .btn-line-accent.disabled:active:hover, .btn-line-accent.disabled:active:focus, .btn-line-accent.disabled:focus:hover, .btn-line-accent.disabled:focus:focus, .btn-line-accent.disabled:hover:hover, .btn-line-accent.disabled:hover:focus {
+.btn-line-accent[disabled]:active, .btn-line-accent[disabled]:focus, .btn-line-accent[disabled]:hover, .btn-line-accent.disabled:active, .btn-line-accent.disabled:focus, .btn-line-accent.disabled:hover {
   background: transparent;
-  border: 1px solid #00A875;
+  box-shadow: none;
+  border-color: #00A875;
   color: #00A875;
 }
 
 .btn-success {
   background: #2ab415;
-  border: 1px solid #2ab415;
+  border-color: #2ab415;
   color: #15590a;
 }
 
 .btn-success:hover, .btn-success:focus {
   background: #2fcb18;
-  border: 1px solid #2ab415;
+  border-color: #2ab415;
   color: #15590a;
-  text-decoration: none;
 }
 
-.btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled]:active:hover, .btn-success[disabled]:active:focus, .btn-success[disabled]:focus:hover, .btn-success[disabled]:focus:focus, .btn-success[disabled]:hover:hover, .btn-success[disabled]:hover:focus, .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled:active:hover, .btn-success.disabled:active:focus, .btn-success.disabled:focus:hover, .btn-success.disabled:focus:focus, .btn-success.disabled:hover:hover, .btn-success.disabled:hover:focus {
+.btn-success[disabled]:active, .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success.disabled:active, .btn-success.disabled:hover, .btn-success.disabled:focus {
   background: #2ab415;
-  border: 1px solid #2ab415;
+  border-color: #2ab415;
   color: #15590a;
 }
 
 .btn-line-success {
   background: transparent;
   box-shadow: none;
-  border: 1px solid #2ab415;
+  border-color: #2ab415;
   color: #2ab415;
 }
 
 .btn-line-success:hover, .btn-line-success:focus {
   background: rgba(42, 180, 21, 0.3);
   box-shadow: none;
-  border: 1px solid #2ab415;
+  border-color: #2ab415;
   color: #2ab415;
-  text-decoration: none;
 }
 
-.btn-line-success[disabled]:hover, .btn-line-success[disabled]:focus, .btn-line-success[disabled]:active:hover, .btn-line-success[disabled]:active:focus, .btn-line-success[disabled]:focus:hover, .btn-line-success[disabled]:focus:focus, .btn-line-success[disabled]:hover:hover, .btn-line-success[disabled]:hover:focus, .btn-line-success.disabled:hover, .btn-line-success.disabled:focus, .btn-line-success.disabled:active:hover, .btn-line-success.disabled:active:focus, .btn-line-success.disabled:focus:hover, .btn-line-success.disabled:focus:focus, .btn-line-success.disabled:hover:hover, .btn-line-success.disabled:hover:focus {
+.btn-line-success[disabled]:active, .btn-line-success[disabled]:focus, .btn-line-success[disabled]:hover, .btn-line-success.disabled:active, .btn-line-success.disabled:focus, .btn-line-success.disabled:hover {
   background: transparent;
-  border: 1px solid #2ab415;
+  box-shadow: none;
+  border-color: #2ab415;
   color: #2ab415;
 }
 
 .btn-warning {
   background: #ffd701;
-  border: 1px solid #ffd701;
+  border-color: #ffd701;
   color: #816c00;
 }
 
 .btn-warning:hover, .btn-warning:focus {
   background: #ffdb1b;
-  border: 1px solid #ffd701;
+  border-color: #ffd701;
   color: #816c00;
-  text-decoration: none;
 }
 
-.btn-warning[disabled]:hover, .btn-warning[disabled]:focus, .btn-warning[disabled]:active:hover, .btn-warning[disabled]:active:focus, .btn-warning[disabled]:focus:hover, .btn-warning[disabled]:focus:focus, .btn-warning[disabled]:hover:hover, .btn-warning[disabled]:hover:focus, .btn-warning.disabled:hover, .btn-warning.disabled:focus, .btn-warning.disabled:active:hover, .btn-warning.disabled:active:focus, .btn-warning.disabled:focus:hover, .btn-warning.disabled:focus:focus, .btn-warning.disabled:hover:hover, .btn-warning.disabled:hover:focus {
+.btn-warning[disabled]:active, .btn-warning[disabled]:hover, .btn-warning[disabled]:focus, .btn-warning.disabled:active, .btn-warning.disabled:hover, .btn-warning.disabled:focus {
   background: #ffd701;
-  border: 1px solid #ffd701;
+  border-color: #ffd701;
   color: #816c00;
 }
 
 .btn-line-warning {
   background: transparent;
   box-shadow: none;
-  border: 1px solid #ffd701;
+  border-color: #ffd701;
   color: #ffd701;
 }
 
 .btn-line-warning:hover, .btn-line-warning:focus {
   background: rgba(255, 215, 1, 0.3);
   box-shadow: none;
-  border: 1px solid #ffd701;
+  border-color: #ffd701;
   color: #ffd701;
-  text-decoration: none;
 }
 
-.btn-line-warning[disabled]:hover, .btn-line-warning[disabled]:focus, .btn-line-warning[disabled]:active:hover, .btn-line-warning[disabled]:active:focus, .btn-line-warning[disabled]:focus:hover, .btn-line-warning[disabled]:focus:focus, .btn-line-warning[disabled]:hover:hover, .btn-line-warning[disabled]:hover:focus, .btn-line-warning.disabled:hover, .btn-line-warning.disabled:focus, .btn-line-warning.disabled:active:hover, .btn-line-warning.disabled:active:focus, .btn-line-warning.disabled:focus:hover, .btn-line-warning.disabled:focus:focus, .btn-line-warning.disabled:hover:hover, .btn-line-warning.disabled:hover:focus {
+.btn-line-warning[disabled]:active, .btn-line-warning[disabled]:focus, .btn-line-warning[disabled]:hover, .btn-line-warning.disabled:active, .btn-line-warning.disabled:focus, .btn-line-warning.disabled:hover {
   background: transparent;
-  border: 1px solid #ffd701;
+  box-shadow: none;
+  border-color: #ffd701;
   color: #ffd701;
 }
 
 .btn-error {
   background: #ff4949;
-  border: 1px solid #ff4949;
+  border-color: #ff4949;
   color: #960000;
 }
 
 .btn-error:hover, .btn-error:focus {
   background: #ff6363;
-  border: 1px solid #ff4949;
+  border-color: #ff4949;
   color: #960000;
-  text-decoration: none;
 }
 
-.btn-error[disabled]:hover, .btn-error[disabled]:focus, .btn-error[disabled]:active:hover, .btn-error[disabled]:active:focus, .btn-error[disabled]:focus:hover, .btn-error[disabled]:focus:focus, .btn-error[disabled]:hover:hover, .btn-error[disabled]:hover:focus, .btn-error.disabled:hover, .btn-error.disabled:focus, .btn-error.disabled:active:hover, .btn-error.disabled:active:focus, .btn-error.disabled:focus:hover, .btn-error.disabled:focus:focus, .btn-error.disabled:hover:hover, .btn-error.disabled:hover:focus {
+.btn-error[disabled]:active, .btn-error[disabled]:hover, .btn-error[disabled]:focus, .btn-error.disabled:active, .btn-error.disabled:hover, .btn-error.disabled:focus {
   background: #ff4949;
-  border: 1px solid #ff4949;
+  border-color: #ff4949;
   color: #960000;
 }
 
 .btn-line-error {
   background: transparent;
   box-shadow: none;
-  border: 1px solid #ff4949;
+  border-color: #ff4949;
   color: #ff4949;
 }
 
 .btn-line-error:hover, .btn-line-error:focus {
   background: rgba(255, 73, 73, 0.3);
   box-shadow: none;
-  border: 1px solid #ff4949;
+  border-color: #ff4949;
   color: #ff4949;
-  text-decoration: none;
 }
 
-.btn-line-error[disabled]:hover, .btn-line-error[disabled]:focus, .btn-line-error[disabled]:active:hover, .btn-line-error[disabled]:active:focus, .btn-line-error[disabled]:focus:hover, .btn-line-error[disabled]:focus:focus, .btn-line-error[disabled]:hover:hover, .btn-line-error[disabled]:hover:focus, .btn-line-error.disabled:hover, .btn-line-error.disabled:focus, .btn-line-error.disabled:active:hover, .btn-line-error.disabled:active:focus, .btn-line-error.disabled:focus:hover, .btn-line-error.disabled:focus:focus, .btn-line-error.disabled:hover:hover, .btn-line-error.disabled:hover:focus {
+.btn-line-error[disabled]:active, .btn-line-error[disabled]:focus, .btn-line-error[disabled]:hover, .btn-line-error.disabled:active, .btn-line-error.disabled:focus, .btn-line-error.disabled:hover {
   background: transparent;
-  border: 1px solid #ff4949;
+  box-shadow: none;
+  border-color: #ff4949;
   color: #ff4949;
 }
 
 .btn-info {
   background: #0a96e0;
-  border: 1px solid #0a96e0;
+  border-color: #0a96e0;
   color: #054466;
 }
 
 .btn-info:hover, .btn-info:focus {
   background: #0fa5f4;
-  border: 1px solid #0a96e0;
+  border-color: #0a96e0;
   color: #054466;
-  text-decoration: none;
 }
 
-.btn-info[disabled]:hover, .btn-info[disabled]:focus, .btn-info[disabled]:active:hover, .btn-info[disabled]:active:focus, .btn-info[disabled]:focus:hover, .btn-info[disabled]:focus:focus, .btn-info[disabled]:hover:hover, .btn-info[disabled]:hover:focus, .btn-info.disabled:hover, .btn-info.disabled:focus, .btn-info.disabled:active:hover, .btn-info.disabled:active:focus, .btn-info.disabled:focus:hover, .btn-info.disabled:focus:focus, .btn-info.disabled:hover:hover, .btn-info.disabled:hover:focus {
+.btn-info[disabled]:active, .btn-info[disabled]:hover, .btn-info[disabled]:focus, .btn-info.disabled:active, .btn-info.disabled:hover, .btn-info.disabled:focus {
   background: #0a96e0;
-  border: 1px solid #0a96e0;
+  border-color: #0a96e0;
   color: #054466;
 }
 
 .btn-line-info {
   background: transparent;
   box-shadow: none;
-  border: 1px solid #0a96e0;
+  border-color: #0a96e0;
   color: #0a96e0;
 }
 
 .btn-line-info:hover, .btn-line-info:focus {
   background: rgba(10, 150, 224, 0.3);
   box-shadow: none;
-  border: 1px solid #0a96e0;
+  border-color: #0a96e0;
   color: #0a96e0;
-  text-decoration: none;
 }
 
-.btn-line-info[disabled]:hover, .btn-line-info[disabled]:focus, .btn-line-info[disabled]:active:hover, .btn-line-info[disabled]:active:focus, .btn-line-info[disabled]:focus:hover, .btn-line-info[disabled]:focus:focus, .btn-line-info[disabled]:hover:hover, .btn-line-info[disabled]:hover:focus, .btn-line-info.disabled:hover, .btn-line-info.disabled:focus, .btn-line-info.disabled:active:hover, .btn-line-info.disabled:active:focus, .btn-line-info.disabled:focus:hover, .btn-line-info.disabled:focus:focus, .btn-line-info.disabled:hover:hover, .btn-line-info.disabled:hover:focus {
+.btn-line-info[disabled]:active, .btn-line-info[disabled]:focus, .btn-line-info[disabled]:hover, .btn-line-info.disabled:active, .btn-line-info.disabled:focus, .btn-line-info.disabled:hover {
   background: transparent;
-  border: 1px solid #0a96e0;
+  box-shadow: none;
+  border-color: #0a96e0;
   color: #0a96e0;
 }
 
 .btn-lightgray {
   background: #eeecec;
-  border: 1px solid #eeecec;
+  border-color: #eeecec;
   color: #9f9393;
 }
 
 .btn-lightgray:hover, .btn-lightgray:focus {
   background: #faf9f9;
-  border: 1px solid #eeecec;
+  border-color: #eeecec;
   color: #9f9393;
-  text-decoration: none;
 }
 
-.btn-lightgray[disabled]:hover, .btn-lightgray[disabled]:focus, .btn-lightgray[disabled]:active:hover, .btn-lightgray[disabled]:active:focus, .btn-lightgray[disabled]:focus:hover, .btn-lightgray[disabled]:focus:focus, .btn-lightgray[disabled]:hover:hover, .btn-lightgray[disabled]:hover:focus, .btn-lightgray.disabled:hover, .btn-lightgray.disabled:focus, .btn-lightgray.disabled:active:hover, .btn-lightgray.disabled:active:focus, .btn-lightgray.disabled:focus:hover, .btn-lightgray.disabled:focus:focus, .btn-lightgray.disabled:hover:hover, .btn-lightgray.disabled:hover:focus {
+.btn-lightgray[disabled]:active, .btn-lightgray[disabled]:hover, .btn-lightgray[disabled]:focus, .btn-lightgray.disabled:active, .btn-lightgray.disabled:hover, .btn-lightgray.disabled:focus {
   background: #eeecec;
-  border: 1px solid #eeecec;
+  border-color: #eeecec;
   color: #9f9393;
 }
 
 .btn-line-lightgray {
   background: transparent;
   box-shadow: none;
-  border: 1px solid #eeecec;
+  border-color: #eeecec;
   color: #eeecec;
 }
 
 .btn-line-lightgray:hover, .btn-line-lightgray:focus {
   background: rgba(238, 236, 236, 0.3);
   box-shadow: none;
-  border: 1px solid #eeecec;
+  border-color: #eeecec;
   color: #eeecec;
-  text-decoration: none;
 }
 
-.btn-line-lightgray[disabled]:hover, .btn-line-lightgray[disabled]:focus, .btn-line-lightgray[disabled]:active:hover, .btn-line-lightgray[disabled]:active:focus, .btn-line-lightgray[disabled]:focus:hover, .btn-line-lightgray[disabled]:focus:focus, .btn-line-lightgray[disabled]:hover:hover, .btn-line-lightgray[disabled]:hover:focus, .btn-line-lightgray.disabled:hover, .btn-line-lightgray.disabled:focus, .btn-line-lightgray.disabled:active:hover, .btn-line-lightgray.disabled:active:focus, .btn-line-lightgray.disabled:focus:hover, .btn-line-lightgray.disabled:focus:focus, .btn-line-lightgray.disabled:hover:hover, .btn-line-lightgray.disabled:hover:focus {
+.btn-line-lightgray[disabled]:active, .btn-line-lightgray[disabled]:focus, .btn-line-lightgray[disabled]:hover, .btn-line-lightgray.disabled:active, .btn-line-lightgray.disabled:focus, .btn-line-lightgray.disabled:hover {
   background: transparent;
-  border: 1px solid #eeecec;
+  box-shadow: none;
+  border-color: #eeecec;
   color: #eeecec;
 }
 
 .btn-midgray {
   background: #aba9a9;
-  border: 1px solid #aba9a9;
+  border-color: #aba9a9;
   color: #575555;
 }
 
 .btn-midgray:hover, .btn-midgray:focus {
   background: #b8b6b6;
-  border: 1px solid #aba9a9;
+  border-color: #aba9a9;
   color: #575555;
-  text-decoration: none;
 }
 
-.btn-midgray[disabled]:hover, .btn-midgray[disabled]:focus, .btn-midgray[disabled]:active:hover, .btn-midgray[disabled]:active:focus, .btn-midgray[disabled]:focus:hover, .btn-midgray[disabled]:focus:focus, .btn-midgray[disabled]:hover:hover, .btn-midgray[disabled]:hover:focus, .btn-midgray.disabled:hover, .btn-midgray.disabled:focus, .btn-midgray.disabled:active:hover, .btn-midgray.disabled:active:focus, .btn-midgray.disabled:focus:hover, .btn-midgray.disabled:focus:focus, .btn-midgray.disabled:hover:hover, .btn-midgray.disabled:hover:focus {
+.btn-midgray[disabled]:active, .btn-midgray[disabled]:hover, .btn-midgray[disabled]:focus, .btn-midgray.disabled:active, .btn-midgray.disabled:hover, .btn-midgray.disabled:focus {
   background: #aba9a9;
-  border: 1px solid #aba9a9;
+  border-color: #aba9a9;
   color: #575555;
 }
 
 .btn-line-midgray {
   background: transparent;
   box-shadow: none;
-  border: 1px solid #aba9a9;
+  border-color: #aba9a9;
   color: #aba9a9;
 }
 
 .btn-line-midgray:hover, .btn-line-midgray:focus {
   background: rgba(171, 169, 169, 0.3);
   box-shadow: none;
-  border: 1px solid #aba9a9;
+  border-color: #aba9a9;
   color: #aba9a9;
-  text-decoration: none;
 }
 
-.btn-line-midgray[disabled]:hover, .btn-line-midgray[disabled]:focus, .btn-line-midgray[disabled]:active:hover, .btn-line-midgray[disabled]:active:focus, .btn-line-midgray[disabled]:focus:hover, .btn-line-midgray[disabled]:focus:focus, .btn-line-midgray[disabled]:hover:hover, .btn-line-midgray[disabled]:hover:focus, .btn-line-midgray.disabled:hover, .btn-line-midgray.disabled:focus, .btn-line-midgray.disabled:active:hover, .btn-line-midgray.disabled:active:focus, .btn-line-midgray.disabled:focus:hover, .btn-line-midgray.disabled:focus:focus, .btn-line-midgray.disabled:hover:hover, .btn-line-midgray.disabled:hover:focus {
+.btn-line-midgray[disabled]:active, .btn-line-midgray[disabled]:focus, .btn-line-midgray[disabled]:hover, .btn-line-midgray.disabled:active, .btn-line-midgray.disabled:focus, .btn-line-midgray.disabled:hover {
   background: transparent;
-  border: 1px solid #aba9a9;
+  box-shadow: none;
+  border-color: #aba9a9;
   color: #aba9a9;
 }
 
 .btn-darkgray {
   background: #575555;
-  border: 1px solid #575555;
+  border-color: #575555;
   color: #fefefe;
 }
 
 .btn-darkgray:hover, .btn-darkgray:focus {
   background: #646262;
-  border: 1px solid #575555;
+  border-color: #575555;
   color: #fefefe;
-  text-decoration: none;
 }
 
-.btn-darkgray[disabled]:hover, .btn-darkgray[disabled]:focus, .btn-darkgray[disabled]:active:hover, .btn-darkgray[disabled]:active:focus, .btn-darkgray[disabled]:focus:hover, .btn-darkgray[disabled]:focus:focus, .btn-darkgray[disabled]:hover:hover, .btn-darkgray[disabled]:hover:focus, .btn-darkgray.disabled:hover, .btn-darkgray.disabled:focus, .btn-darkgray.disabled:active:hover, .btn-darkgray.disabled:active:focus, .btn-darkgray.disabled:focus:hover, .btn-darkgray.disabled:focus:focus, .btn-darkgray.disabled:hover:hover, .btn-darkgray.disabled:hover:focus {
+.btn-darkgray[disabled]:active, .btn-darkgray[disabled]:hover, .btn-darkgray[disabled]:focus, .btn-darkgray.disabled:active, .btn-darkgray.disabled:hover, .btn-darkgray.disabled:focus {
   background: #575555;
-  border: 1px solid #575555;
+  border-color: #575555;
   color: #fefefe;
 }
 
 .btn-line-darkgray {
   background: transparent;
   box-shadow: none;
-  border: 1px solid #575555;
+  border-color: #575555;
   color: #575555;
 }
 
 .btn-line-darkgray:hover, .btn-line-darkgray:focus {
   background: rgba(87, 85, 85, 0.3);
   box-shadow: none;
-  border: 1px solid #575555;
+  border-color: #575555;
   color: #575555;
-  text-decoration: none;
 }
 
-.btn-line-darkgray[disabled]:hover, .btn-line-darkgray[disabled]:focus, .btn-line-darkgray[disabled]:active:hover, .btn-line-darkgray[disabled]:active:focus, .btn-line-darkgray[disabled]:focus:hover, .btn-line-darkgray[disabled]:focus:focus, .btn-line-darkgray[disabled]:hover:hover, .btn-line-darkgray[disabled]:hover:focus, .btn-line-darkgray.disabled:hover, .btn-line-darkgray.disabled:focus, .btn-line-darkgray.disabled:active:hover, .btn-line-darkgray.disabled:active:focus, .btn-line-darkgray.disabled:focus:hover, .btn-line-darkgray.disabled:focus:focus, .btn-line-darkgray.disabled:hover:hover, .btn-line-darkgray.disabled:hover:focus {
+.btn-line-darkgray[disabled]:active, .btn-line-darkgray[disabled]:focus, .btn-line-darkgray[disabled]:hover, .btn-line-darkgray.disabled:active, .btn-line-darkgray.disabled:focus, .btn-line-darkgray.disabled:hover {
   background: transparent;
-  border: 1px solid #575555;
+  box-shadow: none;
+  border-color: #575555;
   color: #575555;
 }
 
