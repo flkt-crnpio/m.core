@@ -362,7 +362,30 @@
                                         <option value="">option group 4</option>
                                     </optgroup>
                                 </select>
+                                <input type="file" name="file" value="" placeholder="file">
                                 <button type="button" name="button">button</button>
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <p>Select input</p>
+                            <div class="form-section-inline">
+                                <select name="select">
+                                    <option disabled value=""> Select one option </option>
+                                    <option value="">option 1</option>
+                                    <option value="">option 2</option>
+                                    <optgroup label="group title">
+                                        <option value="">option group 3</option>
+                                        <option value="">option group 4</option>
+                                    </optgroup>
+                                </select>
+                                <div class="select">
+                                    <select placeholder="Select">
+                                        <option disabled hidden value=""> Select </option>
+                                        <option>option</option>
+                                        <option>option</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
 
@@ -379,8 +402,8 @@
                                 <input id ="password" type="password" name="password" value="" placeholder="password">
                             </div>
 
-                            <div class="form-section-block">
-                                <label for="select">select</label>
+                            <div class="form-section-inline">
+                                <label class="label-block">Select</label>
                                 <select id="select" name="select">
                                     <option disabled value=""> Select one option </option>
                                     <option value="">option 1</option>
@@ -390,6 +413,26 @@
                                         <option value="">option group 4</option>
                                     </optgroup>
                                 </select>
+
+                                <div class="select">
+                                    <select placeholder="Select">
+                                        <option disabled hidden value=""> Select </option>
+                                        <option>option</option>
+                                        <option>option</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-section-inline">
+                                <label class="label-block">Upload</label>
+                                <input type="file" name="file" value="" placeholder="file">
+
+                                <div class="file">
+                                    <input type="file" name="file" value="" placeholder="file">
+                                </div>
+                                <div class="file attached">
+                                    <input type="file" name="file" value="" placeholder="file">
+                                </div>
                             </div>
 
                             <div class="form-section-block">
@@ -401,20 +444,28 @@
                         <div class="">
                             <p>Checkbox</p>
                             <div class="form-section-inline">
-                                <span class="form-title">Form Checkbox:</span>
+                                <span class="label">Form Checkbox:</span>
                                 <input id ="checkbox" type="checkbox" name="checkbox" value="checkbox">
-                                <label for="checkbox">checkbox</label>
+                                <label for="checkbox" class="label-inline">checkbox</label>
+                                <div class="checkbox">
+                                    <input id ="otorocheckbox" type="checkbox" name="checkbox" value="checkbox">
+                                    <label for="otorocheckbox" class="label-inline">checkbox</label>
+                                </div>
                             </div>
                         </div>
 
                         <div class="">
                             <p>Radio buttons</p>
                             <div class="form-section-inline">
-                                <span class="form-title">Form Radio:</span>
+                                <span class="label">Form Radio:</span>
                                 <input id ="radio1" type="radio" name="radio" value="radio1">
-                                <label for="radio1">radio1</label>
+                                <label for="radio1" class="label-inline">radio1</label>
                                 <input id ="radio2" type="radio" name="radio" value="radio2">
-                                <label for="radio2">radio2</label>
+                                <label for="radio2" class="label-inline">radio2</label>
+                                <div class="radio">
+                                    <input id ="radio3" type="radio" name="radio" value="radio2">
+                                    <label for="radio3" class="label-inline">radio3</label>
+                                </div>
                             </div>
                         </div>
 
@@ -441,13 +492,33 @@
 
                             <div class="form-section-inline">
                                 <input class="input-sm" id ="small" type="text" name="small" value="small" placeholder="small">
-                                <button type="button" class="btn-sm">button small</button>
+                                <!-- <button type="button" class="btn-sm">button small</button> -->
+                                <select class="input-sm" name="select">
+                                    <option disabled value=""> Select one option </option>
+                                    <option value="">option 1</option>
+                                    <option value="">option 2</option>
+                                    <optgroup label="group title">
+                                        <option value="">option group 3</option>
+                                        <option value="">option group 4</option>
+                                    </optgroup>
+                                </select>
+                                <input class="input-sm" type="file" name="file" value="" placeholder="file">
                                 <br>
                                 <input id ="normal" type="text" name="normal" value="normal" placeholder="normal">
                                 <button type="button" class="">button</button>
                                 <br>
                                 <input class="input-lg" id ="big" type="text" name="big" value="big" placeholder="big">
-                                <button type="button" class="btn-lg">button large</button>
+                                <!-- <button type="button" class="btn-lg">button large</button> -->
+                                <select class="input-lg" name="select">
+                                    <option disabled value=""> Select one option </option>
+                                    <option value="">option 1</option>
+                                    <option value="">option 2</option>
+                                    <optgroup label="group title">
+                                        <option value="">option group 3</option>
+                                        <option value="">option group 4</option>
+                                    </optgroup>
+                                </select>
+                                <input class="input-lg" type="file" name="file" value="" placeholder="file">
                                 <br>
                                 <input class="input-block" id ="block" type="text" name="block" value="block" placeholder="block">
                                 <button type="button" class="btn-block">button block</button>

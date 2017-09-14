@@ -3,6 +3,7 @@
 [type="datetime"],
 [type="datetime-local"],
 [type="email"],
+[type="file"],
 [type="month"],
 [type="number"],
 [type="password"],
@@ -13,13 +14,21 @@
 [type="url"],
 [type="week"],
 select,
+.select,
+.file,
 textarea {
+    //border
+    border-style: $input-border-style;
+    border-width: $input-border-width;
+    border-top-width: $input-border-top-width;
+    border-left-width: $input-border-left-width;
+    border-right-width: $input-border-right-width;
+    border-bottom-width: $input-border-bottom-width;
+    border-radius: $input-border-radius;
     //color
     background: rgba($color-background,0.7);
     border-color: rgba($color-font,0.2);
     color: rgba($color-font, 0.9);
-    //border
-    border-radius: $form-border-radius;
     //font
     font-family: $font-family;
     font-size: $font-size;
@@ -33,6 +42,7 @@ textarea {
     min-width: $input-min-width;
     width: $input-width;
     //default
+    display: inline-block;
     resize: none;
     vertical-align: middle;
     transition: all 0.5s cubic-bezier(0.465, 0.240, 0.370, 0.825);
@@ -47,22 +57,214 @@ textarea {
 }
 
 // select
-select,
-select:hover,
-select:focus,
-select:active {
-    border: 0;
-    height: $font-size + $form-padding * 2;
-}
 select {
-    outline: 1px solid rgba($color-font,0.2);
+    height: $font-size + $form-padding * 2.2;
 }
-select:hover {
-    outline: 1px solid rgba(mix($color-primary, $color-font, 40), 0.4);
+.select {
+    padding: 0;
+    position: relative;
+
+    select {
+        background: transparent;
+        border: none;
+        display: inline-block;
+        height: auto;
+        line-height: 1em;
+        margin: 0;
+        padding: $form-padding;
+        padding-right: $form-padding * 3;
+        appearance: none;
+        -o-appearance: none;
+        -ms-appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        -ms-display: none;
+    }
+
+    &::after {
+        display: block;
+        content: "\232A";
+        transform: rotate(90deg);
+        pointer-events: none;
+        position: absolute;
+        right: $form-padding;
+        top: $form-padding;
+        font-family: $font-family;
+        font-size: $font-size;
+        line-height: $font-size * 1.6;
+        font-weight: $font-weight;
+    }
 }
-select:focus,
-select:active {
-    outline: 1px solid rgba(mix($color-primary, $color-font, 80), 0.8);
+.select select::-ms-expand {
+    display: none;
+}
+
+// file
+[type="file"] {
+    padding: $form-padding - 2.5px;
+}
+.file {
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+
+    [type="file"] {
+        cursor: pointer;
+        opacity: 0;
+        margin: 0;
+    }
+
+    &::after {
+        display: block;
+        content: "Select File \2191";
+        color: rgba($color-font, 0.7);
+        cursor: pointer;
+        pointer-events: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        text-align: center;
+        font-family: $font-family;
+        font-size: $font-size;
+        line-height: $font-size * 2.4;
+        letter-spacing: $font-space;
+        font-weight: $font-weight;
+    }
+    &.attached {
+        border-color: rgba($color-font, 0.7);
+        cursor: pointer;
+        &::after {
+            display: block;
+            content: "Upload File \2191";
+            color: rgba($color-font, 1);
+            cursor: pointer;
+            pointer-events: none;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            text-align: center;
+            font-family: $font-family;
+            font-size: $font-size;
+            line-height: $font-size * 2.4;
+            letter-spacing: $font-space;
+            font-weight: $font-weight;
+        }
+    }
+}
+
+// radio checkbox
+[type="checkbox"],
+[type="radio"] {
+    cursor: pointer;
+}
+
+// checkbox
+.checkbox {
+    display: inline-block;
+    cursor: pointer;
+
+    [type="checkbox"] {
+        display: none;
+        cursor: pointer;
+    }
+
+    [type="checkbox"] + label {
+        display: inline-block;
+        cursor: pointer;
+        padding-left: $font-size * 1.5;
+        position: relative;
+
+        &::before {
+            border-style: $input-border-style;
+            border-width: $input-border-width;
+            border-radius: $input-border-radius;
+            border-color: rgba($color-font, .2);
+            display: block;
+            height: $font-size;
+            width: $font-size;
+            position: absolute;
+            left: $font-size * .25;
+            content: "";
+        }
+
+        &::after {
+            content: "";
+            width: $font-size;
+            height: $font-size * .5;
+            border-style: solid;
+            border-width: 2px;
+            border-color: rgba($color-font,0);
+            border-top: none;
+            border-right: none;
+            background: transparent;
+            transform: rotate(-45deg);
+            position: absolute;
+            top: 0;
+            left: $font-size * .5;
+        }
+    }
+
+    [type="checkbox"]:checked + label {
+        &::before {
+            border-color: rgba($color-font, .5);
+        }
+        &::after {
+            border-color: rgba($color-font, 1);
+        }
+    }
+}
+
+// radio
+.radio {
+    display: inline-block;
+    cursor: pointer;
+
+    [type="radio"] {
+        display: none;
+        cursor: pointer;
+    }
+
+    [type="radio"] + label {
+        display: inline-block;
+        cursor: pointer;
+        padding-left: $font-size * 1.5;
+        position: relative;
+
+        &::before {
+            border-style: $input-border-style;
+            border-width: $input-border-width;
+            border-radius: $font-size;
+            border-color: rgba($color-font, .2);
+            display: block;
+            height: $font-size;
+            width: $font-size;
+            position: absolute;
+            left: $font-size * .25;
+            content: "";
+        }
+        &::after {
+            content: "";
+            width: $font-size * .5;
+            height: $font-size * .5;
+            border-radius:  $font-size * .5;
+            background: rgba($color-font, 0);
+            position: absolute;
+            top: $font-size * .25;
+            left: $font-size * .5;
+        }
+    }
+    [type="radio"]:checked + label {
+        &::before {
+            border-color: rgba($color-font, .5);
+        }
+        &::after {
+            background: rgba($color-font, 1);
+        }
+    }
 }
 
 // label
@@ -90,7 +292,6 @@ label,
 [type="time"],
 [type="url"],
 [type="week"],
-select,
 textarea {
     &.input-sm {
         font-size: $font-size * .75;
@@ -109,7 +310,45 @@ textarea {
         width: 100%;
     }
 }
+select {
+    &.input-sm {
+        height: $font-size * .75 + $form-padding * .75;
+        font-size: $font-size * .75;
+        line-height: $font-line * .75;
+        padding: ($form-padding * .3) - 1px $form-padding * .75;
+    }
 
+    &.input-lg {
+        height: $font-size + $form-padding * 4;
+        font-size: $font-size * 1.5;
+        line-height: $font-line;
+        padding: $form-padding - 2px $form-padding * 1.5;
+    }
+
+    &.input-block {
+        display: block;
+        width: 100%;
+    }
+}
+[type="file"] {
+    &.input-sm {
+        font-size: $font-size * .75;
+        line-height: $font-line * .75;
+        padding: ($form-padding * .3) - 3px $form-padding * .75;
+    }
+
+    &.input-lg {
+        vertical-align: baseline;
+        font-size: $font-size;
+        line-height: $font-size * 2;
+        padding: $form-padding * 1.3;
+    }
+
+    &.input-block {
+        display: block;
+        width: 100%;
+    }
+}
 label,
 .label {
     &.label-sm {
@@ -119,6 +358,14 @@ label,
     &.label-lg {
         font-size: $font-form-size * 1.5;
         line-height: $font-form-line * 1.5;
+    }
+    &.label-block {
+        display: block;
+        width: 100%;
+    }
+    &.label-inline {
+        display: inline-block;
+        width: auto;
     }
 }
 
@@ -164,10 +411,9 @@ label,
 .form-section-block {
     margin: $element-space/2 0;
 
-    label,
-    .label,
     input,
     select,
+    .select,
     textarea {
         display: block;
     }
@@ -176,10 +422,9 @@ label,
 .form-section-inline {
     margin: $element-space/2 0;
 
-    label,
-    .label,
     input,
     select,
+    .select,
     textarea {
         display: inline-block;
     }

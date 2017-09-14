@@ -832,6 +832,7 @@ input[type="reset"].btn-block,
 [type="datetime"],
 [type="datetime-local"],
 [type="email"],
+[type="file"],
 [type="month"],
 [type="number"],
 [type="password"],
@@ -842,11 +843,19 @@ input[type="reset"].btn-block,
 [type="url"],
 [type="week"],
 select,
+.select,
+.file,
 textarea {
+  border-style: solid;
+  border-width: 1px;
+  border-top-width: 1px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-radius: 2px;
   background: rgba(255, 255, 255, 0.7);
   border-color: rgba(51, 51, 51, 0.2);
   color: rgba(51, 51, 51, 0.9);
-  border-radius: 2px;
   font-family: sans-serif;
   font-size: 16px;
   letter-spacing: 0.01em;
@@ -856,7 +865,8 @@ textarea {
   padding: 9px;
   max-width: 100%;
   min-width: auto;
-  width: auto;
+  width: 300px;
+  display: inline-block;
   resize: none;
   vertical-align: middle;
   transition: all 0.5s cubic-bezier(0.465, 0.24, 0.37, 0.825);
@@ -866,6 +876,7 @@ textarea {
 [type="datetime"]:hover,
 [type="datetime-local"]:hover,
 [type="email"]:hover,
+[type="file"]:hover,
 [type="month"]:hover,
 [type="number"]:hover,
 [type="password"]:hover,
@@ -876,6 +887,8 @@ textarea {
 [type="url"]:hover,
 [type="week"]:hover,
 select:hover,
+.select:hover,
+.file:hover,
 textarea:hover {
   border-color: rgba(153, 60, 51, 0.5);
 }
@@ -887,6 +900,8 @@ textarea:hover {
 [type="datetime-local"]:active,
 [type="email"]:focus,
 [type="email"]:active,
+[type="file"]:focus,
+[type="file"]:active,
 [type="month"]:focus,
 [type="month"]:active,
 [type="number"]:focus,
@@ -907,30 +922,224 @@ textarea:hover {
 [type="week"]:active,
 select:focus,
 select:active,
+.select:focus,
+.select:active,
+.file:focus,
+.file:active,
 textarea:focus,
 textarea:active {
   border-color: #f06e61;
 }
 
-select,
-select:hover,
-select:focus,
-select:active {
-  border: 0;
-  height: 36px;
-}
-
 select {
-  outline: 1px solid rgba(51, 51, 51, 0.2);
+  height: 38px;
 }
 
-select:hover {
-  outline: 1px solid rgba(133, 58, 51, 0.4);
+.select {
+  padding: 0;
+  position: relative;
 }
 
-select:focus,
-select:active {
-  outline: 1px solid rgba(214, 65, 51, 0.8);
+.select select {
+  background: transparent;
+  border: none;
+  display: inline-block;
+  height: auto;
+  line-height: 1em;
+  margin: 0;
+  padding: 10px;
+  padding-right: 30px;
+  appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-display: none;
+}
+
+.select::after {
+  display: block;
+  content: "\232A";
+  transform: rotate(90deg);
+  pointer-events: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 25.6px;
+  font-weight: 300;
+}
+
+.select select::-ms-expand {
+  display: none;
+}
+
+[type="file"] {
+  padding: 7.5px;
+}
+
+.file {
+  padding: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.file [type="file"] {
+  cursor: pointer;
+  opacity: 0;
+  margin: 0;
+}
+
+.file::after {
+  display: block;
+  content: "Select File \2191";
+  color: rgba(51, 51, 51, 0.7);
+  cursor: pointer;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 38.4px;
+  letter-spacing: 0.01em;
+  font-weight: 300;
+}
+
+.file.attached {
+  border-color: rgba(51, 51, 51, 0.7);
+  cursor: pointer;
+}
+
+.file.attached::after {
+  display: block;
+  content: "Upload File \2191";
+  color: #333333;
+  cursor: pointer;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 38.4px;
+  letter-spacing: 0.01em;
+  font-weight: 300;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  cursor: pointer;
+}
+
+.checkbox {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.checkbox [type="checkbox"] {
+  display: none;
+  cursor: pointer;
+}
+
+.checkbox [type="checkbox"] + label {
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 24px;
+  position: relative;
+}
+
+.checkbox [type="checkbox"] + label::before {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+  border-color: rgba(51, 51, 51, 0.2);
+  display: block;
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  left: 4px;
+  content: "";
+}
+
+.checkbox [type="checkbox"] + label::after {
+  content: "";
+  width: 16px;
+  height: 8px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(51, 51, 51, 0);
+  border-top: none;
+  border-right: none;
+  background: transparent;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 0;
+  left: 8px;
+}
+
+.checkbox [type="checkbox"]:checked + label::before {
+  border-color: rgba(51, 51, 51, 0.5);
+}
+
+.checkbox [type="checkbox"]:checked + label::after {
+  border-color: #333333;
+}
+
+.radio {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.radio [type="radio"] {
+  display: none;
+  cursor: pointer;
+}
+
+.radio [type="radio"] + label {
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 24px;
+  position: relative;
+}
+
+.radio [type="radio"] + label::before {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 16px;
+  border-color: rgba(51, 51, 51, 0.2);
+  display: block;
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  left: 4px;
+  content: "";
+}
+
+.radio [type="radio"] + label::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: rgba(51, 51, 51, 0);
+  position: absolute;
+  top: 4px;
+  left: 8px;
+}
+
+.radio [type="radio"]:checked + label::before {
+  border-color: rgba(51, 51, 51, 0.5);
+}
+
+.radio [type="radio"]:checked + label::after {
+  background: #333333;
 }
 
 label,
@@ -956,7 +1165,6 @@ label,
 [type="time"].input-sm,
 [type="url"].input-sm,
 [type="week"].input-sm,
-select.input-sm,
 textarea.input-sm {
   font-size: 12px;
   line-height: 1.2em;
@@ -976,7 +1184,6 @@ textarea.input-sm {
 [type="time"].input-lg,
 [type="url"].input-lg,
 [type="week"].input-lg,
-select.input-lg,
 textarea.input-lg {
   font-size: 24px;
   line-height: 1.6em;
@@ -996,8 +1203,44 @@ textarea.input-lg {
 [type="time"].input-block,
 [type="url"].input-block,
 [type="week"].input-block,
-select.input-block,
 textarea.input-block {
+  display: block;
+  width: 100%;
+}
+
+select.input-sm {
+  height: 19.5px;
+  font-size: 12px;
+  line-height: 1.2em;
+  padding: 2px 7.5px;
+}
+
+select.input-lg {
+  height: 56px;
+  font-size: 24px;
+  line-height: 1.6em;
+  padding: 8px 15px;
+}
+
+select.input-block {
+  display: block;
+  width: 100%;
+}
+
+[type="file"].input-sm {
+  font-size: 12px;
+  line-height: 1.2em;
+  padding: 0px 7.5px;
+}
+
+[type="file"].input-lg {
+  vertical-align: baseline;
+  font-size: 16px;
+  line-height: 32px;
+  padding: 13px;
+}
+
+[type="file"].input-block {
   display: block;
   width: 100%;
 }
@@ -1012,6 +1255,18 @@ label.label-lg,
 .label.label-lg {
   font-size: 18.48px;
   line-height: 2.4em;
+}
+
+label.label-block,
+.label.label-block {
+  display: block;
+  width: 100%;
+}
+
+label.label-inline,
+.label.label-inline {
+  display: inline-block;
+  width: auto;
 }
 
 .form-primary input,
@@ -1368,10 +1623,9 @@ label.label-lg,
   margin: 15px 0;
 }
 
-.form-section-block label,
-.form-section-block .label,
 .form-section-block input,
 .form-section-block select,
+.form-section-block .select,
 .form-section-block textarea {
   display: block;
 }
@@ -1380,10 +1634,9 @@ label.label-lg,
   margin: 15px 0;
 }
 
-.form-section-inline label,
-.form-section-inline .label,
 .form-section-inline input,
 .form-section-inline select,
+.form-section-inline .select,
 .form-section-inline textarea {
   display: inline-block;
 }

@@ -78,14 +78,18 @@ $btn-border-radius: 2px;
 $btn-border-style: solid;
 $btn-border-width: 1px;
 
-$form-border-radius: 2px;
-$form-border-style: solid;
-$form-border-width: 1px;
-
 $form-padding: 10px;
 $form-margin-y: 2px;
 
-$input-width: auto;
+$input-border-radius: 2px;
+$input-border-style: solid;
+$input-border-width: 1px;
+$input-border-top-width: 1px;
+$input-border-left-width: 1px;
+$input-border-right-width: 1px;
+$input-border-bottom-width: 1px;
+
+$input-width: 300px;
 $input-min-width: auto;
 $input-max-width: 100%;
 
