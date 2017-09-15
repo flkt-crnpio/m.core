@@ -493,7 +493,7 @@ label,
 }
 
 // colors
-@each $name, $color, $font in $c {
+@each $name, $color, $font in $colors {
     .form-#{$name} {
         .file,
         input,

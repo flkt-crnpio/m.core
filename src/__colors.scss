@@ -5,14 +5,14 @@ body {
 }
 
 // text
-@each $name, $color, $font in $c {
+@each $name, $color, $font in $colors {
     .text-#{$name} {
         color: $color;
     }
 }
 
 // background
-@each $name, $color, $font in $c {
+@each $name, $color, $font in $colors {
     .background-#{$name} {
         background: $color;
     }

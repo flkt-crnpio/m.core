@@ -29,7 +29,7 @@ a,
 }
 
 // colors
-@each $name, $color, $font in $c {
+@each $name, $color, $font in $colors {
     .link-#{$name} {
         color: $color;
 

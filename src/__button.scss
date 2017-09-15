@@ -78,7 +78,7 @@ input[type="reset"],
 }
 
 // colors
-@each $name, $color, $font in $c {
+@each $name, $color, $font in $colors {
     .btn-#{$name} {
         background: $color;
         border-color: $color;

@@ -3,40 +3,30 @@ $color-background: #fff;
 $color-font: #333;
 
 $color-primary: #FF4533;
-$color-font-primary: #fff;
 $color-secondary: #FF7C4C;
-$color-font-secondary: #A3421F;
 $color-accent: #00A875;
-$color-font-accent: #fff;
 
 $color-success: mix(#28b515, $color-primary, 99%);
-$color-font-success: darken($color-success, 20);
 $color-warning: mix(#ffd800, $color-primary, 99%);
-$color-font-warning: darken($color-warning, 25);
 $color-error: mix(#ff4949, $color-primary, 99%);
-$color-font-error: darken($color-error, 35);
 $color-info: mix(#0897e2, $color-primary, 99%);
-$color-font-info: darken($color-info, 25);
 
 $color-lightgray: mix(#eee, $color-primary, 99%);
-$color-font-lightgray: darken($color-lightgray, 33);
 $color-midgray: mix(#aaa, $color-primary, 99%);
-$color-font-midgray: darken($color-midgray, 33);
 $color-darkgray: mix(#555, $color-primary, 99%);
-$color-font-darkgray: lighten($color-darkgray, 66);
 
 $color-highlight: mix(#fd0, $color-primary, 99%);
 
-$c: (primary, $color-primary, $color-font-primary),
-    (secondary, $color-secondary, $color-font-secondary),
-    (accent, $color-accent, $color-font-accent),
-    (success, $color-success, $color-font-success),
-    (warning, $color-warning, $color-font-warning),
-    (error, $color-error, $color-font-error),
-    (info, $color-info, $color-font-info),
-    (lightgray, $color-lightgray, $color-font-lightgray),
-    (midgray, $color-midgray, $color-font-midgray),
-    (darkgray, $color-darkgray, $color-font-darkgray);
+$colors: (primary, $color-primary, #fff),
+    (secondary, $color-secondary, #A3421F),
+    (accent, $color-accent, #fff),
+    (success, $color-success, darken($color-success, 20)),
+    (warning, $color-warning, darken($color-warning, 25)),
+    (error, $color-error, darken($color-error, 35)),
+    (info, $color-info, darken($color-info, 25)),
+    (lightgray, $color-lightgray, darken($color-lightgray, 33)),
+    (midgray, $color-midgray, darken($color-midgray, 33)),
+    (darkgray, $color-darkgray, lighten($color-darkgray, 66));
 
 // fonts
 $font-family: sans-serif;
