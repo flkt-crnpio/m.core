@@ -1,4 +1,12 @@
 /* text */
+body {
+    font-family: $font-family;
+    font-line: $font-line;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    letter-space: $font-space;
+}
+
 p {
     margin: $element-space 0;
     padding: 0;
