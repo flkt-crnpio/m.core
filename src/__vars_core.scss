@@ -3,6 +3,7 @@ $color-background: #fff;
 $color-font: #333;
 
 $color-primary: #FF4533;
+$color-font-primary: #fff;
 $color-secondary: #FF7C4C;
 $color-accent: #00A875;
 
@@ -17,7 +18,7 @@ $color-darkgray: mix(#555, $color-primary, 99%);
 
 $color-highlight: mix(#fd0, $color-primary, 99%);
 
-$colors: (primary, $color-primary, #fff),
+$colors: (primary, $color-primary, $color-font-primary),
     (secondary, $color-secondary, #A3421F),
     (accent, $color-accent, #fff),
     (success, $color-success, darken($color-success, 20)),

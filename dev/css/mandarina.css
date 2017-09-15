@@ -336,7 +336,7 @@ input[type="reset"],
   background: #FF4533;
   border-color: #FF4533;
   box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent;
-  color: #333;
+  color: #fff;
   border-style: solid;
   border-width: 1px;
   border-radius: 2px;
@@ -372,7 +372,7 @@ input[type="reset"]:focus,
   background: #ff5c4d;
   border-color: #FF4533;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  color: #333;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -404,7 +404,7 @@ input[type="reset"].disabled:focus,
   background: #FF4533;
   border-color: #FF4533;
   box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent;
-  color: #333;
+  color: #fff;
   cursor: default;
   text-decoration: none;
 }
