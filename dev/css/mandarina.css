@@ -2470,6 +2470,23 @@ a:hover, a:focus,
   text-decoration-skip: ink;
 }
 
+a.link-sm,
+.link.link-sm {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+a.link-lg,
+.link.link-lg {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+a.link-block,
+.link.link-block {
+  width: 100%;
+}
+
 .link-primary {
   color: #FF4533;
 }

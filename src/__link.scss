@@ -28,6 +28,22 @@ a,
     }
 }
 
+// sizes
+a,
+.link {
+    &.link-sm {
+        font-size: $font-size * .75;
+        line-height: $font-size * .75;
+    }
+    &.link-lg {
+        font-size: $font-size * 1.5;
+        line-height: $font-size * 1.5;
+    }
+    &.link-block {
+        width: 100%;
+    }
+}
+
 // colors
 @each $name, $color, $font in $colors {
     .link-#{$name} {
