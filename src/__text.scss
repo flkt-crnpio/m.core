@@ -120,3 +120,17 @@ samp {
     background: rgba($color-font, 0.1);
     color: rgba($color-font, 0.7);
 }
+
+// sizes
+.text-sm {
+    font-size: $font-size * .75;
+    line-height: $font-size * .75;
+}
+.text-lg {
+    font-size: $font-size * 1.5;
+    line-height: $font-size * 1.5;
+}
+.text-lead {
+    font-size: $font-size * 2;
+    line-height: $font-size * 1;
+}

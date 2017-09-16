@@ -2845,6 +2845,21 @@ samp {
   color: rgba(51, 51, 51, 0.7);
 }
 
+.text-sm {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.text-lg {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.text-lead {
+  font-size: 32px;
+  line-height: 16px;
+}
+
 /* image */
 a img {
   max-width: 100%;
