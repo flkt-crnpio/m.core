@@ -102,3 +102,16 @@ h6,
         margin-top: 5px;
     }
 }
+
+// colors
+@each $name, $color, $font in $colors {
+    .heading-#{$name} {
+        color: $color;
+        &::after {
+            background: $color;
+        }
+        &::before {
+            background: $color;
+        }
+    }
+}

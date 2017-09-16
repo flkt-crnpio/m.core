@@ -2319,6 +2319,126 @@ h6,
   margin-top: 5px;
 }
 
+.heading-primary {
+  color: #FF4533;
+}
+
+.heading-primary::after {
+  background: #FF4533;
+}
+
+.heading-primary::before {
+  background: #FF4533;
+}
+
+.heading-secondary {
+  color: #FF7C4C;
+}
+
+.heading-secondary::after {
+  background: #FF7C4C;
+}
+
+.heading-secondary::before {
+  background: #FF7C4C;
+}
+
+.heading-accent {
+  color: #00A875;
+}
+
+.heading-accent::after {
+  background: #00A875;
+}
+
+.heading-accent::before {
+  background: #00A875;
+}
+
+.heading-success {
+  color: #2ab415;
+}
+
+.heading-success::after {
+  background: #2ab415;
+}
+
+.heading-success::before {
+  background: #2ab415;
+}
+
+.heading-warning {
+  color: #ffd701;
+}
+
+.heading-warning::after {
+  background: #ffd701;
+}
+
+.heading-warning::before {
+  background: #ffd701;
+}
+
+.heading-error {
+  color: #ff4949;
+}
+
+.heading-error::after {
+  background: #ff4949;
+}
+
+.heading-error::before {
+  background: #ff4949;
+}
+
+.heading-info {
+  color: #0a96e0;
+}
+
+.heading-info::after {
+  background: #0a96e0;
+}
+
+.heading-info::before {
+  background: #0a96e0;
+}
+
+.heading-lightgray {
+  color: #eeecec;
+}
+
+.heading-lightgray::after {
+  background: #eeecec;
+}
+
+.heading-lightgray::before {
+  background: #eeecec;
+}
+
+.heading-midgray {
+  color: #aba9a9;
+}
+
+.heading-midgray::after {
+  background: #aba9a9;
+}
+
+.heading-midgray::before {
+  background: #aba9a9;
+}
+
+.heading-darkgray {
+  color: #575555;
+}
+
+.heading-darkgray::after {
+  background: #575555;
+}
+
+.heading-darkgray::before {
+  background: #575555;
+}
+
 /* link */
 a,
 .link {
