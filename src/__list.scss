@@ -4,6 +4,11 @@ ol {
     list-style-position: inside;
     margin: $element-space 0 $element-space * 2;
     padding: 0;
+
+    ul,
+    ol {
+        margin: 0 0 0 $element-space;
+    }
 }
 
 ul.list-clean,
