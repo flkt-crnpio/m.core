@@ -4,20 +4,16 @@ body {
     color: $color-font;
 }
 
-// text
-@each $name, $color, $font in $colors {
-    .text-#{$name} {
-        color: $color;
-    }
-}
-
-// background
 @each $name, $color, $font in $colors {
     .background-#{$name} {
         background: $color;
     }
 
-    .background-color-#{$name} {
+    .text-#{$name} {
+        color: $color;
+    }
+
+    .background-text-#{$name} {
         background: $color;
         color: $font;
     }

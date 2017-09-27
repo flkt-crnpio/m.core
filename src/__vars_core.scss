@@ -1,90 +1,105 @@
 // color
-$color-background: #fff;
-$color-font: #333;
+$color-background:  #fff;
+$color-font:        #333;
 
-$color-primary: #FF4533;
-$color-font-primary: #fff;
-$color-secondary: #FF7C4C;
-$color-accent: #00A875;
+$color-primary:         #FF4533;
+$color-font-primary:    #fff;
+$color-secondary:       #FF7C4C;
+$color-font-secondary:  #A3421F;
+$color-accent:          #00A875;
+$color-font-accent:     #fff;
 
-$color-success: mix(#28b515, $color-primary, 99%);
-$color-warning: mix(#ffd800, $color-primary, 99%);
-$color-error: mix(#ff4949, $color-primary, 99%);
-$color-info: mix(#0897e2, $color-primary, 99%);
+$color-success:     mix(#28b515, $color-primary, 99%);
+$color-warning:     mix(#ffd800, $color-primary, 99%);
+$color-error:       mix(#ff4949, $color-primary, 99%);
+$color-info:        mix(#0897e2, $color-primary, 99%);
 
-$color-lightgray: mix(#eee, $color-primary, 99%);
-$color-midgray: mix(#aaa, $color-primary, 99%);
-$color-darkgray: mix(#555, $color-primary, 99%);
+$color-gray-light:  mix(#eee, $color-primary, 99%);
+$color-gray-mid:    mix(#aaa, $color-primary, 99%);
+$color-gray-dark:   mix(#555, $color-primary, 99%);
 
-$color-highlight: mix(#fd0, $color-primary, 99%);
+$color-highlight:   mix(#fd0, $color-primary, 99%);
 
-$colors: (primary, $color-primary, $color-font-primary),
-    (secondary, $color-secondary, #A3421F),
-    (accent, $color-accent, #fff),
-    (success, $color-success, darken($color-success, 20)),
-    (warning, $color-warning, darken($color-warning, 25)),
-    (error, $color-error, darken($color-error, 35)),
-    (info, $color-info, darken($color-info, 25)),
-    (lightgray, $color-lightgray, darken($color-lightgray, 33)),
-    (midgray, $color-midgray, darken($color-midgray, 33)),
-    (darkgray, $color-darkgray, lighten($color-darkgray, 66));
+// $colors: (name       color               font-color)
+$colors:    (primary,   $color-primary,     $color-font-primary),
+            (secondary, $color-secondary,   $color-font-secondary),
+            (accent,    $color-accent,      $color-font-accent),
+            (success,   $color-success,     darken($color-success, 20)),
+            (warning,   $color-warning,     darken($color-warning, 25)),
+            (error,     $color-error,       darken($color-error, 35)),
+            (info,      $color-info,        darken($color-info, 25)),
+            (graylight, $color-gray-light,  darken($color-gray-light, 33)),
+            (graymid,   $color-gray-mid,    darken($color-gray-mid, 33)),
+            (graydark,  $color-gray-dark,   lighten($color-gray-dark, 66));
+
+
+
 
 // fonts
-$font-family: sans-serif;
-$font-line: 1.6em;
-$font-size: 16px;
-$font-space: 0.01em;
-$font-weight: 300;
+$font-family:   sans-serif;
+$font-line:     1.6em;
+$font-size:     16px;
+$font-space:    0.01em;
+$font-weight:   300;
 
-$font-title-family: Georgia, serif;
-$font-title-line: 1em;
-$font-title-space: 0;
-$font-title-weight: 400;
-$font-title-style: normal;
-$font-title-line-weight: 2px;
-$font-title-line-width: 3vw;
+$font-title-family:         Georgia, serif;
+$font-title-line:           1em;
+$font-title-space:          0;
+$font-title-weight:         400;
+$font-title-style:          normal;
+$font-title-line-weight:    2px;
+$font-title-line-width:     3vw;
 
-$font-code-family: monospace;
-$font-code-space: 0;
-$font-code-weight: 400;
-$font-code-radius: 2px;
+$font-code-family:  monospace;
+$font-code-space:   0;
+$font-code-weight:  400;
+$font-code-radius:  2px;
 
-$font-link-family: $font-family;
-$font-link-line: $font-line;
-$font-link-size: $font-size;
-$font-link-space: $font-space;
-$font-link-weight: $font-weight;
+$font-link-family:  $font-family;
+$font-link-line:    $font-line;
+$font-link-size:    $font-size;
+$font-link-space:   $font-space;
+$font-link-weight:  $font-weight;
 
-$font-form-family: $font-family;
-$font-form-line: $font-line;
-$font-form-size: $font-size * .77;
-$font-form-space: $font-space;
-$font-form-weight: $font-weight;
+$font-form-family:  $font-family;
+$font-form-line:    $font-line;
+$font-form-size:    $font-size * .77;
+$font-form-space:   $font-space;
+$font-form-weight:  $font-weight;
+
+
+
 
 // buttons & form elements
-$btn-box-shadow: 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0);
-$btn-box-shadow-hover: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+$btn-box-shadow:
+    0 0 0 0 rgba(0,0,0,0),
+    0 0 0 0 rgba(0,0,0,0);
+$btn-box-shadow-hover:
+    0 12px 16px 0 rgba(0,0,0,0.24),
+    0 17px 50px 0 rgba(0,0,0,0.19);
 
 $btn-border-radius: 2px;
-$btn-border-style: solid;
-$btn-border-width: 1px;
+$btn-border-style:  solid;
+$btn-border-width:  1px;
 
-$form-padding: 10px;
+$form-padding:  10px;
 $form-margin-y: 2px;
 
-$input-border-radius: 2px;
-$input-border-style: solid;
-$input-border-width: 1px;
-$input-border-top-width: 1px;
-$input-border-left-width: 1px;
-$input-border-right-width: 1px;
+$input-border-radius:       2px;
+$input-border-style:        solid;
+$input-border-width:        1px;
+$input-border-top-width:    1px;
+$input-border-left-width:   1px;
+$input-border-right-width:  1px;
 $input-border-bottom-width: 1px;
 
-$input-width: auto;
-$input-min-width: auto;
-$input-max-width: 100%;
+$input-width:       auto;
+$input-min-width:   auto;
+$input-max-width:   100%;
+
+
 
 
 // margins
-$layout-space: 7vw;
+$layout-space:  7vw;
 $element-space: 30px;
