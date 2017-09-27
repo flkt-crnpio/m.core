@@ -3,8 +3,8 @@ body {
     font-family: $font-family;
     font-line: $font-line;
     font-size: $font-size;
-    font-weight: $font-weight;
     letter-space: $font-space;
+    font-weight: $font-weight;
 }
 
 p {
@@ -13,8 +13,7 @@ p {
 }
 
 b,
-strong,
-.bold {
+strong {
     font-style: normal;
     font-weight: bold;
     display: inline-block;
@@ -55,9 +54,8 @@ q {
     }
 }
 
-i,
-.italic {
-    font-style: italic;
+i {
+    font-style: normal;
 }
 
 em {
@@ -133,4 +131,51 @@ samp {
 .text-lead {
     font-size: $font-size * 2;
     line-height: $font-size * 1;
+}
+
+// weight
+.text-bold {
+    font-weight: bolder;
+}
+.text-normal {
+    font-weight: normal;
+}
+.text-light {
+    font-weight: lighter;
+}
+
+// styles
+.text-italic {
+    font-style: italic;
+}
+.text-oblique {
+    font-style: oblique;
+}
+.text-normal {
+    font-style: normal;
+}
+
+// transform
+.text-capitalize {
+    text-transform: capitalize;
+}
+.text-lowercase {
+    text-transform: lowercase;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+// align
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.text-left {
+    text-align: left;
+}
+.text-justify {
+    text-align: justify;
 }
