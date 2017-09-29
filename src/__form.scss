@@ -1,4 +1,40 @@
 /* form */
+form,
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="email"],
+[type="file"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="search"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
+[type="button"],
+[type="submit"],
+[type="reset"],
+[type="checkbox"],
+[type="radio"],
+label,
+.label,
+select,
+.select,
+.file,
+.checkbox,
+.radio,
+.switch,
+button,
+.button,
+textarea {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 [type="date"],
 [type="datetime"],
 [type="datetime-local"],
@@ -175,7 +211,8 @@ select {
     [type="checkbox"] + label {
         display: inline-block;
         cursor: pointer;
-        padding-left: $font-size * 1.5;
+        padding-left: $font-size * 1.25;
+        padding-right: $font-size;
         position: relative;
 
         &::before {
@@ -187,7 +224,7 @@ select {
             height: $font-size;
             width: $font-size;
             position: absolute;
-            left: $font-size * .25;
+            left: 0;
             content: "";
         }
 
@@ -204,7 +241,7 @@ select {
             transform: rotate(-45deg);
             position: absolute;
             top: 0;
-            left: $font-size * .5;
+            left: $font-size * .25;
         }
     }
 
@@ -231,7 +268,8 @@ select {
     [type="radio"] + label {
         display: inline-block;
         cursor: pointer;
-        padding-left: $font-size * 1.5;
+        padding-left: $font-size * 1.25;
+        padding-right: $font-size;
         position: relative;
 
         &::before {
@@ -243,7 +281,7 @@ select {
             height: $font-size;
             width: $font-size;
             position: absolute;
-            left: $font-size * .25;
+            left: 0;
             content: "";
         }
         &::after {
@@ -254,7 +292,7 @@ select {
             background: rgba($color-font, 0);
             position: absolute;
             top: $font-size * .25;
-            left: $font-size * .5;
+            left: $font-size * .25;
         }
     }
     [type="radio"]:checked + label {
@@ -266,6 +304,65 @@ select {
         }
     }
 }
+
+// switch
+.switch {
+    display: inline-block;
+    cursor: pointer;
+
+    [type="checkbox"],
+    [type="radio"] {
+        display: none;
+        cursor: pointer;
+    }
+
+    [type="checkbox"] + label,
+    [type="radio"] + label {
+        display: inline-block;
+        color: $color-font;
+        cursor: pointer;
+        position: relative;
+        padding-left: $font-size * 3;
+
+        &::before {
+            background: $color-gray-mid;
+            border-radius: $font-size;
+            display: inline-block;
+            content: "";
+            height: $font-size + 4px;
+            width: $font-size * 2.5;
+            top: 0;
+            left: 0;
+            position: absolute;
+            transition: all 0.17s cubic-bezier(0.465, 0.240, 0.370, 0.825);
+        }
+        &::after {
+            content: "";
+            background: $color-background;
+            border-radius: $font-size;
+            display: block;
+            height: $font-size;
+            width: $font-size;
+            margin-top: 2px;
+            margin-left: 2px;
+            top: 0;
+            left: 0;
+            position: absolute;
+            transition: all 0.17s cubic-bezier(0.465, 0.240, 0.370, 0.825);
+        }
+    }
+
+    [type="checkbox"]:checked + label,
+    [type="radio"]:checked + label {
+        &::before {
+            background: $color-primary;
+        }
+        &::after {
+            margin-left: $font-size * 1.5 - 2px;
+        }
+    }
+}
+
 
 // label
 label,
@@ -429,20 +526,21 @@ select {
         [type="checkbox"] + label {
             font-size: $font-size * 1.5;
             line-height: $font-line * 1.5;
-            padding-left: $font-size * 3;
+            padding-left: $font-size * 2.5;
+            padding-right: $font-size * 2;
 
             &::before {
                 height: $font-size * 2;
                 width: $font-size * 2;
                 top: $font-size * .75;
-                left: $font-size * .25;
+                left: 0;
             }
 
             &::after {
                 width: $font-size * 2;
                 height: $font-size * 1;
                 top: $font-size * .75;
-                left: $font-size * .75;
+                left: $font-size * .5;
             }
         }
     }
@@ -453,20 +551,80 @@ select {
         [type="radio"] + label {
             font-size: $font-size * 1.5;
             line-height: $font-line * 1.5;
-            padding-left: $font-size * 3;
+            padding-left: $font-size * 2.5;
+            padding-right: $font-size * 2;
 
             &::before {
                 height: $font-size * 2;
                 width: $font-size * 2;
                 top: $font-size * .75;
-                left: $font-size * .75;
+                left: 0;
             }
 
             &::after {
                 width: $font-size * 1;
                 height: $font-size * 1;
                 top: $font-size * 1.25;
-                left: $font-size * 1.25;
+                left: $font-size * .5;
+            }
+        }
+    }
+}
+.switch {
+    &.input-sm {
+        [type="checkbox"] + label,
+        [type="radio"] + label {
+            font-size: $font-size * .75;
+            line-height: $font-line * .75;
+            padding-left: $font-size * 2;
+            &::before {
+                border-radius: $font-size * .75;
+                height: $font-size * .75 + 2px;
+                width: $font-size * 1.75;
+                top: 0;
+            }
+            &::after {
+                border-radius: $font-size * .75;
+                height: $font-size * .75;
+                width: $font-size * .75;
+                margin-top: 1px;
+                margin-left: 1px;
+                top: 0;
+            }
+        }
+        [type="checkbox"]:checked + label,
+        [type="radio"]:checked + label {
+            &::after {
+                margin-left: $font-size - 1px;
+            }
+        }
+    }
+
+    &.input-lg {
+        [type="checkbox"] + label,
+        [type="radio"] + label {
+            font-size: $font-size * 1.5;
+            line-height: $font-line * 1.5;
+            padding-left: $font-size * 4.2;
+            &::before {
+                border-radius: $font-size * 1.8;
+                height: $font-size * 1.8 + 4px;
+                width: $font-size * 3.8;
+                top: $font-size - 2px;
+            }
+            &::after {
+                border-radius: $font-size * 1.8;
+                height: $font-size * 1.8;
+                width: $font-size * 1.8;
+                margin-top: 0px;
+                margin-left: 2px;
+                top: $font-size;
+            }
+        }
+        [type="checkbox"]:checked + label,
+        [type="radio"]:checked + label {
+            &::after {
+                margin-left: $font-size * 1.9;
             }
         }
     }
@@ -547,6 +705,15 @@ label,
             }
         }
 
+        .switch {
+            [type="checkbox"]:checked + label,
+            [type="radio"]:checked + label {
+                &::before {
+                    background: $color;
+                }
+            }
+        }
+
         label,
         .label {
             color: $font;
@@ -561,6 +728,48 @@ label,
         &:focus,
         &:active {
             border-color: $color;
+        }
+    }
+
+    .checkbox-#{$name} {
+        [type="checkbox"] + label {
+            &::before {
+                border-color: $font;
+            }
+        }
+        [type="checkbox"]:checked + label {
+            &::after,
+            &::before {
+                border-color: $color;
+            }
+        }
+    }
+
+    .radio-#{$name} {
+        [type="radio"] + label {
+            &::before {
+                border-color: $font;
+            }
+            &::after {
+                background: rgba($color, 0);
+            }
+        }
+        [type="radio"]:checked + label {
+            &::before {
+                border-color: $color;
+            }
+            &::after {
+                background: rgba($color, 1);
+            }
+        }
+    }
+
+    .switch-#{$name} {
+        [type="checkbox"]:checked + label,
+        [type="radio"]:checked + label {
+            &::before {
+                background: $color;
+            }
         }
     }
 
