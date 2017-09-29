@@ -14,3 +14,19 @@ button img {
 .img-responsive {
     max-width: 100%;
 }
+
+// object fit
+.img-cover {
+    width: 100%;
+    object-fit: cover;
+}
+.img-fill {
+    width: 100%;
+    object-fit: fill;
+}
+.img-contain {
+    object-fit: contain;
+}
+.img-scale {
+    object-fit: scale-down;
+}
