@@ -1,36 +1,39 @@
 // color
-$color-background:  #fff;
-$color-font:        #333;
-
+$color-main-bg:  #fff;
+$color-main-font:        #333;
 $color-primary:         #FF4533;
-$color-font-primary:    #fff;
+$color-primary-font:    #fff;
 $color-secondary:       #FF7C4C;
-$color-font-secondary:  #A3421F;
+$color-secondary-font:  #A3421F;
 $color-accent:          #00A875;
-$color-font-accent:     #fff;
+$color-accent-font:     #fff;
 
 $color-success:     mix(#28b515, $color-primary, 99%);
 $color-warning:     mix(#ffd800, $color-primary, 99%);
 $color-error:       mix(#ff4949, $color-primary, 99%);
 $color-info:        mix(#0897e2, $color-primary, 99%);
 
+$color-white:       mix(#fff, $color-primary, 99%);
 $color-gray-light:  mix(#eee, $color-primary, 99%);
 $color-gray-mid:    mix(#ccc, $color-primary, 99%);
-$color-gray-dark:   mix(#555, $color-primary, 99%);
+$color-gray-dark:   mix(#555, $color-primary, 95%);
+$color-black:       mix(#111, $color-primary, 95%);
 
 $color-highlight:   mix(#fd0, $color-primary, 99%);
 
 // $colors: (name       color               font-color)
-$colors:    (primary,   $color-primary,     $color-font-primary),
-            (secondary, $color-secondary,   $color-font-secondary),
-            (accent,    $color-accent,      $color-font-accent),
+$colors:    (primary,   $color-primary,     $color-primary-font),
+            (secondary, $color-secondary,   $color-secondary-font),
+            (accent,    $color-accent,      $color-accent-font),
             (success,   $color-success,     darken($color-success, 20)),
             (warning,   $color-warning,     darken($color-warning, 25)),
             (error,     $color-error,       darken($color-error, 35)),
             (info,      $color-info,        darken($color-info, 25)),
+            (white,     $color-white,       darken($color-white, 70)),
             (graylight, $color-gray-light,  darken($color-gray-light, 33)),
             (graymid,   $color-gray-mid,    darken($color-gray-mid, 33)),
-            (graydark,  $color-gray-dark,   lighten($color-gray-dark, 66));
+            (graydark,  $color-gray-dark,   lighten($color-gray-dark, 66)),
+            (black,     $color-black,       lighten($color-black, 70));
 
 
 
@@ -55,17 +58,10 @@ $font-code-space:   0;
 $font-code-weight:  400;
 $font-code-radius:  2px;
 
-$font-link-family:  $font-family;
-$font-link-line:    $font-line;
-$font-link-size:    $font-size;
-$font-link-space:   $font-space;
 $font-link-weight:  $font-weight;
 
-$font-form-family:  $font-family;
-$font-form-line:    $font-line;
-$font-form-size:    $font-size * .77;
-$font-form-space:   $font-space;
-$font-form-weight:  $font-weight;
+$font-label-size:    $font-size * .77;
+$font-label-weight:  $font-weight;
 
 
 
@@ -87,7 +83,7 @@ $form-margin-y: 2px;
 
 $input-border-radius:       2px;
 $input-border-style:        solid;
-$input-border-width:        1px;
+$input-border-width:        1px; // for checkbox and radio buttons
 $input-border-top-width:    1px;
 $input-border-left-width:   1px;
 $input-border-right-width:  1px;

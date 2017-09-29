@@ -55,16 +55,15 @@ select,
 textarea {
     //border
     border-style: $input-border-style;
-    border-width: $input-border-width;
     border-top-width: $input-border-top-width;
     border-left-width: $input-border-left-width;
     border-right-width: $input-border-right-width;
     border-bottom-width: $input-border-bottom-width;
     border-radius: $input-border-radius;
     //color
-    background: rgba($color-background,0.7);
-    border-color: rgba($color-font,0.2);
-    color: rgba($color-font, 0.9);
+    background: rgba($color-main-bg,0.7);
+    border-color: rgba($color-main-font,0.2);
+    color: rgba($color-main-font, 0.9);
     //font
     font-family: $font-family;
     font-size: $font-size;
@@ -84,11 +83,11 @@ textarea {
     transition: all 0.5s cubic-bezier(0.465, 0.240, 0.370, 0.825);
 
     &:hover {
-        border-color: rgba(mix($color-primary, $color-font, 50), 0.5);
+        border-color: rgba(mix($color-primary, $color-main-font, 50), 0.5);
     }
     &:focus,
     &:active {
-        border-color: lighten(mix($color-primary, $color-font, 90), 10);
+        border-color: lighten(mix($color-primary, $color-main-font, 90), 10);
     }
 }
 
@@ -153,7 +152,7 @@ select {
     &::after {
         display: block;
         content: "Select File \2191";
-        color: rgba($color-font, 0.7);
+        color: rgba($color-main-font, 0.7);
         cursor: pointer;
         pointer-events: none;
         position: absolute;
@@ -169,12 +168,12 @@ select {
         font-weight: $font-weight;
     }
     &.attached {
-        border-color: rgba($color-font, 0.7);
+        border-color: rgba($color-main-font, 0.7);
         cursor: pointer;
         &::after {
             display: block;
             content: "Upload File \2191";
-            color: rgba($color-font, 1);
+            color: rgba($color-main-font, 1);
             cursor: pointer;
             pointer-events: none;
             position: absolute;
@@ -219,7 +218,7 @@ select {
             border-style: $input-border-style;
             border-width: $input-border-width;
             border-radius: $input-border-radius;
-            border-color: rgba($color-font, .2);
+            border-color: rgba($color-main-font, .2);
             display: block;
             height: $font-size;
             width: $font-size;
@@ -234,7 +233,7 @@ select {
             height: $font-size * .5;
             border-style: solid;
             border-width: 2px;
-            border-color: rgba($color-font,0);
+            border-color: rgba($color-main-font,0);
             border-top: none;
             border-right: none;
             background: transparent;
@@ -247,10 +246,10 @@ select {
 
     [type="checkbox"]:checked + label {
         &::before {
-            border-color: rgba($color-font, .5);
+            border-color: rgba($color-main-font, .5);
         }
         &::after {
-            border-color: rgba($color-font, 1);
+            border-color: rgba($color-main-font, 1);
         }
     }
 }
@@ -276,7 +275,7 @@ select {
             border-style: $input-border-style;
             border-width: $input-border-width;
             border-radius: $font-size;
-            border-color: rgba($color-font, .2);
+            border-color: rgba($color-main-font, .2);
             display: block;
             height: $font-size;
             width: $font-size;
@@ -289,7 +288,7 @@ select {
             width: $font-size * .5;
             height: $font-size * .5;
             border-radius:  $font-size * .5;
-            background: rgba($color-font, 0);
+            background: rgba($color-main-font, 0);
             position: absolute;
             top: $font-size * .25;
             left: $font-size * .25;
@@ -297,10 +296,10 @@ select {
     }
     [type="radio"]:checked + label {
         &::before {
-            border-color: rgba($color-font, .5);
+            border-color: rgba($color-main-font, .5);
         }
         &::after {
-            background: rgba($color-font, 1);
+            background: rgba($color-main-font, 1);
         }
     }
 }
@@ -319,7 +318,7 @@ select {
     [type="checkbox"] + label,
     [type="radio"] + label {
         display: inline-block;
-        color: $color-font;
+        color: $color-main-font;
         cursor: pointer;
         position: relative;
         padding-left: $font-size * 3;
@@ -338,7 +337,7 @@ select {
         }
         &::after {
             content: "";
-            background: $color-background;
+            background: $color-main-bg;
             border-radius: $font-size;
             display: block;
             height: $font-size;
@@ -368,11 +367,12 @@ select {
 label,
 .label {
     display: block;
-    font-family: $font-form-family;
-    font-size: $font-form-size;
-    font-weight: $font-form-weight;
-    letter-spacing: $font-form-space;
-    line-height: $font-form-line;
+    font-family: $font-family;
+    font-size: $font-label-size;
+    font-weight: $font-label-weight;
+    letter-spacing: $font-space;
+    line-height: $font-line;
+    text-rendering: optimizeLegibility;
 }
 
 // sizes
@@ -633,12 +633,12 @@ select {
 label,
 .label {
     &.label-sm {
-        font-size: $font-form-size * .75;
-        line-height: $font-form-line * .75;
+        font-size: $font-label-size * .75;
+        line-height: $font-line * .75;
     }
     &.label-lg {
-        font-size: $font-form-size * 1.5;
-        line-height: $font-form-line * 1.5;
+        font-size: $font-label-size * 1.5;
+        line-height: $font-line * 1.5;
     }
     &.label-block {
         display: block;
@@ -805,20 +805,20 @@ label,
 input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0px 1000px $color-background inset;
+    -webkit-box-shadow: 0 0 0px 1000px $color-main-bg inset;
     transition: background-color 5000s ease-in-out 0s;
 }
 
 //placeholder
 ::-webkit-input-placeholder {
-    color: rgba($color-font, 0.5);
+    color: rgba($color-main-font, 0.5);
 }
 ::-moz-placeholder {
-    color: rgba($color-font, 0.5);
+    color: rgba($color-main-font, 0.5);
 }
 :-ms-input-placeholder {
-    color: rgba($color-font, 0.5);
+    color: rgba($color-main-font, 0.5);
 }
 :-moz-placeholder {
-    color: rgba($color-font, 0.5);
+    color: rgba($color-main-font, 0.5);
 }

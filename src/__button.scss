@@ -8,7 +8,7 @@ input[type="reset"],
     background: $color-primary;
     border-color: $color-primary;
     box-shadow: $btn-box-shadow;
-    color: $color-font-primary;
+    color: $color-primary-font;
     //border
     border-style: $btn-border-style;
     border-width: $btn-border-width;
@@ -28,6 +28,7 @@ input[type="reset"],
     -ms-touch-action: manipulation;
     touch-action: manipulation;
     text-decoration: none;
+    text-rendering: optimizeLegibility;
     vertical-align: middle;
     transition: all 0.5s cubic-bezier(0.465, 0.240, 0.370, 0.825);
 
@@ -37,7 +38,7 @@ input[type="reset"],
         background: lighten($color-primary, 5);
         border-color: $color-primary;
         box-shadow: $btn-box-shadow-hover;
-        color: $color-font-primary;
+        color: $color-primary-font;
         text-decoration: none;
     }
 
@@ -49,7 +50,7 @@ input[type="reset"],
             background: $color-primary;
             border-color: $color-primary;
             box-shadow: $btn-box-shadow;
-            color: $color-font-primary;
+            color: $color-primary-font;
             cursor: default;
             text-decoration: none;
         }

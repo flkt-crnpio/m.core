@@ -5,9 +5,9 @@ table {
 
     thead {
         tr {
-            border-bottom: 1px solid rgba($color-font,0.1);
+            border-bottom: 1px solid rgba($color-main-font,0.1);
             th {
-                color: rgba($color-font,0.4);
+                color: rgba($color-main-font,0.4);
                 text-align: left;
                 font-size: 1em;
                 font-weight: normal;
@@ -18,7 +18,7 @@ table {
     }
     tbody {
         tr {
-            border-bottom: 1px solid rgba($color-font,0.1);
+            border-bottom: 1px solid rgba($color-main-font,0.1);
             td {
                 text-align: left;
                 padding: 0.2em 0.8em;
@@ -30,10 +30,10 @@ table {
 table.trhover {
     tbody {
         tr {
-            background: rgba($color-font,0);
+            background: rgba($color-main-font,0);
         }
         tr:hover {
-            background: rgba($color-font,0.15);
+            background: rgba($color-main-font,0.15);
         }
     }
 }
@@ -44,9 +44,9 @@ table.responsive {
     }
     tbody {
         tr {
-            border-bottom: 1px solid rgba($color-font,0.1);
+            border-bottom: 1px solid rgba($color-main-font,0.1);
             tdh {
-                color: rgba($color-font,0.4);
+                color: rgba($color-main-font,0.4);
                 text-align: left;
                 display: block;
                 font-size: 0.8em;
@@ -69,9 +69,9 @@ table.responsive {
             vertical-align: middle;
             border-color: inherit;
             tr {
-                border-bottom: 1px solid rgba($color-font,0.1);
+                border-bottom: 1px solid rgba($color-main-font,0.1);
                 th {
-                    color: rgba($color-font,0.4);
+                    color: rgba($color-main-font,0.4);
                     text-align: left;
                     font-size: 1em;
                     font-weight: normal;
@@ -82,7 +82,7 @@ table.responsive {
         }
         tbody {
             tr {
-                border-bottom: 1px solid rgba($color-font,0.1);
+                border-bottom: 1px solid rgba($color-main-font,0.1);
                 tdh {
                     display: none;
                 }

@@ -1,7 +1,7 @@
 /* colors */
 body {
-    background: $color-background;
-    color: $color-font;
+    background: $color-main-bg;
+    color: $color-main-font;
 }
 
 @each $name, $color, $font in $colors {

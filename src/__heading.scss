@@ -16,6 +16,7 @@ h6,
     letter-spacing: $font-title-space;
     line-height: $font-title-line;
     font-style: $font-title-style;
+    text-rendering: optimizeLegibility;
 }
 
 h1,
@@ -58,7 +59,7 @@ h6,
     justify-content: flex-start;
 
     &:before {
-        background: $color-font;
+        background: $color-main-font;
         display: block;
         content: "";
         height: $font-title-line-weight;
@@ -72,7 +73,7 @@ h6,
     align-items: center;
 
     &:after {
-        background: $color-font;
+        background: $color-main-font;
         display: block;
         content: "";
         height: $font-title-line-weight;
@@ -83,7 +84,7 @@ h6,
 
 .title-topline {
     &:before {
-        background: $color-font;
+        background: $color-main-font;
         display: block;
         content: "";
         height: $font-title-line-weight;
@@ -94,7 +95,7 @@ h6,
 
 .title-bottomline {
     &:after {
-        background: $color-font;
+        background: $color-main-font;
         display: block;
         content: "";
         height: $font-title-line-weight;
