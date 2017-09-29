@@ -14,8 +14,20 @@ a,
     line-height: $font-line;
     margin: 0;
     padding: 0;
+    position: relative;
     text-decoration: none;
     transition: all 0.5s cubic-bezier(0.465, 0.240, 0.370, 0.825);
+
+    &::after {
+        content: "";
+        background: $color-primary;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 1px;
+        transition: all 0.3s cubic-bezier(0.465, 0.240, 0.370, 0.825);
+    }
 
     &:hover,
     &:focus {
@@ -23,8 +35,11 @@ a,
         border: none;
         box-shadow: none;
         color: mix($color-font, $color-primary, 30%);
-        text-decoration: underline;
-        text-decoration-skip: ink;
+
+        &::after {
+            background: mix($color-font, $color-primary, 30%);
+            width: 100%;
+        }
     }
 }
 
@@ -33,11 +48,11 @@ a,
 .link {
     &.link-sm {
         font-size: $font-size * .75;
-        line-height: $font-size * .75;
+        line-height: $font-line * 1.2;
     }
     &.link-lg {
         font-size: $font-size * 1.5;
-        line-height: $font-size * 1.5;
+        line-height: $font-line * .9;
     }
     &.link-block {
         width: 100%;
@@ -48,10 +63,16 @@ a,
 @each $name, $color, $font in $colors {
     .link-#{$name} {
         color: $color;
+        &::after {
+            background: $color;
+        }
 
         &:hover,
         &:focus {
             color: mix($color, $color-primary, 80%);
+            &::after {
+                background: mix($color, $color-primary, 80%);
+            }
         }
     }
 }
