@@ -321,6 +321,7 @@ select {
         cursor: pointer;
         position: relative;
         padding-left: $font-size * 3;
+        padding-right: $font-size;
 
         &::before {
             background: rgba(desaturate($color-primary, 95), .5);
