@@ -318,13 +318,14 @@ select {
     [type="checkbox"] + label,
     [type="radio"] + label {
         display: inline-block;
-        color: $color-main-font;
         cursor: pointer;
         position: relative;
         padding-left: $font-size * 3;
 
         &::before {
-            background: $color-gray-mid;
+            background: rgba(desaturate($color-primary, 95), .5);
+            border-top: $input-border-width $input-border-style rgba(lighten($color-primary, 0), 0);
+            border-bottom: $input-border-width $input-border-style rgba(lighten($color-primary, 50), .3);
             border-radius: $font-size;
             display: inline-block;
             content: "";
@@ -355,6 +356,8 @@ select {
     [type="radio"]:checked + label {
         &::before {
             background: $color-primary;
+            border-top-color: rgba(lighten($color-primary, 50), .3);
+            border-bottom-color: rgba(lighten($color-primary, 0), 0);
         }
         &::after {
             margin-left: $font-size * 1.5 - 2px;
@@ -706,10 +709,20 @@ label,
         }
 
         .switch {
+            [type="checkbox"] + label,
+            [type="radio"] + label {
+                &::before {
+                    background: rgba(desaturate($color, 95), .5);
+                    border-top-color: rgba(lighten($color, 0), 0);
+                    border-bottom-color: rgba(lighten($color, 50), .3);
+                }
+            }
             [type="checkbox"]:checked + label,
             [type="radio"]:checked + label {
                 &::before {
                     background: $color;
+                    border-top-color: rgba(lighten($color, 50), .3);
+                    border-bottom-color: rgba(lighten($color, 0), 0);
                 }
             }
         }
