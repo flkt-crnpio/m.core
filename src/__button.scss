@@ -66,7 +66,7 @@ input[type="reset"],
     &.btn-sm {
         font-size: $font-size * .75;
         line-height: $font-size * .75;
-        padding: $form-padding * .3 $form-padding * .75;
+        padding: $form-padding * .3 $form-padding * .5;
     }
     &.btn-lg {
         font-size: $font-size * 1.5;
