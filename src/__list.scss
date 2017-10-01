@@ -11,8 +11,28 @@ ol {
     }
 }
 
+dl {
+    display: block;
+    margin: $element-space 0;
+    padding: 0;
+    dt {
+        display: block;
+        font-size: .7em;
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+    }
+    dd {
+        display: block;
+        font-size: 1em;
+        margin: 0 0 $element-space * .4;
+        padding: 0;
+    }
+}
+
 ul.list-clean,
-ol.list-clean {
+ol.list-clean,
+dl.list-clean {
     list-style: none;
     margin: 0;
 }
@@ -36,20 +56,13 @@ ol.list-inline, {
     }
 }
 
-dl {
-    display: block;
-    margin: $element-space 0;
-    padding: 0;
+dl.list-inline {
     dt {
-        display: block;
-        font-size: 1em;
-        margin: 0;
-        padding: 0;
+        display: inline-block;
+        margin: 0 $element-space * .4 0 0;
     }
     dd {
-        display: block;
-        font-size: 0.9em;
-        margin: 0 0 $element-space * .4;
-        padding: 0;
+        display: inline-block;
+        margin: 0 $element-space 0 0;
     }
 }
