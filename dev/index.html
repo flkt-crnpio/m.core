@@ -10,7 +10,7 @@
     </head>
     <body>
         <div class="main">
-            <div class="">
+            <div class="container">
                 <div class="p-1">
                     <h1 class="sub-title p-t-1">mandarina</h1>
                     <h3>core min stylesheet</h3>
@@ -77,9 +77,9 @@
                             <span class="text-accent">Text accent</span>
 
                             <br>
-                            <span class="text-lightgray">Text lightgray</span>
-                            <span class="text-midgray">Text midgray</span>
-                            <span class="text-darkgray">Text darkgray</span>
+                            <span class="text-gray-light">Text light gray</span>
+                            <span class="text-gray-mid">Text mid gray</span>
+                            <span class="text-gray-dark">Text dark gray</span>
 
                             <br>
                             <span class="text-error">Text error</span>
@@ -259,6 +259,8 @@
 
                     <div class="">
                         <p>Button disabled</p>
+                        <button type="button" class="btn-primary">normal</button>
+                        <button type="button" class="btn-line-primary">normal</button>
                         <button type="button" class="btn-primary" disabled>disabled</button>
                         <button type="button" class="btn-line-primary" disabled>disabled</button>
                     </div>
@@ -448,6 +450,31 @@
                         </div>
 
                         <div class="">
+                            <p>Switch</p>
+                            <div class="form-section-inline">
+                                <span class="label">Form Switch:</span>
+                                <div class="switch">
+                                    <input id ="checkboxswitch" type="checkbox" name="checkboxswitch">
+                                    <label for="checkboxswitch"> checkbox switch</label>
+                                </div>
+                            </div>
+                            <div class="form-section-inline">
+                                <div class="switch">
+                                    <input id ="radioswitch" type="radio" name="radioswitch">
+                                    <label for="radioswitch">radio</label>
+                                </div>
+                                <div class="switch">
+                                    <input id ="radioswitch1" type="radio" name="radioswitch">
+                                    <label for="radioswitch1">radio</label>
+                                </div>
+                                <div class="switch">
+                                    <input id ="radioswitch2" type="radio" name="radioswitch">
+                                    <label for="radioswitch2">radio</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="">
                             <p>Colors</p>
                             <div class="form-section-inline form-error">
                                 <label for="error">Error</label>
@@ -469,6 +496,10 @@
                                 <div class="radio">
                                     <input id ="radioerror" type="radio" name="radio" value="radio2">
                                     <label for="radioerror" class="label-inline">radio</label>
+                                </div>
+                                <div class="switch">
+                                    <input id ="swerror" type="checkbox" name="checkboxswitch">
+                                    <label for="swerror"> checkbox switch</label>
                                 </div>
                             </div>
 
@@ -493,6 +524,10 @@
                                     <input id ="radiowarning" type="radio" name="radio" value="radio2">
                                     <label for="radiowarning" class="label-inline">radio</label>
                                 </div>
+                                <div class="switch">
+                                    <input id ="swwarning" type="checkbox" name="checkboxswitch">
+                                    <label for="swwarning"> checkbox switch</label>
+                                </div>
                             </div>
 
                             <div class="form-section-inline form-success">
@@ -515,6 +550,10 @@
                                 <div class="radio">
                                     <input id ="radiosuccess" type="radio" name="radio" value="radio2">
                                     <label for="radiosuccess" class="label-inline">radio</label>
+                                </div>
+                                <div class="switch">
+                                    <input id ="swsuccess" type="checkbox" name="checkboxswitch">
+                                    <label for="swsuccess"> checkbox switch</label>
                                 </div>
                             </div>
                         </div>
@@ -559,6 +598,10 @@
                                     <input id ="radiosm" type="radio" name="radio" value="radio2">
                                     <label for="radiosm" class="label-inline">radio</label>
                                 </div>
+                                <div class="switch input-sm">
+                                    <input id ="swsm" type="checkbox" name="checkboxswitch">
+                                    <label for="swsm"> sm switch</label>
+                                </div>
                                 <br>
                                 <br>
                                 <br>
@@ -597,6 +640,10 @@
                                 <div class="radio input-lg">
                                     <input id ="radiolg" type="radio" name="radio" value="radio2">
                                     <label for="radiolg" class="label-inline">radio</label>
+                                </div>
+                                <div class="switch input-lg">
+                                    <input id ="swlg" type="checkbox" name="checkboxswitch">
+                                    <label for="swlg"> lg switch</label>
                                 </div>
                                 <br>
                                 <br>

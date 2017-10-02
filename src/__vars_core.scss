@@ -30,9 +30,9 @@ $colors:    (primary,   $color-primary,     $color-primary-font),
             (error,     $color-error,       darken($color-error, 35)),
             (info,      $color-info,        darken($color-info, 25)),
             (white,     $color-white,       darken($color-white, 70)),
-            (graylight, $color-gray-light,  darken($color-gray-light, 33)),
-            (graymid,   $color-gray-mid,    darken($color-gray-mid, 33)),
-            (graydark,  $color-gray-dark,   lighten($color-gray-dark, 66)),
+            (gray-light,$color-gray-light,  darken($color-gray-light, 33)),
+            (gray-mid,  $color-gray-mid,    darken($color-gray-mid, 33)),
+            (gray-dark, $color-gray-dark,   lighten($color-gray-dark, 66)),
             (black,     $color-black,       lighten($color-black, 70));
 
 
