@@ -35,8 +35,8 @@ input[type="reset"],
     &:active,
     &:hover,
     &:focus {
-        background: lighten($color-primary, 5);
-        border-color: $color-primary;
+        background: darken($color-primary, 5);
+        border-color: darken($color-primary, 5);
         box-shadow: $btn-box-shadow-hover;
         color: $color-primary-font;
         text-decoration: none;
@@ -87,8 +87,8 @@ input[type="reset"],
 
         &:hover,
         &:focus {
-            background: lighten($color, 5);
-            border-color: $color;
+            background: darken($color, 5);
+            border-color: darken($color, 5);
             color: $font;
         }
 
@@ -112,10 +112,10 @@ input[type="reset"],
 
         &:hover,
         &:focus {
-            background: rgba($color, .3);
+            background: darken($color, 10);
+            border-color: darken($color, 10);
             box-shadow: none;
-            border-color: $color;
-            color: $color;
+            color: $font;
         }
 
         &[disabled],
