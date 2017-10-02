@@ -64,7 +64,7 @@ h6,
         content: "";
         height: $font-title-line-weight;
         width: $font-title-line-width;
-        margin-right: 10px;
+        margin-right: $element-space * .5;
     }
 }
 
@@ -78,7 +78,7 @@ h6,
         content: "";
         height: $font-title-line-weight;
         width: $font-title-line-width;
-        margin-left: 10px;
+        margin-left: $element-space * .5;
     }
 }
 
@@ -89,7 +89,7 @@ h6,
         content: "";
         height: $font-title-line-weight;
         width: $font-title-line-width;
-        margin-bottom: 5px;
+        margin-bottom: $element-space * .5;
     }
 }
 
@@ -100,7 +100,7 @@ h6,
         content: "";
         height: $font-title-line-weight;
         width: $font-title-line-width;
-        margin-top: 5px;
+        margin-top: $element-space * .5;
     }
 }
 
