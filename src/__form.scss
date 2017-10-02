@@ -73,9 +73,9 @@ textarea {
     line-height: $font-size;
     margin: $form-margin-y 0;
     padding: $form-padding - 1px;
-    max-width: $input-max-width;
-    min-width: $input-min-width;
-    width: $input-width;
+    max-width: $input-max-width-mobile;
+    min-width: $input-min-width-mobile;
+    width: $input-width-mobile;
     //default
     display: inline-block;
     resize: none;
@@ -794,7 +794,7 @@ label,
 
 // form layout
 .form-section-block {
-    margin: $element-space/2 0;
+    margin: $element-space-mobile/2 0;
 
     input,
     select,
@@ -805,7 +805,7 @@ label,
 }
 
 .form-section-inline {
-    margin: $element-space/2 0;
+    margin: $element-space-mobile/2 0;
 
     input,
     select,
@@ -835,4 +835,65 @@ select:-webkit-autofill {
 }
 :-moz-placeholder {
     color: rgba($color-main-font, 0.5);
+}
+
+@media screen and (min-width: $tablet) {
+    [type="date"],
+    [type="datetime"],
+    [type="datetime-local"],
+    [type="email"],
+    [type="file"],
+    [type="month"],
+    [type="number"],
+    [type="password"],
+    [type="search"],
+    [type="tel"],
+    [type="text"],
+    [type="time"],
+    [type="url"],
+    [type="week"],
+    select,
+    .select,
+    .file,
+    textarea {
+        max-width: $input-max-width-tablet;
+        min-width: $input-min-width-tablet;
+        width: $input-width-tablet;
+    }
+    .form-section-block {
+        margin: $element-space-tablet/2 0;
+    }
+    .form-section-inline {
+        margin: $element-space-tablet/2 0;
+    }
+}
+@media screen and (min-width: $desktop) {
+    [type="date"],
+    [type="datetime"],
+    [type="datetime-local"],
+    [type="email"],
+    [type="file"],
+    [type="month"],
+    [type="number"],
+    [type="password"],
+    [type="search"],
+    [type="tel"],
+    [type="text"],
+    [type="time"],
+    [type="url"],
+    [type="week"],
+    select,
+    .select,
+    .file,
+    textarea {
+        max-width: $input-max-width-desktop;
+        min-width: $input-min-width-desktop;
+        width: $input-width-desktop;
+    }
+    .form-section-block {
+        margin: $element-space-desktop/2 0;
+    }
+    .form-section-inline {
+        margin: $element-space-desktop/2 0;
+    }
 }

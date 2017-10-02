@@ -12,9 +12,21 @@
 .container {
     margin-left: auto;
     margin-right: auto;
-    max-width: 1000px;
-    width: 90%;
+    max-width: $container-max-width-mobile;
+    width: $container-width-mobile;
 }
+    @media screen and (min-width: $tablet) {
+        .container {
+            max-width: $container-max-width-tablet;
+            width: $container-width-tablet;
+        }
+    }
+    @media screen and (min-width: $desktop) {
+        .container {
+            max-width: $container-max-width-desktop;
+            width: $container-width-desktop;
+        }
+    }
 
 .layout-container {
     display: flex;

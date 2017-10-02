@@ -2,18 +2,18 @@
 ul,
 ol {
     list-style-position: inside;
-    margin: $element-space 0 $element-space * 2;
+    margin: $element-space-mobile 0 $element-space-mobile * 2;
     padding: 0;
 
     ul,
     ol {
-        margin: 0 0 0 $element-space;
+        margin: 0 0 0 $element-space-mobile;
     }
 }
 
 dl {
     display: block;
-    margin: $element-space 0;
+    margin: $element-space-mobile 0;
     padding: 0;
     dt {
         display: block;
@@ -25,7 +25,7 @@ dl {
     dd {
         display: block;
         font-size: 1em;
-        margin: 0 0 $element-space * .4;
+        margin: 0 0 $element-space-mobile * .4;
         padding: 0;
     }
 }
@@ -45,7 +45,7 @@ ol.list-inline, {
         float: left;
         margin: 0;
         &:not(:last-child) {
-            margin-right: $element-space;
+            margin-right: $element-space-mobile;
         }
     }
 
@@ -59,10 +59,77 @@ ol.list-inline, {
 dl.list-inline {
     dt {
         display: inline-block;
-        margin: 0 $element-space * .4 0 0;
+        margin: 0 $element-space-mobile * .4 0 0;
     }
     dd {
         display: inline-block;
-        margin: 0 $element-space 0 0;
+        margin: 0 $element-space-mobile 0 0;
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    ul,
+    ol {
+        margin: $element-space-tablet 0 $element-space-tablet * 2;
+        ul,
+        ol {
+            margin: 0 0 0 $element-space-tablet;
+        }
+    }
+
+    dl {
+        margin: $element-space-tablet 0;
+        dd {
+            margin: 0 0 $element-space-tablet * .4;
+        }
+    }
+    ul.list-inline,
+    ol.list-inline, {
+        > li {
+            &:not(:last-child) {
+                margin-right: $element-space-tablet;
+            }
+        }
+    }
+    dl.list-inline {
+        dt {
+            margin: 0 $element-space-tablet * .4 0 0;
+        }
+        dd {
+            margin: 0 $element-space-tablet 0 0;
+        }
+    }
+}
+@media screen and (min-width: $desktop) {
+    ul,
+    ol {
+        margin: $element-space-desktop 0 $element-space-desktop * 2;
+        ul,
+        ol {
+            margin: 0 0 0 $element-space-desktop;
+        }
+    }
+
+    dl {
+        margin: $element-space-desktop 0;
+        dd {
+            margin: 0 0 $element-space-desktop * .4;
+        }
+    }
+    ul.list-inline,
+    ol.list-inline, {
+        > li {
+            &:not(:last-child) {
+                margin-right: $element-space-desktop;
+            }
+        }
+    }
+    dl.list-inline {
+        dt {
+            margin: 0 $element-space-desktop * .4 0 0;
+        }
+        dd {
+            margin: 0 $element-space-desktop 0 0;
+        }
     }
 }

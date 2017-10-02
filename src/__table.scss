@@ -1,6 +1,6 @@
 /* table */
 table {
-    margin: $element-space 0;
+    margin: $element-space-mobile 0;
     width: 100%;
 
     thead {
@@ -12,7 +12,7 @@ table {
                 font-size: $font-size;
                 font-weight: $font-weight;
                 line-height: $font-line;
-                padding: $element-space * 1.5 $element-space * .5 $element-space * .1;
+                padding: $element-space-mobile * 1.5 $element-space-mobile * .5 $element-space-mobile * .1;
             }
         }
     }
@@ -21,7 +21,7 @@ table {
             border-bottom: 1px solid rgba($color-main-font,0.1);
             td {
                 text-align: left;
-                padding: $element-space * .1 $element-space * .5;
+                padding: $element-space-mobile * .1 $element-space-mobile * .5;
             }
         }
     }
@@ -52,17 +52,34 @@ table.responsive {
                 font-size: $font-size * .7;
                 font-weight: normal;
                 line-height: $font-line;
-                padding-top: $element-space * .5;
+                padding-top: $element-space-mobile * .5;
             }
             td {
                 text-align: left;
-                padding: $element-space * .1 $element-space * .5;
+                padding: $element-space-mobile * .1 $element-space-mobile * .5;
             }
         }
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
+    table {
+        margin: $element-space-tablet 0;
+        thead {
+            tr {
+                th {
+                    padding: $element-space-tablet * 1.5 $element-space-tablet * .5 $element-space-tablet * .1;
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    padding: $element-space-tablet * .1 $element-space-tablet * .5;
+                }
+            }
+        }
+    }
     table.responsive {
         thead {
             display: table-header-group;
@@ -76,7 +93,7 @@ table.responsive {
                     font-size: $font-size;
                     font-weight: normal;
                     line-height: $font-line;
-                    padding: $element-space * 1.5 $element-space * .5 $element-space * .1;
+                    padding: $element-space-tablet * 1.5 $element-space-tablet * .5 $element-space-tablet * .1;
                 }
             }
         }
@@ -88,7 +105,56 @@ table.responsive {
                 }
                 td {
                     text-align: left;
-                    padding: $element-space * .1 $element-space * .5;
+                    padding: $element-space-tablet * .1 $element-space-tablet * .5;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: $desktop) {
+    table {
+        margin: $element-space-desktop 0;
+        thead {
+            tr {
+                th {
+                    padding: $element-space-desktop * 1.5 $element-space-desktop * .5 $element-space-desktop * .1;
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    padding: $element-space-desktop * .1 $element-space-desktop * .5;
+                }
+            }
+        }
+    }
+    table.responsive {
+        thead {
+            display: table-header-group;
+            vertical-align: middle;
+            border-color: inherit;
+            tr {
+                border-bottom: 1px solid rgba($color-main-font, .1);
+                th {
+                    color: rgba($color-main-font, .4);
+                    text-align: left;
+                    font-size: $font-size;
+                    font-weight: normal;
+                    line-height: $font-line;
+                    padding: $element-space-desktop * 1.5 $element-space-desktop * .5 $element-space-desktop * .1;
+                }
+            }
+        }
+        tbody {
+            tr {
+                border-bottom: 1px solid rgba($color-main-font, .1);
+                tdh {
+                    display: none;
+                }
+                td {
+                    text-align: left;
+                    padding: $element-space-desktop * .1 $element-space-desktop * .5;
                 }
             }
         }

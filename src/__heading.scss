@@ -21,27 +21,27 @@ h6,
 
 h1,
 .h1 {
-    font-size: 4em;
+    font-size: $font-title-size-mobile * 3;
 }
 h2,
 .h2 {
-    font-size: 3em;
+    font-size: $font-title-size-mobile * 2.5;
 }
 h3,
 .h3 {
-    font-size: 2em;
+    font-size: $font-title-size-mobile * 2;
 }
 h4,
 .h4 {
-    font-size: 1.4em;
+    font-size: $font-title-size-mobile * 1.4;
 }
 h5,
 .h5 {
-    font-size: 1.2em;
+    font-size: $font-title-size-mobile * 1.2;
 }
 h6,
 .h6 {
-    font-size: 1em;
+    font-size: $font-title-size-mobile * 1;
 }
 
 .sub-title {
@@ -64,7 +64,7 @@ h6,
         content: "";
         height: $font-title-line-weight;
         width: $font-title-line-width;
-        margin-right: $element-space * .5;
+        margin-right: $element-space-mobile * .5;
     }
 }
 
@@ -78,7 +78,7 @@ h6,
         content: "";
         height: $font-title-line-weight;
         width: $font-title-line-width;
-        margin-left: $element-space * .5;
+        margin-left: $element-space-mobile * .5;
     }
 }
 
@@ -89,7 +89,7 @@ h6,
         content: "";
         height: $font-title-line-weight;
         width: $font-title-line-width;
-        margin-bottom: $element-space * .5;
+        margin-bottom: $element-space-mobile * .5;
     }
 }
 
@@ -100,7 +100,7 @@ h6,
         content: "";
         height: $font-title-line-weight;
         width: $font-title-line-width;
-        margin-top: $element-space * .5;
+        margin-top: $element-space-mobile * .5;
     }
 }
 
@@ -113,6 +113,99 @@ h6,
         }
         &::before {
             background: $color;
+        }
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    h1,
+    .h1 {
+        font-size: $font-title-size-tablet * 3;
+    }
+    h2,
+    .h2 {
+        font-size: $font-title-size-tablet * 2.5;
+    }
+    h3,
+    .h3 {
+        font-size: $font-title-size-tablet * 2;
+    }
+    h4,
+    .h4 {
+        font-size: $font-title-size-tablet * 1.4;
+    }
+    h5,
+    .h5 {
+        font-size: $font-title-size-tablet * 1.2;
+    }
+    h6,
+    .h6 {
+        font-size: $font-title-size-tablet * 1;
+    }
+    .title-leftline {
+        &:before {
+            margin-right: $element-space-tablet * .5;
+        }
+    }
+    .title-rightline {
+        &:after {
+            margin-left: $element-space-tablet * .5;
+        }
+    }
+    .title-topline {
+        &:before {
+            margin-bottom: $element-space-tablet * .5;
+        }
+    }
+    .title-bottomline {
+        &:after {
+            margin-top: $element-space-tablet * .5;
+        }
+    }
+}
+@media screen and (min-width: $desktop) {
+    h1,
+    .h1 {
+        font-size: $font-title-size-desktop * 3;
+    }
+    h2,
+    .h2 {
+        font-size: $font-title-size-desktop * 2.5;
+    }
+    h3,
+    .h3 {
+        font-size: $font-title-size-desktop * 2;
+    }
+    h4,
+    .h4 {
+        font-size: $font-title-size-desktop * 1.4;
+    }
+    h5,
+    .h5 {
+        font-size: $font-title-size-desktop * 1.2;
+    }
+    h6,
+    .h6 {
+        font-size: $font-title-size-desktop * 1;
+    }
+    .title-leftline {
+        &:before {
+            margin-right: $element-space-desktop * .5;
+        }
+    }
+    .title-rightline {
+        &:after {
+            margin-left: $element-space-desktop * .5;
+        }
+    }
+    .title-topline {
+        &:before {
+            margin-bottom: $element-space-desktop * .5;
+        }
+    }
+    .title-bottomline {
+        &:after {
+            margin-top: $element-space-desktop * .5;
         }
     }
 }

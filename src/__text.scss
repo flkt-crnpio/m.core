@@ -9,7 +9,7 @@ body {
 }
 
 p {
-    margin: $element-space 0;
+    margin: $element-space-mobile 0;
     padding: 0;
 }
 
@@ -22,7 +22,7 @@ strong {
 
 blockquote {
     font-size: 1.2em;
-    margin: $element-space;
+    margin: $element-space-mobile;
     padding: 0;
     &::before {
         content: "\201C";
@@ -98,7 +98,7 @@ var {
     border-radius: $font-code-radius;
     letter-spacing: $font-code-space;
     margin: 0;
-    padding: 0 $element-space/2;
+    padding: 0 $element-space-mobile * .2;
 }
 
 code {
@@ -179,4 +179,35 @@ samp {
 }
 .text-justify {
     text-align: justify;
+}
+
+@media screen and (min-width: $tablet) {
+    p {
+        margin: $element-space-tablet 0;
+    }
+    blockquote {
+        margin: $element-space-tablet;
+    }
+    code,
+    kbd,
+    mark,
+    samp,
+    var {
+        padding: 0 $element-space-tablet * .2;
+    }
+}
+@media screen and (min-width: $desktop) {
+    p {
+        margin: $element-space-desktop 0;
+    }
+    blockquote {
+        margin: $element-space-desktop;
+    }
+    code,
+    kbd,
+    mark,
+    samp,
+    var {
+        padding: 0 $element-space-desktop * .2;
+    }
 }

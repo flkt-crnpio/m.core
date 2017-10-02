@@ -89,13 +89,45 @@ $input-border-left-width:   1px;
 $input-border-right-width:  1px;
 $input-border-bottom-width: 1px;
 
-$input-width:       auto;
-$input-min-width:   auto;
-$input-max-width:   100%;
 
 
+// media queries
+$mobile:    20rem;
+$tablet:    48rem;
+$desktop:   64rem;
 
+// heading
+$font-title-size-mobile:   18px;
+$font-title-size-tablet:   22px;
+$font-title-size-desktop:  32px;
 
-// margins
-$layout-space:  7vw;
-$element-space: 30px;
+// form
+$input-width-mobile:       100%;
+$input-min-width-mobile:   100%;
+$input-max-width-mobile:   100%;
+
+$input-width-tablet:       auto;
+$input-min-width-tablet:   320px;
+$input-max-width-tablet:   100%;
+
+$input-width-desktop:      auto;
+$input-min-width-desktop:  320px;
+$input-max-width-desktop:  100%;
+
+// layout
+$layout-space-mobile:   1vw;
+$layout-space-tablet:   3vw;
+$layout-space-desktop:  5vw;
+
+$element-space-mobile:  30px;
+$element-space-tablet:  40px;
+$element-space-desktop: 50px;
+
+// width container
+$container-width-mobile:  80%;
+$container-width-tablet:  80%;
+$container-width-desktop: 80%;
+
+$container-max-width-mobile:  80%;
+$container-max-width-tablet:  900px;
+$container-max-width-desktop: 1000px;
