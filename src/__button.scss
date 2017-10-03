@@ -86,54 +86,60 @@ input[type="reset"],
 }
 
 // colors
-@each $name, $color, $font in $colors {
-    .btn-#{$name} {
-        background: $color;
-        border-color: $color;
-        color: $font;
-
-        &:hover,
-        &:focus {
-            background: darken($color, 5);
-            border-color: darken($color, 5);
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.btn {
+    @each $name, $color, $font in $colors {
+        &.btn-#{$name} {
+            background: $color;
+            border-color: $color;
             color: $font;
-        }
 
-        &[disabled],
-        &.disabled {
-            &:active,
             &:hover,
             &:focus {
-                background: $color;
-                border-color: $color;
+                background: darken($color, 5);
+                border-color: darken($color, 5);
                 color: $font;
             }
+
+            &[disabled],
+            &.disabled {
+                &:active,
+                &:hover,
+                &:focus {
+                    background: $color;
+                    border-color: $color;
+                    color: $font;
+                }
+            }
         }
-    }
 
-    .btn-line-#{$name} {
-        background: transparent;
-        box-shadow: none;
-        border-color: $color;
-        color: $color;
-
-        &:hover,
-        &:focus {
-            background: darken($color, 10);
-            border-color: darken($color, 10);
+        &.btn-line-#{$name} {
+            background: transparent;
             box-shadow: none;
-            color: $font;
-        }
+            border-color: $color;
+            color: $color;
 
-        &[disabled],
-        &.disabled {
-            &:active,
-            &:focus,
-            &:hover {
-                background: transparent;
+            &:hover,
+            &:focus {
+                background: darken($color, 10);
+                border-color: darken($color, 10);
                 box-shadow: none;
-                border-color: $color;
-                color: $color;
+                color: $font;
+            }
+
+            &[disabled],
+            &.disabled {
+                &:active,
+                &:focus,
+                &:hover {
+                    background: transparent;
+                    box-shadow: none;
+                    border-color: $color;
+                    color: $color;
+                }
             }
         }
     }
