@@ -39,13 +39,14 @@ $colors:    (primary,   $color-primary,     $color-primary-font),
 
 
 // fonts
-$font-family:   sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Open+Sans:400,700');
+$font-family:   'Open Sans', sans-serif;
 $font-line:     1.6em;
 $font-size:     16px;
 $font-space:    0.01em;
 $font-weight:   300;
 
-$font-title-family:         Georgia, serif;
+$font-title-family:         'Fredoka One', Georgia, serif;
 $font-title-line:           1em;
 $font-title-space:          0;
 $font-title-weight:         400;
@@ -115,19 +116,41 @@ $input-min-width-desktop:  320px;
 $input-max-width-desktop:  100%;
 
 // layout
-$layout-space-mobile:   1vw;
-$layout-space-tablet:   3vw;
-$layout-space-desktop:  5vw;
+$layout-margins-quantity: 5;
+
+$layout-space-mobile:   2vw;
+$layout-space-tablet:   2vw;
+$layout-space-desktop:  2vw;
 
 $element-space-mobile:  30px;
 $element-space-tablet:  40px;
 $element-space-desktop: 50px;
 
 // width container
-$container-width-mobile:  80%;
-$container-width-tablet:  80%;
-$container-width-desktop: 80%;
+$container-width-mobile:  90%;
+$container-width-tablet:  90%;
+$container-width-desktop: 90%;
 
-$container-max-width-mobile:  80%;
+$container-min-width-mobile:  90%;
+$container-min-width-tablet:  auto;
+$container-min-width-desktop: auto;
+
+$container-max-width-mobile:  90%;
 $container-max-width-tablet:  900px;
 $container-max-width-desktop: 1000px;
+
+// height container
+$container-height-mobile:  auto;
+$container-height-tablet:  auto;
+$container-height-desktop: auto;
+
+$container-min-height-mobile:   100vh;
+$container-min-height-tablet:   100vh;
+$container-min-height-desktop:  100vh;
+
+$container-max-height-mobile:   auto;
+$container-max-height-tablet:   auto;
+$container-max-height-desktop:  auto;
+
+// grid
+$grid-quantity: 7;
