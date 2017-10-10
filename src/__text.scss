@@ -120,6 +120,27 @@ samp {
     color: rgba($color-main-font, 0.7);
 }
 
+// word
+.word-normal {
+    word-break: normal;
+}
+.word-break {
+    word-break: break-all;
+    hyphens: auto;
+}
+.word-keep {
+    word-break: keep-all;
+}
+.word-wrap {
+    word-wrap: break-word;
+    hyphens: auto;
+}
+.text-overflow-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 // sizes
 .text-sm {
     font-size: $font-size * .75;
