@@ -1,5 +1,5 @@
 /* margins */
-@for $i from 0 through 5 {
+@for $i from 0 through $layout-margins-quantity {
     .m-#{$i} {
         margin: $layout-space-mobile * $i;
     }
