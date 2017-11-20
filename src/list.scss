@@ -1,0 +1,61 @@
+/* list */
+ul,
+ol {
+    list-style-position: inside;
+    margin: 0 0 $mandarina-element-space;
+    padding: 0;
+
+    ul,
+    ol {
+        margin: 0 0 0 $mandarina-element-space * .5;
+    }
+}
+
+dl {
+    display: block;
+    margin: 0 0 $mandarina-element-space;
+    padding: 0;
+    dt {
+        display: block;
+        font-size: .7em;
+        font-weight: bolder;
+        text-transform: uppercase;
+    }
+    dd {
+        display: block;
+        margin: 0 0 $mandarina-element-space * .3;
+        padding: 0;
+    }
+}
+
+ul.list-clean,
+ol.list-clean {
+    list-style: none;
+}
+
+ul.list-inline,
+ol.list-inline, {
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    > li {
+        display: inline-flex;
+        margin: 0;
+        &:not(:last-child) {
+            margin-right: $mandarina-element-space * .5;
+        }
+    }
+}
+
+dl.list-inline {
+    display: flex;
+    align-items: baseline;
+    dt {
+        display: inline-flex;
+        margin: 0 $mandarina-element-space * .3 0 0;
+    }
+    dd {
+        display: inline-flex;
+        margin: 0 $mandarina-element-space 0 0;
+    }
+}
