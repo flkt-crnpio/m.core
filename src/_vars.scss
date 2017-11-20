@@ -1,0 +1,179 @@
+// layout
+//
+$mandarina-element-space: 30px;
+
+
+// colors
+//
+$mandarina-color-primary:   #FF5722;
+$mandarina-color-secondary: #F44336;
+$mandarina-color-accent:    #00BCD4;
+$mandarina-color-gray:      mix(#aaa, $mandarina-color-primary, 98%);
+
+$mandarina-color-success:   #fff;
+$mandarina-color-warning:   #fff;
+$mandarina-color-error:     #fff;
+$mandarina-color-info:      #fff;
+
+$mandarina-colors:
+    (primary, $mandarina-color-primary),
+    (secondary, $mandarina-color-secondary),
+    (accent, $mandarina-color-accent),
+    (gray, $mandarina-color-gray);
+
+$mandarina-btn-colors:
+    (primary, $mandarina-color-primary, darken($mandarina-color-primary,15), #fff, #fff),
+    (secondary, $mandarina-color-secondary, darken($mandarina-color-secondary,15), #fff, #fff),
+    (accent, $mandarina-color-accent, darken($mandarina-color-accent,15), #fff, #fff);
+
+$mandarina-link-colors:
+    (primary, $mandarina-color-primary, darken($mandarina-color-primary,15)),
+    (secondary, $mandarina-color-secondary, darken($mandarina-color-secondary,15)),
+    (accent, $mandarina-color-accent, darken($mandarina-color-accent,15));
+
+$mandarina-title-colors:
+    (primary, $mandarina-color-primary),
+    (secondary, $mandarina-color-secondary),
+    (accent, $mandarina-color-accent);
+
+
+// typography
+//
+$mandarina-font-family:     sans-serif;
+$mandarina-font-color:      #333;
+$mandarina-font-size:       16px;
+$mandarina-font-height:     24px;
+$mandarina-font-spacing:    normal;
+$mandarina-font-weight:     400;
+
+$mandarina-title-family:    sans-serif;
+$mandarina-title-color:     #333;
+$mandarina-title-size:      5vmin;
+$mandarina-title-height:    1em;
+$mandarina-title-spacing:   normal;
+$mandarina-title-weight:    400;
+$mandarina-title-style:     normal;
+
+$mandarina-title-line-weight: 3px;
+$mandarina-title-line-width:  6vmin;
+
+$mandarina-code-family:     monospace;
+$mandarina-code-size:       16px;
+$mandarina-code-height:     24px;
+$mandarina-code-spacing:    normal;
+$mandarina-code-weight:     400;
+
+$mandarina-code-radius:     3px;
+
+$mandarina-code-background: #ccc;
+$mandarina-code-color:      #777;
+$mandarina-kbd-background:  #777;
+$mandarina-kbd-color:       #ccc;
+$mandarina-mark-background: #fa0;
+$mandarina-mark-color:      #fff;
+$mandarina-samp-background: #009;
+$mandarina-samp-color:      #fff;
+
+
+// links
+//
+$mandarina-link-family:     $mandarina-font-family;
+$mandarina-link-size:       $mandarina-font-size;
+$mandarina-link-weight:     $mandarina-font-weight;
+$mandarina-link-space:      $mandarina-font-spacing;
+$mandarina-link-height:     $mandarina-font-height;
+$mandarina-link-transition: all 0.3s cubic-bezier(0.465, 0.240, 0.370, 0.825);
+
+$mandarina-link-line-size:  1px;
+
+$mandarina-link-color:              $mandarina-color-primary;
+$mandarina-link-color-hover:        darken($mandarina-color-primary, 15);
+
+
+// buttons
+//
+$mandarina-btn-family:  $mandarina-font-family;
+$mandarina-btn-size:    $mandarina-font-size;
+$mandarina-btn-height:  $mandarina-font-height;
+$mandarina-btn-space:   $mandarina-font-spacing;
+$mandarina-btn-weight:  $mandarina-font-weight;
+
+$mandarina-btn-background:          #eee;
+$mandarina-btn-background-hover:    #e0e0e0;
+$mandarina-btn-color:               $mandarina-font-color;
+$mandarina-btn-color-hover:         darken($mandarina-font-color, 15);
+
+$mandarina-btn-border:              1px solid #ddd;
+$mandarina-btn-border-hover:        1px solid #ccc;
+$mandarina-btn-border-radius:       3px;
+$mandarina-btn-border-radius-hover: 3px;
+
+$mandarina-btn-padding: 7px;
+
+$mandarina-btn-shadow:          none;
+$mandarina-btn-shadow-hover:    none;
+
+$mandarina-btn-transition: all 0.5s cubic-bezier(0.465, 0.240, 0.370, 0.825);
+
+
+// tables
+//
+$mandarina-table-border:            1px solid #ddd;
+$mandarina-table-transition:        all 0.3s linear;
+
+$mandarina-table-thead-border:      1px solid #ddd;
+$mandarina-table-thead-background:  #fff;
+$mandarina-table-thead-color:       #999;
+$mandarina-table-thead-font-size:   $mandarina-font-size;
+$mandarina-table-thead-font-weight: 400;
+$mandarina-table-thead-font-height: $mandarina-font-size * 2;
+$mandarina-table-thead-height:      $mandarina-font-size * 2;
+
+$mandarina-table-tbody-border:      1px solid #ddd;
+$mandarina-table-tbody-bg-odd:      #eee;
+$mandarina-table-tbody-bg-even:     #fff;
+$mandarina-table-tbody-bg-hover:    #ccc;
+
+$mandarina-table-tfoot-background:  #fff;
+$mandarina-table-tfoot-color:       #333;
+$mandarina-table-tfoot-font-size:   $mandarina-font-size;
+$mandarina-table-tfoot-font-weight: 400;
+$mandarina-table-tfoot-font-height: $mandarina-font-size * 2;
+$mandarina-table-tfoot-height:      $mandarina-font-size * 2;
+
+
+// forms
+//
+$mandarina-input-background:            transparent;
+$mandarina-input-background-autofill:   #fff;
+$mandarina-input-color:                 $mandarina-font-color;
+$mandarina-input-border:                1px solid $mandarina-color-gray;
+$mandarina-input-border-bottom:         1px solid $mandarina-color-gray;
+$mandarina-input-border-radius:         0;
+
+$mandarina-input-background-hover:      transparent;
+$mandarina-input-border-hover:          $mandarina-color-primary;
+$mandarina-input-color-hover:           $mandarina-font-color;
+$mandarina-input-color-ckecked:         $mandarina-color-primary;
+
+$mandarina-input-family:                $mandarina-font-family;
+$mandarina-input-size:                  $mandarina-font-size;
+$mandarina-input-spacing:               $mandarina-font-spacing;
+$mandarina-input-weight:                $mandarina-font-weight;
+$mandarina-input-height:                $mandarina-font-height;
+
+$mandarina-input-padding:               $mandarina-btn-padding;
+
+$mandarina-input-transform:             all 0.3s cubic-bezier(0.465, 0.240, 0.370, 0.825);
+
+$mandarina-checkbox-border:             1px solid $mandarina-color-gray;
+$mandarina-checkbox-border-radius:      3px;
+$mandarina-radio-border:                1px solid $mandarina-color-gray;
+$mandarina-switch-border-radius:        $mandarina-input-padding * 3.5;
+
+$mandarina-label-family:                $mandarina-font-family;
+$mandarina-label-size:                  $mandarina-font-size * .8;
+$mandarina-label-spacing:               $mandarina-font-spacing;
+$mandarina-label-weight:                $mandarina-font-weight;
+$mandarina-label-height:                2em;
+$mandarina-label-color:                 $mandarina-font-color;

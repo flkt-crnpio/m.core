@@ -1,0 +1,140 @@
+/* button */
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.btn {
+    background:  $mandarina-btn-background;
+    border: $mandarina-btn-border;
+    border-radius: $mandarina-btn-border-radius;
+    box-shadow: $mandarina-btn-shadow;
+    color: $mandarina-btn-color;
+    font-family: $mandarina-btn-family;
+    font-size: $mandarina-btn-size;
+    letter-spacing: $mandarina-btn-space;
+    font-weight: $mandarina-btn-weight;
+    line-height: $mandarina-btn-height;
+    margin: 1px;
+    padding: $mandarina-btn-padding $mandarina-btn-padding * 3;
+    transition: $mandarina-btn-transition;
+
+    cursor: pointer;
+    display: inline-flex;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+        height: 0;
+    }
+
+    &:active,
+    &:hover,
+    &:focus {
+        background: $mandarina-btn-background-hover;
+        border: $mandarina-btn-border-hover;
+        border-radius: $mandarina-btn-border-radius-hover;
+        box-shadow: $mandarina-btn-shadow-hover;
+        color: $mandarina-btn-color-hover;
+        text-decoration: none;
+    }
+
+    &[disabled],
+    &.disabled {
+        &:active,
+        &:hover,
+        &:focus {
+            background: $mandarina-btn-background;
+            border: $mandarina-btn-border;
+            box-shadow: $mandarina-btn-shadow;
+            color: $mandarina-btn-color;
+            cursor: default;
+            text-decoration: none;
+            opacity: .7;
+        }
+    }
+}
+
+// sizes
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.btn {
+    &.btn-sm {
+        font-size: $mandarina-btn-size * .75;
+        line-height: $mandarina-btn-size * .75;
+        padding: $mandarina-btn-padding * .5 $mandarina-btn-padding;
+    }
+    &.btn-lg {
+        font-size: $mandarina-btn-size * 1.5;
+        line-height: $mandarina-btn-size * 1.5;
+        padding: $mandarina-btn-padding * 1.5 $mandarina-btn-padding * 5;
+    }
+    &.btn-block {
+        width: 100%;
+    }
+}
+
+// colors
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.btn {
+    @each $name, $color, $color-hover, $font , $font-hover in $mandarina-btn-colors {
+        &.btn-#{$name} {
+            background: $color;
+            border-color: $color;
+            color: $font;
+
+            &:hover,
+            &:focus {
+                background: $color-hover;
+                border-color: $color-hover;
+                color: $font;
+            }
+
+            &[disabled],
+            &.disabled {
+                &:active,
+                &:hover,
+                &:focus {
+                    background: $color-hover;
+                    border-color: $color-hover;
+                    color: $font-hover;
+                }
+            }
+        }
+
+        &.btn-#{$name}-line {
+            background: transparent;
+            box-shadow: none;
+            border-color: $color;
+            color: $color;
+
+            &:hover,
+            &:focus {
+                background: $color-hover;
+                border-color: $color-hover;
+                box-shadow: none;
+                color: $font-hover;
+            }
+
+            &[disabled],
+            &.disabled {
+                &:active,
+                &:focus,
+                &:hover {
+                    background: transparent;
+                    box-shadow: none;
+                    border-color: $color;
+                    color: $color;
+                }
+            }
+        }
+    }
+}

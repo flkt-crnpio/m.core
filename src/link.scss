@@ -1,44 +1,46 @@
 /* link */
 a,
 .link {
+    color: $mandarina-link-color;
+    font-family: $mandarina-link-family;
+    font-size: $mandarina-link-size;
+    font-weight: $mandarina-link-weight;
+    letter-spacing: $mandarina-link-space;
+    line-height: $mandarina-link-height;
+    transition: $mandarina-link-transition;
+
     background: transparent;
     border: none;
     box-shadow: none;
-    color: $color-primary;
     cursor: pointer;
-    display: inline-block;
-    font-family: $font-family;
-    font-size: $font-size;
-    font-weight: $font-link-weight;
-    letter-spacing: $font-space;
-    line-height: $font-line;
+    display: inline-flex;
     margin: 0;
     padding: 0;
     position: relative;
     text-decoration: none;
     text-rendering: optimizeLegibility;
-    transition: all 0.5s cubic-bezier(0.465, 0.240, 0.370, 0.825);
+
 
     &::after {
+        background: $mandarina-link-color;
+        height: $mandarina-link-line-size;
+        transition: $mandarina-link-transition;
         content: "";
-        background: $color-primary;
         position: absolute;
         bottom: 0;
         left: 0;
         width: 0;
-        height: 1px;
-        transition: all 0.3s cubic-bezier(0.465, 0.240, 0.370, 0.825);
     }
 
     &:hover,
     &:focus {
+        color: $mandarina-link-color-hover;
         background: transparent;
         border: none;
         box-shadow: none;
-        color: mix($color-main-font, $color-primary, 30%);
 
         &::after {
-            background: mix($color-main-font, $color-primary, 30%);
+            background: $mandarina-link-color-hover;
             width: 100%;
         }
     }
@@ -48,12 +50,10 @@ a,
 a,
 .link {
     &.link-sm {
-        font-size: $font-size * .75;
-        line-height: $font-line * 1.2;
+        font-size: $mandarina-link-size * .75;
     }
     &.link-lg {
-        font-size: $font-size * 1.5;
-        line-height: $font-line * .9;
+        font-size: $mandarina-link-size * 1.5;
     }
     &.link-block {
         width: 100%;
@@ -61,7 +61,7 @@ a,
 }
 
 // colors
-@each $name, $color, $font in $colors {
+@each $name, $color, $color-hover in $mandarina-link-colors {
     .link-#{$name} {
         color: $color;
         &::after {
@@ -70,9 +70,9 @@ a,
 
         &:hover,
         &:focus {
-            color: mix($color, $color-primary, 80%);
+            color: $color-hover;
             &::after {
-                background: mix($color, $color-primary, 80%);
+                background: $color-hover;
             }
         }
     }
