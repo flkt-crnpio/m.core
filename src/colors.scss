@@ -1,0 +1,28 @@
+/* colors */
+
+@each $name, $color in $mandarina-colors {
+    @for $i from 1 through 4 {
+        $percent: 50 - ($i * 10);
+        .bg-#{$name}-#{$i} {
+            background: lighten($color, $percent);
+            color: #000;
+        }
+    }
+    @for $j from 6 through 9 {
+        $percent: ($j - 5) * 5;
+        .bg-#{$name}-#{$j} {
+            background: darken($color, $percent);
+            color: #fff;
+        }
+    }
+    .bg-#{$name}-5 {
+        background: $color;
+        color: #fff;
+    }
+    .border-#{$name} {
+        border: 1px solid $color;
+    }
+    .text-#{$name} {
+        color: $color;
+    }
+}
