@@ -815,6 +815,7 @@ input[type="reset"].btn-accent-line.disabled:hover,
   color: #fff;
 }
 
+.bg-primary,
 .bg-primary-5 {
   background: #FF5722;
   color: #fff;
@@ -868,6 +869,7 @@ input[type="reset"].btn-accent-line.disabled:hover,
   color: #fff;
 }
 
+.bg-secondary,
 .bg-secondary-5 {
   background: #F44336;
   color: #fff;
@@ -921,6 +923,7 @@ input[type="reset"].btn-accent-line.disabled:hover,
   color: #fff;
 }
 
+.bg-accent,
 .bg-accent-5 {
   background: #00BCD4;
   color: #fff;
@@ -974,6 +977,7 @@ input[type="reset"].btn-accent-line.disabled:hover,
   color: #fff;
 }
 
+.bg-gray,
 .bg-gray-5 {
   background: #aca8a7;
   color: #fff;
