@@ -295,13 +295,13 @@ label,
 .form-block {
     display: flex;
     flex-direction: column;
-    margin: 1px 0;
+    margin: 1px 0 $mandarina-element-space * .5;
 }
 
 .form-inline {
     display: inline-flex;
     align-items: center;
-    margin: 1px 0;
+    margin: 1px 0 $mandarina-element-space * .5;
 }
 
 // autofill
