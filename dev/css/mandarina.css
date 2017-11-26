@@ -1365,13 +1365,13 @@ label,
 .form-block {
   display: flex;
   flex-direction: column;
-  margin: 1px 0;
+  margin: 1px 0 15px;
 }
 
 .form-inline {
   display: inline-flex;
   align-items: center;
-  margin: 1px 0;
+  margin: 1px 0 15px;
 }
 
 input:-webkit-autofill,
@@ -1601,8 +1601,17 @@ a,
   text-rendering: optimizeLegibility;
 }
 
-a::after,
-.link::after {
+a:hover, a:focus,
+.link:hover,
+.link:focus {
+  color: #d53300;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+a:not(.link-clean)::after,
+.link:not(.link-clean)::after {
   background: #FF5722;
   height: 1px;
   transition: all 0.3s cubic-bezier(0.465, 0.24, 0.37, 0.825);
@@ -1613,18 +1622,9 @@ a::after,
   width: 0;
 }
 
-a:hover, a:focus,
-.link:hover,
-.link:focus {
-  color: #d53300;
-  background: transparent;
-  border: none;
-  box-shadow: none;
-}
-
-a:hover::after, a:focus::after,
-.link:hover::after,
-.link:focus::after {
+a:not(.link-clean):hover::after, a:not(.link-clean):focus::after,
+.link:not(.link-clean):hover::after,
+.link:not(.link-clean):focus::after {
   background: #d53300;
   width: 100%;
 }
@@ -1648,15 +1648,15 @@ a.link-block,
   color: #FF5722;
 }
 
-.link-primary::after {
-  background: #FF5722;
-}
-
 .link-primary:hover, .link-primary:focus {
   color: #d53300;
 }
 
-.link-primary:hover::after, .link-primary:focus::after {
+.link-primary:not(.link-clean)::after {
+  background: #FF5722;
+}
+
+.link-primary:not(.link-clean):hover::after, .link-primary:not(.link-clean):focus::after {
   background: #d53300;
 }
 
@@ -1664,15 +1664,15 @@ a.link-block,
   color: #F44336;
 }
 
-.link-secondary::after {
-  background: #F44336;
-}
-
 .link-secondary:hover, .link-secondary:focus {
   color: #d2190b;
 }
 
-.link-secondary:hover::after, .link-secondary:focus::after {
+.link-secondary:not(.link-clean)::after {
+  background: #F44336;
+}
+
+.link-secondary:not(.link-clean):hover::after, .link-secondary:not(.link-clean):focus::after {
   background: #d2190b;
 }
 
@@ -1680,15 +1680,15 @@ a.link-block,
   color: #00BCD4;
 }
 
-.link-accent::after {
-  background: #00BCD4;
-}
-
 .link-accent:hover, .link-accent:focus {
   color: #007888;
 }
 
-.link-accent:hover::after, .link-accent:focus::after {
+.link-accent:not(.link-clean)::after {
+  background: #00BCD4;
+}
+
+.link-accent:not(.link-clean):hover::after, .link-accent:not(.link-clean):focus::after {
   background: #007888;
 }
 
@@ -2006,7 +2006,7 @@ samp {
 
 .text-lead {
   font-size: 32px;
-  line-height: 16px;
+  line-height: 32px;
 }
 
 .text-bold {

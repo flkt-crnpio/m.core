@@ -20,7 +20,17 @@ a,
     text-decoration: none;
     text-rendering: optimizeLegibility;
 
+    &:hover,
+    &:focus {
+        color: $mandarina-link-color-hover;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+    }
+}
 
+a:not(.link-clean),
+.link:not(.link-clean) {
     &::after {
         background: $mandarina-link-color;
         height: $mandarina-link-line-size;
@@ -34,11 +44,6 @@ a,
 
     &:hover,
     &:focus {
-        color: $mandarina-link-color-hover;
-        background: transparent;
-        border: none;
-        box-shadow: none;
-
         &::after {
             background: $mandarina-link-color-hover;
             width: 100%;
@@ -64,13 +69,19 @@ a,
 @each $name, $color, $color-hover in $mandarina-link-colors {
     .link-#{$name} {
         color: $color;
-        &::after {
-            background: $color;
-        }
 
         &:hover,
         &:focus {
             color: $color-hover;
+        }
+    }
+
+    .link-#{$name}:not(.link-clean) {
+        &::after {
+            background: $color;
+        }
+        &:hover,
+        &:focus {
             &::after {
                 background: $color-hover;
             }
