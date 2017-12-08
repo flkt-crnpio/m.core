@@ -2078,19 +2078,19 @@ samp {
 
 [hidden],
 .hidden {
-  display: none;
-  pointer-events: none;
+  display: none !important;
+  pointer-events: none !important;
 }
 
 [disabled],
 .disabled {
-  cursor: default;
-  opacity: 0.7;
-  pointer-events: none;
+  cursor: default !important;
+  opacity: 0.7 !important;
+  pointer-events: none !important;
 }
 
 [readonly],
 .readonly {
-  cursor: default;
-  pointer-events: none;
+  cursor: default !important;
+  pointer-events: none !important;
 }
