@@ -29,8 +29,8 @@ a,
     }
 }
 
-a:not(.link-clean),
-.link:not(.link-clean) {
+a:not(.link-clean, .btn),
+.link:not(.link-clean, .btn) {
     &::after {
         background: $mandarina-link-color;
         height: $mandarina-link-line-size;
