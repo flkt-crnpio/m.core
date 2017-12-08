@@ -1,0 +1,18 @@
+[hidden],
+.hidden {
+    display: none;
+    pointer-events: none;
+}
+
+[disabled],
+.disabled {
+    cursor: default;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+[readonly],
+.readonly {
+    cursor: default;
+    pointer-events: none;
+}
