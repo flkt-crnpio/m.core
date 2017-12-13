@@ -101,7 +101,7 @@ label,
 
 // select
 select {
-    height: $mandarina-input-height + 1px + $mandarina-input-padding * 2;
+    height: $mandarina-input-height + 3px + $mandarina-input-padding * 2;
     width: 100%;
 }
 .select {
@@ -157,8 +157,7 @@ select {
     letter-spacing: $mandarina-input-spacing;
     font-weight: $mandarina-input-weight;
     line-height: $mandarina-input-height;
-    height: $mandarina-input-height;
-    padding: $mandarina-input-padding;
+    height: $mandarina-input-height + $mandarina-input-padding * .5;
     display: inline-flex;
     align-items: baseline;
     cursor: pointer;
@@ -210,7 +209,7 @@ select {
     [type="checkbox"] + label,
     [type="radio"] + label {
         padding-left: $mandarina-input-padding * 4;
-        &.nolabel {
+        &.hidden {
             padding-left: $mandarina-input-padding * 1.5;
         }
 
@@ -286,7 +285,7 @@ select {
     [type="checkbox"] + label,
     [type="radio"] + label {
         padding-left: $mandarina-input-padding * 7;
-        &.nolabel {
+        &.hidden {
             padding-left: $mandarina-input-padding * 5;
         }
 
@@ -322,7 +321,7 @@ select {
 }
 
 .f-inline {
-    display: inline-flex;
+    display: flex;
     align-items: baseline;
     margin: $mandarina-element-space * .5 0 0;
 
