@@ -35,6 +35,7 @@ textarea {
     -ms-user-select: none;
     user-select: none;
     resize: none;
+    max-width: 100%;
 }
 [type="date"],
 [type="datetime"],
@@ -66,8 +67,9 @@ textarea {
     line-height: $mandarina-input-height;
     transition: $mandarina-input-transform;
     padding: $mandarina-input-padding;
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    width: calc(100% - #{$mandarina-input-padding} * 2);
 
     &:hover,
     &:focus,
@@ -78,14 +80,35 @@ textarea {
     }
 }
 
+// label
+label,
+.label {
+    font-family: $mandarina-label-family;
+    font-size: $mandarina-label-size;
+    letter-spacing: $mandarina-label-spacing;
+    font-weight: $mandarina-label-weight;
+    line-height: $mandarina-label-height;
+    color: $mandarina-label-color;
+    display: flex;
+    align-items: baseline;
+    margin: $mandarina-element-space * .5 0 0;
+    text-rendering: optimizeLegibility;
+
+    &.hidden {
+        color: transparent;
+    }
+}
+
 // select
 select {
     height: $mandarina-input-height + 1px + $mandarina-input-padding * 2;
+    width: 100%;
 }
 .select {
     position: relative;
     height: auto;
     padding: 0;
+    width: 100%;
     select {
         padding-right: $mandarina-input-padding * 3;
         background: transparent;
@@ -97,6 +120,7 @@ select {
         -moz-appearance: none;
         -webkit-appearance: none;
         -ms-display: none;
+        width: 100%;
     }
     &::after {
         content: "\25bc";
@@ -114,39 +138,44 @@ select {
 
 // file
 [type="file"] {
-    padding: $mandarina-input-padding + 2px;
+    padding: $mandarina-input-padding + 2px $mandarina-input-padding - 1;
+    width: calc(100% - #{$mandarina-input-padding} * 2);
+}
+
+// checkbox radio
+[type="checkbox"],
+[type="radio"] {
+    display: inline-flex;
+    align-items: baseline;
+    cursor: pointer;
+}
+
+[type="checkbox"] + label,
+[type="radio"] + label {
+    font-family: $mandarina-input-family;
+    font-size: $mandarina-input-size;
+    letter-spacing: $mandarina-input-spacing;
+    font-weight: $mandarina-input-weight;
+    line-height: $mandarina-input-height;
+    height: $mandarina-input-height;
+    padding: $mandarina-input-padding;
+    display: inline-flex;
+    align-items: baseline;
+    cursor: pointer;
+    margin: 0 $mandarina-input-padding * 2 0 0;
 }
 
 // checkbox radio switch
 .checkbox,
 .radio,
 .switch {
-    display: inline-flex;
-    align-items: baseline;
-    resize: none;
-    cursor: pointer;
-    margin: 0;
-    padding: 0;
-
     [type="checkbox"],
     [type="radio"] {
         display: none;
-        cursor: pointer;
     }
 
     [type="checkbox"] + label,
     [type="radio"] + label {
-        font-family: $mandarina-input-family;
-        font-size: $mandarina-input-size;
-        letter-spacing: $mandarina-input-spacing;
-        font-weight: $mandarina-input-weight;
-        line-height: $mandarina-input-height;
-        height: $mandarina-input-height;
-        padding: $mandarina-input-padding;
-        display: inline-flex;
-        align-items: baseline;
-        cursor: pointer;
-        margin: 0;
         position: relative;
 
         &::before {
@@ -163,10 +192,6 @@ select {
             position: absolute;
             content: "";
             transition: $mandarina-input-transform;
-        }
-
-        &.nolabel {
-            color: transparent;
         }
     }
 
@@ -292,32 +317,43 @@ select {
     }
 }
 
-// label
-label,
-.label {
-    font-family: $mandarina-label-family;
-    font-size: $mandarina-label-size;
-    letter-spacing: $mandarina-label-spacing;
-    font-weight: $mandarina-label-weight;
-    line-height: $mandarina-label-height;
-    color: $mandarina-label-color;
-    display: flex;
-    align-items: baseline;
-    margin: 2px;
-    text-rendering: optimizeLegibility;
+.f-m {
+    margin: $mandarina-element-space * .5 0 0;
 }
 
-// form layout
-.form-block {
-    display: flex;
-    flex-direction: column;
-    margin: 1px 0 $mandarina-element-space * .5;
-}
-
-.form-inline {
+.f-inline {
     display: inline-flex;
-    align-items: center;
-    margin: 1px 0 $mandarina-element-space * .5;
+    align-items: baseline;
+    margin: $mandarina-element-space * .5 0 0;
+
+    label,
+    .label {
+        margin: 0 $mandarina-element-space * .5 0 0;
+    }
+
+    [type="date"],
+    [type="datetime"],
+    [type="datetime-local"],
+    [type="email"],
+    [type="file"],
+    [type="month"],
+    [type="number"],
+    [type="password"],
+    [type="search"],
+    [type="tel"],
+    [type="text"],
+    [type="time"],
+    [type="url"],
+    [type="week"],
+    select,
+    .select,
+    .file,
+    textarea {
+        &.m-0,
+        &:not(:last-child) {
+            margin: 0 $mandarina-element-space 0 0;
+        }
+    }
 }
 
 // autofill

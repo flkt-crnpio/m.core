@@ -9,55 +9,82 @@
         <link rel="stylesheet" href="css/mandarina.css">
     </head>
     <body>
-        <div class="">
+        <div style="width: 90%; margin: 10vh auto;">
             <form>
-                <input type="text" name="text" value="" placeholder="text">
-                <select class="" name="">
-                    <option value="">option</option>
-                </select>
-                <div class="select">
-                    <select class="" name="">
-                        <option value="">option</option>
+                <div class="f-m">
+                    <label for="">Input</label>
+                    <input type="text" name="text" value="" placeholder="text">
+                </div>
+
+                <div class="f-inline">
+                    <label for="">Input</label>
+                    <input type="text" name="text" value="" placeholder="text">
+                
+                    <label for="">Input</label>
+                    <input type="text" name="text" value="" placeholder="text">
+                </div>
+
+
+                <div class="f-m">
+                    <label for="select1">Select</label>
+                    <select id="select1" name="select">
+                        <option value="opt1">option 1</option>
+                        <option value="opt2">option 2</option>
+                        <option value="opt3">option 3</option>
                     </select>
                 </div>
-                <input type="file" name="" value="">
-                <input type="radio" name="radio">
-                <div class="radio">
-                    <input type="radio" name="radio" id="radio1">
+                <div class="f-m">
+                    <label for="select2">Select</label>
+                    <div id="select2" class="select">
+                        <select name="select-styled">
+                            <option value="opt1">option 1</option>
+                            <option value="opt2">option 2</option>
+                            <option value="opt3">option 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="f-m">
+                    <label for="">file</label>
+                    <input type="file" name="file">
+                </div>
+                <div class="f-m">
+                    <input type="radio" name="radio" id="radio1" value="1">
                     <label for="radio1">radio 1</label>
-                </div>
-                <div class="radio">
-                    <input type="radio" name="radio" id="radio2">
+
+                    <input type="radio" name="radio" id="radio2" value="2">
                     <label for="radio2">radio 2</label>
+
+                    <input type="radio" name="radio" id="radio3" value="3">
+                    <label for="radio3">radio 3</label>
+
+                    <input type="radio" name="radio" id="radio4" value="4">
+                    <label for="radio4">radio 4</label>
                 </div>
-                <input type="checkbox" name="">
-                <div class="checkbox">
-                    <input type="checkbox" name="" id="checkbox">
-                    <label for="checkbox">checkbox</label>
+                <div class="f-m radio">
+                    <input type="radio" name="radio" id="radio5" value="5">
+                    <label for="radio5">radio 5</label>
+                    <input type="radio" name="radio" id="radio6" value="6">
+                    <label for="radio6">radio 6</label>
                 </div>
-                <div class="switch">
-                    <input type="checkbox" name="" id="switch">
-                    <label for="switch">switch</label>
+                <div class="f-m">
+                    <input type="checkbox" name="check" id="checkbox1">
+                    <label for="checkbox1">checkbox</label>
                 </div>
-                <button type="button" class="btn btn-primary">button</button>
+                <div class="f-m checkbox">
+                    <input type="checkbox" name="checkbox" id="checkbox2">
+                    <label for="checkbox2">checkbox </label>
+                </div>
+                <div class="f-m switch">
+                    <input type="checkbox" name="check" id="switch1">
+                    <label for="switch1">switch</label>
+                </div>
+                <div class="f-m">
+                    <button type="button" class="btn btn-primary">button</button>
+                </div>
             </form>
 
-            <form>
-                <div class="form-block">
-                    <label for="input">label input</label>
-                    <input type="text" name="" value="" id="input">
-                </div>
-                <div class="form-block">
-                    <label for="input">label input</label>
-                    <input type="text" name="" value="" id="input">
-                </div>
-                <div class="form-inline">
-                    <label for="input">label input</label>
-                    <input type="text" name="" value="" id="input">
-                </div>
-            </form>
         </div>
-        <div class="">
+        <!-- <div class="">
             <div class="bg-primary-1">bg-primary-1</div>
             <div class="bg-primary-2">bg-primary-2</div>
             <div class="bg-primary-3">bg-primary-3</div>
@@ -94,8 +121,8 @@
             <div class="bg-gray-7">bg-gray-7</div>
             <div class="bg-gray-8">bg-gray-8</div>
             <div class="bg-gray-9">bg-gray-9</div>
-        </div>
-        <div class="">
+        </div> -->
+        <!-- <div class="">
                 <button type="button">button</button>
                 <button type="button" class="btn-sm">button</button>
                 <button type="button" class="btn">button</button>
@@ -110,8 +137,8 @@
                 <button type="button" class="btn">.btn</button>
                 <a href="#" class="btn">.btn</a>
                 <p class="btn">.btn</p>
-        </div>
-        <div class="">
+        </div> -->
+        <!-- <div class="">
             <a href="#">links</a><br>
             <a href="#" class="link-sm">link sm</a>
             <a href="#" class="link">link</a>
@@ -121,13 +148,13 @@
             <a href="#" class="link-secondary">link secondary</a>
             <a href="#" class="link-accent">link accent</a>
             <a href="#" class="link-clean">link clean</a>
-        </div>
-        <div class="">
+        </div> -->
+        <!-- <div class="">
             <img src="img/github.png" alt="github">
             <a href="#"><img src="img/github.png" alt="github"></a>
             <button type="button"><img src="img/github.png" alt="github"></button>
-        </div>
-        <div class="">
+        </div> -->
+        <!-- <div class="">
             <h1>h1</h1>
             <h2>h2</h2>
             <h3>h3</h3>
@@ -143,8 +170,8 @@
             <h6 class="title-primary">.title-primary</h6>
             <h6 class="title-secondary">.title-secondary</h6>
             <h6 class="title-accent">.title-accent</h6>
-        </div>
-        <div class="">
+        </div> -->
+        <!-- <div class="">
             <p>paragraph</p>
 
             <blockquote cite="http://">
@@ -191,9 +218,9 @@
             <p class="word-break-all">word-break-all</p>
             <p class="word-wrap-break">word-wrap-break</p>
 
-        </div>
+        </div> -->
 
-        <div class="">
+        <!-- <div class="">
             <ul>
                 <li>ul li</li>
                 <li>ul li</li>
@@ -249,9 +276,9 @@
                 <dt>dt</dt>
                 <dd>dd</dd>
             </dl>
-        </div>
+        </div> -->
 
-        <div class="">
+        <!-- <div class="">
             <table>
                 <thead>
                     <tr>
@@ -356,6 +383,6 @@
                         </tr>
                 </tbody>
             </table>
-        </div>
+        </div> -->
     </body>
 </html>

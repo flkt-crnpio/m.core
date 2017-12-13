@@ -1028,6 +1028,7 @@ textarea {
   -ms-user-select: none;
   user-select: none;
   resize: none;
+  max-width: 100%;
 }
 
 [type="date"],
@@ -1060,8 +1061,9 @@ textarea {
   line-height: 24px;
   transition: all 0.3s cubic-bezier(0.465, 0.24, 0.37, 0.825);
   padding: 7px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  width: calc(100% - 7px * 2);
 }
 
 [type="date"]:hover, [type="date"]:focus, [type="date"]:active,
@@ -1121,14 +1123,35 @@ textarea:active {
   color: #333;
 }
 
+label,
+.label {
+  font-family: sans-serif;
+  font-size: 12.8px;
+  letter-spacing: normal;
+  font-weight: 400;
+  line-height: 2em;
+  color: #333;
+  display: flex;
+  align-items: baseline;
+  margin: 15px 0 0;
+  text-rendering: optimizeLegibility;
+}
+
+label.hidden,
+.label.hidden {
+  color: transparent;
+}
+
 select {
   height: 39px;
+  width: 100%;
 }
 
 .select {
   position: relative;
   height: auto;
   padding: 0;
+  width: 100%;
 }
 
 .select select {
@@ -1142,6 +1165,7 @@ select {
   -moz-appearance: none;
   -webkit-appearance: none;
   -ms-display: none;
+  width: 100%;
 }
 
 .select::after {
@@ -1159,36 +1183,19 @@ select {
 }
 
 [type="file"] {
-  padding: 9px;
+  padding: 9px 6px;
+  width: calc(100% - 7px * 2);
 }
 
-.checkbox,
-.radio,
-.switch {
+[type="checkbox"],
+[type="radio"] {
   display: inline-flex;
   align-items: baseline;
-  resize: none;
-  cursor: pointer;
-  margin: 0;
-  padding: 0;
-}
-
-.checkbox [type="checkbox"],
-.checkbox [type="radio"],
-.radio [type="checkbox"],
-.radio [type="radio"],
-.switch [type="checkbox"],
-.switch [type="radio"] {
-  display: none;
   cursor: pointer;
 }
 
-.checkbox [type="checkbox"] + label,
-.checkbox [type="radio"] + label,
-.radio [type="checkbox"] + label,
-.radio [type="radio"] + label,
-.switch [type="checkbox"] + label,
-.switch [type="radio"] + label {
+[type="checkbox"] + label,
+[type="radio"] + label {
   font-family: sans-serif;
   font-size: 16px;
   letter-spacing: normal;
@@ -1199,7 +1206,24 @@ select {
   display: inline-flex;
   align-items: baseline;
   cursor: pointer;
-  margin: 0;
+  margin: 0 14px 0 0;
+}
+
+.checkbox [type="checkbox"],
+.checkbox [type="radio"],
+.radio [type="checkbox"],
+.radio [type="radio"],
+.switch [type="checkbox"],
+.switch [type="radio"] {
+  display: none;
+}
+
+.checkbox [type="checkbox"] + label,
+.checkbox [type="radio"] + label,
+.radio [type="checkbox"] + label,
+.radio [type="radio"] + label,
+.switch [type="checkbox"] + label,
+.switch [type="radio"] + label {
   position: relative;
 }
 
@@ -1227,15 +1251,6 @@ select {
   position: absolute;
   content: "";
   transition: all 0.3s cubic-bezier(0.465, 0.24, 0.37, 0.825);
-}
-
-.checkbox [type="checkbox"] + label.nolabel,
-.checkbox [type="radio"] + label.nolabel,
-.radio [type="checkbox"] + label.nolabel,
-.radio [type="radio"] + label.nolabel,
-.switch [type="checkbox"] + label.nolabel,
-.switch [type="radio"] + label.nolabel {
-  color: transparent;
 }
 
 .checkbox [type="checkbox"]:checked + label::before,
@@ -1375,30 +1390,57 @@ select {
   left: 21px;
 }
 
-label,
-.label {
-  font-family: sans-serif;
-  font-size: 12.8px;
-  letter-spacing: normal;
-  font-weight: 400;
-  line-height: 2em;
-  color: #333;
-  display: flex;
-  align-items: baseline;
-  margin: 2px;
-  text-rendering: optimizeLegibility;
+.f-m {
+  margin: 15px 0 0;
 }
 
-.form-block {
-  display: flex;
-  flex-direction: column;
-  margin: 1px 0 15px;
-}
-
-.form-inline {
+.f-inline {
   display: inline-flex;
-  align-items: center;
-  margin: 1px 0 15px;
+  align-items: baseline;
+  margin: 15px 0 0;
+}
+
+.f-inline label,
+.f-inline .label {
+  margin: 0 15px 0 0;
+}
+
+.f-inline [type="date"].m-0, .f-inline [type="date"]:not(:last-child),
+.f-inline [type="datetime"].m-0,
+.f-inline [type="datetime"]:not(:last-child),
+.f-inline [type="datetime-local"].m-0,
+.f-inline [type="datetime-local"]:not(:last-child),
+.f-inline [type="email"].m-0,
+.f-inline [type="email"]:not(:last-child),
+.f-inline [type="file"].m-0,
+.f-inline [type="file"]:not(:last-child),
+.f-inline [type="month"].m-0,
+.f-inline [type="month"]:not(:last-child),
+.f-inline [type="number"].m-0,
+.f-inline [type="number"]:not(:last-child),
+.f-inline [type="password"].m-0,
+.f-inline [type="password"]:not(:last-child),
+.f-inline [type="search"].m-0,
+.f-inline [type="search"]:not(:last-child),
+.f-inline [type="tel"].m-0,
+.f-inline [type="tel"]:not(:last-child),
+.f-inline [type="text"].m-0,
+.f-inline [type="text"]:not(:last-child),
+.f-inline [type="time"].m-0,
+.f-inline [type="time"]:not(:last-child),
+.f-inline [type="url"].m-0,
+.f-inline [type="url"]:not(:last-child),
+.f-inline [type="week"].m-0,
+.f-inline [type="week"]:not(:last-child),
+.f-inline select.m-0,
+.f-inline select:not(:last-child),
+.f-inline .select.m-0,
+.f-inline .select:not(:last-child),
+.f-inline .file.m-0,
+.f-inline .file:not(:last-child),
+.f-inline textarea.m-0,
+.f-inline textarea:not(:last-child) {
+  margin: 0 30px 0 0;
 }
 
 input:-webkit-autofill,
