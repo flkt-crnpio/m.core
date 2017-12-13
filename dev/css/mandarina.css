@@ -1396,7 +1396,6 @@ select {
 .f-inline {
   display: flex;
   align-items: baseline;
-  margin: 15px 0 0;
 }
 
 .f-inline label,
