@@ -230,7 +230,7 @@ select {
             border-right: none;
             background: transparent;
             transform: rotate(-45deg);
-            top: $mandarina-input-padding * 2;
+            top: $mandarina-input-padding;
             left: $mandarina-input-padding * .7;
         }
     }
@@ -266,7 +266,7 @@ select {
             border-radius: 50%;
             height: $mandarina-input-padding * 1.3;
             width: $mandarina-input-padding * 1.3;
-            top: $mandarina-input-padding * 2;
+            top: $mandarina-input-padding;
             left: $mandarina-input-padding;
         }
     }

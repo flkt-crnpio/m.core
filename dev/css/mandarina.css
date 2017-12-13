@@ -1299,7 +1299,7 @@ select {
   border-right: none;
   background: transparent;
   transform: rotate(-45deg);
-  top: 14px;
+  top: 7px;
   left: 4.9px;
 }
 
@@ -1338,7 +1338,7 @@ select {
   border-radius: 50%;
   height: 9.1px;
   width: 9.1px;
-  top: 14px;
+  top: 7px;
   left: 7px;
 }
 
