@@ -1137,8 +1137,8 @@ label,
   text-rendering: optimizeLegibility;
 }
 
-label.hidden,
-.label.hidden {
+label.empty,
+.label.empty {
   color: transparent;
 }
 
@@ -1201,7 +1201,7 @@ select {
   letter-spacing: normal;
   font-weight: 400;
   line-height: 24px;
-  height: 27.5px;
+  height: 31px;
   display: inline-flex;
   align-items: baseline;
   cursor: pointer;
@@ -1275,8 +1275,8 @@ select {
   padding-left: 28px;
 }
 
-.checkbox [type="checkbox"] + label.hidden,
-.checkbox [type="radio"] + label.hidden {
+.checkbox [type="checkbox"] + label.empty,
+.checkbox [type="radio"] + label.empty {
   padding-left: 10.5px;
 }
 
@@ -1356,8 +1356,8 @@ select {
   padding-left: 49px;
 }
 
-.switch [type="checkbox"] + label.hidden,
-.switch [type="radio"] + label.hidden {
+.switch [type="checkbox"] + label.empty,
+.switch [type="radio"] + label.empty {
   padding-left: 35px;
 }
 
