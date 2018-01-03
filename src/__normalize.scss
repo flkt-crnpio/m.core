@@ -6,23 +6,8 @@ html {
 }
 
 body {
-    color: #333;
-    font-family: sans-serif;
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 1.6em;
     margin: 0;
     padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: Georgia, serif;
-    font-weight: normal;
 }
 
 article,
@@ -85,15 +70,6 @@ ins {
     border-bottom: 1px dashed rgba(0,0,0,0.5);
 }
 
-b,
-strong {
-    font-weight: bolder;
-}
-
-dfn {
-    font-style: italic;
-}
-
 small {
     font-size: 0.8em;
 }
@@ -112,16 +88,6 @@ sub {
 
 sup {
     top: -0.5em;
-}
-code,
-kbd,
-pre,
-samp,
-var {
-    font-family: monospace;
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 1.6em;
 }
 
 pre {
@@ -162,74 +128,6 @@ svg {
 
 svg:not(:root) {
     overflow: hidden;
-}
-
-button,
-[type="button"],
-[type="date"],
-[type="datetime"],
-[type="datetime-local"],
-[type="email"],
-[type="month"],
-[type="number"],
-[type="password"],
-[type="reset"],
-[type="search"],
-[type="submit"],
-[type="tel"],
-[type="text"],
-[type="time"],
-[type="url"],
-[type="week"],
-select,
-textarea {
-    min-height: 1.5em;
-}
-
-button,
-input,
-select,
-textarea {
-    border: 1px solid rgba(0,0,0,0.2);
-    font-family: sans-serif;
-    font-size: 1em;
-    font-weight: normal;
-    line-height: 1em;
-    margin: 0;
-    padding: .4em .6em;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-}
-
-button,
-input,
-select {
-    overflow: visible;
-}
-
-textarea {
-    overflow: auto;
-}
-
-button,
-select {
-    text-transform: none;
-}
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-    cursor: pointer;
-    -webkit-appearance: button;
-}
-
-[disabled],
-[disabled]:active,
-[disabled]:focus,
-[disabled]:hover {
-    cursor: default;
-    opacity: 0.5;
 }
 
 button::-moz-focus-inner,
@@ -299,4 +197,23 @@ fieldset {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+[hidden],
+.hidden {
+    display: none !important;
+    pointer-events: none !important;
+}
+
+[disabled],
+.disabled {
+    cursor: default !important;
+    opacity: 0.7 !important;
+    pointer-events: none !important;
+}
+
+[readonly],
+.readonly {
+    cursor: default !important;
+    pointer-events: none !important;
 }
