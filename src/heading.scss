@@ -11,12 +11,13 @@ h6,
 .h4,
 .h5,
 .h6 {
+    background: $mandarina-title-background;
+    color: $mandarina-title-color;
     font-family: $mandarina-title-family;
+    font-style: $mandarina-title-style;
     font-weight: $mandarina-title-weight;
     letter-spacing: $mandarina-title-spacing;
     line-height: $mandarina-title-height;
-    font-style: $mandarina-title-style;
-    color: $mandarina-title-color;
     text-rendering: optimizeLegibility;
 }
 
