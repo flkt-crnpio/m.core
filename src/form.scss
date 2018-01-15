@@ -69,6 +69,8 @@ textarea {
     padding: $mandarina-input-padding;
     display: flex;
     align-items: center;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
     width: calc(100% - #{$mandarina-input-padding} * 2);
 
     &:hover,
