@@ -2,18 +2,33 @@
 //
 $mandarina-element-space: 30px;
 
-
 // colors
 //
-$mandarina-color-primary:   #FF5722;
-$mandarina-color-secondary: #F44336;
-$mandarina-color-accent:    #00BCD4;
-$mandarina-color-gray:      mix(#aaa, $mandarina-color-primary, 98%);
+$mandarina-color-primary:       #FF5722;
+$mandarina-color-secondary:     #F44336;
+$mandarina-color-accent:        #00BCD4;
+$mandarina-color-gray:          mix(#aaa, $mandarina-color-primary, 98%);
 
-$mandarina-color-success:   #fff;
-$mandarina-color-warning:   #fff;
-$mandarina-color-error:     #fff;
-$mandarina-color-info:      #fff;
+$mandarina-color-success:       #fff;
+$mandarina-color-warning:       #fff;
+$mandarina-color-error:         #fff;
+$mandarina-color-info:          #fff;
+
+$mandarina-font-background:     #fff;
+$mandarina-font-color:          #333;
+$mandarina-title-background:    #fff;
+$mandarina-title-color:         #333;
+$mandarina-code-background:     #ccc;
+$mandarina-code-color:          #777;
+$mandarina-kbd-background:      #777;
+$mandarina-kbd-color:           #ccc;
+$mandarina-mark-background:     #fa0;
+$mandarina-mark-color:          #fff;
+$mandarina-samp-background:     #009;
+$mandarina-samp-color:          #fff;
+
+$mandarina-select-background:   #333;
+$mandarina-select-color:        #eee;
 
 $mandarina-colors:
     (primary, $mandarina-color-primary),
@@ -36,47 +51,32 @@ $mandarina-title-colors:
     (secondary, $mandarina-color-secondary),
     (accent, $mandarina-color-accent);
 
-
 // typography
 //
-$mandarina-select-color:        #eee;
-$mandarina-select-background:   #333;
+@import url('https://fonts.googleapis.com/css?family=Roboto|Work+Sans');
 
-$mandarina-font-family:     sans-serif;
-$mandarina-font-color:      #333;
+$mandarina-font-family:     'Roboto', sans-serif;
 $mandarina-font-size:       16px;
 $mandarina-font-height:     24px;
 $mandarina-font-spacing:    normal;
 $mandarina-font-weight:     400;
 
-$mandarina-title-family:    sans-serif;
-$mandarina-title-color:     #333;
+$mandarina-title-family:    'Work Sans', sans-serif;
 $mandarina-title-size:      1.5em;
 $mandarina-title-height:    1em;
 $mandarina-title-spacing:   normal;
 $mandarina-title-weight:    400;
 $mandarina-title-style:     normal;
 
-$mandarina-title-line-weight: 3px;
+$mandarina-title-line-weight: 1px;
 $mandarina-title-line-width:  6vmin;
 
 $mandarina-code-family:     monospace;
-$mandarina-code-size:       16px;
-$mandarina-code-height:     24px;
+$mandarina-code-size:       $mandarina-font-size;
+$mandarina-code-height:     $mandarina-font-height;
 $mandarina-code-spacing:    normal;
 $mandarina-code-weight:     400;
-
 $mandarina-code-radius:     3px;
-
-$mandarina-code-background: #ccc;
-$mandarina-code-color:      #777;
-$mandarina-kbd-background:  #777;
-$mandarina-kbd-color:       #ccc;
-$mandarina-mark-background: #fa0;
-$mandarina-mark-color:      #fff;
-$mandarina-samp-background: #009;
-$mandarina-samp-color:      #fff;
-
 
 // links
 //
