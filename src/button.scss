@@ -19,6 +19,7 @@ input[type="reset"],
     transition: $mandarina-btn-transition;
 
     cursor: pointer;
+    -webkit-appearance: button;
     display: inline-flex;
     -ms-touch-action: manipulation;
     touch-action: manipulation;
