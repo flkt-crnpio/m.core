@@ -80,6 +80,32 @@ input[type="reset"],
     }
 }
 
+.btn-circle {
+    border-radius: 50%;
+    height: $mandarina-btn-height;
+    width: $mandarina-btn-height;
+}
+.btn-box {
+    border-radius: $mandarina-btn-border-radius;
+    height: $mandarina-btn-height;
+    width: $mandarina-btn-height;
+}
+.btn-circle,
+.btn-box {
+    &.btn-sm {
+        font-size: $mandarina-btn-size * .75;
+        height: $mandarina-btn-height * .75;
+        padding: 0;
+        width: $mandarina-btn-height * .75;
+    }
+    &.btn-lg {
+        font-size: $mandarina-btn-size * 1.5;
+        height: $mandarina-btn-height * 1.5;
+        padding: 0;
+        width: $mandarina-btn-height * 1.5;
+    }
+}
+
 // colors
 button,
 input[type="button"],
