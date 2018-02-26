@@ -1,307 +1,4 @@
-/* Custom normalize based on normalize.css v4.0.0 and sanitize.css v3.3.0 */
-html {
-  box-sizing: border-box;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-body {
-  color: #333;
-  font-family: sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 1.6em;
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: Georgia, serif;
-  font-weight: normal;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
-}
-
-figure {
-  margin: 1.6em;
-}
-
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-}
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-audio,
-canvas,
-iframe,
-video {
-  vertical-align: middle;
-}
-
-progress {
-  vertical-align: baseline;
-}
-
-template,
-[hidden] {
-  display: none;
-}
-
-abbr,
-ins {
-  text-decoration: none;
-}
-
-abbr {
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
-  cursor: help;
-}
-
-ins {
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.5);
-}
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-dfn {
-  font-style: italic;
-}
-
-small {
-  font-size: 0.8em;
-}
-
-sub,
-sup {
-  font-size: 0.7em;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-code,
-kbd,
-pre,
-samp,
-var {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 1.6em;
-}
-
-pre {
-  overflow: auto;
-  display: block;
-  white-space: pre;
-  margin: 1em 0;
-}
-
-a {
-  background-color: transparent;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-  cursor: pointer;
-}
-
-a:active, a:hover, a:focus {
-  outline-width: 0;
-}
-
-hr {
-  border: none;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-}
-
-img {
-  border-style: none;
-  max-width: 100%;
-}
-
-svg {
-  fill: currentColor;
-}
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
-button,
-[type="button"],
-[type="date"],
-[type="datetime"],
-[type="datetime-local"],
-[type="email"],
-[type="month"],
-[type="number"],
-[type="password"],
-[type="reset"],
-[type="search"],
-[type="submit"],
-[type="tel"],
-[type="text"],
-[type="time"],
-[type="url"],
-[type="week"],
-select,
-textarea {
-  min-height: 1.5em;
-}
-
-button,
-input,
-select,
-textarea {
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  font-family: sans-serif;
-  font-size: 1em;
-  font-weight: normal;
-  line-height: 1em;
-  margin: 0;
-  padding: .4em .6em;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-}
-
-button,
-input,
-select {
-  overflow: visible;
-}
-
-textarea {
-  overflow: auto;
-}
-
-button,
-select {
-  text-transform: none;
-}
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  cursor: pointer;
-  -webkit-appearance: button;
-}
-
-[disabled],
-[disabled]:active,
-[disabled]:focus,
-[disabled]:hover {
-  cursor: default;
-  opacity: 0.5;
-}
-
-button::-moz-focus-inner,
-input::-moz-focus-inner,
-textarea::-moz-focus-inner,
-select::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-button:-moz-focusring,
-input:-moz-focusring,
-textarea:-moz-focusring,
-select:-moz-focusring {
-  outline: none;
-}
-
-button:focus,
-input:focus,
-textarea:focus,
-select:focus {
-  outline: none;
-}
-
-fieldset {
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  margin: 0;
-  padding: 0.35em 0.7em 0.7em;
-}
-
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
-}
-
-[type="number"] {
-  width: auto;
-}
-
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-[type="search"] {
-  -webkit-appearance: textfield;
-}
-
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-[aria-busy="true"] {
-  cursor: progress;
-}
-
-[aria-controls] {
-  cursor: pointer;
-}
-
-[aria-disabled] {
-  cursor: default;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
+@import url("https://fonts.googleapis.com/css?family=Roboto|Work+Sans");
 /* button */
 button,
 input[type="button"],
@@ -313,7 +10,7 @@ input[type="reset"],
   border-radius: 3px;
   box-shadow: none;
   color: #333;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   letter-spacing: normal;
   font-weight: 400;
@@ -322,6 +19,7 @@ input[type="reset"],
   padding: 7px 21px;
   transition: all 0.5s cubic-bezier(0.465, 0.24, 0.37, 0.825);
   cursor: pointer;
+  -webkit-appearance: button;
   display: inline-flex;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
@@ -420,6 +118,34 @@ input[type="submit"].btn-block,
 input[type="reset"].btn-block,
 .btn.btn-block {
   width: 100%;
+}
+
+.btn-circle {
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+}
+
+.btn-box {
+  border-radius: 3px;
+  height: 24px;
+  width: 24px;
+}
+
+.btn-circle.btn-sm,
+.btn-box.btn-sm {
+  font-size: 12px;
+  height: 18px;
+  padding: 0;
+  width: 18px;
+}
+
+.btn-circle.btn-lg,
+.btn-box.btn-lg {
+  font-size: 24px;
+  height: 36px;
+  padding: 0;
+  width: 36px;
 }
 
 button.btn-primary,
@@ -1035,7 +761,7 @@ textarea {
   border-bottom: 1px solid #aca8a7;
   border-radius: 0;
   color: #333;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   letter-spacing: normal;
   font-weight: 400;
@@ -1044,6 +770,8 @@ textarea {
   padding: 7px;
   display: flex;
   align-items: center;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
   width: calc(100% - 7px * 2);
 }
 
@@ -1106,7 +834,7 @@ textarea:active {
 
 label,
 .label {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 12.8px;
   letter-spacing: normal;
   font-weight: 400;
@@ -1177,7 +905,7 @@ select {
 
 [type="checkbox"] + label,
 [type="radio"] + label {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   letter-spacing: normal;
   font-weight: 400;
@@ -1458,43 +1186,44 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: sans-serif;
+  background: #fff;
+  color: #333;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
   font-weight: 400;
   letter-spacing: normal;
   line-height: 1em;
-  font-style: normal;
-  color: #333;
   text-rendering: optimizeLegibility;
 }
 
 h1,
 .h1 {
-  font-size: 15vmin;
+  font-size: 4.5em;
 }
 
 h2,
 .h2 {
-  font-size: 12.5vmin;
+  font-size: 3.75em;
 }
 
 h3,
 .h3 {
-  font-size: 10vmin;
+  font-size: 3em;
 }
 
 h4,
 .h4 {
-  font-size: 7vmin;
+  font-size: 2.1em;
 }
 
 h5,
 .h5 {
-  font-size: 6vmin;
+  font-size: 1.8em;
 }
 
 h6,
 .h6 {
-  font-size: 5vmin;
+  font-size: 1.5em;
 }
 
 .sub-title {
@@ -1518,7 +1247,7 @@ h6,
   background: #333;
   display: block;
   content: "";
-  height: 3px;
+  height: 1px;
   width: 6vmin;
   margin-right: 15px;
 }
@@ -1533,7 +1262,7 @@ h6,
   background: #333;
   display: block;
   content: "";
-  height: 3px;
+  height: 1px;
   width: 6vmin;
   margin-left: 15px;
 }
@@ -1542,7 +1271,7 @@ h6,
   background: #333;
   display: block;
   content: "";
-  height: 3px;
+  height: 1px;
   width: 6vmin;
   margin-bottom: 15px;
 }
@@ -1551,7 +1280,7 @@ h6,
   background: #333;
   display: block;
   content: "";
-  height: 3px;
+  height: 1px;
   width: 6vmin;
   margin-top: 15px;
 }
@@ -1631,7 +1360,7 @@ button img {
 a,
 .link {
   color: #FF5722;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: normal;
@@ -1894,7 +1623,8 @@ table tfoot tr td {
 
 /* text */
 body {
-  font-family: sans-serif;
+  background: #fff;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: normal;
@@ -1961,6 +1691,10 @@ i {
   font-style: normal;
 }
 
+dfn {
+  font-style: italic;
+}
+
 em {
   font-style: italic;
   font-weight: bold;
@@ -2024,6 +1758,24 @@ kbd {
 samp {
   background: #009;
   color: #fff;
+}
+
+::-webkit-selection {
+  background-color: #333;
+  color: #eee;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background-color: #333;
+  color: #eee;
+  text-shadow: none;
+}
+
+::selection {
+  background-color: #333;
+  color: #eee;
+  text-shadow: none;
 }
 
 .word-break-all {
@@ -2095,23 +1847,4 @@ samp {
 
 .text-justify {
   text-align: justify;
-}
-
-[hidden],
-.hidden {
-  display: none !important;
-  pointer-events: none !important;
-}
-
-[disabled],
-.disabled {
-  cursor: default !important;
-  opacity: 0.7 !important;
-  pointer-events: none !important;
-}
-
-[readonly],
-.readonly {
-  cursor: default !important;
-  pointer-events: none !important;
 }

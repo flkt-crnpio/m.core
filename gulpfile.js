@@ -14,7 +14,7 @@ var gulp = require('gulp'),
 
 gulp.task('dist', ['sass-dist']);
 
-gulp.task('dev', ['sass-dev'], function() {
+gulp.task('dev', ['copy', 'sass-dev'], function() {
     browserSync.init({
         server: {
             baseDir: "./dev"
@@ -40,4 +40,9 @@ gulp.task('sass-dev', function(){
         .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
         .pipe(gulp.dest('dev/css'))
         .pipe(browserSync.stream());
+});
+
+gulp.task('copy', function() {
+    return gulp.src('node_modules/m.normalize/normalize.min.css')
+        .pipe(gulp.dest('dev/css/'));
 });
