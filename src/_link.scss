@@ -1,0 +1,84 @@
+// link
+a,
+.link {
+    color: $m-a-color;
+    transition: $m-transition;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    &:hover,
+    &:focus {
+        color: $m-a-color-hover;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        text-decoration: none;
+    }
+}
+
+a:not(.btn):not(.clean),
+.link:not(.btn):not(.clean) {
+    &::after {
+        background: $m-a-color;
+        transition: $m-transition;
+        height: $m-a-underline;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+    }
+    &:hover,
+    &:focus {
+        &::after {
+            background: $m-a-color-hover;
+            left: 0;
+            width: 100%;
+        }
+    }
+}
+
+.link-sm {
+    font-size: $m-font-size * .75;
+    line-height: $m-line-height .75;
+}
+.link-lg {
+    font-size: $m-font-size * 1.5;
+    line-height: $m-line-height * 1.5;
+}
+.link-lead {
+    font-size: $m-font-size * 2;
+    line-height: $m-line-height * 2;
+}
+.link-block {
+    display: block;
+}
+
+@each $name, $color in $m-colors {
+    .link-#{$name} {
+        color: $color;
+        &:hover,
+        &:focus {
+            color: darken($color, 5);
+        }
+    }
+
+    .link-#{$name}:not(.link-clean):not(.btn) {
+        &::after {
+            background: lighten($color, 50);
+        }
+        &:hover,
+        &:focus {
+            &::after {
+                background: $color;
+            }
+        }
+    }
+}
