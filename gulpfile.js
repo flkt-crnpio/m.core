@@ -26,7 +26,7 @@ gulp.task('dev', ['normalize', 'grid', 'sass-dev'], function() {
 });
 
 gulp.task('sass-dist', function(){
-    return gulp.src(['src/mandarina.scss'])
+    return gulp.src(['src/mol.scss'])
         .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(cssnano({
@@ -38,7 +38,7 @@ gulp.task('sass-dist', function(){
 });
 
 gulp.task('sass-dev', function(){
-    return gulp.src(['src/mandarina.scss'])
+    return gulp.src(['src/mol.scss'])
         .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
         .pipe(gulp.dest('dev/css'))
         .pipe(browserSync.stream());

@@ -1,7 +1,7 @@
 {
   "name": "mol",
   "version": "2.0.0",
-  "description": "modular scss library",
+  "description": "M base for modular scss library",
   "main": "dev/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

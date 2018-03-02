@@ -1,5 +1,5 @@
-# mandarina #
-Mandarina is a CSS modular library.
+# mol #
+Mol is a CSS modular library.
 This project contain core styles for init a clean project.
 
 ## Setup for edit ##
@@ -21,7 +21,7 @@ gulp dev
 
 ## License ##
 
-The MIT License (MIT) Copyright (c) 2017 flkt
+The MIT License (MIT) Copyright (c) flkt
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
