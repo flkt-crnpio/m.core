@@ -1,0 +1,135 @@
+// typography
+body {
+    background: $m-background;
+    color: $m-color;
+    font-family: $m-font-family;
+    font-size: $m-font-size;
+    font-weight: $m-font-weight;
+    letter-spacing: $m-letter-spacing;
+    line-height: $m-line-height;
+}
+
+blockquote {
+    font-size: 1.2em;
+    margin: 0 $m-spacelement;
+    padding: $m-spacelement;
+    position: relative;
+    &::before {
+        content: "\201C";
+        font-family: Georgia, serif;
+        font-size: 7em;
+        left: -#{$m-spacelement};
+        opacity: 0.05;
+        position: absolute;
+        top: $m-spacelement * 2;
+    }
+}
+
+del {
+    opacity: 0.5;
+}
+
+em {
+    font-style: italic;
+    font-weight: bold;
+}
+
+code,
+kbd,
+mark,
+samp {
+    font-family: $m-code-family;
+    font-weight: lighter;
+    border-radius: 3px;
+    margin: 0;
+    padding: $m-spacelement * .1;
+}
+code {
+    background: $m-color;
+    color: $m-background;
+}
+kbd {
+    background: #00f;
+    color: #fff;
+}
+mark {
+    background: #ff0;
+    color: #333;
+}
+samp {
+    background: #eee;
+    color: #00f;
+}
+var {
+    font-family: $m-code-family;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.word-break-all {
+    word-break: break-all;
+    hyphens: auto;
+}
+.word-wrap-break {
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.text-overflow-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.font-sm {
+    font-size: $m-font-size * .75;
+    line-height: $m-font-size * .75;
+}
+.font-lg {
+    font-size: $m-font-size * 1.5;
+    line-height: $m-font-size * 1.5;
+}
+.font-lead {
+    font-size: $m-font-size * 2;
+    line-height: $m-font-size * 2;
+}
+
+.font-bold {
+    font-weight: bolder;
+}
+.font-light {
+    font-weight: lighter;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+.text-lowercase {
+    text-transform: lowercase;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.text-left {
+    text-align: left;
+}
+.text-justify {
+    text-align: justify;
+}
+
+@each $name, $color in $m-colors {
+    .font-#{$name} {
+        color: $color;
+    }
+}

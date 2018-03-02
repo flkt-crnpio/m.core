@@ -1,0 +1,53 @@
+// heading
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: $m-h-family;
+    font-style: $m-h-style;
+    font-weight: $m-h-weight;
+    letter-spacing: $m-h-spacing;
+    line-height: $m-h-height;
+}
+
+h1,
+.h1 {
+    font-size: $m-h-size * 3;
+}
+h2,
+.h2 {
+    font-size: $m-h-size * 2.5;
+}
+h3,
+.h3 {
+    font-size: $m-h-size * 2;
+}
+h4,
+.h4 {
+    font-size: $m-h-size * 1.4;
+}
+h5,
+.h5 {
+    font-size: $m-h-size * 1.2;
+}
+h6,
+.h6 {
+    font-size: $m-h-size;
+}
+
+.sub-title {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.sub-title + * {
+    margin-top: 0;
+    padding-top: 0;
+}

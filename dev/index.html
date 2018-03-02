@@ -6,401 +6,531 @@
     	<meta name="googlebot" content="noindex,nofollow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <title>mandarina</title>
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/grid.min.css">
         <link rel="stylesheet" href="css/mandarina.css">
     </head>
     <body>
-        <div style="width: 90%; margin: 10vh auto;">
-            <form>
-                <div class="f-m">
-                    <label for="">Input</label>
-                    <input type="text" name="text" value="" placeholder="text">
+        <div class="main">
+            <div class="container-x">
+                <!-- _heading -->
+                <div class="m-y-5">
+                    <h1>h1 Heading</h1>
+                    <h2>h2 Heading</h2>
+                    <h3>h3 Heading</h3>
+                    <h4>h4 Heading</h4>
+                    <h5>h5 Heading</h5>
+                    <h6>h6 Heading</h6>
+                    <h1 class="sub-title">sub-title</h1>
+                    <h4>sub title class remove margins</h4>
                 </div>
 
-                <div class="f-inline f-m">
-                    <label for="">Input</label>
-                    <input type="text" name="text" value="" placeholder="text">
+                <!-- _typography -->
+                <div class="m-y-5">
+                    <p><b>Paragraph</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus velit nulla, scelerisque quis aliquam eget, rhoncus tincidunt lacus. Aliquam blandit est lacinia fringilla pulvinar. Morbi sodales eros leo, sed ultrices nunc rutrum et. Morbi at magna ante. Pellentesque tincidunt lectus a pharetra sodales. Phasellus ullamcorper elementum metus, ut consectetur libero lobortis eget. Nam mattis eros in ante tristique dignissim.</p>
 
-                    <label for="">Input</label>
-                    <input type="text" name="text" value="" placeholder="text">
-                </div>
+                    <blockquote cite="http://es.lipsum.com/">
+                        <b>blockquote</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </blockquote>
 
-                <div class="f-inline f-m">
-                    <div class="switch">
-                        <input type="checkbox" name="check" id="switch1">
-                        <label for="switch1">switch</label>
+                    <div class="m-y-2">
+                        <b>b</b> <strong>strong</strong><br>
+                        <cite>cite</cite> <q cite="">q</q><br>
+                        <i>i</i><br>
+                        <em>em</em><br>
+                        <del>del</del><br>
+                        <dfn>dfn</dfn><br>
+                        <abbr title="">abbr</abbr><br>
+                        <ins>ins</ins><br>
+                        <small>small</small><br>
+                        <sub>sub</sub><br>
+                        <sup>sup</sup><br>
                     </div>
-                    <div class="switch">
-                        <input type="checkbox" name="check" id="switch1">
-                        <label for="switch1">switch</label>
+                    <div class="m-y-2">
+                        <code><var>var</var> code</code>
+                        <kbd>kbd</kbd>
+                        <mark>mark</mark>
+                        <samp>samp</samp>
+                        <var>var</var>
                     </div>
-                    <div class="switch">
-                        <input type="checkbox" name="check" id="switch1">
-                        <label for="switch1">switch</label>
+                    <div class="m-y-2">
+                        <p class="font-sm"><b>font-sm</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="font-lg"><b>font-lg</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="font-lead"><b>font-lead</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-
-                    <button type="button" class="btn btn-sm btn-primary">button</button>
-                    <button type="button" class="btn btn-primary">button</button>
-
-                </div>
-
-                <div class="f-m">
-                    <label for="select1">Select</label>
-                    <select id="select1" name="select">
-                        <option value="opt1">option 1</option>
-                        <option value="opt2">option 2</option>
-                        <option value="opt3">option 3</option>
-                    </select>
-                </div>
-                <div class="f-m">
-                    <label for="select2">Select</label>
-                    <div id="select2" class="select">
-                        <select name="select-styled">
-                            <option value="opt1">option 1</option>
-                            <option value="opt2">option 2</option>
-                            <option value="opt3">option 3</option>
-                        </select>
+                    <div class="m-y-2">
+                        <p>
+                            Font color
+                            <span class="font-primary">font-primary</span>
+                            <span class="font-secondary">font-secondary</span>
+                            <span class="font-accent">font-accent</span>
+                        </p>
+                    </div>
+                    <div class="m-y-2">
+                        <p class="font-bold">font-bold</p>
+                        <p class="font-light">font-light</p>
+                    </div>
+                    <div class="m-y-2">
+                        <p class="font-italic">font-italic</p>
+                    </div>
+                    <div class="m-y-2">
+                        <p class="text-capitalize">text-capitalize</p>
+                        <p class="text-lowercase">text-lowercase</p>
+                        <p class="text-uppercase">text-uppercase</p>
+                    </div>
+                    <div class="m-y-2">
+                        <p class="text-center"><b>text-center</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p class="text-right"><b>text-right</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p class="text-left"><b>text-left</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p class="text-justify"><b>text-justify</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                    <div class="m-y-2">
+                        <p class="text-overflow-ellipsis"><b>text-overflow-ellipsis</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="word-break-all"><b>word-break-all</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="word-wrap-break"><b>word-wrap-break</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                 </div>
-                <div class="f-m">
-                    <label for="">file</label>
-                    <input type="file" name="file">
-                </div>
-                <div class="f-m">
-                    <input type="radio" name="radio" id="radio1" value="1">
-                    <label for="radio1">radio 1</label>
 
-                    <input type="radio" name="radio" id="radio2" value="2">
-                    <label for="radio2">radio 2</label>
+                <!-- _list -->
+                <div class="m-y-5">
+                    <ol>
+                        <li>ol li</li>
+                        <li>
+                            ol li
+                            <ul>
+                                <li>ul li</li>
+                                <li>ul li</li>
+                                <li>ul li</li>
+                            </ul>
+                        </li>
+                        <li>ol li</li>
+                    </ol>
+                    <dl>
+                        <dt>dl dt</dt>
+                        <dd>dd</dd>
+                        <dt>dt</dt>
+                        <dd>dd</dd>
+                    </dl>
+                    <ol class="list-clean">
+                        <li>list-clean</li>
+                        <li>
+                            ol li
+                            <ul class="list-clean">
+                                <li>list-clean</li>
+                                <li>ul li</li>
+                                <li>ul li</li>
+                            </ul>
+                        </li>
+                    </ol>
 
-                    <input type="radio" name="radio" id="radio3" value="3">
-                    <label for="radio3">radio 3</label>
+                    <ol class="list-striped">
+                        <li>list-striped</li>
+                        <li>
+                            ol li
+                            <ul class="list-striped">
+                                <li>list-striped</li>
+                                <li>ul li</li>
+                                <li>ul li</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <dl class="list-striped">
+                        <dt>dt list-striped</dt>
+                        <dd>dd</dd>
+                        <dt>dt</dt>
+                        <dd>dd</dd>
+                        <dt>dt</dt>
+                        <dd>dd</dd>
+                        <dt>dt</dt>
+                        <dd>dd</dd>
+                    </dl>
 
-                    <input type="radio" name="radio" id="radio4" value="4">
-                    <label for="radio4">radio 4</label>
-                </div>
-                <div class="f-m radio">
-                    <input type="radio" name="radio" id="radio5" value="5">
-                    <label for="radio5">radio 5</label>
-                    <input type="radio" name="radio" id="radio6" value="6">
-                    <label for="radio6">radio 6</label>
-                </div>
-                <div class="f-m">
-                    <input type="checkbox" name="check" id="checkbox1">
-                    <label for="checkbox1">checkbox</label>
-                </div>
-                <div class="f-m checkbox">
-                    <input type="checkbox" name="checkbox" id="checkbox2">
-                    <label for="checkbox2">checkbox </label>
-                </div>
-                <div class="f-m switch">
-                    <input type="checkbox" name="check" id="switch1">
-                    <label for="switch1">switch</label>
-                </div>
-                <div class="f-m">
-                    <button type="button" class="btn btn-primary">button</button>
-                </div>
-            </form>
-
-        </div>
-        <!-- <div class="">
-            <div class="bg-primary-1">bg-primary-1</div>
-            <div class="bg-primary-2">bg-primary-2</div>
-            <div class="bg-primary-3">bg-primary-3</div>
-            <div class="bg-primary-4">bg-primary-4</div>
-            <div class="bg-primary-5">bg-primary-5</div>
-            <div class="bg-primary-6">bg-primary-6</div>
-            <div class="bg-primary-7">bg-primary-7</div>
-            <div class="bg-primary-8">bg-primary-8</div>
-            <div class="bg-primary-9">bg-primary-9</div>
-            <div class="bg-secondary-1">bg-secondary-1</div>
-            <div class="bg-secondary-2">bg-secondary-2</div>
-            <div class="bg-secondary-3">bg-secondary-3</div>
-            <div class="bg-secondary-4">bg-secondary-4</div>
-            <div class="bg-secondary-5">bg-secondary-5</div>
-            <div class="bg-secondary-6">bg-secondary-6</div>
-            <div class="bg-secondary-7">bg-secondary-7</div>
-            <div class="bg-secondary-8">bg-secondary-8</div>
-            <div class="bg-secondary-9">bg-secondary-9</div>
-            <div class="bg-accent-1">bg-accent-1</div>
-            <div class="bg-accent-2">bg-accent-2</div>
-            <div class="bg-accent-3">bg-accent-3</div>
-            <div class="bg-accent-4">bg-accent-4</div>
-            <div class="bg-accent-5">bg-accent-5</div>
-            <div class="bg-accent-6">bg-accent-6</div>
-            <div class="bg-accent-7">bg-accent-7</div>
-            <div class="bg-accent-8">bg-accent-8</div>
-            <div class="bg-accent-9">bg-accent-9</div>
-            <div class="bg-gray-1">bg-gray-1</div>
-            <div class="bg-gray-2">bg-gray-2</div>
-            <div class="bg-gray-3">bg-gray-3</div>
-            <div class="bg-gray-4">bg-gray-4</div>
-            <div class="bg-gray-5">bg-gray-5</div>
-            <div class="bg-gray-6">bg-gray-6</div>
-            <div class="bg-gray-7">bg-gray-7</div>
-            <div class="bg-gray-8">bg-gray-8</div>
-            <div class="bg-gray-9">bg-gray-9</div>
-        </div> -->
-        <!-- <div class="">
-                <button type="button">button</button>
-                <button type="button" class="btn-sm">button</button>
-                <button type="button" class="btn">button</button>
-                <button type="button" class="btn-lg">button</button>
-                <button type="button" class="btn-block">button</button>
-                <button type="button" class="btn btn-primary">button</button>
-                <button type="button" class="btn btn-secondary">button</button>
-                <button type="button" class="btn btn-accent">button</button>
-                <button type="button" class="btn btn-primary-line">button</button>
-                <button type="button" class="btn btn-secondary-line">button</button>
-                <button type="button" class="btn btn-accent-line">button</button>
-                <button type="button" class="btn">.btn</button>
-                <a href="#" class="btn">.btn</a>
-                <p class="btn">.btn</p>
-        </div> -->
-        <!-- <div class="">
-            <a href="#">links</a><br>
-            <a href="#" class="link-sm">link sm</a>
-            <a href="#" class="link">link</a>
-            <a href="#" class="link-lg">link lg</a>
-            <a href="#" class="link-block">link block</a>
-            <a href="#" class="link-primary">link primary</a>
-            <a href="#" class="link-secondary">link secondary</a>
-            <a href="#" class="link-accent">link accent</a>
-            <a href="#" class="link-clean">link clean</a>
-        </div> -->
-        <!-- <div class="">
-            <img src="img/github.png" alt="github">
-            <a href="#"><img src="img/github.png" alt="github"></a>
-            <button type="button"><img src="img/github.png" alt="github"></button>
-        </div> -->
-        <!-- <div class="">
-            <h1>h1</h1>
-            <h2>h2</h2>
-            <h3>h3</h3>
-            <h4>h4</h4>
-            <h5>h5</h5>
-            <h6>h6</h6>
-
-            <h6 class="title-leftline">.title-leftline</h6>
-            <h6 class="title-rightline">.title-rightline</h6>
-            <h6 class="title-topline">.title-topline</h6>
-            <h6 class="title-bottomline">.title-bottomline</h6>
-
-            <h6 class="title-primary">.title-primary</h6>
-            <h6 class="title-secondary">.title-secondary</h6>
-            <h6 class="title-accent">.title-accent</h6>
-        </div> -->
-        <!-- <div class="">
-            <p>paragraph</p>
-
-            <blockquote cite="http://">
-                blockquote
-                <cite>cite</cite>
-            </blockquote>
-
-            <b>b</b> <strong>strong</strong><br>
-            <cite>cite</cite> <q cite="">q</q><br>
-            <i>i</i><br>
-            <em>em</em><br>
-            <del>del</del><br>
-            <abbr title="">abbr</abbr><br>
-            <ins>ins</ins><br>
-            <small>small</small><br>
-            <sub>sub</sub><br>
-            <sup>sup</sup><br>
-            <code>code</code><br>
-            <kbd>kbd</kbd><br>
-            <mark>mark</mark><br>
-            <samp>samp</samp><br>
-            <var>var</var><br>
-
-            <p class="text-sm">text-sm</p>
-            <p class="text-lg">text-lg</p>
-            <p class="text-lead">text-lead</p>
-
-            <p class="text-bold">text-bold</p>
-            <p class="text-light">text-light</p>
-
-            <p class="text-italic">text-italic</p>
-
-            <p class="text-capitalize">text-capitalize</p>
-            <p class="text-lowercase">text-lowercase</p>
-            <p class="text-uppercase">text-uppercase</p>
-
-            <p class="text-center">text-center</p>
-            <p class="text-right">text-right</p>
-            <p class="text-left">text-left</p>
-            <p class="text-justify">text-justify</p>
-
-            <p class="text-overflow-ellipsis">text-overflow-ellipsis</p>
-
-            <p class="word-break-all">word-break-all</p>
-            <p class="word-wrap-break">word-wrap-break</p>
-
-        </div> -->
-
-        <!-- <div class="">
-            <ul>
-                <li>ul li</li>
-                <li>ul li</li>
-                <li>
-                    ul li
-                    <ul>
+                    <ul class="list-inline">
+                        <li>list-inline</li>
                         <li>ul li</li>
-                        <li>ul li</li>
-                        <li>ul li</li>
+                        <li>li</li>
                     </ul>
-                </li>
-            </ul>
-            <ol>
-                <li>ol li</li>
-                <li>
-                    ol li
-                    <ol>
-                        <li>ol li</li>
-                        <li>ol li</li>
-                        <li>ol li</li>
-                    </ol>
-                </li>
-                <li>ol li</li>
-            </ol>
-            <dl class="">
-                <dt>dl dt</dt>
-                <dd>dd</dd>
-                <dt>dt</dt>
-                <dd>dd</dd>
-            </dl>
+                    <dl class="list-inline">
+                        <dt>list-inline</dt>
+                        <dd>dd</dd>
+                        <dt>dt</dt>
+                        <dd>dd</dd>
+                    </dl>
+                </div>
 
-            <ol class="list-clean">
-                <li>list-clean li</li>
-                <li>
-                    i
-                    <ol>
-                        <li>ol li</li>
-                        <li>ol li</li>
-                        <li>ol li</li>
-                    </ol>
-                </li>
-            </ol>
+                <!-- _table -->
+                <div class="m-y-5">
+                    <div class="table-container">
+                        <table>
+                            <caption>Container div.table-container > table</caption>
+                            <thead>
+                                <tr>
+                                    <th>thead tr th</th>
+                                    <th>th default vertical-align bottom</th>
+                                    <th>th</th>
+                                    <th>th</th>
+                                    <th>th</th>
+                                    <th>th</th>
+                                    <th>th</th>
+                                    <th>th</th>
+                                    <th>th</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>tbody tr td</td>
+                                    <td>tbody default vertical-align: top</td>
+                                    <td>tbody.align-middle vertical-align: middle</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                </tr>
+                                <tr>
+                                    <td>td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                </tr>
+                                <tr>
+                                    <td>td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>tfoot tr td</td>
+                                    <td>td default vertical-align middle</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
 
-            <ul class="list-inline">
-                <li>list-inline</li>
-                <li>ul li</li>
-                <li>li</li>
-            </ul>
+                    <table class="striped m-t-2">
+                        <caption>.table-striped</caption>
+                        <thead>
+                            <tr>
+                                <th>thead tr th</th>
+                                <th>th</th>
+                                <th>th</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                    <td>tbody tr td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                </tr>
+                                <tr>
+                                    <td>tbody tr td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                </tr>
+                                <tr>
+                                    <td>tbody tr td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                </tr>
+                        </tbody>
+                    </table>
 
-            <dl class="list-inline">
-                <dt>dl list-inline dt</dt>
-                <dd>dd</dd>
-                <dt>dt</dt>
-                <dd>dd</dd>
-            </dl>
-        </div> -->
+                    <table class="hover m-t-2">
+                        <caption>.table-hover</caption>
+                        <thead>
+                            <tr>
+                                <th>thead tr th</th>
+                                <th>th</th>
+                                <th>th</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                    <td>tbody tr td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                </tr>
+                                <tr>
+                                    <td>tbody tr td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                </tr>
+                                <tr>
+                                    <td>tbody tr td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                </tr>
+                        </tbody>
+                    </table>
 
-        <!-- <div class="">
-            <table>
-                <thead>
-                    <tr>
-                        <th>table thead tr th</th>
-                        <th>th</th>
-                        <th>th</th>
-                    </tr>
-                </thead>
-                <tbody>
-                        <tr>
-                            <td>tbody tr td</td>
-                            <td>td</td>
-                            <td>td</td>
-                        </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td>tfoot tr td</td>
-                        <td>td</td>
-                        <td>td</td>
-                    </tr>
-                </tfoot>
-            </table>
+                    <table class="box m-t-2">
+                        <caption>.table-box</caption>
+                        <thead>
+                            <tr>
+                                <th>thead tr th</th>
+                                <th>th</th>
+                                <th>th</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                    <td>tbody tr td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                </tr>
+                                <tr>
+                                    <td>tbody tr td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                </tr>
+                                <tr>
+                                    <td>tbody tr td</td>
+                                    <td>td</td>
+                                    <td>td</td>
+                                </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-            <table class="table-striped">
-                <thead>
-                    <tr>
-                        <th>table-striped</th>
-                        <th>th</th>
-                        <th>th</th>
-                    </tr>
-                </thead>
-                <tbody>
-                        <tr>
-                            <td>tbody tr td</td>
-                            <td>td</td>
-                            <td>td</td>
-                        </tr>
-                        <tr>
-                            <td>tbody tr td</td>
-                            <td>td</td>
-                            <td>td</td>
-                        </tr>
-                        <tr>
-                            <td>tbody tr td</td>
-                            <td>td</td>
-                            <td>td</td>
-                        </tr>
-                </tbody>
-            </table>
+                <!-- _link -->
+                <div class="m-y-5">
+                    <p>
+                        <a href="#">links</a>
+                        <a href="#">a</a>
+                        <span class="link">.link</span>
+                    </p>
 
-            <table class="table-hover">
-                <thead>
-                    <tr>
-                        <th>table-hover</th>
-                        <th>th</th>
-                        <th>th</th>
-                    </tr>
-                </thead>
-                <tbody>
-                        <tr>
-                            <td>tbody tr td</td>
-                            <td>td</td>
-                            <td>td</td>
-                        </tr>
-                        <tr>
-                            <td>tbody tr td</td>
-                            <td>td</td>
-                            <td>td</td>
-                        </tr>
-                        <tr>
-                            <td>tbody tr td</td>
-                            <td>td</td>
-                            <td>td</td>
-                        </tr>
-                </tbody>
-            </table>
+                    <p>
+                        <a href="#" class="link-sm">a.sm</a>
+                        <a href="#">a</a>
+                        <a href="#" class="link-lg">a.lg</a>
+                        <a href="#" class="link-lead">a.lead</a>
+                    </p>
 
-            <table class="table-bordered">
-                <thead>
-                    <tr>
-                        <th>table-bordered</th>
-                        <th>th</th>
-                        <th>th</th>
-                    </tr>
-                </thead>
-                <tbody>
-                        <tr>
-                            <td>tbody tr td</td>
-                            <td>td</td>
-                            <td>td</td>
-                        </tr>
-                        <tr>
-                            <td>tbody tr td</td>
-                            <td>td</td>
-                            <td>td</td>
-                        </tr>
-                        <tr>
-                            <td>tbody tr td</td>
-                            <td>td</td>
-                            <td>td</td>
-                        </tr>
-                </tbody>
-            </table>
-        </div> -->
+                    <p>
+                        <a href="#" class="link-block">a.block</a>
+                    </p>
+
+                    <p>
+                        <a href="#" class="link-primary">a.primary</a>
+                        <a href="#" class="link-secondary">a.secondary</a>
+                        <a href="#" class="link-accent">a.accent</a>
+                    </p>
+                    <p>
+                        <a href="#" class="link-clean">a.clean</a>
+                    </p>
+                    <p>
+                        <button href="#" class="link">button.link</button>
+                    </p>
+                </div>
+
+                <!-- _buttons -->
+                <div class="m-y-5">
+                    <p>
+                        <button type="button">button</button>
+                        <a href="#" class="btn">a.btn</a>
+                        <span class="btn">span.btn</span>
+                    </p>
+                    <p>
+                        <input type="submit" name="" value="input submit disabled" disabled>
+                        <input type="button" name="" value="input button hidden" hidden>
+                        <input type="reset" name="" value="input reset">
+                    </p>
+                    <p>
+                        <button type="button" class="btn-sm">button.sm</button>
+                        <button type="button">button</button>
+                        <button type="button" class="btn-lg">button.lg</button>
+                        <button type="button" class="btn-block">button.block</button>
+                    </p>
+                    <p>
+                        <button type="button" class="btn-circle-sm">btn</button>
+                        <button type="button" class="btn-circle">btn</button>
+                        <button type="button" class="btn-circle-lg">btn</button>
+                    </p>
+                    <p>
+                        <button type="button" class="btn-primary">button.primary</button>
+                        <button type="button" class="btn-secondary">button.secondary</button>
+                        <button type="button" class="btn-accent">button.accent</button><br>
+                        <button type="button" class="btn-primary" disabled>button.primary disabled</button>
+                        <button type="button" class="btn-secondary" disabled>button.secondary disabled</button>
+                        <button type="button" class="btn-accent" disabled>button.accent disabled</button>
+                    </p>
+                    <p>
+                        <button type="button" class="btn-primary-line">button.primary-line</button>
+                        <button type="button" class="btn-secondary-line">button.secondary-line</button>
+                        <button type="button" class="btn-accent-line">button.accent-line</button><br>
+                        <button type="button" class="btn-primary-line" disabled>button.primary-line disabled</button>
+                        <button type="button" class="btn-secondary-line" disabled>button.secondary-line disabled</button>
+                        <button type="button" class="btn-accent-line" disabled>button.accent-line disabled</button>
+                    </p>
+                </div>
+
+                <!-- _image -->
+                <div class="m-y-5">
+                    <img src="img/github.png" alt="github">
+                    <a href="#"><img src="img/github.png" alt="github"></a>
+                    <button type="button"><img src="img/github.png" alt="github"></button>
+                </div>
+
+                <!-- _form -->
+                <div class="m-y-5">
+                    <form>
+                        <div class="form-block">
+                            <label for="">Input</label>
+                            <input type="text" name="text" value="" placeholder="text">
+                        </div>
+                        <div class="form-block">
+                            <label for="select1">Select</label>
+                            <select id="select1" name="select">
+                                <option value="opt1">option 1</option>
+                                <option value="opt2">option 2</option>
+                                <option value="opt3">option 3</option>
+                            </select>
+                        </div>
+                        <div class="form-block">
+                            <label for="">File</label>
+                            <input type="file" name="file">
+                        </div>
+                        <div class="form-block">
+                            <label for="">Textarea</label>
+                            <textarea name="name" rows="8" cols="80"></textarea>
+                        </div>
+                        <div class="form-block">
+                            <input type="radio" name="radio" id="radio1" value="1">
+                            <label for="radio1">radio 1</label>
+
+                            <input type="radio" name="radio" id="radio2" value="2">
+                            <label for="radio2">radio 2</label>
+
+                            <input type="radio" name="radio" id="radio3" value="3" disabled>
+                            <label for="radio3">radio 3 disabled</label>
+
+                            <input type="checkbox" name="check1" id="checkbox1" value="checkbox1">
+                            <label for="checkbox1">checkbox 1</label>
+
+                            <input type="checkbox" name="check2" id="checkbox2" value="checkbox2" disabled>
+                            <label for="checkbox2">checkbox 2 disabled</label>
+                        </div>
+
+                        <div class="form-block">
+                            <div class="radio">
+                                <input type="radio" name="customradio" id="radio4" value="4">
+                                <label for="radio4">radio 4</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="customradio" id="radio5" value="5">
+                                <label for="radio5">radio 5</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="customradio" id="radio6" value="6" disabled>
+                                <label for="radio6">radio 6 disabled</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" name="checkbox3" id="checkbox3" value="checkbox3">
+                                <label for="checkbox3">checkbox 3</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" name="checkbox4" id="checkbox4" value="checkbox4" disabled>
+                                <label for="checkbox4">checkbox 4 disabled</label>
+                            </div>
+                            <div class="switch">
+                                <input type="checkbox" name="switch" id="switch1" value="switch1">
+                                <label for="switch1">switch</label>
+                            </div>
+                        </div>
+
+                        <div class="form-inline">
+                            <label for="">Input form-inline</label>
+                            <input type="text" name="text" value="" placeholder="text">
+
+                            <label for="">Input</label>
+                            <input type="text" name="text" value="" placeholder="text">
+
+                            <input type="button" name="" value="input button">
+                        </div>
+
+                        <div class="form-inlineblock">
+                            <div class="form-block">
+                                <label for="">Input form-inlineblock</label>
+                                <input type="text" name="text" value="" placeholder="text">
+                            </div>
+                            <div class="form-block">
+                                <label for="">Input</label>
+                                <input type="text" name="text" value="" placeholder="text">
+                            </div>
+                            <div>
+                                <input type="button" name="" value="input button">
+                            </div>
+                        </div>
+                    </form>
+
+                    <form>
+                        <fieldset>
+                            <legend>legend</legend>
+                            <div class="form-inlineblock">
+                                <div class="form-block">
+                                    <label for="">Input form-inlineblock</label>
+                                    <input type="text" name="text" value="" placeholder="text">
+                                </div>
+                                <div class="form-block">
+                                    <label for="">Input</label>
+                                    <input type="text" name="text" value="" placeholder="text">
+                                </div>
+                                <div>
+                                    <input type="button" name="" value="input button">
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                    <form>
+                        <fieldset disabled>
+                            <legend>legend fieldset disabled</legend>
+                            <div class="form-block">
+                                <label for="">Input form-inlineblock</label>
+                                <input type="text" name="text" value="" placeholder="text">
+                            </div>
+                            <div class="form-block">
+                                <label for="">Input</label>
+                                <input type="text" name="text" value="" placeholder="text">
+                            </div>
+                            <div class="form-block">
+                                <input type="button" name="" value="button">
+                            </div>
+                        </fieldset>
+                    </form>
+
+                    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                        <div class="form-inline">
+                            <input type="number" id="a" value="10">
+                            <span>+</span>
+                            <input type="number" id="b" value="50">
+                            <span>=</span>
+                            <output name="x" for="a b"></output>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
