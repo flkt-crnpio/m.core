@@ -2,6 +2,7 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
     cssnano = require('gulp-cssnano'),
+    rename = require('gulp-rename'),
     browserSync = require('browser-sync').create(),
     supportedbrowsers = [
         'last 2 versions',
@@ -31,6 +32,7 @@ gulp.task('sass-dist', function(){
         .pipe(cssnano({
             autoprefixer: {browsers: supportedbrowsers, add: true}
         }))
+        .pipe(rename({ extname: '.min.css' }))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('dist'))
 });
