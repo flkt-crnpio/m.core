@@ -1,21 +1,22 @@
 {
-  "name": "mol",
+  "name": "m.mol",
   "version": "2.0.0",
   "description": "M base for modular scss library",
   "main": "dev/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "gulp dev",
+    "build": "gulp dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flkt-crnpio/mol.git"
+    "url": "git+https://github.com/flkt-crnpio/m.mol.git"
   },
   "author": "flkt",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/flkt-crnpio/mol/issues"
+    "url": "https://github.com/flkt-crnpio/m.mol/issues"
   },
-  "homepage": "https://github.com/flkt-crnpio/mol#readme",
+  "homepage": "https://github.com/flkt-crnpio/m.mol#readme",
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
