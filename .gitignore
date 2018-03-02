@@ -3,3 +3,5 @@
 .git
 
 /node_modules
+/dev/css/grid.min.css
+/dev/css/normalize.min.css
