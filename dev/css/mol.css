@@ -932,7 +932,7 @@ table tbody tr td {
   vertical-align: top;
 }
 
-table tbody.align-middle tr td {
+table .tbody-align-middle tr td {
   vertical-align: middle;
 }
 
