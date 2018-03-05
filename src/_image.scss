@@ -1,31 +1,37 @@
 // image
-a img {
-    max-width: 100%;
-    max-height: 100%;
+.img-link {
+    max-height: $m-font-size;
     vertical-align: baseline;
 }
 
-button img {
-    max-width: 100%;
-    max-height: 100%;
+.img-btn {
+    height: $m-input-height;
+    object-fit: fill;
     vertical-align: middle;
-}
-
-.img-responsive {
-    max-width: 100%;
+    margin: -($m-input-padding * 1.5) ($m-input-padding * 1.5) -($m-input-padding * 1.5) -($m-input-padding * 1.5);
+    border-radius: $m-btn-border-radius;
 }
 
 .img-cover {
+    height: 100%;
     width: 100%;
     object-fit: cover;
 }
 .img-fill {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+.img-fill-height {
+    height: 100%;
+    object-fit: fill;
+}
+.img-fill-width {
     width: 100%;
     object-fit: fill;
 }
 .img-contain {
+    height: 100%;
+    width: 100%;
     object-fit: contain;
-}
-.img-scale {
-    object-fit: scale-down;
 }

@@ -387,9 +387,86 @@
 
                 <!-- _image -->
                 <div class="m-y-5">
-                    <img src="img/github.png" alt="github">
-                    <a href="#"><img src="img/github.png" alt="github"></a>
-                    <button type="button"><img src="img/github.png" alt="github"></button>
+                    <style media="screen">
+                        .img-container {
+                            background: #eee;
+                            height: 123px;
+                            overflow: hidden;
+                            margin: 0 0 30px;
+                        }
+                    </style>
+                    <div class="flex-row">
+                        <div class="col-1_3">
+                            <b>none</b>
+                        </div>
+                        <div class="col-1_3">
+                            <b>img-contain</b>
+                        </div>
+                        <div class="col-1_3">
+                            <b>img-cover</b>
+                        </div>
+                    </div>
+                    <div class="flex-row">
+                        <div class="col-1_3 img-container">
+                            <img src="img/eric-nopanen-208576-unsplash.jpg" class="none">
+                        </div>
+                        <div class="col-1_3 img-container">
+                            <img src="img/eric-nopanen-208576-unsplash.jpg" class="img-contain">
+                        </div>
+                        <div class="col-1_3 img-container">
+                            <img src="img/eric-nopanen-208576-unsplash.jpg" class="img-cover">
+                        </div>
+                    </div>
+                    <div class="flex-row">
+                        <div class="col-1_3">
+                            <b>img-fill</b>
+                        </div>
+                        <div class="col-1_3">
+                            <b>img-fill-height</b>
+                        </div>
+                        <div class="col-1_3">
+                            <b>img-fill-width</b>
+                        </div>
+                    </div>
+                    <div class="flex-row">
+                        <div class="col-1_3 img-container">
+                            <img src="img/eric-nopanen-208576-unsplash.jpg" class="img-fill">
+                        </div>
+                        <div class="col-1_3 img-container">
+                            <img src="img/eric-nopanen-208576-unsplash.jpg" class="img-fill-height">
+                        </div>
+                        <div class="col-1_3 img-container">
+                            <img src="img/eric-nopanen-208576-unsplash.jpg" class="img-fill-width">
+                        </div>
+                    </div>
+                    <div class="flex-row">
+                        <div class="col-1_3">
+                            <b>img</b>
+                        </div>
+                        <div class="col-1_3">
+                            <b>img-link</b>
+                        </div>
+                        <div class="col-1_3">
+                            <b>img-button</b>
+                        </div>
+                    </div>
+                    <div class="flex-row">
+                        <div class="col-1_3 mol-img-container">
+                            <img class="" src="img/github.png" alt="github">
+                        </div>
+                        <div class="col-1_3 mol-img-container">
+                            <a href="#">
+                                <img class="img-link" src="img/github.png" alt="github">
+                                link mol-img-baseline
+                            </a>
+                        </div>
+                        <div class="col-1_3">
+                            <button type="button">
+                                <img src="img/eric-nopanen-208576-unsplash.jpg" class="img-btn">
+                                button mol-img-middle
+                            </button>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- _form -->
