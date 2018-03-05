@@ -855,36 +855,36 @@ dl dd {
   list-style: none;
 }
 
-.list-striped li:nth-child(even) {
+.list-striped > li:nth-child(even) {
   background: #fff;
 }
 
-.list-striped li:nth-child(odd) {
+.list-striped > li:nth-child(odd) {
   background: #eee;
 }
 
-.list-striped dt {
+.list-striped > dt {
   padding: 7.5px 15px 0;
 }
 
-.list-striped dd {
+.list-striped > dd {
   margin: 0;
   padding: 0 15px 7.5px;
 }
 
-.list-striped dt:nth-of-type(odd) {
+.list-striped > dt:nth-of-type(odd) {
   background: #eee;
 }
 
-.list-striped dd:nth-of-type(odd) {
+.list-striped > dd:nth-of-type(odd) {
   background: #eee;
 }
 
-.list-striped dt:nth-of-type(even) {
+.list-striped > dt:nth-of-type(even) {
   background: #fff;
 }
 
-.list-striped dd:nth-of-type(even) {
+.list-striped > dd:nth-of-type(even) {
   background: #fff;
 }
 
@@ -903,12 +903,12 @@ dl dd {
   margin-right: 15px;
 }
 
-.list-inline dt {
+.list-inline > dt {
   display: inline-flex;
   margin: 0 7.5px 0 0;
 }
 
-.list-inline dd {
+.list-inline > dd {
   display: inline-flex;
   margin: 0 30px 0 0;
 }
