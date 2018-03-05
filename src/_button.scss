@@ -71,7 +71,7 @@ input[type="reset"],
 }
 
 @each $name, $color, $color-hover, $font , $font-hover in $m-btn-colors {
-    &.btn-#{$name} {
+    .btn-#{$name} {
         background: $color;
         border-color: $color;
         color: $font;
@@ -82,7 +82,7 @@ input[type="reset"],
             color: $font-hover;
         }
     }
-    &.btn-#{$name}-line {
+    .btn-#{$name}-line {
         background: transparent;
         box-shadow: none;
         border-color: $color;
