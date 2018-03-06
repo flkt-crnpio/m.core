@@ -731,8 +731,8 @@ a:hover, a:focus,
   text-decoration: none;
 }
 
-a:not(.btn):not(.clean)::after,
-.link:not(.btn):not(.clean)::after {
+a:not(.btn):not(.link-clean)::after,
+.link:not(.btn):not(.link-clean)::after {
   background: #0089A2;
   transition: all 0.3s cubic-bezier(0.465, 0.24, 0.37, 0.825);
   height: 2px;
@@ -743,9 +743,9 @@ a:not(.btn):not(.clean)::after,
   width: 0;
 }
 
-a:not(.btn):not(.clean):hover::after, a:not(.btn):not(.clean):focus::after,
-.link:not(.btn):not(.clean):hover::after,
-.link:not(.btn):not(.clean):focus::after {
+a:not(.btn):not(.link-clean):hover::after, a:not(.btn):not(.link-clean):focus::after,
+.link:not(.btn):not(.link-clean):hover::after,
+.link:not(.btn):not(.link-clean):focus::after {
   background: #004856;
   left: 0;
   width: 100%;

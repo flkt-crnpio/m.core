@@ -23,8 +23,8 @@ a,
     }
 }
 
-a:not(.btn):not(.clean),
-.link:not(.btn):not(.clean) {
+a:not(.btn):not(.link-clean),
+.link:not(.btn):not(.link-clean) {
     &::after {
         background: $m-a-color;
         transition: $m-transition;
