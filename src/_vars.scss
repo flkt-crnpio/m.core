@@ -78,9 +78,15 @@ $m-input-border-bottom: 1px solid #ccc;
 $m-input-border-radius: 1px;
 
 $m-input-color-active:  $m-primary;
+$m-input-after-active:  #fff;
 
 $m-checkbox-height:     20px;
 $m-checkbox-border:     1px solid #ccc;
+
+$m-switch-background-off:   #eee;
+$m-switch-background-on:    $m-input-color-active;
+$m-switch-color-off:        #fff;
+$m-switch-color-on:         #fff;
 
 $m-fieldset-background: transparent;
 $m-fieldset-border:     1px solid #eee;

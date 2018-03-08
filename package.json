@@ -1,6 +1,6 @@
 {
   "name": "m.mol",
-  "version": "2.0.6",
+  "version": "2.1.0",
   "description": "M base for modular scss library",
   "main": "dev/index.html",
   "scripts": {

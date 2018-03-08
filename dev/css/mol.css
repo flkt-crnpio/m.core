@@ -491,6 +491,7 @@ output {
 
 .switch [type="checkbox"]:checked + label::after,
 .switch [type="radio"]:checked + label::after {
+  background: #fff;
   left: 20px;
 }
 

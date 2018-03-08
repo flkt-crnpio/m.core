@@ -188,7 +188,7 @@ output {
             border-color: $m-input-color-active;
         }
         &::after {
-            border-color: #fff;
+            border-color: $m-input-after-active;
         }
     }
 }
@@ -219,7 +219,7 @@ output {
             border-color: $m-input-color-active;
         }
         &::after {
-            background: #fff;
+            background: $m-input-after-active;
         }
     }
 }
@@ -230,13 +230,13 @@ output {
         padding-left: $m-checkbox-height * 2.5;
 
         &::before {
-            background: #eee;
+            background: $m-switch-background-off;
             border-radius: $m-checkbox-height;
             height: $m-checkbox-height + 4px;
             width: $m-checkbox-height * 2 + 4px;
         }
         &::after {
-            background: #fff;
+            background: $m-switch-color-off;
             border-radius: $m-checkbox-height;
             height: $m-checkbox-height;
             width: $m-checkbox-height;
@@ -248,9 +248,10 @@ output {
     [type="checkbox"]:checked + label,
     [type="radio"]:checked + label {
         &::before {
-            background: $m-input-color-active;
+            background: $m-switch-background-on;
         }
         &::after {
+            background: $m-switch-color-on;
             left: $m-checkbox-height;
         }
     }
