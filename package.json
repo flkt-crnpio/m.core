@@ -7,6 +7,12 @@
     "watch": "gulp dev",
     "build": "gulp dist"
   },
+  "keywords": [
+    "mol",
+    "css",
+    "flkt-mol",
+    "scss-module"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/flkt-crnpio/m.mol.git"
