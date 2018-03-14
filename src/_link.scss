@@ -21,6 +21,11 @@ a,
         box-shadow: none;
         text-decoration: none;
     }
+
+    &[hidden],
+    &.hidden {
+        display: none;
+    }
 }
 
 a:not(.btn):not(.link-clean),
