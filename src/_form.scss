@@ -158,7 +158,7 @@ output {
     [type="radio"] + label {
         padding-left: $m-checkbox-height * 1.5;
         &.empty {
-            margin-right: 2px;
+            margin-right: $m-spacelement * .3;
             padding-left: 0;
             height: $m-checkbox-height;
             width: $m-checkbox-height;
@@ -203,7 +203,7 @@ output {
     [type="radio"] + label {
         padding-left: $m-checkbox-height * 1.5;
         &.empty {
-            margin-right: 2px;
+            margin-right: $m-spacelement * .3;
             padding-left: 0;
             height: $m-checkbox-height;
             width: $m-checkbox-height;
@@ -240,7 +240,7 @@ output {
     [type="radio"] + label {
         padding-left: $m-checkbox-height * 2.5;
         &.empty {
-            margin-right: 2px;
+            margin-right: $m-spacelement * .3;
             padding-left: 0;
             height: $m-checkbox-height;
             width: $m-checkbox-height * 2;
