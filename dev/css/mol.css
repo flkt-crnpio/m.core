@@ -181,7 +181,6 @@ select,
 .radio,
 .switch,
 button,
-.button,
 textarea {
   user-select: none;
   resize: none;
@@ -395,6 +394,14 @@ output {
   padding-left: 30px;
 }
 
+.checkbox [type="checkbox"] + label.empty,
+.checkbox [type="radio"] + label.empty {
+  margin-right: 2px;
+  padding-left: 0;
+  height: 20px;
+  width: 20px;
+}
+
 .checkbox [type="checkbox"] + label::before,
 .checkbox [type="radio"] + label::before {
   border: 1px solid #ccc;
@@ -434,6 +441,14 @@ output {
   padding-left: 30px;
 }
 
+.radio [type="checkbox"] + label.empty,
+.radio [type="radio"] + label.empty {
+  margin-right: 2px;
+  padding-left: 0;
+  height: 20px;
+  width: 20px;
+}
+
 .radio [type="checkbox"] + label::before,
 .radio [type="radio"] + label::before {
   border: 1px solid #ccc;
@@ -464,6 +479,14 @@ output {
 .switch [type="checkbox"] + label,
 .switch [type="radio"] + label {
   padding-left: 50px;
+}
+
+.switch [type="checkbox"] + label.empty,
+.switch [type="radio"] + label.empty {
+  margin-right: 2px;
+  padding-left: 0;
+  height: 20px;
+  width: 40px;
 }
 
 .switch [type="checkbox"] + label::before,
@@ -588,6 +611,38 @@ textarea:-webkit-autofill,
 select:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px #fff inset;
   transition: background-color 5000s ease-in-out 0s;
+}
+
+input[hidden], input.hidden,
+.checkbox[hidden],
+.checkbox.hidden,
+.radio[hidden],
+.radio.hidden,
+.switch[hidden],
+.switch.hidden,
+textarea[hidden],
+textarea.hidden,
+select[hidden],
+select.hidden,
+label[hidden],
+label.hidden,
+.label[hidden],
+.label.hidden,
+output[hidden],
+output.hidden,
+fieldset[hidden],
+fieldset.hidden,
+legend[hidden],
+legend.hidden,
+form[hidden],
+form.hidden,
+.form-block[hidden],
+.form-block.hidden,
+.form-inline[hidden],
+.form-inline.hidden,
+.form-inlineblock[hidden],
+.form-inlineblock.hidden {
+  display: none;
 }
 
 ::-webkit-input-placeholder {
@@ -730,6 +785,12 @@ a:hover, a:focus,
   border: none;
   box-shadow: none;
   text-decoration: none;
+}
+
+a[hidden], a.hidden,
+.link[hidden],
+.link.hidden {
+  display: none;
 }
 
 a:not(.btn):not(.link-clean)::after,

@@ -157,6 +157,12 @@ output {
     [type="checkbox"] + label,
     [type="radio"] + label {
         padding-left: $m-checkbox-height * 1.5;
+        &.empty {
+            margin-right: 2px;
+            padding-left: 0;
+            height: $m-checkbox-height;
+            width: $m-checkbox-height;
+        }
 
         &::before {
             border: $m-checkbox-border;
@@ -196,6 +202,12 @@ output {
     [type="checkbox"] + label,
     [type="radio"] + label {
         padding-left: $m-checkbox-height * 1.5;
+        &.empty {
+            margin-right: 2px;
+            padding-left: 0;
+            height: $m-checkbox-height;
+            width: $m-checkbox-height;
+        }
 
         &::before {
             border: $m-checkbox-border;
@@ -227,6 +239,12 @@ output {
     [type="checkbox"] + label,
     [type="radio"] + label {
         padding-left: $m-checkbox-height * 2.5;
+        &.empty {
+            margin-right: 2px;
+            padding-left: 0;
+            height: $m-checkbox-height;
+            width: $m-checkbox-height * 2;
+        }
 
         &::before {
             background: $m-switch-background-off;
