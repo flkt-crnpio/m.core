@@ -26,7 +26,6 @@ select,
 .radio,
 .switch,
 button,
-.button,
 textarea {
     user-select: none;
     resize: none;
@@ -334,9 +333,13 @@ select:-webkit-autofill {
 }
 
 input,
+.checkbox,
+.radio,
+.switch,
 textarea,
 select,
 label,
+.label,
 output,
 fieldset,
 legend,
