@@ -19,18 +19,34 @@ $m-primary:     #0089A2;
 $m-secondary:   #2EDCC0;
 $m-accent:      #EB6642;
 
+$m-success:     #3c6;
+$m-warning:     #fc3;
+$m-error:       #f43;
+$m-info:        #09c;
+$m-muted:       #ccc;
+
 $m-striped-odd: #eee;
 $m-striped-even:#fff;
 
 $m-colors:
     (primary, $m-primary),
     (secondary, $m-secondary),
-    (accent, $m-accent);
+    (accent, $m-accent),
+    (success, $m-success),
+    (warning, $m-warning),
+    (error, $m-error),
+    (info, $m-info),
+    (muted, $m-muted);
 
 $m-btn-colors:
     (primary, $m-primary, lighten($m-primary, 10), #fff, #fff),
     (secondary, $m-secondary, lighten($m-secondary, 10), #fff, #fff),
-    (accent, $m-accent, darken($m-accent, 10), #fff, #fff);
+    (accent, $m-accent, darken($m-accent, 10), #fff, #fff),
+    (success, $m-success, darken($m-success, 5), #fff, #fff),
+    (warning, $m-warning, darken($m-warning, 10), #fff, #fff),
+    (error, $m-error, darken($m-error, 5), #fff, #fff),
+    (info, $m-info, darken($m-info, 5), #fff, #fff),
+    (muted, $m-muted, darken($m-muted, 10), #fff, #fff);
 
 // fonts
 $m-font-family:     Arial, Helvetica, sans-serif;

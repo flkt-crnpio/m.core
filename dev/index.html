@@ -64,6 +64,11 @@
                             <span class="font-primary">font-primary</span>
                             <span class="font-secondary">font-secondary</span>
                             <span class="font-accent">font-accent</span>
+                            <span class="font-success">font-success</span>
+                            <span class="font-warning">font-warning</span>
+                            <span class="font-error">font-error</span>
+                            <span class="font-info">font-info</span>
+                            <span class="font-muted">font-muted</span>
                         </p>
                     </div>
                     <div class="m-y-2">
@@ -359,23 +364,29 @@
                     </p>
 
                     <p>
-                        <a href="#" class="link-sm">a.sm</a>
+                        <a href="#" class="link-sm">link-sm</a>
                         <a href="#">a</a>
-                        <a href="#" class="link-lg">a.lg</a>
-                        <a href="#" class="link-lead">a.lead</a>
+                        <a href="#" class="link-lg">link-lg</a>
+                        <a href="#" class="link-lead">link-lead</a>
                     </p>
 
                     <p>
-                        <a href="#" class="link-block">a.block</a>
+                        <a href="#" class="link-block">link-block</a>
                     </p>
 
                     <p>
-                        <a href="#" class="link-primary">a.primary</a>
-                        <a href="#" class="link-secondary">a.secondary</a>
-                        <a href="#" class="link-accent">a.accent</a>
+                        <a href="#" class="link-primary">link-primary</a>
+                        <a href="#" class="link-secondary">link-secondary</a>
+                        <a href="#" class="link-accent">link-accent</a>
+
+                        <a href="#" class="link-success">link-success</a>
+                        <a href="#" class="link-warning">link-warning</a>
+                        <a href="#" class="link-error">link-error</a>
+                        <a href="#" class="link-info">link-info</a>
+                        <a href="#" class="link-muted">link-muted</a>
                     </p>
                     <p>
-                        <a href="#" class="link-clean">a.clean</a>
+                        <a href="#" class="link-clean">link-clean</a>
                     </p>
                     <p>
                         <button href="#" class="link">button.link</button>
@@ -408,18 +419,39 @@
                     <p>
                         <button type="button" class="btn-primary">btn-primary</button>
                         <button type="button" class="btn-secondary">btn-secondary</button>
-                        <button type="button" class="btn-accent">btn-accent</button><br>
+                        <button type="button" class="btn-accent">btn-accent</button>
+                        <button type="button" class="btn-success">btn-success</button>
+                        <button type="button" class="btn-warning">btn-warning</button>
+                        <button type="button" class="btn-error">btn-error</button>
+                        <button type="button" class="btn-info">btn-info</button>
+                        <button type="button" class="btn-muted">btn-muted</button><br>
                         <button type="button" class="btn-primary" disabled>btn-primary disabled</button>
                         <button type="button" class="btn-secondary" disabled>btn-secondary disabled</button>
                         <button type="button" class="btn-accent" disabled>btn-accent disabled</button>
+                        <button type="button" class="btn-success" disabled>btn-success disabled</button>
+                        <button type="button" class="btn-warning" disabled>btn-warning disabled</button>
+                        <button type="button" class="btn-error" disabled>btn-error disabled</button>
+                        <button type="button" class="btn-info" disabled>btn-info disabled</button>
+                        <button type="button" class="btn-muted" disabled>btn-muted disabled</button>
                     </p>
                     <p>
                         <button type="button" class="btn-primary-line">btn-primary-line</button>
                         <button type="button" class="btn-secondary-line">btn-secondary-line</button>
-                        <button type="button" class="btn-accent-line">btn-accent-line</button><br>
+                        <button type="button" class="btn-accent-line">btn-accent-line</button>
+                        <button type="button" class="btn-success-line">btn-success-line</button>
+                        <button type="button" class="btn-warning-line">btn-warning-line</button>
+                        <button type="button" class="btn-error-line">btn-error-line</button>
+                        <button type="button" class="btn-info-line">btn-info-line</button>
+                        <button type="button" class="btn-muted-line">btn-muted-line</button>
+                        <br>
                         <button type="button" class="btn-primary-line" disabled>btn-primary-line disabled</button>
                         <button type="button" class="btn-secondary-line" disabled>btn-secondary-line disabled</button>
                         <button type="button" class="btn-accent-line" disabled>btn-accent-line disabled</button>
+                        <button type="button" class="btn-success-line" disabled>btn-success-line disabled</button>
+                        <button type="button" class="btn-warning-line" disabled>btn-warning-line disabled</button>
+                        <button type="button" class="btn-error-line" disabled>btn-error-line disabled</button>
+                        <button type="button" class="btn-info-line" disabled>btn-info-line disabled</button>
+                        <button type="button" class="btn-muted-line" disabled>btn-muted-line disabled</button>
                     </p>
                 </div>
 
@@ -510,6 +542,7 @@
                 <!-- _form -->
                 <div class="m-y-5">
                     <form>
+                        <p class="sub-title">Form inputs</p>
                         <div class="form-block">
                             <label for="">Input</label>
                             <input type="text" name="text" value="" placeholder="text">
@@ -546,7 +579,10 @@
                             <input type="checkbox" name="check2" id="checkbox2" value="checkbox2" disabled>
                             <label for="checkbox2">checkbox 2 disabled</label>
                         </div>
+                    </form>
 
+                    <form class="m-t-2">
+                        <p class="sub-title">Custom inputs</p>
                         <div class="form-block">
                             <div class="radio">
                                 <input type="radio" name="customradio" id="radio4" value="4">
@@ -604,9 +640,12 @@
                                 <label class="empty" for="switch3"></label>
                             </div>
                         </div>
+                    </form>
 
+                    <form class="m-t-2">
+                        <p class="sub-title">form-inline</p>
                         <div class="form-inline">
-                            <label for="">Input form-inline</label>
+                            <label for="">Input</label>
                             <input type="text" name="text" value="" placeholder="text">
 
                             <label for="">Input</label>
@@ -614,10 +653,13 @@
 
                             <input type="button" name="" value="input button">
                         </div>
+                    </form>
 
+                    <form class="m-t-2">
+                        <p class="sub-title">form-inlineblock</p>
                         <div class="form-inlineblock">
                             <div class="form-block">
-                                <label for="">Input form-inlineblock</label>
+                                <label for="">Input</label>
                                 <input type="text" name="text" value="" placeholder="text">
                             </div>
                             <div class="form-block">
@@ -630,7 +672,87 @@
                         </div>
                     </form>
 
-                    <form>
+                    <form class="m-t-2">
+                        <p class="sub-title">form color</p>
+                        <div class="form-inline">
+                            <input type="text" placeholder="form-success" value="form-success" class="form-success">
+                            <input type="text" placeholder="form-warning" value="form-warning" class="form-warning">
+                            <input type="text" placeholder="form-error" value="form-error" class="form-error">
+                            <input type="text" placeholder="form-info" value="form-info" class="form-info">
+                            <input type="text" placeholder="form-muted" value="form-muted" class="form-muted">
+                        </div>
+
+                        <div class="form-inline">
+                            <div class="radio radio-success">
+                                <input type="radio" name="radiocolors" id="radio-success" value="success">
+                                <label for="radio-success">success</label>
+                            </div>
+                            <div class="radio radio-warning">
+                                <input type="radio" name="radiocolors" id="radio-warning" value="warning">
+                                <label for="radio-warning">warning</label>
+                            </div>
+                            <div class="radio radio-error">
+                                <input type="radio" name="radiocolors" id="radio-error" value="error">
+                                <label for="radio-error">error</label>
+                            </div>
+                            <div class="radio radio-info">
+                                <input type="radio" name="radiocolors" id="radio-info" value="info">
+                                <label for="radio-info">info</label>
+                            </div>
+                            <div class="radio radio-muted">
+                                <input type="radio" name="radiocolors" id="radio-muted" value="muted">
+                                <label for="radio-muted">muted</label>
+                            </div>
+                        </div>
+
+                        <div class="form-inline">
+                            <div class="checkbox checkbox-success">
+                                <input type="checkbox" name="checkboxcolors" id="checkbox-success" value="success">
+                                <label for="checkbox-success">success</label>
+                            </div>
+                            <div class="checkbox checkbox-warning">
+                                <input type="checkbox" name="checkboxcolors" id="checkbox-warning" value="warning">
+                                <label for="checkbox-warning">warning</label>
+                            </div>
+                            <div class="checkbox checkbox-error">
+                                <input type="checkbox" name="checkboxcolors" id="checkbox-error" value="error">
+                                <label for="checkbox-error">error</label>
+                            </div>
+                            <div class="checkbox checkbox-info">
+                                <input type="checkbox" name="checkboxcolors" id="checkbox-info" value="info">
+                                <label for="checkbox-info">info</label>
+                            </div>
+                            <div class="checkbox checkbox-muted">
+                                <input type="checkbox" name="checkboxcolors" id="checkbox-muted" value="muted">
+                                <label for="checkbox-muted">muted</label>
+                            </div>
+                        </div>
+                        <div class="form-inline">
+                            <div class="switch switch-success">
+                                <input type="checkbox" name="switchcolors" id="switch-success" value="success">
+                                <label for="switch-success">success</label>
+                            </div>
+                            <div class="switch switch-warning">
+                                <input type="checkbox" name="switchcolors" id="switch-warning" value="warning">
+                                <label for="switch-warning">warning</label>
+                            </div>
+                            <div class="switch switch-error">
+                                <input type="checkbox" name="switchcolors" id="switch-error" value="error">
+                                <label for="switch-error">error</label>
+                            </div>
+                            <div class="switch switch-info">
+                                <input type="checkbox" name="switchcolors" id="switch-info" value="info">
+                                <label for="switch-info">info</label>
+                            </div>
+                            <div class="switch switch-muted">
+                                <input type="checkbox" name="switchcolors" id="switch-muted" value="muted">
+                                <label for="switch-muted">muted</label>
+                            </div>
+                        </div>
+                    </form>
+
+                    <form class="m-t-2">
+                        <p class="sub-title">Fieldset</p>
                         <fieldset>
                             <legend>legend</legend>
                             <div class="form-inlineblock">
@@ -649,7 +771,8 @@
                         </fieldset>
                     </form>
 
-                    <form>
+                    <form class="m-t-2">
+                        <p class="sub-title">Form disabled</p>
                         <fieldset disabled>
                             <legend>legend fieldset disabled</legend>
                             <div class="form-block">
@@ -666,7 +789,8 @@
                         </fieldset>
                     </form>
 
-                    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)" class="m-t-2">
+                        <p class="sub-title">Output</p>
                         <div class="form-inline">
                             <input type="number" id="a" value="10">
                             <span>+</span>

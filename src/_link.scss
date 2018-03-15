@@ -71,18 +71,18 @@ a:not(.btn):not(.link-clean),
         color: $color;
         &:hover,
         &:focus {
-            color: darken($color, 5);
+            color: darken($color, 10);
         }
     }
 
     .link-#{$name}:not(.link-clean):not(.btn) {
         &::after {
-            background: lighten($color, 50);
+            background: lighten($color, 80);
         }
         &:hover,
         &:focus {
             &::after {
-                background: $color;
+                background: darken($color, 10);
             }
         }
     }

@@ -343,6 +343,48 @@ legend {
     }
 }
 
+@each $name, $color in $m-colors {
+    .form-#{$name} {
+        border-color: $color;
+        color: $color;
+        &:hover,
+        &:focus {
+            border-color: darken($color, 15);
+            color: darken($color, 15);
+        }
+    }
+    .checkbox-#{$name} {
+        [type="checkbox"]:checked + label ,
+        [type="radio"]:checked + label {
+            color: $color;
+            &::before {
+                background: $color;
+                border-color: $color;
+            }
+        }
+    }
+    .radio-#{$name} {
+        [type="checkbox"]:checked + label ,
+        [type="radio"]:checked + label {
+            color: $color;
+            &::before {
+                background: $color;
+                border-color: $color;
+            }
+        }
+    }
+    .switch-#{$name} {
+        [type="checkbox"]:checked + label ,
+        [type="radio"]:checked + label {
+            color: $color;
+            &::before {
+                background: $color;
+                border-color: $color;
+            }
+        }
+    }
+}
+
 input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
