@@ -1091,10 +1091,35 @@ h6,
 
 .img-btn {
   height: 40px;
-  object-fit: fill;
-  vertical-align: middle;
-  margin: -15px -15px;
+  width: 40px;
+  object-fit: cover;
   border-radius: 40px;
+}
+
+.img-btn + * {
+  margin: 0 15px 0 10px;
+}
+
+.img-btn-sm {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.img-btn-sm + * {
+  margin: 0 10px;
+}
+
+.img-btn-lg {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.img-btn-lg + * {
+  margin: 0 30px 0 10px;
 }
 
 .img-cover {
@@ -1572,6 +1597,10 @@ input[type="reset"].hidden,
   padding: 0;
   height: 60px;
   width: 60px;
+}
+
+.btn-img {
+  padding: 0;
 }
 
 .btn-primary {

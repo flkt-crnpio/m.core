@@ -70,6 +70,10 @@ input[type="reset"],
     width: $m-input-height * 1.5;
 }
 
+.btn-img {
+    padding: 0;
+}
+
 @each $name, $color, $color-hover, $font , $font-hover in $m-btn-colors {
     .btn-#{$name} {
         background: $color;
