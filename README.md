@@ -1,5 +1,5 @@
 # m.core
-Mol Core es el módulo principal de MolFramework. Administra el estilo de las etiquetas de html, las clases generales de atributos para grupos de elementos y clases de uso común como el switch con checkboxes.
+MolCore es el módulo principal de MolFramework. Administra el estilo de las etiquetas de html, las clases generales de atributos para grupos de elementos y clases de uso común como el switch con checkboxes.
 
 
 Puedes agregar el módulo MolCore corriendo la siguiente línea en la consola
