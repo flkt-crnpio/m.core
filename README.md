@@ -1,42 +1,41 @@
-# mol #
-Mol is a CSS modular library.
-This project contain core styles for init a clean project.
+# m.core
+Mol Core es el módulo principal de MolFramework. Administra el estilo de las etiquetas de html, las clases generales de atributos para grupos de elementos y clases de uso común como el switch con checkboxes.
 
-## Setup for edit ##
-Require npm gulp and sass
-Install dependencies
+
+Puedes agregar el módulo MolCore corriendo la siguiente línea en la consola
+```sh
+npm install --save https://github.com/flkt-crnpio/m.core.git
+```
+___
+
+### Personaliza el archivo
+Necesitas tener instalado [npm](https://www.npmjs.com/get-npm) y [sass](https://sass-lang.com/install)
+
+Instala las dependencias del proyecto con la siguiente línea
 ```sh
 npm install
 ```
 
-Run this to get dist css file
-```sh
-gulp dist
-```
+Dentro de la carpeta `src` están los archivos de las clases y estilos para cada tipo de elemento. Desde el archivo `_vars.scss` se pueden manipular los atributos generales utilizando las variables.
 
-Or this if you are changing something
+Para ver actualizados los estilos de la librería, corre
 ```sh
 gulp dev
 ```
 
-## License ##
+Una vez que termines la edición, utiliza la siguiente línea para obtener los archivos comprimidos
+```sh
+gulp dist
+```
+___
 
-The MIT License (MIT) Copyright (c) flkt
+### Probado y funcionando en los siguientes navegadores
+* Brave
+* Chrome
+* Firefox
+* Opera
+* Safari
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+-----------
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+( ﾟ▽ﾟ)/ Cualquier pregunta, comentario, sugerencia y/o corrección, escríbanme a [@flktcrnpio](https://twitter.com/flktcrnpio) en Twitter.
