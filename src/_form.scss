@@ -392,27 +392,6 @@ select:-webkit-autofill {
     transition: background-color 5000s ease-in-out 0s;
 }
 
-input,
-.checkbox,
-.radio,
-.switch,
-textarea,
-select,
-label,
-.label,
-output,
-fieldset,
-legend,
-form,
-.form-block,
-.form-inline,
-.form-inlineblock {
-    &[hidden],
-    &.hidden {
-        display: none;
-    }
-}
-
 ::-webkit-input-placeholder {
     color: rgba($m-color, 0.4);
 }

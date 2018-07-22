@@ -29,11 +29,6 @@ input[type="reset"],
         box-shadow: $m-btn-shadow-hover;
         color: $m-btn-color-hover;
     }
-
-    &[hidden],
-    &.hidden {
-        display: none;
-    }
 }
 
 .btn-sm {
