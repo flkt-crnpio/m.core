@@ -20,7 +20,7 @@ Dentro de la carpeta `src` están los archivos de las clases y estilos para cada
 
 Para ver actualizados los estilos de la librería, corre
 ```sh
-gulp dev
+gulp
 ```
 
 Una vez que termines la edición, utiliza la siguiente línea para obtener los archivos comprimidos
@@ -38,4 +38,4 @@ ___
 
 -----------
 
-( ﾟ▽ﾟ)/ Cualquier pregunta, comentario, sugerencia y/o corrección, escríbanme a [@flktcrnpio](https://twitter.com/flktcrnpio) en Twitter.
+( ﾟ▽ﾟ)/ Cualquier pregunta, comentario, sugerencia y/o corrección, escríbanme a [@MolFramework](https://twitter.com/MolFramework) en Twitter.
