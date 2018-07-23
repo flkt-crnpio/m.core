@@ -1,11 +1,45 @@
+body, p, summary, form,
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="email"],
+[type="file"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="search"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
+[type="button"],
+[type="submit"],
+[type="reset"],
+[type="checkbox"],
+[type="radio"],
+label,
+.label,
+select,
+.checkbox,
+.radio,
+.switch,
+button,
+textarea,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.btn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 1.3em;
+  font-weight: 400;
+}
+
 body {
   background: #fff;
   color: #333;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: normal;
-  line-height: 24px;
 }
 
 blockquote {
@@ -87,19 +121,32 @@ var {
   text-overflow: ellipsis;
 }
 
-.font-sm {
-  font-size: 12px;
-  line-height: 12px;
+.font-xxs {
+  font-size: xx-small;
 }
 
-.font-lg {
-  font-size: 24px;
-  line-height: 24px;
+.font-xs {
+  font-size: x-small;
 }
 
-.font-lead {
-  font-size: 32px;
-  line-height: 32px;
+.font-s {
+  font-size: small;
+}
+
+.font-m {
+  font-size: medium;
+}
+
+.font-l {
+  font-size: large;
+}
+
+.font-xl {
+  font-size: x-large;
+}
+
+.font-xxl {
+  font-size: xx-large;
 }
 
 .font-bold {
@@ -977,38 +1024,6 @@ select:-webkit-autofill {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-input[hidden], input.hidden,
-.checkbox[hidden],
-.checkbox.hidden,
-.radio[hidden],
-.radio.hidden,
-.switch[hidden],
-.switch.hidden,
-textarea[hidden],
-textarea.hidden,
-select[hidden],
-select.hidden,
-label[hidden],
-label.hidden,
-.label[hidden],
-.label.hidden,
-output[hidden],
-output.hidden,
-fieldset[hidden],
-fieldset.hidden,
-legend[hidden],
-legend.hidden,
-form[hidden],
-form.hidden,
-.form-block[hidden],
-.form-block.hidden,
-.form-inline[hidden],
-.form-inline.hidden,
-.form-inlineblock[hidden],
-.form-inlineblock.hidden {
-  display: none;
-}
-
 ::-webkit-input-placeholder {
   color: rgba(51, 51, 51, 0.4);
 }
@@ -1152,6 +1167,7 @@ h6,
 
 a,
 .link {
+  font-size: inherit;
   color: #0089A2;
   transition: all 0.3s cubic-bezier(0.465, 0.24, 0.37, 0.825);
   background: transparent;
@@ -1159,11 +1175,13 @@ a,
   box-shadow: none;
   cursor: pointer;
   display: inline-flex;
+  align-items: baseline;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
-  position: relative;
-  text-decoration: none;
+  text-decoration: underline;
   text-rendering: optimizeLegibility;
+  text-underline-position: under;
 }
 
 a:hover, a:focus,
@@ -1173,20 +1191,18 @@ a:hover, a:focus,
   background: transparent;
   border: none;
   box-shadow: none;
+  text-decoration: underline;
+}
+
+.link-underline {
+  position: relative;
   text-decoration: none;
 }
 
-a[hidden], a.hidden,
-.link[hidden],
-.link.hidden {
-  display: none;
-}
-
-a:not(.btn):not(.link-clean)::after,
-.link:not(.btn):not(.link-clean)::after {
+.link-underline::after {
   background: #0089A2;
   transition: all 0.3s cubic-bezier(0.465, 0.24, 0.37, 0.825);
-  height: 2px;
+  height: 1px;
   content: "";
   position: absolute;
   bottom: 0;
@@ -1194,31 +1210,14 @@ a:not(.btn):not(.link-clean)::after,
   width: 0;
 }
 
-a:not(.btn):not(.link-clean):hover::after, a:not(.btn):not(.link-clean):focus::after,
-.link:not(.btn):not(.link-clean):hover::after,
-.link:not(.btn):not(.link-clean):focus::after {
+.link-underline:hover, .link-underline:focus {
+  text-decoration: none;
+}
+
+.link-underline:hover::after, .link-underline:focus::after {
   background: #004856;
   left: 0;
   width: 100%;
-}
-
-.link-sm {
-  font-size: 12px;
-  line-height: 24px 0.75;
-}
-
-.link-lg {
-  font-size: 24px;
-  line-height: 36px;
-}
-
-.link-lead {
-  font-size: 32px;
-  line-height: 48px;
-}
-
-.link-block {
-  display: block;
 }
 
 .link-primary {
@@ -1229,11 +1228,11 @@ a:not(.btn):not(.link-clean):hover::after, a:not(.btn):not(.link-clean):focus::a
   color: #005e6f;
 }
 
-.link-primary:not(.link-clean):not(.btn)::after {
+.link-underline.link-primary::after {
   background: white;
 }
 
-.link-primary:not(.link-clean):not(.btn):hover::after, .link-primary:not(.link-clean):not(.btn):focus::after {
+.link-underline.link-primary:hover::after, .link-underline.link-primary:focus::after {
   background: #005e6f;
 }
 
@@ -1245,11 +1244,11 @@ a:not(.btn):not(.link-clean):hover::after, a:not(.btn):not(.link-clean):focus::a
   color: #1fb89f;
 }
 
-.link-secondary:not(.link-clean):not(.btn)::after {
+.link-underline.link-secondary::after {
   background: white;
 }
 
-.link-secondary:not(.link-clean):not(.btn):hover::after, .link-secondary:not(.link-clean):not(.btn):focus::after {
+.link-underline.link-secondary:hover::after, .link-underline.link-secondary:focus::after {
   background: #1fb89f;
 }
 
@@ -1261,11 +1260,11 @@ a:not(.btn):not(.link-clean):hover::after, a:not(.btn):not(.link-clean):focus::a
   color: #e24318;
 }
 
-.link-accent:not(.link-clean):not(.btn)::after {
+.link-underline.link-accent::after {
   background: white;
 }
 
-.link-accent:not(.link-clean):not(.btn):hover::after, .link-accent:not(.link-clean):not(.btn):focus::after {
+.link-underline.link-accent:hover::after, .link-underline.link-accent:focus::after {
   background: #e24318;
 }
 
@@ -1277,11 +1276,11 @@ a:not(.btn):not(.link-clean):hover::after, a:not(.btn):not(.link-clean):focus::a
   color: #29a352;
 }
 
-.link-success:not(.link-clean):not(.btn)::after {
+.link-underline.link-success::after {
   background: white;
 }
 
-.link-success:not(.link-clean):not(.btn):hover::after, .link-success:not(.link-clean):not(.btn):focus::after {
+.link-underline.link-success:hover::after, .link-underline.link-success:focus::after {
   background: #29a352;
 }
 
@@ -1293,11 +1292,11 @@ a:not(.btn):not(.link-clean):hover::after, a:not(.btn):not(.link-clean):focus::a
   color: #ffbf00;
 }
 
-.link-warning:not(.link-clean):not(.btn)::after {
+.link-underline.link-warning::after {
   background: white;
 }
 
-.link-warning:not(.link-clean):not(.btn):hover::after, .link-warning:not(.link-clean):not(.btn):focus::after {
+.link-underline.link-warning:hover::after, .link-underline.link-warning:focus::after {
   background: #ffbf00;
 }
 
@@ -1309,11 +1308,11 @@ a:not(.btn):not(.link-clean):hover::after, a:not(.btn):not(.link-clean):focus::a
   color: #ff1500;
 }
 
-.link-error:not(.link-clean):not(.btn)::after {
+.link-underline.link-error::after {
   background: white;
 }
 
-.link-error:not(.link-clean):not(.btn):hover::after, .link-error:not(.link-clean):not(.btn):focus::after {
+.link-underline.link-error:hover::after, .link-underline.link-error:focus::after {
   background: #ff1500;
 }
 
@@ -1325,11 +1324,11 @@ a:not(.btn):not(.link-clean):hover::after, a:not(.btn):not(.link-clean):focus::a
   color: #007399;
 }
 
-.link-info:not(.link-clean):not(.btn)::after {
+.link-underline.link-info::after {
   background: white;
 }
 
-.link-info:not(.link-clean):not(.btn):hover::after, .link-info:not(.link-clean):not(.btn):focus::after {
+.link-underline.link-info:hover::after, .link-underline.link-info:focus::after {
   background: #007399;
 }
 
@@ -1341,11 +1340,11 @@ a:not(.btn):not(.link-clean):hover::after, a:not(.btn):not(.link-clean):focus::a
   color: #b3b3b3;
 }
 
-.link-muted:not(.link-clean):not(.btn)::after {
+.link-underline.link-muted::after {
   background: white;
 }
 
-.link-muted:not(.link-clean):not(.btn):hover::after, .link-muted:not(.link-clean):not(.btn):focus::after {
+.link-underline.link-muted:hover::after, .link-underline.link-muted:focus::after {
   background: #b3b3b3;
 }
 
@@ -1518,6 +1517,7 @@ input[type="reset"],
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
   color: #fff;
   padding: 10px 15px;
+  text-decoration: none;
   transition: all 0.3s cubic-bezier(0.465, 0.24, 0.37, 0.825);
   cursor: pointer;
   display: inline-flex;
@@ -1543,22 +1543,11 @@ input[type="reset"]:focus,
 .btn:active,
 .btn:hover,
 .btn:focus {
+  text-decoration: none;
   background: #00a7c6;
   border: 1px solid #009fbc;
   box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.3);
   color: #fff;
-}
-
-button[hidden], button.hidden,
-input[type="button"][hidden],
-input[type="button"].hidden,
-input[type="submit"][hidden],
-input[type="submit"].hidden,
-input[type="reset"][hidden],
-input[type="reset"].hidden,
-.btn[hidden],
-.btn.hidden {
-  display: none;
 }
 
 .btn-sm {
