@@ -53,7 +53,7 @@ $m-font-family:     Arial, Helvetica, sans-serif;
 $m-font-size:       16px;
 $m-font-weight:     400;
 $m-letter-spacing:  normal;
-$m-line-height:     24px;
+$m-line-height:     1.3em;
 
 $m-code-family:     monospace;
 
@@ -65,7 +65,7 @@ $m-h-weight:        600;
 $m-h-style:         normal;
 
 // links
-$m-a-underline:     2px;
+$m-a-underline:     1px;
 $m-a-color:         $m-primary;
 $m-a-color-hover:   darken($m-primary, 15);
 
