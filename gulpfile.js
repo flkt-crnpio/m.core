@@ -13,14 +13,15 @@ var gulp = require('gulp'),
         'android 4'
     ];
 
-gulp.task('dist', function() {
+gulp.task('dist', function(done) {
     return gulp.src(['src/mol.scss'])
         .pipe(sourcemaps.init())
         .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
         .pipe(cssnano({ autoprefixer: { browsers: supportedbrowsers, add: true } }))
         .pipe(rename({ extname: '.min.css' }))
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('dist'));
+    done();
 });
 
 gulp.task('server', function() {
@@ -49,4 +50,6 @@ gulp.watch('src/**/*.scss', gulp.series('sass')).on('change', function() {
   browserSync.reload;
 });
 
-gulp.task('default', gulp.parallel('server', 'normalize', 'grid', 'sass', function() {}));
+gulp.task('default', gulp.parallel('server', 'normalize', 'grid', 'sass', function(done) {
+    done();
+}));
