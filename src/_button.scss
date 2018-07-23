@@ -4,12 +4,14 @@ input[type="button"],
 input[type="submit"],
 input[type="reset"],
 .btn {
+    @extend %m-font-base;
     background: $m-btn-background;
     border: $m-btn-border;
     border-radius: $m-btn-border-radius;
     box-shadow: $m-btn-shadow;
     color: $m-btn-color;
     padding: $m-input-padding $m-input-padding * 1.5;
+    text-decoration: none;
     transition: $m-transition;
     cursor: pointer;
     display: inline-flex;
@@ -24,6 +26,7 @@ input[type="reset"],
     &:active,
     &:hover,
     &:focus {
+        text-decoration: none;
         background: $m-btn-background-hover;
         border: $m-btn-border-hover;
         box-shadow: $m-btn-shadow-hover;
