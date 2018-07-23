@@ -1,12 +1,16 @@
 // typography
 body {
+    @extend %m-font-base;
     background: $m-background;
     color: $m-color;
-    font-family: $m-font-family;
-    font-size: $m-font-size;
-    font-weight: $m-font-weight;
-    letter-spacing: $m-letter-spacing;
-    line-height: $m-line-height;
+}
+
+p {
+    @extend %m-font-base;
+}
+
+summary {
+    @extend %m-font-base;
 }
 
 blockquote {
@@ -81,17 +85,26 @@ var {
     text-overflow: ellipsis;
 }
 
-.font-sm {
-    font-size: $m-font-size * .75;
-    line-height: $m-font-size * .75;
+.font-xxs {
+    font-size: xx-small;
 }
-.font-lg {
-    font-size: $m-font-size * 1.5;
-    line-height: $m-font-size * 1.5;
+.font-xs {
+    font-size: x-small;
 }
-.font-lead {
-    font-size: $m-font-size * 2;
-    line-height: $m-font-size * 2;
+.font-s {
+    font-size: small;
+}
+.font-m {
+    font-size: medium;
+}
+.font-l {
+    font-size: large;
+}
+.font-xl {
+    font-size: x-large;
+}
+.font-xxl {
+    font-size: xx-large;
 }
 
 .font-bold {

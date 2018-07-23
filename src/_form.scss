@@ -27,6 +27,7 @@ select,
 .switch,
 button,
 textarea {
+    @extend %m-font-base;
     user-select: none;
     resize: none;
     max-width: 100%;
