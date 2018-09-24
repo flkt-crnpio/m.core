@@ -1,6 +1,6 @@
 {
   "name": "m.core",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Core file for MolFramework",
   "main": "dev/index.html",
   "scripts": {

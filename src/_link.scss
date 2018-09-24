@@ -1,5 +1,9 @@
 // link
 a,
+button.link,
+input[type="button"].link,
+input[type="submit"].link,
+input[type="reset"].link,
 .link {
     font-size: inherit;
     color: $m-a-color;
@@ -25,6 +29,10 @@ a,
     }
 }
 
+button.link-underline,
+input[type="button"].link-underline,
+input[type="submit"].link-underline,
+input[type="reset"].link-underline,
 .link-underline {
     position: relative;
     text-decoration: none;
@@ -52,6 +60,10 @@ a,
 }
 
 @each $name, $color in $m-colors {
+    button.link-#{$name},
+    input[type="button"].link-#{$name},
+    input[type="submit"].link-#{$name},
+    input[type="reset"].link-#{$name},
     .link-#{$name} {
         color: $color;
         &:hover,
@@ -60,6 +72,10 @@ a,
         }
     }
 
+    button.link-underline.link-#{$name},
+    input[type="button"].link-underline.link-#{$name},
+    input[type="submit"].link-underline.link-#{$name},
+    input[type="reset"].link-underline.link-#{$name},
     .link-underline.link-#{$name}{
         &::after {
             background: lighten($color, 80);

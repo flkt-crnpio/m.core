@@ -34,25 +34,47 @@ input[type="reset"],
     }
 }
 
+button.btn-sm,
+input[type="button"].btn-sm,
+input[type="submit"].btn-sm,
+input[type="reset"].btn-sm,
 .btn-sm {
     font-size: $m-font-size * .75;
     padding: $m-input-padding * .5 $m-input-padding;
 }
+
+button.btn-lg,
+input[type="button"].btn-lg,
+input[type="submit"].btn-lg,
+input[type="reset"].btn-lg,
 .btn-lg {
     font-size: $m-font-size * 1.5;
     padding: $m-input-padding * 2 $m-input-padding * 4;
 }
+
+button.btn-block,
+input[type="button"].btn-block,
+input[type="submit"].btn-block,
+input[type="reset"].btn-block,
 .btn-block {
     display: block;
     width: 100%;
 }
 
+button.btn-circle,
+input[type="button"].btn-circle,
+input[type="submit"].btn-circle,
+input[type="reset"].btn-circle,
 .btn-circle {
     border-radius: 50%;
     padding: 0;
     height: $m-input-height;
     width: $m-input-height;
 }
+button.btn-circle-sm,
+input[type="button"].btn-circle-sm,
+input[type="submit"].btn-circle-sm,
+input[type="reset"].btn-circle-sm,
 .btn-circle-sm {
     border-radius: 50%;
     font-size: $m-font-size * .75;
@@ -60,6 +82,10 @@ input[type="reset"],
     height: $m-input-height * .75;
     width: $m-input-height * .75;
 }
+button.btn-circle-lg,
+input[type="button"].btn-circle-lg,
+input[type="submit"].btn-circle-lg,
+input[type="reset"].btn-circle-lg,
 .btn-circle-lg {
     border-radius: 50%;
     font-size: $m-font-size * 1.5;
@@ -68,11 +94,19 @@ input[type="reset"],
     width: $m-input-height * 1.5;
 }
 
+button.btn-img,
+input[type="button"].btn-img,
+input[type="submit"].btn-img,
+input[type="reset"].btn-img,
 .btn-img {
     padding: 0;
 }
 
 @each $name, $color, $color-hover, $font , $font-hover in $m-btn-colors {
+    button.btn-#{$name},
+    input[type="button"].btn-#{$name},
+    input[type="submit"].btn-#{$name},
+    input[type="reset"].btn-#{$name},
     .btn-#{$name} {
         background: $color;
         border-color: $color;
@@ -84,6 +118,10 @@ input[type="reset"],
             color: $font-hover;
         }
     }
+    button.btn-#{$name}-line,
+    input[type="button"].btn-#{$name}-line,
+    input[type="submit"].btn-#{$name}-line,
+    input[type="reset"].btn-#{$name}-line,
     .btn-#{$name}-line {
         background: transparent;
         box-shadow: none;
