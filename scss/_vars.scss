@@ -2,15 +2,14 @@
 
 $m-background:  		#fff;
 $m-color:       		#222;
-$m-primary:					#03f;
-$m-background:  #222029;
-$m-color:       #eee;
-$m-primary:			#e73225;
+// $m-background:  #222029;
+// $m-color:       #eee;
+
 
 $m-font-family:     'Open Sans', sans-serif;
 $m-font-size:       15px;
 $m-font-weight:     400;
-$m-font-weight:	300;
+// $m-font-weight:	300;
 $m-letter-spacing:  normal;
 $m-line-height:     1.5em;
 
@@ -30,21 +29,21 @@ $m-transition:			all 0.3s cubic-bezier(0.465, 0.240, 0.370, 0.825);
 $m-spacelement: 30px;
 
 // box-shadow
-$m-shadow:      0 5px 20px 0 rgba(0, 0, 0, 0.1);
+$m-shadow:      0 0 0 0 rgba(0, 0, 0, 0);
 
 // colors
-$m-primary:     #0089A2;
-$m-secondary:   #2EDCC0;
-$m-accent:      #EB6642;
+$m-primary:     #fe3225;
+$m-secondary:   #f76059;
+$m-accent:      #23285e;
 
-$m-success:     #3c6;
-$m-warning:     #fc3;
-$m-error:       #f43;
-$m-info:        #09c;
-$m-muted:       rgba($m-color, .5);
+$m-success:     mix(#3c6, $m-primary, 80%);
+$m-warning:     mix(#fc3, $m-primary, 80%);
+$m-error:       mix(#a00, $m-primary, 80%);
+$m-info:        mix(#0cf, $m-primary, 80%);
+$m-muted:       mix(#eee, $m-color, 90%);
 
 $m-striped-odd: rgba($m-color, .05);
-$m-striped-even:rgba($m-color, .15);
+$m-striped-even:rgba($m-color, .1);
 
 $m-colors:
     (primary, $m-primary),
@@ -72,8 +71,8 @@ $m-a-color:         $m-primary;
 $m-a-color-hover:   darken($m-primary, 15);
 
 // tables
-$m-table-border:    1px solid rgba($m-color,.2);
-$m-table-hover:     rgba($m-color,.2);
+$m-table-border:    1px solid rgba($m-color,.1);
+$m-table-hover:     rgba($m-primary, .7);
 
 // buttons and inputs
 $m-input-height:    40px;
@@ -83,16 +82,16 @@ $m-input-padding:   7px;
 $m-btn-background:      $m-primary;
 $m-btn-color:           #fff;
 $m-btn-border:          1px solid $m-primary;
-$m-btn-shadow:          0 1px 10px 0 rgba(0, 0, 0, 0.1);
+$m-btn-shadow:          0 1px 3px rgba(0,0,0,0), 0 1px 2px rgba(0,0,0,0);
 $m-btn-background-hover:lighten($m-primary, 7);
 $m-btn-color-hover:     #fff;
 $m-btn-border-hover:    1px solid lighten($m-primary, 5);
-$m-btn-shadow-hover:    0 7px 10px 0 rgba(0, 0, 0, 0.3);
+$m-btn-shadow-hover:    0 14px 28px rgba(0,0,0,0.2), 0 5px 5px rgba(0,0,0,0.3);
 $m-btn-border-radius:   $m-input-height;
 
 // forms
-$m-input-border:        1px solid rgba($m-color, .5);
-$m-input-border-hover:  1px solid $m-color;
+$m-input-border:        1px solid rgba($m-color, .3);
+$m-input-border-hover:  1px solid rgba($m-color, .5);
 $m-input-border-radius: 5px;
 
 $m-input-color-active:  $m-primary;

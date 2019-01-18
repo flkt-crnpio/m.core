@@ -53,6 +53,7 @@ select {
 }
 
 fieldset {
+  border: $m-table-border;
   border-radius: $m-input-border-radius;
   margin: $m-spacelement 0;
   padding: $m-spacelement * .5;

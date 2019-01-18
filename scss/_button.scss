@@ -59,7 +59,7 @@ input[type="reset"].btn-circle,
 	border-radius: 50%;
 	padding: 0;
 	height: $m-input-height;
-	width: $m-input-height;
+	width: $m-input-height * 1.1;
 }
 button.btn-circle-sm,
 input[type="button"].btn-circle-sm,
@@ -70,7 +70,7 @@ input[type="reset"].btn-circle-sm,
 	font-size: $m-font-size * .75;
 	padding: 0;
 	height: $m-input-height * .75;
-	width: $m-input-height * .75;
+	width: $m-input-height * .80;
 }
 button.btn-circle-lg,
 input[type="button"].btn-circle-lg,
@@ -81,7 +81,7 @@ input[type="reset"].btn-circle-lg,
 	font-size: $m-font-size * 1.5;
 	padding: 0;
 	height: $m-input-height * 1.5;
-	width: $m-input-height * 1.5;
+	width: $m-input-height * 1.6;
 }
 
 button.btn-img,
