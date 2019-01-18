@@ -1,7 +1,6 @@
-.DS_Store
-.sass-cache
 .git
+.sass-cache
 
-/node_modules
-/dev/css/grid.min.css
-/dev/css/normalize.min.css
+.DS_Store
+
+node_modules

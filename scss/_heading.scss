@@ -1,0 +1,9 @@
+//styles for h1 to h6 are on _normalize.scss file
+.sub-title {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.sub-title + * {
+  margin-top: 0;
+  padding-top: 0;
+}

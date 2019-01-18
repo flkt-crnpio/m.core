@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="googlebot" content="noindex,nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Mol</title>
+    <link rel="stylesheet" href="mol.css">
+    <style media="screen">
+      .wrap { margin: 70vh 10vw 10vw; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Mol<br>Core file</h1>
+      <hr>
+
+      <h1>Título 1</h1>
+      <h2>Título 2</h2>
+      <h3>Título 3</h3>
+      <h4>Título 4</h4>
+      <h5>Título 5</h5>
+      <h6>Título 6</h6>
+      <h1 class="sub-title">Título</h1>
+      <h4>Sub Título</h4>
+
+      <br><br>
+      <details>
+        <summary>Details Summary</summary>
+        <p>Details content. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </details>
+      <figure>
+        <img src="http://flkt.mx/bg.jpg" alt="img" width="192px" height="108px">
+        <figcaption>figure.- figcaption</figcaption>
+      </figure>
+      <style media="screen">
+        .img-container {
+          background: rgba(255,255,255,.1);
+          height: 192px;
+          width: 192px;
+          margin: 0 0 20px;
+          overflow: hidden;
+        }
+      </style>
+      <code>img</code>
+      <div class="img-container">
+        <img src="http://flkt.mx/bg.jpg" class="none" alt="img" width="192px" height="108px">
+      </div>
+      <code>img.img-contain</code>
+      <div class="img-container">
+        <img src="http://flkt.mx/bg.jpg" class="img-contain" alt="img">
+      </div>
+      <code>img.img-cover</code>
+      <div class="img-container">
+        <img src="http://flkt.mx/bg.jpg" class="img-cover" alt="img">
+      </div>
+      <code>img.img-fill</code>
+      <div class="img-container">
+        <img src="http://flkt.mx/bg.jpg" class="img-fill">
+      </div>
+      <code>img.img-fill-height</code>
+      <div class="img-container">
+        <img src="http://flkt.mx/bg.jpg" class="img-fill-height">
+      </div>
+      <code>img.img-fill-width</code>
+      <div class="img-container">
+        <img src="http://flkt.mx/bg.jpg" class="img-fill-width">
+      </div>
+      <p>
+        <button class="btn-img" type="button">
+          <img src="http://flkt.mx/bg.jpg" class="img-btn">
+          <span>button mol-img-middle</span>
+        </button>
+        <button class="btn-img btn-sm" type="button">
+          <img src="http://flkt.mx/bg.jpg" class="img-btn-sm">
+          <span>button mol-img-middle</span>
+        </button>
+        <button class="btn-img btn-lg" type="button">
+          <img src="http://flkt.mx/bg.jpg" class="img-btn-lg">
+          <span>button mol-img-middle</span>
+        </button>
+      </p>
+      <p>
+        <a href="#">
+          <img class="img-link" src="http://flkt.mx/bg.jpg" alt="github">
+          link mol-img-baseline
+        </a>
+      </p>
+
+      <br><br>
+      <p>
+        Parrafo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus velit nulla, <code>code</code> scelerisque quis aliquam eget, rhoncus tincidunt lacus. Aliquam blandit est lacinia fringilla pulvinar. Morbi sodales eros leo, sed ultrices nunc rutrum et. Morbi at magna ante. Pellentesque tincidunt lectus a pharetra sodales. Phasellus ullamcorper elementum metus, ut consectetur libero lobortis eget. Nam mattis eros in ante tristique dignissim. Mauris elementum tempus dolor, eu luctus dolor consequat ac. Nullam et libero ac nibh rutrum faucibus quis gravida lectus.
+      </p>
+      <p>
+        <b>bold</b>
+        <strong>strong</strong>
+        <small>small</small> normal
+        <i>italica</i> normal
+        <abbr title="abbr title">abreviación</abbr>
+        <ins>insertado</ins>
+        <del>eliminado</del>
+        <dfn>definición</dfn>
+        <sub>sub</sub> normal <sup>sup</sup>
+        <em>énfasis</em>
+        <cite>cita</cite>
+        <q cite="">cita</q>
+      </p>
+      <blockquote cite="http://es.lipsum.com/">
+        cita larga Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus velit nulla, scelerisque quis aliquam eget, rhoncus tincidunt lacus. Aliquam blandit est lacinia fringilla pulvinar. Morbi sodales eros leo, sed ultrices nunc rutrum et. Morbi at magna ante. Pellentesque tincidunt lectus a pharetra sodales. Phasellus ullamcorper elementum metus, ut consectetur libero lobortis eget. Nam mattis eros in ante tristique dignissim. Mauris elementum tempus dolor, eu luctus dolor consequat ac. Nullam et libero ac nibh rutrum faucibus quis gravida lectus.
+      </blockquote>
+      <pre>texto preformateado</pre>
+      <p>
+        <code>code</code>
+        <kbd>entrada de teclado</kbd>
+        <samp>muestra de salida</samp>
+        <var>variable</var>
+        <mark>mark</mark>
+      </p>
+      <p class="font-xxs">.font-xxs<br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="font-xs">.font-xs<br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="font-s">.font-s<br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="font-m">.font-m<br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="font-l">.font-l<br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="font-xl">.font-xl<br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="font-xxl">.font-xxl<br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>
+        <span class="font-primary">.font-primary</span>
+        <span class="font-secondary">.font-secondary</span>
+        <span class="font-accent">.font-accent</span>
+        <span class="font-success">.font-success</span>
+        <span class="font-warning">.font-warning</span>
+        <span class="font-error">.font-error</span>
+        <span class="font-info">.font-info</span>
+        <span class="font-muted">.font-muted</span>
+      </p>
+      <p>
+        <span class="font-bold">.font-bold</span>
+        <span class="font-light">.font-light</span>
+      </p>
+      <p class="font-italic">.font-italic</p>
+      <p>
+        <span class="text-capitalize">.text-capitalize</span>
+        <span class="text-lowercase">.text-lowercase</span>
+        <span class="text-uppercase">.text-uppercase</span>
+      </p>
+      <p class="text-center">.text-center<br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <p class="text-right">.text-right<br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <p class="text-left">.text-left<br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <p class="text-justify">.text-justify<br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <p class="text-overflow-ellipsis">.text-overflow-ellipsis<br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p class="word-break-all">.word-break-all<br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p class="word-wrap-break">.word-wrap-break<br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+      <br><br>
+      <p>
+        <a href="#">link</a>
+        <a href="#" class="hover">link .hover</a>
+        <span class="link">span.link</span>
+      </p>
+      <p>
+        <a href="#" class="link-underline">.link-underline</a>
+        <a href="#" class="link-underline hover">.link-underline .hover</a>
+        <span class="link-underline">span.link-underline</span>
+      </p>
+      <p>
+        <a href="#" class="link-underline link-primary">.link-underline .link-primary</a>
+        <a href="#" class="link-underline link-secondary">.link-underline .link-secondary</a>
+        <a href="#" class="link-underline link-accent">.link-underline .link-accent</a>
+        <a href="#" class="link-underline link-success">.link-underline .link-success</a>
+        <a href="#" class="link-underline link-warning">.link-underline .link-warning</a>
+        <a href="#" class="link-underline link-error">.link-underline .link-error</a>
+        <a href="#" class="link-underline link-info">.link-underline .link-info</a>
+        <a href="#" class="link-underline link-muted">.link-underline .link-muted</a>
+      </p>
+      <p>
+        <a href="#" class="link-primary">.link-primary</a>
+        <a href="#" class="link-secondary">.link-secondary</a>
+        <a href="#" class="link-accent">.link-accent</a>
+        <a href="#" class="link-success">.link-success</a>
+        <a href="#" class="link-warning">.link-warning</a>
+        <a href="#" class="link-error">.link-error</a>
+        <a href="#" class="link-info">.link-info</a>
+        <a href="#" class="link-muted">.link-muted</a>
+      </p>
+      <p>
+        <button href="#" class="link-underline link-secondary">button.link-underline.link-secondary</button>
+        <input type="button" name="" value="input[button].link"  class="link link-underline">
+        <input type="submit" name="" value="input[submit].link-underline.link-accent"  class="link-underline link-accent">
+        <input type="reset" name="" value="input[reset ].link.link-success" class="link link-success">
+      </p>
+
+      <br><br>
+      <form>
+        <fieldset>
+          <legend>Fieldset legend</legend>
+          <label>Label</label>
+          <input type="text" name="text" value="" placeholder="input">
+          <label>Label</label>
+          <input type="text" name="text" value="" placeholder="input hover" class="hover">
+          <input type="reset" name="" value="input reset">
+          <button type="button" name="button">button</button>
+        </fieldset>
+      </form>
+      <p class="sub-title">.form-inline</p>
+      <form class="form-inline">
+        <label for="">disabled</label>
+        <input type="text" class="disabled" placeholder="disabled">
+        <label for="">readonly</label>
+        <input type="text" class="readonly" placeholder="readonly" value="readonly">
+        <label for="">bussy</label>
+        <input type="text" class="bussy" placeholder="bussy">
+        <input type="reset" name="" value="input reset">
+        <button type="button" name="button">button</button>
+      </form>
+      <p class="sub-title">.form-inline</p>
+      <form class="form-inline">
+        <div class="form-block">
+          <label for="">.form-block</label>
+          <input type="number" name="number" value="" placeholder="number">
+        </div>
+        <div class="form-block">
+          <label for="">.form-block</label>
+          <input type="search" placeholder="search">
+        </div>
+        <div class="form-block">
+          <label for="">.form-block</label>
+          <select id="select1" name="select">
+            <option value="opt1">option 1</option>
+            <option value="opt2">option 2</option>
+            <option value="opt3">option 3</option>
+          </select>
+        </div>
+        <div class="form-block">
+          <label for="">.form-block</label>
+          <input type="file" name="file">
+        </div>
+      </form>
+      <p class="sub-title">.form-flock</p>
+      <form class="form-block">
+        <label>Label</label>
+        <input type="text" name="text" value="" placeholder="input">
+        <label for="">Textarea</label>
+        <textarea name="name" rows="8" cols="80"></textarea>
+        <input type="radio" name="radio" id="radio1" value="1">
+        <label for="radio1">radio 1</label>
+        <input type="checkbox" name="check1" id="checkbox1" value="checkbox1">
+        <label for="checkbox1">checkbox 1</label>
+      </form>
+      <form class="form-inline">
+        <div class="radio">
+          <input type="radio" name="customradio" id="radio4" value="4">
+          <label for="radio4">.radio</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="checkbox3" id="checkbox3" value="checkbox3">
+          <label for="checkbox3">.checkbox</label>
+        </div>
+        <div class="switch">
+          <input type="checkbox" name="switch" id="switch1" value="switch1">
+          <label for="switch1">.switch</label>
+        </div>
+        <div class="radio">
+          <input type="radio" name="customradio" id="radio7" value="7">
+          <label class="empty" for="radio7"></label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="checkbox5" id="checkbox5" value="checkbox3">
+          <label class="empty" for="checkbox5"></label>
+        </div>
+        <div class="switch">
+          <input type="checkbox" name="switch" id="switch2" value="switch2">
+          <label class="empty" for="switch2"></label>
+        </div>
+      </form>
+      <form>
+        <p class="sub-title">form color</p>
+        <div class="form-inline">
+          <input type="text" placeholder="form-success" value="form-success" class="form-success">
+          <input type="text" placeholder="form-warning" value="form-warning" class="form-warning">
+          <input type="text" placeholder="form-error" value="form-error" class="form-error">
+          <input type="text" placeholder="form-info" value="form-info" class="form-info">
+          <input type="text" placeholder="form-muted" value="form-muted" class="form-muted">
+        </div>
+        <div class="form-inline">
+          <div class="radio radio-success">
+            <input type="radio" name="radiocolors" id="radio-success" value="success">
+            <label for="radio-success">success</label>
+          </div>
+          <div class="radio radio-warning">
+            <input type="radio" name="radiocolors" id="radio-warning" value="warning">
+            <label for="radio-warning">warning</label>
+          </div>
+          <div class="radio radio-error">
+            <input type="radio" name="radiocolors" id="radio-error" value="error">
+            <label for="radio-error">error</label>
+          </div>
+          <div class="radio radio-info">
+            <input type="radio" name="radiocolors" id="radio-info" value="info">
+            <label for="radio-info">info</label>
+          </div>
+          <div class="radio radio-muted">
+            <input type="radio" name="radiocolors" id="radio-muted" value="muted">
+            <label for="radio-muted">muted</label>
+          </div>
+        </div>
+        <div class="form-inline">
+          <div class="checkbox checkbox-success">
+            <input type="checkbox" name="checkboxcolors" id="checkbox-success" value="success">
+            <label for="checkbox-success">success</label>
+          </div>
+          <div class="checkbox checkbox-warning">
+            <input type="checkbox" name="checkboxcolors" id="checkbox-warning" value="warning">
+            <label for="checkbox-warning">warning</label>
+          </div>
+          <div class="checkbox checkbox-error">
+            <input type="checkbox" name="checkboxcolors" id="checkbox-error" value="error">
+            <label for="checkbox-error">error</label>
+          </div>
+          <div class="checkbox checkbox-info">
+            <input type="checkbox" name="checkboxcolors" id="checkbox-info" value="info">
+            <label for="checkbox-info">info</label>
+          </div>
+          <div class="checkbox checkbox-muted">
+            <input type="checkbox" name="checkboxcolors" id="checkbox-muted" value="muted">
+            <label for="checkbox-muted">muted</label>
+          </div>
+        </div>
+        <div class="form-inline">
+          <div class="switch switch-success">
+            <input type="checkbox" name="switchcolors" id="switch-success" value="success">
+            <label for="switch-success">success</label>
+          </div>
+          <div class="switch switch-warning">
+            <input type="checkbox" name="switchcolors" id="switch-warning" value="warning">
+            <label for="switch-warning">warning</label>
+          </div>
+          <div class="switch switch-error">
+            <input type="checkbox" name="switchcolors" id="switch-error" value="error">
+            <label for="switch-error">error</label>
+          </div>
+          <div class="switch switch-info">
+            <input type="checkbox" name="switchcolors" id="switch-info" value="info">
+            <label for="switch-info">info</label>
+          </div>
+          <div class="switch switch-muted">
+            <input type="checkbox" name="switchcolors" id="switch-muted" value="muted">
+            <label for="switch-muted">muted</label>
+          </div>
+        </div>
+      </form>
+      <p class="sub-title">form disabled</p>
+      <form disabled class="form-block">
+        <label for="">Input</label>
+        <input type="text" name="text" value="" placeholder="text">
+        <input type="button" name="" value="input button">
+      </form>
+      <p class="sub-title">Output</p>
+      <form oninput="x.value=parseInt(a.value)+parseInt(b.value)" class="form-inline">
+        <input type="number" id="a" value="10">
+        <span>+</span>
+        <input type="number" id="b" value="50">
+        <span>=</span>
+        <output name="x" for="a b"></output>
+      </form>
+
+      <br><br>
+      <p>
+        <button type="button">button</button>
+        <button type="button" class="hover">button.hover</button>
+        <a href="#" class="btn">a.btn</a>
+        <input type="submit" name="" value="input submit disabled" disabled>
+        <input type="button" name="" value="input button hidden" hidden>
+        <input type="reset" name="" value="input reset">
+      </p>
+      <p>
+        <button type="button" class="btn-sm">button.btn-sm</button>
+        <button type="button">button</button>
+        <button type="button" class="btn-lg">button.btn-lg</button>
+        <button type="button" class="btn-block">button.btn-block</button>
+      </p>
+      <p>
+        <code>.btn-circle-sm</code>
+        <button type="button" class="btn-circle-sm">sm</button>
+        <code>.btn-circle</code>
+        <button type="button" class="btn-circle">circle</button>
+        <code>.btn-circle-lg</code>
+        <button type="button" class="btn-circle-lg">lg</button>
+      </p>
+      <p>
+        <button type="button" class="btn-primary">.btn-primary</button>
+        <button type="button" class="btn-secondary">.btn-secondary</button>
+        <button type="button" class="btn-accent">.btn-accent</button>
+        <button type="button" class="btn-success">.btn-success</button>
+        <button type="button" class="btn-warning">.btn-warning</button>
+        <button type="button" class="btn-error">.btn-error</button>
+        <button type="button" class="btn-info">.btn-info</button>
+        <button type="button" class="btn-muted">.btn-muted</button>
+      </p>
+      <p>
+        <button type="button" class="btn-primary-line">.btn-primary-line</button>
+        <button type="button" class="btn-secondary-line">.btn-secondary-line</button>
+        <button type="button" class="btn-accent-line">.btn-accent-line</button>
+        <button type="button" class="btn-success-line">.btn-success-line</button>
+        <button type="button" class="btn-warning-line">.btn-warning-line</button>
+        <button type="button" class="btn-error-line">.btn-error-line</button>
+        <button type="button" class="btn-info-line">.btn-info-line</button>
+        <button type="button" class="btn-muted-line">.btn-muted-line</button>
+      </p>
+
+      <br><br>
+      <dl>
+        <dt>description list</dt>
+        <dd>dd description</dd>
+        <dt>dt term</dt>
+        <dd>dd description</dd>
+      </dl>
+      <ul>
+        <li>unordered list</li>
+        <li>li</li>
+        <li>
+          li
+          <ul>
+            <li>ul li</li>
+            <li>li</li>
+          </ul>
+        </li>
+      </ul>
+      <ol>
+        <li>ordered list</li>
+        <li>
+          li
+          <ol>
+            <li>ol li</li>
+            <li>li</li>
+          </ol>
+        </li>
+      </ol>
+      <ol class="list-clean">
+        <li>ol.list-clean</li>
+        <li>li</li>
+        <li>li
+          <ul>
+            <li>ul li</li>
+            <li>ul li</li>
+            <li>ul li</li>
+          </ul>
+        </li>
+      </ol>
+      <ol class="list-striped">
+        <li>ol.list-striped</li>
+        <li>li</li>
+        <li>li
+          <ul>
+            <li>ul li</li>
+            <li>ul li</li>
+            <li>ul li</li>
+          </ul>
+        </li>
+      </ol>
+      <dl class="list-striped">
+        <dt>dl.list-striped</dt>
+        <dd>dd</dd>
+        <dt>dt</dt>
+        <dd>dd</dd>
+      </dl>
+      <ul class="list-inline">
+        <li>ul.list-inline</li>
+        <li>ul li</li>
+        <li>ul li</li>
+      </ul>
+      <dl class="list-inline">
+        <dt>dl.list-inline</dt>
+        <dd>dd</dd>
+        <dt>dt</dt>
+        <dd>dd</dd>
+      </dl>
+
+      <br><br>
+      <table>
+        <thead>
+          <tr>
+            <th>Table</th>
+            <th>thead</th>
+            <th>th</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td>''</td>
+            <td>tfoot</td>
+            <td>td</td>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <td>''</td>
+            <td>tbody</td>
+            <td>td</td>
+          </tr>
+          <tr>
+            <td>''</td>
+            <td>tbody</td>
+            <td>td</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="table-container">
+        <table>
+          <caption>Container div.table-container > table</caption>
+          <thead>
+            <tr>
+              <th>thead tr th</th>
+              <th>th default vertical-align bottom</th>
+              <th>th</th>
+              <th>th</th>
+              <th>th</th>
+              <th>th</th>
+              <th>th</th>
+              <th>th</th>
+              <th>th</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>tbody tr td</td>
+              <td>tbody default vertical-align: top</td>
+              <td>tbody-align-middle vertical-align: middle</td>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+            </tr>
+            <tr>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+            </tr>
+            <tr>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>tfoot tr td</td>
+              <td>td default vertical-align middle</td>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <table>
+        <caption> table > tbody.tbody-align-middle</caption>
+        <thead>
+          <tr>
+            <th>thead tr th</th>
+            <th>th</th>
+            <th>th</th>
+            <th>th</th>
+            <th>th</th>
+          </tr>
+        </thead>
+        <tbody class="tbody-align-middle">
+          <tr>
+            <td>tbody-align-middle</td>
+            <td>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</td>
+            <td>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</td>
+            <td>Labore et dolore magna aliqua. isi ut aliquip ex ea commodo consequat.</td>
+            <td><button type="button">button</button></td>
+          </tr>
+          <tr>
+            <td>Incididunt ut labore et dolore magna aliqua.</td>
+            <td>Zullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
+            <td>Minim veniam, quis nostrud exercitation ullamco.</td>
+            <td>Nisi ut aliquip ex ea commodo consequat.</td>
+            <td><button type="button">button</button></td>
+          </tr>
+          <tr>
+            <td>Consectetur adipisicing elit, sed do e.</td>
+            <td>Cillum dolore eu fugiat nulla pariatur.</td>
+            <td>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Esse cillum dolore eu fugiat nulla pariatur.</td>
+            <td>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
+            <td><button type="button">button</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table-striped">
+        <caption>table.table-striped</caption>
+        <thead>
+          <tr>
+            <th>thead tr th</th>
+            <th>th</th>
+            <th>th</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>tbody tr td</td>
+            <td>td</td>
+            <td>td</td>
+          </tr>
+          <tr>
+            <td>tbody tr td</td>
+            <td>td</td>
+            <td>td</td>
+          </tr>
+          <tr>
+            <td>tbody tr td</td>
+            <td>td</td>
+            <td>td</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table-hover">
+        <caption>table.table-hover</caption>
+        <thead>
+          <tr>
+            <th>thead tr th</th>
+            <th>th</th>
+            <th>th</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>tbody tr td</td>
+            <td>td</td>
+            <td>td</td>
+          </tr>
+          <tr>
+            <td>tbody tr td</td>
+            <td>td</td>
+            <td>td</td>
+          </tr>
+          <tr>
+            <td>tbody tr td</td>
+            <td>td</td>
+            <td>td</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table-box">
+        <caption>table.table-box</caption>
+        <thead>
+          <tr>
+            <th>thead tr th</th>
+            <th>th</th>
+            <th>th</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>tbody tr td</td>
+            <td>td</td>
+            <td>td</td>
+          </tr>
+          <tr>
+            <td>tbody tr td</td>
+            <td>td</td>
+            <td>td</td>
+          </tr>
+          <tr>
+            <td>tbody tr td</td>
+            <td>td</td>
+            <td>td</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

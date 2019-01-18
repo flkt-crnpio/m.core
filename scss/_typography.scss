@@ -1,0 +1,84 @@
+// typography
+.font-xxs {
+  font-size: xx-small;
+  line-height: $m-line-height;
+}
+.font-xs {
+  font-size: x-small;
+  line-height: $m-line-height;
+}
+.font-s {
+  font-size: small;
+  line-height: $m-line-height;
+}
+.font-m {
+  font-size: medium;
+  line-height: $m-line-height;
+}
+.font-l {
+  font-size: large;
+  line-height: $m-line-height;
+}
+.font-xl {
+  font-size: x-large;
+  line-height: $m-line-height;
+}
+.font-xxl {
+  font-size: xx-large;
+  line-height: $m-line-height;
+}
+
+.font-bold {
+  font-weight: bolder;
+}
+.font-light {
+  font-weight: lighter;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.text-justify {
+  text-align: justify;
+}
+
+.text-overflow-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.word-break-all {
+  word-break: break-all;
+  hyphens: auto;
+}
+.word-wrap-break {
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+@each $name, $color in $m-colors {
+  .font-#{$name} {
+    color: $color;
+  }
+}

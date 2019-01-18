@@ -1,0 +1,97 @@
+// link
+%m-link-base {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: $m-a-color;
+  cursor: pointer;
+  font-size: inherit;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+%m-link-hover-base {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: $m-a-color-hover;
+  text-decoration: none;
+}
+
+a,
+button.link,
+input[type="button"].link,
+input[type="submit"].link,
+input[type="reset"].link,
+.link {
+  @extend %m-interact-base;
+  @extend %m-link-base;
+  &.hover,
+  &:active,
+  &:hover,
+  &:focus {
+    @extend %m-link-hover-base;
+  }
+}
+
+button.link-underline,
+input[type="button"].link-underline,
+input[type="submit"].link-underline,
+input[type="reset"].link-underline,
+.link-underline {
+  @extend %m-link-base;
+  position: relative;
+  &::after {
+    background: $m-a-color;
+    transition: $m-transition;
+    height: $m-a-underline;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+  }
+  &.hover,
+  &:active,
+  &:hover,
+  &:focus {
+    @extend %m-link-hover-base;
+    position: relative;
+    &::after {
+      background: $m-a-color-hover;
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+
+@each $name, $color in $m-colors {
+  button.link-#{$name},
+  input[type="button"].link-#{$name},
+  input[type="submit"].link-#{$name},
+  input[type="reset"].link-#{$name},
+  .link-#{$name} {
+    color: $color;
+    &:hover,
+    &:focus {
+      color: darken($color, 10);
+    }
+  }
+
+  button.link-underline.link-#{$name},
+  input[type="button"].link-underline.link-#{$name},
+  input[type="submit"].link-underline.link-#{$name},
+  input[type="reset"].link-underline.link-#{$name},
+  .link-underline.link-#{$name}{
+    &::after {
+      background: $color;
+    }
+    &:hover,
+    &:focus {
+      &::after {
+        background: darken($color, 10);
+      }
+    }
+  }
+}

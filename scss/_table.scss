@@ -1,0 +1,61 @@
+// table
+table {
+  margin: 0 0 $m-spacelement;
+  width: 100%;
+  tbody tr,
+  tfoot tr {
+    border-top: $m-table-border;
+  }
+  thead tr th {
+    vertical-align: bottom;
+  }
+  tbody tr td {
+    vertical-align: top;
+  }
+  .tbody-align-middle tr td {
+    vertical-align: middle;
+  }
+  tfoot tr td {
+    opacity: .7;
+    vertical-align: top;
+  }
+  thead tr th,
+  tbody tr td,
+  tfoot tr td {
+    padding: $m-spacelement * .25;
+    text-align: left;
+  }
+}
+
+.table-container {
+  overflow: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+.table-striped {
+  tbody {
+    tr:nth-child(even) {
+      background: $m-striped-even;
+    }
+    tr:nth-child(odd) {
+      background: $m-striped-odd;
+    }
+  }
+}
+
+.table-hover {
+  tbody {
+    tr {
+      transition: $m-transition;
+    }
+    tr:hover {
+      background: $m-table-hover;
+    }
+  }
+}
+
+.table-box {
+  border: $m-table-border;
+  box-shadow: $m-shadow;
+}

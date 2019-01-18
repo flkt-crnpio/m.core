@@ -1,0 +1,345 @@
+// form
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="email"],
+[type="file"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="search"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
+textarea,
+select {
+  border: $m-input-border;
+  border-radius: $m-input-border-radius;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  padding: $m-input-padding $m-input-padding * 1.5;
+  width: calc(100% - #{$m-input-padding} * 3);
+  max-width: 100%;
+  &.hover,
+  &:focus,
+  &:hover {
+    border: $m-input-border-hover;
+  }
+}
+
+[type="checkbox"] + label,
+[type="radio"] + label {
+  cursor: pointer;
+  margin-left: $m-spacelement * .15;
+  margin-right: $m-spacelement;
+}
+[type="checkbox"]:disabled + label,
+[type="radio"]:disabled + label {
+  cursor: default;
+  opacity: .5;
+}
+
+[type="search"],
+select {
+  width: 100%;
+  opacity: 1;
+}
+
+[type="file"] {
+  padding-top: $m-input-padding + 2px;
+  padding-bottom: $m-input-padding + 2px;
+}
+
+fieldset {
+  border-radius: $m-input-border-radius;
+  margin: $m-spacelement 0;
+  padding: $m-spacelement * .5;
+}
+legend {
+  padding: 0 $m-spacelement * .5;
+}
+
+.checkbox,
+.radio,
+.switch {
+  display: inline-flex;
+  margin-top: $m-spacelement * .25;
+  margin-bottom: $m-spacelement * .25;
+  [type="checkbox"],
+  [type="radio"] {
+    display: none;
+  }
+  [type="checkbox"] + label,
+  [type="radio"] + label {
+    position: relative;
+    &::before {
+      display: block;
+      position: absolute;
+      left: 0;
+      content: "";
+      transition: $m-transition;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      transition: $m-transition;
+    }
+  }
+  [type="checkbox"]:checked + label ,
+  [type="radio"]:checked + label {
+    color: darken($m-input-color-active, 5);
+    &::before {
+      border-color: $m-input-color-active;
+    }
+    &::after {
+      border-color: $m-input-color-active;
+    }
+  }
+}
+
+.checkbox {
+  [type="checkbox"] + label,
+  [type="radio"] + label {
+    padding-left: $m-checkbox-height * 1.5;
+    &.empty {
+      margin-right: $m-spacelement * .3;
+      padding-left: 0;
+      height: $m-checkbox-height;
+      width: $m-checkbox-height;
+    }
+    &::before {
+      border: $m-checkbox-border;
+      border-radius: $m-input-border-radius;
+      height: $m-checkbox-height;
+      width: $m-checkbox-height;
+    }
+    &::after {
+      width: $m-checkbox-height * .6;
+      height: $m-checkbox-height * .25;
+      border-style: solid;
+      border-width: 2px;
+      border-color: transparent;
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      transform: rotate(-45deg);
+      top: $m-checkbox-height * .3;
+      left: $m-checkbox-height * .2;
+    }
+  }
+  [type="checkbox"]:checked + label ,
+  [type="radio"]:checked + label {
+    &::before {
+      background: $m-input-color-active;
+      border-color: $m-input-color-active;
+    }
+    &::after {
+      border-color: $m-input-after-active;
+    }
+  }
+}
+
+.radio {
+  [type="checkbox"] + label,
+  [type="radio"] + label {
+    padding-left: $m-checkbox-height * 1.5;
+    &.empty {
+      margin-right: $m-spacelement * .3;
+      padding-left: 0;
+      height: $m-checkbox-height;
+      width: $m-checkbox-height;
+    }
+    &::before {
+      border: $m-checkbox-border;
+      border-radius: 50%;
+      height: $m-checkbox-height;
+      width: $m-checkbox-height;
+    }
+    &::after {
+      background: transparent;
+      border-radius: 50%;
+      height: $m-checkbox-height * .3;
+      width: $m-checkbox-height * .3;
+      top: $m-checkbox-height *.4;
+      left: $m-checkbox-height *.4;
+    }
+  }
+  [type="radio"]:checked + label {
+    &::before {
+      background: $m-input-color-active;
+      border-color: $m-input-color-active;
+    }
+    &::after {
+      background: $m-input-after-active;
+    }
+  }
+}
+
+.switch {
+  [type="checkbox"] + label,
+  [type="radio"] + label {
+    padding-left: $m-checkbox-height * 2.5;
+    &.empty {
+      margin-right: $m-spacelement * .3;
+      padding-left: 0;
+      height: $m-checkbox-height;
+      width: $m-checkbox-height * 2;
+    }
+    &::before {
+      background: $m-switch-background-off;
+      border-radius: $m-checkbox-height;
+      height: $m-checkbox-height + 4px;
+      width: $m-checkbox-height * 2 + 4px;
+    }
+    &::after {
+      background: $m-switch-color-off;
+      border-radius: $m-checkbox-height;
+      height: $m-checkbox-height;
+      width: $m-checkbox-height;
+      margin: 2px;
+      left: 0;
+    }
+  }
+  [type="checkbox"]:checked + label,
+  [type="radio"]:checked + label {
+    &::before {
+      background: $m-switch-background-on;
+    }
+    &::after {
+      background: $m-switch-color-on;
+      left: $m-checkbox-height;
+    }
+  }
+}
+
+fieldset,
+.form-block {
+  output,
+  [type="date"],
+  [type="datetime"],
+  [type="datetime-local"],
+  [type="email"],
+  [type="file"],
+  [type="month"],
+  [type="number"],
+  [type="password"],
+  [type="search"],
+  [type="tel"],
+  [type="text"],
+  [type="time"],
+  [type="url"],
+  [type="week"],
+  select,
+  textarea {
+    &:not(:last-child) {
+      margin-bottom: $m-spacelement * .5;
+    }
+  }
+}
+
+.form-inline {
+  display: flex;
+  align-items: baseline;
+  .form-block,
+  output,
+  [type="date"],
+  [type="datetime"],
+  [type="datetime-local"],
+  [type="email"],
+  [type="file"],
+  [type="month"],
+  [type="number"],
+  [type="password"],
+  [type="search"],
+  [type="tel"],
+  [type="text"],
+  [type="time"],
+  [type="url"],
+  [type="week"],
+  select,
+  textarea {
+    flex: 1;
+    &:not(:last-child) {
+      margin-right: $m-spacelement;
+    }
+  }
+  div,
+  label,
+  button,
+  [type="button"],
+  [type="submit"],
+  [type="reset"] {
+    flex: 0;
+    &:not(:last-child) {
+      margin-right: $m-spacelement * .25;
+    }
+  }
+  span {
+    flex: 0;
+    margin-right: $m-spacelement;
+  }
+}
+
+@each $name, $color in $m-colors {
+  .form-#{$name} {
+    border-color: $color;
+    color: $color;
+    &:hover,
+    &:focus {
+      border-color: darken($color, 15);
+      color: darken($color, 15);
+    }
+  }
+  .checkbox-#{$name} {
+    [type="checkbox"]:checked + label ,
+    [type="radio"]:checked + label {
+      color: $color;
+      &::before {
+        background: $color;
+        border-color: $color;
+      }
+    }
+  }
+  .radio-#{$name} {
+    [type="checkbox"]:checked + label ,
+    [type="radio"]:checked + label {
+      color: $color;
+      &::before {
+        background: $color;
+        border-color: $color;
+      }
+    }
+  }
+  .switch-#{$name} {
+    [type="checkbox"]:checked + label ,
+    [type="radio"]:checked + label {
+      color: $color;
+      &::before {
+        background: $color;
+        border-color: $color;
+      }
+    }
+  }
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px $m-background inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+::-webkit-input-placeholder {
+    color: rgba($m-color, 0.4);
+}
+::-moz-placeholder {
+    color: rgba($m-color, 0.4);
+}
+:-ms-input-placeholder {
+    color: rgba($m-color, 0.4);
+}
+:-moz-placeholder {
+    color: rgba($m-color, 0.4);
+}

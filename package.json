@@ -1,38 +1,32 @@
 {
-  "name": "m.core",
-  "version": "2.0.5",
-  "description": "Core file for MolFramework",
-  "main": "dev/index.html",
+  "name": "mol.core",
+  "version": "0.0.0",
+  "description": "Core file for Mol Framework",
   "scripts": {
-    "watch": "gulp",
-    "build": "gulp dist"
+    "dist": "sass scss/mol.scss:dist/mol.min.css --style compressed",
+    "docs": "npm run scss | npm run start",
+    "start": "browser-sync start --server 'docs' --files 'docs'",
+    "scss": "sass --watch scss/mol.scss:docs/mol.css --style expanded"
   },
   "keywords": [
     "mol",
     "mol-framework",
     "css",
     "sass",
+    "scss",
     "scss-module"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flkt-crnpio/m.core.git"
+    "url": "git+https://github.com/MolFramework/mol.core.git"
   },
   "author": "flkt <flkt.crnpio@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/flkt-crnpio/m.core/issues"
+    "url": "https://github.com/MolFramework/mol.core/issues"
   },
-  "homepage": "https://github.com/flkt-crnpio/m.core#readme",
   "devDependencies": {
-    "browser-sync": "^2.18.13",
-    "gulp": "github:gulpjs/gulp",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.0",
-    "m.grid": "git+https://github.com/flkt-crnpio/m.grid.git",
-    "m.normalize": "git+https://github.com/flkt-crnpio/m.normalize.git"
-  },
-  "dependencies": {}
+    "browser-sync": "^2.26.3",
+    "mol.normalize": "git+https://github.com/MolFramework/mol.normalize.git"
+  }
 }
