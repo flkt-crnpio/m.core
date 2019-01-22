@@ -77,6 +77,15 @@
   hyphens: auto;
 }
 
+.font-hover {
+  background: rgba($m-block-hover,0);
+  transition: $m-transition;
+  &.hover,
+  &:hover {
+    background: $m-block-hover;
+  }
+}
+
 @each $name, $color in $m-colors {
   .font-#{$name} {
     color: $color;

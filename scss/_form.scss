@@ -64,7 +64,7 @@ legend {
 .checkbox,
 .radio,
 .switch {
-  display: inline-flex;
+  display: inline-block;
   margin-top: $m-spacelement * .25;
   margin-bottom: $m-spacelement * .25;
   [type="checkbox"],
@@ -73,6 +73,8 @@ legend {
   }
   [type="checkbox"] + label,
   [type="radio"] + label {
+    display: inline-block;
+    white-space: nowrap;
     position: relative;
     &::before {
       display: block;
@@ -241,6 +243,7 @@ fieldset,
 
 .form-inline {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   .form-block,
   output,
@@ -282,14 +285,15 @@ fieldset,
   }
 }
 
-@each $name, $color in $m-colors {
+@each $name, $color, $color-hover, $font , $font-hover, $border, $border-hover in $m-actn-colors {
   .form-#{$name} {
-    border-color: $color;
+    border-color: $border;
     color: $color;
+    &.hover,
     &:hover,
     &:focus {
-      border-color: darken($color, 15);
-      color: darken($color, 15);
+      border-color: $border-hover;
+      color: $color-hover;
     }
   }
   .checkbox-#{$name} {

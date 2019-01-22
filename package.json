@@ -1,6 +1,6 @@
 {
   "name": "mol.core",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Core file for Mol Framework",
   "scripts": {
     "dist": "sass scss/mol.scss:dist/mol.min.css --style compressed",

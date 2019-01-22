@@ -3,7 +3,7 @@
   background-color: transparent;
   border: none;
   box-shadow: none;
-  color: $m-a-color;
+  color: $m-actn-color;
   cursor: pointer;
   font-size: inherit;
   font-weight: normal;
@@ -15,7 +15,7 @@
   background-color: transparent;
   border: none;
   box-shadow: none;
-  color: $m-a-color-hover;
+  color: $m-actn-color-hover;
   text-decoration: none;
 }
 
@@ -28,8 +28,8 @@ input[type="reset"].link,
   @extend %m-interact-base;
   @extend %m-link-base;
   &.hover,
-  &:active,
   &:hover,
+  &:active,
   &:focus {
     @extend %m-link-hover-base;
   }
@@ -43,7 +43,7 @@ input[type="reset"].link-underline,
   @extend %m-link-base;
   position: relative;
   &::after {
-    background: $m-a-color;
+    background: $m-actn-color;
     transition: $m-transition;
     height: $m-a-underline;
     content: "";
@@ -53,27 +53,29 @@ input[type="reset"].link-underline,
     width: 0;
   }
   &.hover,
-  &:active,
   &:hover,
+  &:active,
   &:focus {
     @extend %m-link-hover-base;
     position: relative;
     &::after {
-      background: $m-a-color-hover;
+      background: $m-actn-color-hover;
       left: 0;
       width: 100%;
     }
   }
 }
 
-@each $name, $color, $color-hover, $font , $font-hover in $m-action-colors {
+@each $name, $color, $color-hover, $font , $font-hover, $border, $border-hover in $m-actn-colors {
   button.link-#{$name},
   input[type="button"].link-#{$name},
   input[type="submit"].link-#{$name},
   input[type="reset"].link-#{$name},
   .link-#{$name} {
     color: $color;
+    &.hover,
     &:hover,
+    &:active,
     &:focus {
       color: $color-hover;
     }
@@ -87,7 +89,9 @@ input[type="reset"].link-underline,
     &::after {
       background: $color-hover;
     }
+    &.hover,
     &:hover,
+    &:active,
     &:focus {
       &::after {
         background: $color-hover;

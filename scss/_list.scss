@@ -4,7 +4,6 @@ ol {
   list-style-position: inside;
   margin: 0 0 $m-spacelement;
   padding: 0;
-
   ul,
   ol {
     margin: 0 0 0 $m-spacelement * .5;
@@ -31,6 +30,17 @@ dl {
 
 .list-clean {
   list-style: none;
+}
+
+.list-hover {
+  li {
+    background: rgba($m-block-hover,0);
+    transition: $m-transition;
+    &.hover,
+    &:hover {
+      background: $m-block-hover;
+    }
+  }
 }
 
 .list-striped {

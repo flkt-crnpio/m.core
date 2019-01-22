@@ -1,15 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Open+Sans:300,400,700');
 
-$m-background:  		#fff;
-$m-color:       		#222;
-// $m-background:  #222029;
-// $m-color:       #eee;
+$m-background:  			#fff;
+$m-color:       			#222029;
+$m-primary:						#ff2d39;
+$m-secondary:   			#2a21a5;
+$m-accent:      			#2ed7d1;
 
+$m-actn-color: 			  $m-primary;
+$m-actn-color-hover:  mix($m-primary, $m-accent, 90%);
+$m-actn-font:         $m-background;
+$m-actn-font-hover:   $m-background;
+
+$m-actn-border-color:       $m-primary;
+$m-actn-border-color-hover: mix($m-primary, $m-accent, 95%);
 
 $m-font-family:     'Open Sans', sans-serif;
 $m-font-size:       15px;
 $m-font-weight:     400;
-// $m-font-weight:	300;
 $m-letter-spacing:  normal;
 $m-line-height:     1.5em;
 
@@ -25,69 +32,57 @@ $m-h-transform:  		normal;
 
 $m-transition:			all 0.3s cubic-bezier(0.465, 0.240, 0.370, 0.825);
 
-// layout
 $m-spacelement: 30px;
 
-// box-shadow
 $m-shadow:      0 0 0 0 rgba(0, 0, 0, 0);
 
-// colors
-$m-primary:     #fe3225;
-$m-secondary:   #f76059;
-$m-accent:      #23285e;
+$m-success:       mix(#3c6, $m-primary, 90%);
+$m-warning:       mix(#fc3, $m-primary, 90%);
+$m-error:         mix(#a00, $m-primary, 90%);
+$m-info:          mix(#0cf, $m-primary, 90%);
+$m-muted:         mix(#eee, $m-color, 90%);
 
-$m-success:     mix(#3c6, $m-primary, 80%);
-$m-warning:     mix(#fc3, $m-primary, 80%);
-$m-error:       mix(#a00, $m-primary, 80%);
-$m-info:        mix(#0cf, $m-primary, 80%);
-$m-muted:       mix(#eee, $m-color, 90%);
+$m-striped-odd:   rgba($m-color, .05);
+$m-striped-even:  rgba($m-color, .1);
 
-$m-striped-odd: rgba($m-color, .05);
-$m-striped-even:rgba($m-color, .1);
+$m-block-hover:   rgba($m-secondary, .1);
 
 $m-colors:
-    (primary, $m-primary),
-    (secondary, $m-secondary),
-    (accent, $m-accent),
-    (success, $m-success),
-    (warning, $m-warning),
-    (error, $m-error),
-    (info, $m-info),
-    (muted, $m-muted);
+  (primary, $m-primary),
+  (secondary, $m-secondary),
+  (accent, $m-accent),
+  (success, $m-success),
+  (warning, $m-warning),
+  (error, $m-error),
+  (info, $m-info),
+  (muted, $m-muted);
 
-$m-btn-colors:
-    (primary, $m-primary, lighten($m-primary, 10), #fff, #fff),
-    (secondary, $m-secondary, lighten($m-secondary, 10), #fff, #fff),
-    (accent, $m-accent, darken($m-accent, 10), #fff, #fff),
-    (success, $m-success, darken($m-success, 5), #fff, #fff),
-    (warning, $m-warning, darken($m-warning, 10), #fff, #fff),
-    (error, $m-error, darken($m-error, 5), #fff, #fff),
-    (info, $m-info, darken($m-info, 5), #fff, #fff),
-    (muted, $m-muted, darken($m-muted, 10), #fff, #fff);
+$m-actn-colors:
+  (primary, $m-actn-color, $m-actn-color-hover, $m-actn-font, $m-actn-font-hover, $m-actn-border-color, $m-actn-border-color-hover),
+  (secondary, $m-secondary, mix($m-secondary, $m-accent, 80%), $m-background, $m-background, $m-secondary, mix($m-secondary, $m-accent, 75%)),
+  (accent, $m-accent, mix($m-accent, $m-primary, 90%), $m-background, $m-background, $m-accent, mix($m-accent, $m-primary, 85%)),
+  (success, $m-success, mix($m-success, $m-primary, 90%), $m-background, $m-background, $m-success, mix($m-success, $m-primary, 85%)),
+  (warning, $m-warning, mix($m-warning, $m-primary, 85%), $m-background, $m-background, $m-warning, mix($m-warning, $m-primary, 80%)),
+  (error, $m-error, mix($m-error, $m-primary, 77%), $m-background, $m-background, $m-error, mix($m-error, $m-primary, 70%)),
+  (info, $m-info, mix($m-info, $m-primary, 90%), $m-background, $m-background, $m-info, mix($m-info, $m-primary, 85%)),
+  (muted, $m-muted, $m-muted, $m-color, $m-color, $m-muted, $m-muted);
 
 // links
 $m-a-underline:     1px;
-$m-a-color:         $m-primary;
-$m-a-color-hover:   darken($m-primary, 15);
 
 // tables
 $m-table-border:    1px solid rgba($m-color,.1);
-$m-table-hover:     rgba($m-primary, .7);
 
 // buttons and inputs
 $m-input-height:    40px;
 $m-input-padding:   7px;
 
 // buttons
-$m-btn-background:      $m-primary;
-$m-btn-color:           #fff;
-$m-btn-border:          1px solid $m-primary;
 $m-btn-shadow:          0 1px 3px rgba(0,0,0,0), 0 1px 2px rgba(0,0,0,0);
-$m-btn-background-hover:lighten($m-primary, 7);
-$m-btn-color-hover:     #fff;
-$m-btn-border-hover:    1px solid lighten($m-primary, 5);
-$m-btn-shadow-hover:    0 14px 28px rgba(0,0,0,0.2), 0 5px 5px rgba(0,0,0,0.3);
+$m-btn-shadow-hover:    0 14px 28px rgba(0,0,0,0.05), 0 5px 5px rgba(0,0,0,0.1);
 $m-btn-border-radius:   $m-input-height;
+$m-btn-border-width:    1px;
+$m-btn-border-style:    solid;
 
 // forms
 $m-input-border:        1px solid rgba($m-color, .3);
@@ -95,12 +90,12 @@ $m-input-border-hover:  1px solid rgba($m-color, .5);
 $m-input-border-radius: 5px;
 
 $m-input-color-active:  $m-primary;
-$m-input-after-active:  #fff;
+$m-input-after-active:  $m-background;
 
 $m-checkbox-height:     20px;
-$m-checkbox-border:     1px solid #ccc;
+$m-checkbox-border:     1px solid rgba($m-color, .2);
 
 $m-switch-background-off:   rgba($m-color, .2);
 $m-switch-background-on:    $m-input-color-active;
-$m-switch-color-off:        rgba($m-background, .9);
-$m-switch-color-on:         rgba($m-background, .9);
+$m-switch-color-off:        $m-background;
+$m-switch-color-on:         $m-background;
