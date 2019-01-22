@@ -66,7 +66,7 @@ input[type="reset"].link-underline,
   }
 }
 
-@each $name, $color in $m-colors {
+@each $name, $color, $color-hover, $font , $font-hover in $m-action-colors {
   button.link-#{$name},
   input[type="button"].link-#{$name},
   input[type="submit"].link-#{$name},
@@ -75,7 +75,7 @@ input[type="reset"].link-underline,
     color: $color;
     &:hover,
     &:focus {
-      color: darken($color, 10);
+      color: $color-hover;
     }
   }
 
@@ -85,12 +85,12 @@ input[type="reset"].link-underline,
   input[type="reset"].link-underline.link-#{$name},
   .link-underline.link-#{$name}{
     &::after {
-      background: $color;
+      background: $color-hover;
     }
     &:hover,
     &:focus {
       &::after {
-        background: darken($color, 10);
+        background: $color-hover;
       }
     }
   }

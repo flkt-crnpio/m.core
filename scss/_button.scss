@@ -94,7 +94,7 @@ input[type="reset"].btn-img,
 	padding: 0;
 }
 
-@each $name, $color, $color-hover, $font , $font-hover in $m-btn-colors {
+@each $name, $color, $color-hover, $font , $font-hover in $m-action-colors {
 	button.btn-#{$name},
 	input[type="button"].btn-#{$name},
 	input[type="submit"].btn-#{$name},
@@ -121,10 +121,10 @@ input[type="reset"].btn-img,
 		color: $color;
 		&:hover,
 		&:focus {
-			background: $color-hover;
-			border-color: $color-hover;
+			background: $color;
+			border-color: $color;
 			box-shadow: none;
-			color: $font-hover;
+			color: $font;
 		}
 	}
 }
