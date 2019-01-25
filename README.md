@@ -38,11 +38,11 @@ Edita los archivos dentro de la carpeta de **scss**
 ```text
 mol.core/
 ├── dist/
-│   ├── mol.min.css
-│   └── mol.min.css.map
+│   ├── core.min.css
+│   └── core.min.css.map
 ├── docs/
-│   ├── mol.css
-│   ├── mol.css.map
+│   ├── core.css
+│   ├── core.css.map
 │   └── index.html
 └── scss/
     ├── _button.scss
@@ -51,11 +51,11 @@ mol.core/
 		├── _image.scss
 		├── _link.scss
 		├── _list.scss
-		├── _mol.scss
+		├── _core.scss
     ├── _table.scss
 		├── _typography.scss
 		├── _vars.scss
-    └── mol.scss
+    └── core.scss
 ```
 
 #### Variables específicas del core

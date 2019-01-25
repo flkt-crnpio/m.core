@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Core file for Mol Framework",
   "scripts": {
-    "dist": "sass scss/mol.scss:dist/mol.min.css --style compressed",
+    "dist": "sass scss/core.scss:dist/core.min.css --style compressed",
     "docs": "npm run scss | npm run start",
     "start": "browser-sync start --server 'docs' --files 'docs'",
-    "scss": "sass --watch scss/mol.scss:docs/mol.css --style expanded"
+    "scss": "sass --watch scss/core.scss:docs/core.css --style expanded"
   },
   "keywords": [
     "mol",
