@@ -2222,35 +2222,6 @@ input[type=reset].btn-primary:focus,
   color: #fff;
 }
 
-button.btn-primary-line,
-input[type=button].btn-primary-line,
-input[type=submit].btn-primary-line,
-input[type=reset].btn-primary-line,
-.btn-primary-line {
-  background: transparent;
-  box-shadow: none;
-  border-color: #ff2d39;
-  color: #ff2d39;
-}
-button.btn-primary-line.hover, button.btn-primary-line:hover, button.btn-primary-line:focus,
-input[type=button].btn-primary-line.hover,
-input[type=button].btn-primary-line:hover,
-input[type=button].btn-primary-line:focus,
-input[type=submit].btn-primary-line.hover,
-input[type=submit].btn-primary-line:hover,
-input[type=submit].btn-primary-line:focus,
-input[type=reset].btn-primary-line.hover,
-input[type=reset].btn-primary-line:hover,
-input[type=reset].btn-primary-line:focus,
-.btn-primary-line.hover,
-.btn-primary-line:hover,
-.btn-primary-line:focus {
-  background: #ea3e48;
-  border-color: #f53641;
-  box-shadow: none;
-  color: #fff;
-}
-
 button.btn-secondary,
 input[type=button].btn-secondary,
 input[type=submit].btn-secondary,
@@ -2275,35 +2246,6 @@ input[type=reset].btn-secondary:focus,
 .btn-secondary:focus {
   background: #2b45ae;
   border-color: #2b4fb0;
-  color: #fff;
-}
-
-button.btn-secondary-line,
-input[type=button].btn-secondary-line,
-input[type=submit].btn-secondary-line,
-input[type=reset].btn-secondary-line,
-.btn-secondary-line {
-  background: transparent;
-  box-shadow: none;
-  border-color: #2a21a5;
-  color: #2a21a5;
-}
-button.btn-secondary-line.hover, button.btn-secondary-line:hover, button.btn-secondary-line:focus,
-input[type=button].btn-secondary-line.hover,
-input[type=button].btn-secondary-line:hover,
-input[type=button].btn-secondary-line:focus,
-input[type=submit].btn-secondary-line.hover,
-input[type=submit].btn-secondary-line:hover,
-input[type=submit].btn-secondary-line:focus,
-input[type=reset].btn-secondary-line.hover,
-input[type=reset].btn-secondary-line:hover,
-input[type=reset].btn-secondary-line:focus,
-.btn-secondary-line.hover,
-.btn-secondary-line:hover,
-.btn-secondary-line:focus {
-  background: #2b45ae;
-  border-color: #2b4fb0;
-  box-shadow: none;
   color: #fff;
 }
 
@@ -2334,35 +2276,6 @@ input[type=reset].btn-accent:focus,
   color: #fff;
 }
 
-button.btn-accent-line,
-input[type=button].btn-accent-line,
-input[type=submit].btn-accent-line,
-input[type=reset].btn-accent-line,
-.btn-accent-line {
-  background: transparent;
-  box-shadow: none;
-  border-color: #2ed7d1;
-  color: #2ed7d1;
-}
-button.btn-accent-line.hover, button.btn-accent-line:hover, button.btn-accent-line:focus,
-input[type=button].btn-accent-line.hover,
-input[type=button].btn-accent-line:hover,
-input[type=button].btn-accent-line:focus,
-input[type=submit].btn-accent-line.hover,
-input[type=submit].btn-accent-line:hover,
-input[type=submit].btn-accent-line:focus,
-input[type=reset].btn-accent-line.hover,
-input[type=reset].btn-accent-line:hover,
-input[type=reset].btn-accent-line:focus,
-.btn-accent-line.hover,
-.btn-accent-line:hover,
-.btn-accent-line:focus {
-  background: #43c6c2;
-  border-color: #4dbeba;
-  box-shadow: none;
-  color: #fff;
-}
-
 button.btn-success,
 input[type=button].btn-success,
 input[type=submit].btn-success,
@@ -2387,35 +2300,6 @@ input[type=reset].btn-success:focus,
 .btn-success:focus {
   background: #59ae5e;
   border-color: #63a75c;
-  color: #fff;
-}
-
-button.btn-success-line,
-input[type=button].btn-success-line,
-input[type=submit].btn-success-line,
-input[type=reset].btn-success-line,
-.btn-success-line {
-  background: transparent;
-  box-shadow: none;
-  border-color: #47bc62;
-  color: #47bc62;
-}
-button.btn-success-line.hover, button.btn-success-line:hover, button.btn-success-line:focus,
-input[type=button].btn-success-line.hover,
-input[type=button].btn-success-line:hover,
-input[type=button].btn-success-line:focus,
-input[type=submit].btn-success-line.hover,
-input[type=submit].btn-success-line:hover,
-input[type=submit].btn-success-line:focus,
-input[type=reset].btn-success-line.hover,
-input[type=reset].btn-success-line:hover,
-input[type=reset].btn-success-line:focus,
-.btn-success-line.hover,
-.btn-success-line:hover,
-.btn-success-line:focus {
-  background: #59ae5e;
-  border-color: #63a75c;
-  box-shadow: none;
   color: #fff;
 }
 
@@ -2446,35 +2330,6 @@ input[type=reset].btn-warning:focus,
   color: #fff;
 }
 
-button.btn-warning-line,
-input[type=button].btn-warning-line,
-input[type=submit].btn-warning-line,
-input[type=reset].btn-warning-line,
-.btn-warning-line {
-  background: transparent;
-  box-shadow: none;
-  border-color: #ffbc34;
-  color: #ffbc34;
-}
-button.btn-warning-line.hover, button.btn-warning-line:hover, button.btn-warning-line:focus,
-input[type=button].btn-warning-line.hover,
-input[type=button].btn-warning-line:hover,
-input[type=button].btn-warning-line:focus,
-input[type=submit].btn-warning-line.hover,
-input[type=submit].btn-warning-line:hover,
-input[type=submit].btn-warning-line:focus,
-input[type=reset].btn-warning-line.hover,
-input[type=reset].btn-warning-line:hover,
-input[type=reset].btn-warning-line:focus,
-.btn-warning-line.hover,
-.btn-warning-line:hover,
-.btn-warning-line:focus {
-  background: #ffa735;
-  border-color: #ff9f35;
-  box-shadow: none;
-  color: #fff;
-}
-
 button.btn-error,
 input[type=button].btn-error,
 input[type=submit].btn-error,
@@ -2499,35 +2354,6 @@ input[type=reset].btn-error:focus,
 .btn-error:focus {
   background: #c40e12;
   border-color: #ca1115;
-  color: #fff;
-}
-
-button.btn-error-line,
-input[type=button].btn-error-line,
-input[type=submit].btn-error-line,
-input[type=reset].btn-error-line,
-.btn-error-line {
-  background: transparent;
-  box-shadow: none;
-  border-color: #b30506;
-  color: #b30506;
-}
-button.btn-error-line.hover, button.btn-error-line:hover, button.btn-error-line:focus,
-input[type=button].btn-error-line.hover,
-input[type=button].btn-error-line:hover,
-input[type=button].btn-error-line:focus,
-input[type=submit].btn-error-line.hover,
-input[type=submit].btn-error-line:hover,
-input[type=submit].btn-error-line:focus,
-input[type=reset].btn-error-line.hover,
-input[type=reset].btn-error-line:hover,
-input[type=reset].btn-error-line:focus,
-.btn-error-line.hover,
-.btn-error-line:hover,
-.btn-error-line:focus {
-  background: #c40e12;
-  border-color: #ca1115;
-  box-shadow: none;
   color: #fff;
 }
 
@@ -2558,35 +2384,6 @@ input[type=reset].btn-info:focus,
   color: #fff;
 }
 
-button.btn-info-line,
-input[type=button].btn-info-line,
-input[type=submit].btn-info-line,
-input[type=reset].btn-info-line,
-.btn-info-line {
-  background: transparent;
-  box-shadow: none;
-  border-color: #1abceb;
-  color: #1abceb;
-}
-button.btn-info-line.hover, button.btn-info-line:hover, button.btn-info-line:focus,
-input[type=button].btn-info-line.hover,
-input[type=button].btn-info-line:hover,
-input[type=button].btn-info-line:focus,
-input[type=submit].btn-info-line.hover,
-input[type=submit].btn-info-line:hover,
-input[type=submit].btn-info-line:focus,
-input[type=reset].btn-info-line.hover,
-input[type=reset].btn-info-line:hover,
-input[type=reset].btn-info-line:focus,
-.btn-info-line.hover,
-.btn-info-line:hover,
-.btn-info-line:focus {
-  background: #31aed9;
-  border-color: #3ca7d0;
-  box-shadow: none;
-  color: #fff;
-}
-
 button.btn-muted,
 input[type=button].btn-muted,
 input[type=submit].btn-muted,
@@ -2611,35 +2408,6 @@ input[type=reset].btn-muted:focus,
 .btn-muted:focus {
   background: #dad9da;
   border-color: #dad9da;
-  color: #222029;
-}
-
-button.btn-muted-line,
-input[type=button].btn-muted-line,
-input[type=submit].btn-muted-line,
-input[type=reset].btn-muted-line,
-.btn-muted-line {
-  background: transparent;
-  box-shadow: none;
-  border-color: #dad9da;
-  color: #dad9da;
-}
-button.btn-muted-line.hover, button.btn-muted-line:hover, button.btn-muted-line:focus,
-input[type=button].btn-muted-line.hover,
-input[type=button].btn-muted-line:hover,
-input[type=button].btn-muted-line:focus,
-input[type=submit].btn-muted-line.hover,
-input[type=submit].btn-muted-line:hover,
-input[type=submit].btn-muted-line:focus,
-input[type=reset].btn-muted-line.hover,
-input[type=reset].btn-muted-line:hover,
-input[type=reset].btn-muted-line:focus,
-.btn-muted-line.hover,
-.btn-muted-line:hover,
-.btn-muted-line:focus {
-  background: #dad9da;
-  border-color: #dad9da;
-  box-shadow: none;
   color: #222029;
 }
 

@@ -111,22 +111,4 @@ input[type="reset"].btn-img,
 			color: $font-hover;
 		}
 	}
-	button.btn-#{$name}-line,
-	input[type="button"].btn-#{$name}-line,
-	input[type="submit"].btn-#{$name}-line,
-	input[type="reset"].btn-#{$name}-line,
-	.btn-#{$name}-line {
-		background: transparent;
-		box-shadow: none;
-		border-color: $border;
-		color: $color;
-		&.hover,
-		&:hover,
-		&:focus {
-			background: $color-hover;
-			border-color: $border-hover;
-			box-shadow: none;
-			color: $font-hover;
-		}
-	}
 }
