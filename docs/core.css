@@ -3175,10 +3175,8 @@ select:-webkit-autofill {
   object-fit: contain;
 }
 
-button.link-underline,
-input[type=button].link-underline,
-input[type=submit].link-underline,
-input[type=reset].link-underline,
+button.link-r-underline,
+.link-r-underline, button.link-underline,
 .link-underline, a,
 button.link,
 input[type=button].link,
@@ -3197,19 +3195,11 @@ input[type=reset].link,
   text-decoration: none;
 }
 
-button.link-underline.hover, button.link-underline:hover, button.link-underline:active, button.link-underline:focus,
-input[type=button].link-underline.hover,
-input[type=button].link-underline:hover,
-input[type=button].link-underline:active,
-input[type=button].link-underline:focus,
-input[type=submit].link-underline.hover,
-input[type=submit].link-underline:hover,
-input[type=submit].link-underline:active,
-input[type=submit].link-underline:focus,
-input[type=reset].link-underline.hover,
-input[type=reset].link-underline:hover,
-input[type=reset].link-underline:active,
-input[type=reset].link-underline:focus,
+button.link-r-underline.hover, button.link-r-underline:hover, button.link-r-underline:active, button.link-r-underline:focus,
+.link-r-underline.hover,
+.link-r-underline:hover,
+.link-r-underline:active,
+.link-r-underline:focus, button.link-underline.hover, button.link-underline:hover, button.link-underline:active, button.link-underline:focus,
 .link-underline.hover,
 .link-underline:hover,
 .link-underline:active,
@@ -3238,16 +3228,10 @@ input[type=reset].link:focus,
 }
 
 button.link-underline,
-input[type=button].link-underline,
-input[type=submit].link-underline,
-input[type=reset].link-underline,
 .link-underline {
   position: relative;
 }
 button.link-underline::after,
-input[type=button].link-underline::after,
-input[type=submit].link-underline::after,
-input[type=reset].link-underline::after,
 .link-underline::after {
   background: #ff2d39;
   transition: all 0.3s cubic-bezier(0.465, 0.24, 0.37, 0.825);
@@ -3255,22 +3239,10 @@ input[type=reset].link-underline::after,
   content: "";
   position: absolute;
   bottom: 0;
-  left: 50%;
-  width: 0;
+  left: 12px;
+  width: 12px;
 }
 button.link-underline.hover, button.link-underline:hover, button.link-underline:active, button.link-underline:focus,
-input[type=button].link-underline.hover,
-input[type=button].link-underline:hover,
-input[type=button].link-underline:active,
-input[type=button].link-underline:focus,
-input[type=submit].link-underline.hover,
-input[type=submit].link-underline:hover,
-input[type=submit].link-underline:active,
-input[type=submit].link-underline:focus,
-input[type=reset].link-underline.hover,
-input[type=reset].link-underline:hover,
-input[type=reset].link-underline:active,
-input[type=reset].link-underline:focus,
 .link-underline.hover,
 .link-underline:hover,
 .link-underline:active,
@@ -3278,25 +3250,43 @@ input[type=reset].link-underline:focus,
   position: relative;
 }
 button.link-underline.hover::after, button.link-underline:hover::after, button.link-underline:active::after, button.link-underline:focus::after,
-input[type=button].link-underline.hover::after,
-input[type=button].link-underline:hover::after,
-input[type=button].link-underline:active::after,
-input[type=button].link-underline:focus::after,
-input[type=submit].link-underline.hover::after,
-input[type=submit].link-underline:hover::after,
-input[type=submit].link-underline:active::after,
-input[type=submit].link-underline:focus::after,
-input[type=reset].link-underline.hover::after,
-input[type=reset].link-underline:hover::after,
-input[type=reset].link-underline:active::after,
-input[type=reset].link-underline:focus::after,
 .link-underline.hover::after,
 .link-underline:hover::after,
 .link-underline:active::after,
 .link-underline:focus::after {
   background: #ea3e48;
-  left: 0;
   width: 100%;
+}
+
+button.link-r-underline,
+.link-r-underline {
+  position: relative;
+}
+button.link-r-underline::after,
+.link-r-underline::after {
+  background: #ff2d39;
+  transition: all 0.3s cubic-bezier(0.465, 0.24, 0.37, 0.825);
+  height: 1px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -12px;
+  width: 100%;
+}
+button.link-r-underline.hover, button.link-r-underline:hover, button.link-r-underline:active, button.link-r-underline:focus,
+.link-r-underline.hover,
+.link-r-underline:hover,
+.link-r-underline:active,
+.link-r-underline:focus {
+  position: relative;
+}
+button.link-r-underline.hover::after, button.link-r-underline:hover::after, button.link-r-underline:active::after, button.link-r-underline:focus::after,
+.link-r-underline.hover::after,
+.link-r-underline:hover::after,
+.link-r-underline:active::after,
+.link-r-underline:focus::after {
+  background: #ea3e48;
+  width: 12px;
 }
 
 button.link-primary,
@@ -3327,29 +3317,24 @@ input[type=reset].link-primary:focus,
 }
 
 button.link-underline.link-primary::after,
-input[type=button].link-underline.link-primary::after,
-input[type=submit].link-underline.link-primary::after,
-input[type=reset].link-underline.link-primary::after,
-.link-underline.link-primary::after {
-  background: #ea3e48;
+.link-underline.link-primary::after,
+button.link-r-underline.link-primary::after,
+.link-r-underline.link-primary::after {
+  background: #ff2d39;
 }
 button.link-underline.link-primary.hover::after, button.link-underline.link-primary:hover::after, button.link-underline.link-primary:active::after, button.link-underline.link-primary:focus::after,
-input[type=button].link-underline.link-primary.hover::after,
-input[type=button].link-underline.link-primary:hover::after,
-input[type=button].link-underline.link-primary:active::after,
-input[type=button].link-underline.link-primary:focus::after,
-input[type=submit].link-underline.link-primary.hover::after,
-input[type=submit].link-underline.link-primary:hover::after,
-input[type=submit].link-underline.link-primary:active::after,
-input[type=submit].link-underline.link-primary:focus::after,
-input[type=reset].link-underline.link-primary.hover::after,
-input[type=reset].link-underline.link-primary:hover::after,
-input[type=reset].link-underline.link-primary:active::after,
-input[type=reset].link-underline.link-primary:focus::after,
 .link-underline.link-primary.hover::after,
 .link-underline.link-primary:hover::after,
 .link-underline.link-primary:active::after,
-.link-underline.link-primary:focus::after {
+.link-underline.link-primary:focus::after,
+button.link-r-underline.link-primary.hover::after,
+button.link-r-underline.link-primary:hover::after,
+button.link-r-underline.link-primary:active::after,
+button.link-r-underline.link-primary:focus::after,
+.link-r-underline.link-primary.hover::after,
+.link-r-underline.link-primary:hover::after,
+.link-r-underline.link-primary:active::after,
+.link-r-underline.link-primary:focus::after {
   background: #ea3e48;
 }
 
@@ -3381,29 +3366,24 @@ input[type=reset].link-secondary:focus,
 }
 
 button.link-underline.link-secondary::after,
-input[type=button].link-underline.link-secondary::after,
-input[type=submit].link-underline.link-secondary::after,
-input[type=reset].link-underline.link-secondary::after,
-.link-underline.link-secondary::after {
-  background: #2b45ae;
+.link-underline.link-secondary::after,
+button.link-r-underline.link-secondary::after,
+.link-r-underline.link-secondary::after {
+  background: #2a21a5;
 }
 button.link-underline.link-secondary.hover::after, button.link-underline.link-secondary:hover::after, button.link-underline.link-secondary:active::after, button.link-underline.link-secondary:focus::after,
-input[type=button].link-underline.link-secondary.hover::after,
-input[type=button].link-underline.link-secondary:hover::after,
-input[type=button].link-underline.link-secondary:active::after,
-input[type=button].link-underline.link-secondary:focus::after,
-input[type=submit].link-underline.link-secondary.hover::after,
-input[type=submit].link-underline.link-secondary:hover::after,
-input[type=submit].link-underline.link-secondary:active::after,
-input[type=submit].link-underline.link-secondary:focus::after,
-input[type=reset].link-underline.link-secondary.hover::after,
-input[type=reset].link-underline.link-secondary:hover::after,
-input[type=reset].link-underline.link-secondary:active::after,
-input[type=reset].link-underline.link-secondary:focus::after,
 .link-underline.link-secondary.hover::after,
 .link-underline.link-secondary:hover::after,
 .link-underline.link-secondary:active::after,
-.link-underline.link-secondary:focus::after {
+.link-underline.link-secondary:focus::after,
+button.link-r-underline.link-secondary.hover::after,
+button.link-r-underline.link-secondary:hover::after,
+button.link-r-underline.link-secondary:active::after,
+button.link-r-underline.link-secondary:focus::after,
+.link-r-underline.link-secondary.hover::after,
+.link-r-underline.link-secondary:hover::after,
+.link-r-underline.link-secondary:active::after,
+.link-r-underline.link-secondary:focus::after {
   background: #2b45ae;
 }
 
@@ -3435,29 +3415,24 @@ input[type=reset].link-accent:focus,
 }
 
 button.link-underline.link-accent::after,
-input[type=button].link-underline.link-accent::after,
-input[type=submit].link-underline.link-accent::after,
-input[type=reset].link-underline.link-accent::after,
-.link-underline.link-accent::after {
-  background: #43c6c2;
+.link-underline.link-accent::after,
+button.link-r-underline.link-accent::after,
+.link-r-underline.link-accent::after {
+  background: #2ed7d1;
 }
 button.link-underline.link-accent.hover::after, button.link-underline.link-accent:hover::after, button.link-underline.link-accent:active::after, button.link-underline.link-accent:focus::after,
-input[type=button].link-underline.link-accent.hover::after,
-input[type=button].link-underline.link-accent:hover::after,
-input[type=button].link-underline.link-accent:active::after,
-input[type=button].link-underline.link-accent:focus::after,
-input[type=submit].link-underline.link-accent.hover::after,
-input[type=submit].link-underline.link-accent:hover::after,
-input[type=submit].link-underline.link-accent:active::after,
-input[type=submit].link-underline.link-accent:focus::after,
-input[type=reset].link-underline.link-accent.hover::after,
-input[type=reset].link-underline.link-accent:hover::after,
-input[type=reset].link-underline.link-accent:active::after,
-input[type=reset].link-underline.link-accent:focus::after,
 .link-underline.link-accent.hover::after,
 .link-underline.link-accent:hover::after,
 .link-underline.link-accent:active::after,
-.link-underline.link-accent:focus::after {
+.link-underline.link-accent:focus::after,
+button.link-r-underline.link-accent.hover::after,
+button.link-r-underline.link-accent:hover::after,
+button.link-r-underline.link-accent:active::after,
+button.link-r-underline.link-accent:focus::after,
+.link-r-underline.link-accent.hover::after,
+.link-r-underline.link-accent:hover::after,
+.link-r-underline.link-accent:active::after,
+.link-r-underline.link-accent:focus::after {
   background: #43c6c2;
 }
 
@@ -3489,29 +3464,24 @@ input[type=reset].link-success:focus,
 }
 
 button.link-underline.link-success::after,
-input[type=button].link-underline.link-success::after,
-input[type=submit].link-underline.link-success::after,
-input[type=reset].link-underline.link-success::after,
-.link-underline.link-success::after {
-  background: #59ae5e;
+.link-underline.link-success::after,
+button.link-r-underline.link-success::after,
+.link-r-underline.link-success::after {
+  background: #47bc62;
 }
 button.link-underline.link-success.hover::after, button.link-underline.link-success:hover::after, button.link-underline.link-success:active::after, button.link-underline.link-success:focus::after,
-input[type=button].link-underline.link-success.hover::after,
-input[type=button].link-underline.link-success:hover::after,
-input[type=button].link-underline.link-success:active::after,
-input[type=button].link-underline.link-success:focus::after,
-input[type=submit].link-underline.link-success.hover::after,
-input[type=submit].link-underline.link-success:hover::after,
-input[type=submit].link-underline.link-success:active::after,
-input[type=submit].link-underline.link-success:focus::after,
-input[type=reset].link-underline.link-success.hover::after,
-input[type=reset].link-underline.link-success:hover::after,
-input[type=reset].link-underline.link-success:active::after,
-input[type=reset].link-underline.link-success:focus::after,
 .link-underline.link-success.hover::after,
 .link-underline.link-success:hover::after,
 .link-underline.link-success:active::after,
-.link-underline.link-success:focus::after {
+.link-underline.link-success:focus::after,
+button.link-r-underline.link-success.hover::after,
+button.link-r-underline.link-success:hover::after,
+button.link-r-underline.link-success:active::after,
+button.link-r-underline.link-success:focus::after,
+.link-r-underline.link-success.hover::after,
+.link-r-underline.link-success:hover::after,
+.link-r-underline.link-success:active::after,
+.link-r-underline.link-success:focus::after {
   background: #59ae5e;
 }
 
@@ -3543,29 +3513,24 @@ input[type=reset].link-warning:focus,
 }
 
 button.link-underline.link-warning::after,
-input[type=button].link-underline.link-warning::after,
-input[type=submit].link-underline.link-warning::after,
-input[type=reset].link-underline.link-warning::after,
-.link-underline.link-warning::after {
-  background: #ffa735;
+.link-underline.link-warning::after,
+button.link-r-underline.link-warning::after,
+.link-r-underline.link-warning::after {
+  background: #ffbc34;
 }
 button.link-underline.link-warning.hover::after, button.link-underline.link-warning:hover::after, button.link-underline.link-warning:active::after, button.link-underline.link-warning:focus::after,
-input[type=button].link-underline.link-warning.hover::after,
-input[type=button].link-underline.link-warning:hover::after,
-input[type=button].link-underline.link-warning:active::after,
-input[type=button].link-underline.link-warning:focus::after,
-input[type=submit].link-underline.link-warning.hover::after,
-input[type=submit].link-underline.link-warning:hover::after,
-input[type=submit].link-underline.link-warning:active::after,
-input[type=submit].link-underline.link-warning:focus::after,
-input[type=reset].link-underline.link-warning.hover::after,
-input[type=reset].link-underline.link-warning:hover::after,
-input[type=reset].link-underline.link-warning:active::after,
-input[type=reset].link-underline.link-warning:focus::after,
 .link-underline.link-warning.hover::after,
 .link-underline.link-warning:hover::after,
 .link-underline.link-warning:active::after,
-.link-underline.link-warning:focus::after {
+.link-underline.link-warning:focus::after,
+button.link-r-underline.link-warning.hover::after,
+button.link-r-underline.link-warning:hover::after,
+button.link-r-underline.link-warning:active::after,
+button.link-r-underline.link-warning:focus::after,
+.link-r-underline.link-warning.hover::after,
+.link-r-underline.link-warning:hover::after,
+.link-r-underline.link-warning:active::after,
+.link-r-underline.link-warning:focus::after {
   background: #ffa735;
 }
 
@@ -3597,29 +3562,24 @@ input[type=reset].link-error:focus,
 }
 
 button.link-underline.link-error::after,
-input[type=button].link-underline.link-error::after,
-input[type=submit].link-underline.link-error::after,
-input[type=reset].link-underline.link-error::after,
-.link-underline.link-error::after {
-  background: #c40e12;
+.link-underline.link-error::after,
+button.link-r-underline.link-error::after,
+.link-r-underline.link-error::after {
+  background: #b30506;
 }
 button.link-underline.link-error.hover::after, button.link-underline.link-error:hover::after, button.link-underline.link-error:active::after, button.link-underline.link-error:focus::after,
-input[type=button].link-underline.link-error.hover::after,
-input[type=button].link-underline.link-error:hover::after,
-input[type=button].link-underline.link-error:active::after,
-input[type=button].link-underline.link-error:focus::after,
-input[type=submit].link-underline.link-error.hover::after,
-input[type=submit].link-underline.link-error:hover::after,
-input[type=submit].link-underline.link-error:active::after,
-input[type=submit].link-underline.link-error:focus::after,
-input[type=reset].link-underline.link-error.hover::after,
-input[type=reset].link-underline.link-error:hover::after,
-input[type=reset].link-underline.link-error:active::after,
-input[type=reset].link-underline.link-error:focus::after,
 .link-underline.link-error.hover::after,
 .link-underline.link-error:hover::after,
 .link-underline.link-error:active::after,
-.link-underline.link-error:focus::after {
+.link-underline.link-error:focus::after,
+button.link-r-underline.link-error.hover::after,
+button.link-r-underline.link-error:hover::after,
+button.link-r-underline.link-error:active::after,
+button.link-r-underline.link-error:focus::after,
+.link-r-underline.link-error.hover::after,
+.link-r-underline.link-error:hover::after,
+.link-r-underline.link-error:active::after,
+.link-r-underline.link-error:focus::after {
   background: #c40e12;
 }
 
@@ -3651,29 +3611,24 @@ input[type=reset].link-info:focus,
 }
 
 button.link-underline.link-info::after,
-input[type=button].link-underline.link-info::after,
-input[type=submit].link-underline.link-info::after,
-input[type=reset].link-underline.link-info::after,
-.link-underline.link-info::after {
-  background: #31aed9;
+.link-underline.link-info::after,
+button.link-r-underline.link-info::after,
+.link-r-underline.link-info::after {
+  background: #1abceb;
 }
 button.link-underline.link-info.hover::after, button.link-underline.link-info:hover::after, button.link-underline.link-info:active::after, button.link-underline.link-info:focus::after,
-input[type=button].link-underline.link-info.hover::after,
-input[type=button].link-underline.link-info:hover::after,
-input[type=button].link-underline.link-info:active::after,
-input[type=button].link-underline.link-info:focus::after,
-input[type=submit].link-underline.link-info.hover::after,
-input[type=submit].link-underline.link-info:hover::after,
-input[type=submit].link-underline.link-info:active::after,
-input[type=submit].link-underline.link-info:focus::after,
-input[type=reset].link-underline.link-info.hover::after,
-input[type=reset].link-underline.link-info:hover::after,
-input[type=reset].link-underline.link-info:active::after,
-input[type=reset].link-underline.link-info:focus::after,
 .link-underline.link-info.hover::after,
 .link-underline.link-info:hover::after,
 .link-underline.link-info:active::after,
-.link-underline.link-info:focus::after {
+.link-underline.link-info:focus::after,
+button.link-r-underline.link-info.hover::after,
+button.link-r-underline.link-info:hover::after,
+button.link-r-underline.link-info:active::after,
+button.link-r-underline.link-info:focus::after,
+.link-r-underline.link-info.hover::after,
+.link-r-underline.link-info:hover::after,
+.link-r-underline.link-info:active::after,
+.link-r-underline.link-info:focus::after {
   background: #31aed9;
 }
 
@@ -3705,29 +3660,24 @@ input[type=reset].link-muted:focus,
 }
 
 button.link-underline.link-muted::after,
-input[type=button].link-underline.link-muted::after,
-input[type=submit].link-underline.link-muted::after,
-input[type=reset].link-underline.link-muted::after,
-.link-underline.link-muted::after {
+.link-underline.link-muted::after,
+button.link-r-underline.link-muted::after,
+.link-r-underline.link-muted::after {
   background: #dad9da;
 }
 button.link-underline.link-muted.hover::after, button.link-underline.link-muted:hover::after, button.link-underline.link-muted:active::after, button.link-underline.link-muted:focus::after,
-input[type=button].link-underline.link-muted.hover::after,
-input[type=button].link-underline.link-muted:hover::after,
-input[type=button].link-underline.link-muted:active::after,
-input[type=button].link-underline.link-muted:focus::after,
-input[type=submit].link-underline.link-muted.hover::after,
-input[type=submit].link-underline.link-muted:hover::after,
-input[type=submit].link-underline.link-muted:active::after,
-input[type=submit].link-underline.link-muted:focus::after,
-input[type=reset].link-underline.link-muted.hover::after,
-input[type=reset].link-underline.link-muted:hover::after,
-input[type=reset].link-underline.link-muted:active::after,
-input[type=reset].link-underline.link-muted:focus::after,
 .link-underline.link-muted.hover::after,
 .link-underline.link-muted:hover::after,
 .link-underline.link-muted:active::after,
-.link-underline.link-muted:focus::after {
+.link-underline.link-muted:focus::after,
+button.link-r-underline.link-muted.hover::after,
+button.link-r-underline.link-muted:hover::after,
+button.link-r-underline.link-muted:active::after,
+button.link-r-underline.link-muted:focus::after,
+.link-r-underline.link-muted.hover::after,
+.link-r-underline.link-muted:hover::after,
+.link-r-underline.link-muted:active::after,
+.link-r-underline.link-muted:focus::after {
   background: #dad9da;
 }
 

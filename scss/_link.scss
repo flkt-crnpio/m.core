@@ -36,9 +36,6 @@ input[type="reset"].link,
 }
 
 button.link-underline,
-input[type="button"].link-underline,
-input[type="submit"].link-underline,
-input[type="reset"].link-underline,
 .link-underline {
   @extend %m-link-base;
   position: relative;
@@ -49,8 +46,8 @@ input[type="reset"].link-underline,
     content: "";
     position: absolute;
     bottom: 0;
-    left: 50%;
-    width: 0;
+    left: $m-spacelement * .4;
+    width: $m-spacelement * .4;
   }
   &.hover,
   &:hover,
@@ -60,8 +57,33 @@ input[type="reset"].link-underline,
     position: relative;
     &::after {
       background: $m-actn-color-hover;
-      left: 0;
       width: 100%;
+    }
+  }
+}
+button.link-r-underline,
+.link-r-underline {
+  @extend %m-link-base;
+  position: relative;
+  &::after {
+    background: $m-actn-color;
+    transition: $m-transition;
+    height: $m-a-underline;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -#{$m-spacelement * .4};
+    width: 100%;
+  }
+  &.hover,
+  &:hover,
+  &:active,
+  &:focus {
+    @extend %m-link-hover-base;
+    position: relative;
+    &::after {
+      background: $m-actn-color-hover;
+      width: $m-spacelement * .4;
     }
   }
 }
@@ -82,12 +104,11 @@ input[type="reset"].link-underline,
   }
 
   button.link-underline.link-#{$name},
-  input[type="button"].link-underline.link-#{$name},
-  input[type="submit"].link-underline.link-#{$name},
-  input[type="reset"].link-underline.link-#{$name},
-  .link-underline.link-#{$name}{
+  .link-underline.link-#{$name},
+  button.link-r-underline.link-#{$name},
+  .link-r-underline.link-#{$name} {
     &::after {
-      background: $color-hover;
+      background: $color;
     }
     &.hover,
     &:hover,
@@ -98,4 +119,5 @@ input[type="reset"].link-underline,
       }
     }
   }
+
 }
