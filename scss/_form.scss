@@ -285,49 +285,6 @@ fieldset,
   }
 }
 
-@each $name, $color, $color-hover, $font , $font-hover, $border, $border-hover in $m-actn-colors {
-  .form-#{$name} {
-    border-color: $border;
-    color: $color;
-    &.hover,
-    &:hover,
-    &:focus {
-      border-color: $border-hover;
-      color: $color-hover;
-    }
-  }
-  .checkbox-#{$name} {
-    [type="checkbox"]:checked + label ,
-    [type="radio"]:checked + label {
-      color: $color;
-      &::before {
-        background: $color;
-        border-color: $color;
-      }
-    }
-  }
-  .radio-#{$name} {
-    [type="checkbox"]:checked + label ,
-    [type="radio"]:checked + label {
-      color: $color;
-      &::before {
-        background: $color;
-        border-color: $color;
-      }
-    }
-  }
-  .switch-#{$name} {
-    [type="checkbox"]:checked + label ,
-    [type="radio"]:checked + label {
-      color: $color;
-      &::before {
-        background: $color;
-        border-color: $color;
-      }
-    }
-  }
-}
-
 input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
@@ -346,4 +303,128 @@ select:-webkit-autofill {
 }
 :-moz-placeholder {
     color: rgba($m-color, 0.4);
+}
+
+@each $name, $color, $color-hover, $font , $font-hover, $border, $border-hover in $m-actn-colors {
+  .form-#{$name} {
+    [type="date"],
+    [type="datetime"],
+    [type="datetime-local"],
+    [type="email"],
+    [type="file"],
+    [type="month"],
+    [type="number"],
+    [type="password"],
+    [type="search"],
+    [type="tel"],
+    [type="text"],
+    [type="time"],
+    [type="url"],
+    [type="week"],
+    textarea,
+    select {
+      border-color: $border;
+      color: $color;
+      &.hover,
+      &:hover,
+      &:focus {
+        border-color: $border-hover;
+        color: $color-hover;
+      }
+      &::-webkit-input-placeholder {
+          color: rgba($border, .5);
+      }
+      &::-moz-placeholder {
+          color: rgba($border, .5);
+      }
+      &:-ms-input-placeholder {
+          color: rgba($border, .5);
+      }
+      &:-moz-placeholder {
+          color: rgba($border, .5);
+      }
+    }
+    label {
+      color: $color;
+    }
+    button,
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"],
+    .btn {
+      background: $color;
+  		border-color: $border;
+  		color: $font;
+  		&.hover,
+  		&:hover,
+  		&:focus {
+  			background: $color-hover;
+  			border-color: $border-hover;
+  			color: $font-hover;
+  		}
+    }
+    .checkbox,
+    .radio,
+    .switch {
+      [type="checkbox"] + label ,
+      [type="radio"] + label {
+        color: $color;
+        &::before {
+          border-color: $border;
+        }
+      }
+      [type="checkbox"]:checked + label ,
+      [type="radio"]:checked + label {
+        color: $color-hover;
+        &::before {
+          background: $color;
+          border-color: $color;
+        }
+      }
+    }
+  }
+  .label-#{$name} {
+    color: $color;
+  }
+  .input-#{$name} {
+    border-color: $border;
+    color: $color;
+    &.hover,
+    &:hover,
+    &:focus {
+      border-color: $border-hover;
+      color: $color-hover;
+    }
+    &::-webkit-input-placeholder {
+        color: rgba($border, .5);
+    }
+    &::-moz-placeholder {
+        color: rgba($border, .5);
+    }
+    &:-ms-input-placeholder {
+        color: rgba($border, .5);
+    }
+    &:-moz-placeholder {
+        color: rgba($border, .5);
+    }
+  }
+  .checkbox-#{$name},
+  .radio-#{$name},
+  .switch-#{$name} {
+    [type="checkbox"] + label ,
+    [type="radio"] + label {
+      color: $color;
+      &::before {
+        border-color: $border;
+      }
+    }
+    [type="checkbox"]:checked + label ,
+    [type="radio"]:checked + label {
+      color: $color-hover;
+      &::before {
+        background: $color;
+        border-color: $color;
+      }
+    }
+  }
 }
