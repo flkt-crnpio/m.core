@@ -485,11 +485,15 @@ table {
 }
 
 .font-bold {
-  font-weight: bolder;
+  font-weight: 700;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .font-light {
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .font-italic {
