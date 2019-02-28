@@ -28,6 +28,12 @@ select {
     border: $m-input-border-hover;
   }
 }
+output {
+  width: calc(100% - #{$m-input-padding} * 3);
+  max-width: 100%;
+  display: inline-flex;
+  align-self: flex-end;
+}
 
 [type="checkbox"] + label,
 [type="radio"] + label {
