@@ -42,6 +42,19 @@
   font-style: italic;
 }
 
+.font-body {
+  font-family: $m-font-family;
+}
+.font-serif {
+  font-family: $m-font-serif;
+}
+.font-code {
+  font-family: $m-code-family;
+}
+.font-heading {
+  font-family: $m-h-family;
+}
+
 .text-capitalize {
   text-transform: capitalize;
 }

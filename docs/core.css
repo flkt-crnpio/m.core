@@ -518,6 +518,22 @@ table {
   font-style: italic;
 }
 
+.font-body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.font-serif {
+  font-family: "PT Serif", serif;
+}
+
+.font-code {
+  font-family: monospace;
+}
+
+.font-heading {
+  font-family: "Josefin Sans", sans-serif;
+}
+
 .text-capitalize {
   text-transform: capitalize;
 }
