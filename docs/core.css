@@ -247,6 +247,7 @@ mark {
   font-size: 0.9em;
   font-weight: normal;
   padding: 0.4em 0.9em;
+  display: inline-block;
   margin: 0.2em 0;
 }
 
@@ -261,9 +262,9 @@ kbd {
 
 pre {
   background: rgba(34, 32, 41, 0.05);
-  display: block;
   margin: 1.5em 0;
   padding: 1em;
+  display: block;
   overflow: auto;
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -296,6 +297,7 @@ textarea,
 select,
 output {
   padding: 0.4em 0.8em;
+  display: inline-block;
   margin: 0.2em 0;
 }
 
@@ -319,6 +321,8 @@ select:hover {
 output {
   background: transparent;
   border-bottom: 1px solid rgba(34, 32, 41, 0.5);
+  display: inline-block;
+  vertical-align: bottom;
 }
 
 [type=file] {
@@ -337,6 +341,7 @@ select {
   background-size: 5px 5px, 5px 5px;
   background-repeat: no-repeat;
   padding-right: 30px;
+  display: inline-block;
 }
 
 button,
@@ -377,11 +382,13 @@ fieldset {
   border: 1px solid rgba(34, 32, 41, 0.2);
   margin: 1.5em 0;
   padding: 0.35em 0.7em 0.7em;
+  display: block;
 }
 
 input[type=checkbox],
 input[type=radio] {
   padding: 0;
+  display: inline-block;
 }
 
 input[type=number]::-webkit-inner-spin-button,
