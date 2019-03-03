@@ -5,20 +5,20 @@ Administra el estilo de las etiquetas de html y clases generales
 
 
 ## Uso e instalación
-Para utilizar el core en tu proyecto, puedes installarlo con [npm](https://www.npmjs.com/)
+Para utilizar este archivo en tu proyecto, puedes installarlo con [npm](https://www.npmjs.com/)
 ```sh
-npm install --save https://github.com/MolFramework/mol.core.git
+npm install https://github.com/MolFramework/mol.core.git
 ```
-e importarlo en tu hoja de estilos principal, éste archivo contiene el archivo del normalize incrustado en el archivo de distribución del módulo core
-```sh
-@import '~mol.core/dist/core.min.css';
-```
-o si prefieres utilizar tu propio archivo de variables, importa
+importa el archivo principal
 ```sh
 @import '~mol.core/scss/_core.scss';
 ```
 y crea un archivo que contenga las mismas variables que las que se encuentran en
 el archivo de `~mol.core/scss/_vars.scss`
+
+ó si no tienes tiempo, importa el archivo minificado en tu hoja de estilos principal
+```sh
+@import '~mol.core/dist/core.min.css';
 
 
 ## Dev
@@ -72,7 +72,7 @@ $m-striped-odd:             rgba($m-color, .05);
 $m-striped-even:            rgba($m-color, .1);
 $m-block-hover:             rgba($m-secondary, .1);
 
-$m-colors:
+$m-core:
   (primary, $m-primary),
   (secondary, $m-secondary),
   (accent, $m-accent),
@@ -82,7 +82,7 @@ $m-colors:
   (info, $m-info),
   (muted, $m-muted);
 
-$m-actn-colors:
+$m-actn-core:
   (primary, $m-actn-color, $m-actn-color-hover, $m-actn-font, $m-actn-font-hover, $m-actn-border-color, $m-actn-border-color-hover),
   (secondary, $m-secondary, mix($m-secondary, $m-accent, 80%), $m-background, $m-background, $m-secondary, mix($m-secondary, $m-accent, 75%)),
   (accent, $m-accent, mix($m-accent, $m-primary, 90%), $m-background, $m-background, $m-accent, mix($m-accent, $m-primary, 85%)),
@@ -91,8 +91,6 @@ $m-actn-colors:
   (error, $m-error, mix($m-error, $m-primary, 77%), $m-background, $m-background, $m-error, mix($m-error, $m-primary, 70%)),
   (info, $m-info, mix($m-info, $m-primary, 90%), $m-background, $m-background, $m-info, mix($m-info, $m-primary, 85%)),
   (muted, $m-muted, $m-muted, $m-color, $m-color, $m-muted, $m-muted);
-
-$m-spacelement:             20px;
 
 $m-shadow:                  0 0 0 0 rgba(0, 0, 0, 0);
 
@@ -121,6 +119,8 @@ $m-switch-background-off:   rgba($m-color, .2);
 $m-switch-background-on:    $m-input-color-active;
 $m-switch-color-off:        $m-background;
 $m-switch-color-on:         $m-background;
+
+$m-spacelement:             20px;
 ```
 
 
