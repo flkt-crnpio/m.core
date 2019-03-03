@@ -1,5 +1,8 @@
 # Mol Core
 Administra el estilo de las etiquetas de html y clases generales
+__
+*Este proyecto utiliza [mol.normalize](https://github.com/MolFramework/mol.normalize)*
+
 
 ( ﾟ▽ﾟ)/ Hi! [@MolFramework](https://twitter.com/MolFramework)
 
