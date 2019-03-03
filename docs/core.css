@@ -444,7 +444,6 @@ table {
 .readonly,
 [readonly] {
   border-color: rgba(34, 32, 41, 0.15);
-  color: #222029 !important;
   cursor: default !important;
   pointer-events: none !important;
 }
