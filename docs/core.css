@@ -1,5 +1,5 @@
 /*
- * Mol v1.0.0
+ * mol.core v1.0.0
  * Core File for Mol Framework
  * MIT License
  * https://github.com/MolFramework/mol.core
@@ -584,38 +584,6 @@ table {
 }
 .font-hover.hover, .font-hover:hover {
   background: rgba(119, 119, 119, 0.1);
-}
-
-.font-primary {
-  color: #112;
-}
-
-.font-secondary {
-  color: #777;
-}
-
-.font-accent {
-  color: #00f;
-}
-
-.font-success {
-  color: #30b95f;
-}
-
-.font-warning {
-  color: #e7b931;
-}
-
-.font-error {
-  color: #9b0203;
-}
-
-.font-info {
-  color: #02b9e9;
-}
-
-.font-muted {
-  color: #dad9da;
 }
 
 [type=date],
@@ -2894,8 +2862,8 @@ select:-webkit-autofill {
 .form-muted [type=week],
 .form-muted textarea,
 .form-muted select {
-  border-color: #dad9da;
-  color: #dad9da;
+  border-color: #d8d8da;
+  color: #d8d8da;
 }
 .form-muted [type=date].hover, .form-muted [type=date]:hover, .form-muted [type=date]:focus,
 .form-muted [type=datetime].hover,
@@ -2943,8 +2911,8 @@ select:-webkit-autofill {
 .form-muted select.hover,
 .form-muted select:hover,
 .form-muted select:focus {
-  border-color: #dad9da;
-  color: #dad9da;
+  border-color: #d8d8da;
+  color: #d8d8da;
 }
 .form-muted [type=date]::-webkit-input-placeholder,
 .form-muted [type=datetime]::-webkit-input-placeholder,
@@ -2962,7 +2930,7 @@ select:-webkit-autofill {
 .form-muted [type=week]::-webkit-input-placeholder,
 .form-muted textarea::-webkit-input-placeholder,
 .form-muted select::-webkit-input-placeholder {
-  color: rgba(218, 217, 218, 0.5);
+  color: rgba(216, 216, 218, 0.5);
 }
 .form-muted [type=date]::-moz-placeholder,
 .form-muted [type=datetime]::-moz-placeholder,
@@ -2980,7 +2948,7 @@ select:-webkit-autofill {
 .form-muted [type=week]::-moz-placeholder,
 .form-muted textarea::-moz-placeholder,
 .form-muted select::-moz-placeholder {
-  color: rgba(218, 217, 218, 0.5);
+  color: rgba(216, 216, 218, 0.5);
 }
 .form-muted [type=date]:-ms-input-placeholder,
 .form-muted [type=datetime]:-ms-input-placeholder,
@@ -2998,7 +2966,7 @@ select:-webkit-autofill {
 .form-muted [type=week]:-ms-input-placeholder,
 .form-muted textarea:-ms-input-placeholder,
 .form-muted select:-ms-input-placeholder {
-  color: rgba(218, 217, 218, 0.5);
+  color: rgba(216, 216, 218, 0.5);
 }
 .form-muted [type=date]:-moz-placeholder,
 .form-muted [type=datetime]:-moz-placeholder,
@@ -3016,18 +2984,18 @@ select:-webkit-autofill {
 .form-muted [type=week]:-moz-placeholder,
 .form-muted textarea:-moz-placeholder,
 .form-muted select:-moz-placeholder {
-  color: rgba(218, 217, 218, 0.5);
+  color: rgba(216, 216, 218, 0.5);
 }
 .form-muted label {
-  color: #dad9da;
+  color: #d8d8da;
 }
 .form-muted button,
 .form-muted input[type=button],
 .form-muted input[type=submit],
 .form-muted input[type=reset],
 .form-muted .btn {
-  background: #dad9da;
-  border-color: #dad9da;
+  background: #d8d8da;
+  border-color: #d8d8da;
   color: #222029;
 }
 .form-muted button.hover, .form-muted button:hover, .form-muted button:focus,
@@ -3043,8 +3011,8 @@ select:-webkit-autofill {
 .form-muted .btn.hover,
 .form-muted .btn:hover,
 .form-muted .btn:focus {
-  background: #dad9da;
-  border-color: #dad9da;
+  background: #d8d8da;
+  border-color: #d8d8da;
   color: #222029;
 }
 .form-muted .checkbox [type=checkbox] + label,
@@ -3053,7 +3021,7 @@ select:-webkit-autofill {
 .form-muted .radio [type=radio] + label,
 .form-muted .switch [type=checkbox] + label,
 .form-muted .switch [type=radio] + label {
-  color: #dad9da;
+  color: #d8d8da;
 }
 .form-muted .checkbox [type=checkbox] + label::before,
 .form-muted .checkbox [type=radio] + label::before,
@@ -3061,7 +3029,7 @@ select:-webkit-autofill {
 .form-muted .radio [type=radio] + label::before,
 .form-muted .switch [type=checkbox] + label::before,
 .form-muted .switch [type=radio] + label::before {
-  border-color: #dad9da;
+  border-color: #d8d8da;
 }
 .form-muted .checkbox [type=checkbox]:checked + label,
 .form-muted .checkbox [type=radio]:checked + label,
@@ -3069,7 +3037,7 @@ select:-webkit-autofill {
 .form-muted .radio [type=radio]:checked + label,
 .form-muted .switch [type=checkbox]:checked + label,
 .form-muted .switch [type=radio]:checked + label {
-  color: #dad9da;
+  color: #d8d8da;
 }
 .form-muted .checkbox [type=checkbox]:checked + label::before,
 .form-muted .checkbox [type=radio]:checked + label::before,
@@ -3077,33 +3045,33 @@ select:-webkit-autofill {
 .form-muted .radio [type=radio]:checked + label::before,
 .form-muted .switch [type=checkbox]:checked + label::before,
 .form-muted .switch [type=radio]:checked + label::before {
-  background: #dad9da;
-  border-color: #dad9da;
+  background: #d8d8da;
+  border-color: #d8d8da;
 }
 
 .label-muted {
-  color: #dad9da;
+  color: #d8d8da;
 }
 
 .input-muted {
-  border-color: #dad9da;
-  color: #dad9da;
+  border-color: #d8d8da;
+  color: #d8d8da;
 }
 .input-muted.hover, .input-muted:hover, .input-muted:focus {
-  border-color: #dad9da;
-  color: #dad9da;
+  border-color: #d8d8da;
+  color: #d8d8da;
 }
 .input-muted::-webkit-input-placeholder {
-  color: rgba(218, 217, 218, 0.5);
+  color: rgba(216, 216, 218, 0.5);
 }
 .input-muted::-moz-placeholder {
-  color: rgba(218, 217, 218, 0.5);
+  color: rgba(216, 216, 218, 0.5);
 }
 .input-muted:-ms-input-placeholder {
-  color: rgba(218, 217, 218, 0.5);
+  color: rgba(216, 216, 218, 0.5);
 }
 .input-muted:-moz-placeholder {
-  color: rgba(218, 217, 218, 0.5);
+  color: rgba(216, 216, 218, 0.5);
 }
 
 .checkbox-muted [type=checkbox] + label,
@@ -3112,7 +3080,7 @@ select:-webkit-autofill {
 .radio-muted [type=radio] + label,
 .switch-muted [type=checkbox] + label,
 .switch-muted [type=radio] + label {
-  color: #dad9da;
+  color: #d8d8da;
 }
 .checkbox-muted [type=checkbox] + label::before,
 .checkbox-muted [type=radio] + label::before,
@@ -3120,7 +3088,7 @@ select:-webkit-autofill {
 .radio-muted [type=radio] + label::before,
 .switch-muted [type=checkbox] + label::before,
 .switch-muted [type=radio] + label::before {
-  border-color: #dad9da;
+  border-color: #d8d8da;
 }
 .checkbox-muted [type=checkbox]:checked + label,
 .checkbox-muted [type=radio]:checked + label,
@@ -3128,7 +3096,7 @@ select:-webkit-autofill {
 .radio-muted [type=radio]:checked + label,
 .switch-muted [type=checkbox]:checked + label,
 .switch-muted [type=radio]:checked + label {
-  color: #dad9da;
+  color: #d8d8da;
 }
 .checkbox-muted [type=checkbox]:checked + label::before,
 .checkbox-muted [type=radio]:checked + label::before,
@@ -3136,8 +3104,8 @@ select:-webkit-autofill {
 .radio-muted [type=radio]:checked + label::before,
 .switch-muted [type=checkbox]:checked + label::before,
 .switch-muted [type=radio]:checked + label::before {
-  background: #dad9da;
-  border-color: #dad9da;
+  background: #d8d8da;
+  border-color: #d8d8da;
 }
 
 .sub-title {
@@ -3678,7 +3646,7 @@ input[type=button].link-muted,
 input[type=submit].link-muted,
 input[type=reset].link-muted,
 .link-muted {
-  color: #dad9da;
+  color: #d8d8da;
 }
 button.link-muted.hover, button.link-muted:hover, button.link-muted:active, button.link-muted:focus,
 input[type=button].link-muted.hover,
@@ -3697,14 +3665,14 @@ input[type=reset].link-muted:focus,
 .link-muted:hover,
 .link-muted:active,
 .link-muted:focus {
-  color: #dad9da;
+  color: #d8d8da;
 }
 
 button.link-underline.link-muted::after,
 .link-underline.link-muted::after,
 button.link-r-underline.link-muted::after,
 .link-r-underline.link-muted::after {
-  background: #dad9da;
+  background: #d8d8da;
 }
 button.link-underline.link-muted.hover::after, button.link-underline.link-muted:hover::after, button.link-underline.link-muted:active::after, button.link-underline.link-muted:focus::after,
 .link-underline.link-muted.hover::after,
@@ -3719,7 +3687,7 @@ button.link-r-underline.link-muted:focus::after,
 .link-r-underline.link-muted:hover::after,
 .link-r-underline.link-muted:active::after,
 .link-r-underline.link-muted:focus::after {
-  background: #dad9da;
+  background: #d8d8da;
 }
 
 ul,
@@ -4168,8 +4136,8 @@ input[type=button].btn-muted,
 input[type=submit].btn-muted,
 input[type=reset].btn-muted,
 .btn-muted {
-  background: #dad9da;
-  border-color: #dad9da;
+  background: #d8d8da;
+  border-color: #d8d8da;
   color: #222029;
 }
 button.btn-muted.hover, button.btn-muted:hover, button.btn-muted:focus,
@@ -4185,8 +4153,8 @@ input[type=reset].btn-muted:focus,
 .btn-muted.hover,
 .btn-muted:hover,
 .btn-muted:focus {
-  background: #dad9da;
-  border-color: #dad9da;
+  background: #d8d8da;
+  border-color: #d8d8da;
   color: #222029;
 }
 

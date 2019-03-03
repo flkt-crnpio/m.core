@@ -101,9 +101,3 @@
     background: $m-block-hover;
   }
 }
-
-@each $name, $color in $m-colors {
-  .font-#{$name} {
-    color: $color;
-  }
-}
