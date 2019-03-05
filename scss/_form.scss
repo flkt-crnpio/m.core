@@ -311,7 +311,7 @@ select:-webkit-autofill {
     color: rgba($m-color, 0.4);
 }
 
-@each $name, $color, $color-hover, $font , $font-hover, $border, $border-hover in $m-actn-colors {
+@each $name, $color, $color-hover, $font , $font-hover, $border, $border-hover in $m-array-colors {
   .form-#{$name} {
     [type="date"],
     [type="datetime"],
@@ -353,22 +353,6 @@ select:-webkit-autofill {
     label {
       color: $color;
     }
-    button,
-    input[type="button"],
-    input[type="submit"],
-    input[type="reset"],
-    .btn {
-      background: $color;
-  		border-color: $border;
-  		color: $font;
-  		&.hover,
-  		&:hover,
-  		&:focus {
-  			background: $color-hover;
-  			border-color: $border-hover;
-  			color: $font-hover;
-  		}
-    }
     .checkbox,
     .radio,
     .switch {
@@ -392,7 +376,22 @@ select:-webkit-autofill {
   .label-#{$name} {
     color: $color;
   }
-  .input-#{$name} {
+  [type="date"].input-#{$name},
+  [type="datetime"].input-#{$name},
+  [type="datetime-local"].input-#{$name},
+  [type="email"].input-#{$name},
+  [type="file"].input-#{$name},
+  [type="month"].input-#{$name},
+  [type="number"].input-#{$name},
+  [type="password"].input-#{$name},
+  [type="search"].input-#{$name},
+  [type="tel"].input-#{$name},
+  [type="text"].input-#{$name},
+  [type="time"].input-#{$name},
+  [type="url"].input-#{$name},
+  [type="week"].input-#{$name},
+  .textarea-#{$name},
+  .select-#{$name} {
     border-color: $border;
     color: $color;
     &.hover,
@@ -428,8 +427,131 @@ select:-webkit-autofill {
     [type="radio"]:checked + label {
       color: $color-hover;
       &::before {
-        background: $color;
+        background: $color-hover;
+        border-color: $color-hover;
+      }
+    }
+  }
+}
+
+@each $name, $color, $color-hover in $m-array-form-color-validations {
+  .form-#{$name} {
+    [type="date"],
+    [type="datetime"],
+    [type="datetime-local"],
+    [type="email"],
+    [type="file"],
+    [type="month"],
+    [type="number"],
+    [type="password"],
+    [type="search"],
+    [type="tel"],
+    [type="text"],
+    [type="time"],
+    [type="url"],
+    [type="week"],
+    textarea,
+    select {
+      border-color: $color;
+      color: $color;
+      &.hover,
+      &:hover,
+      &:focus {
+        border-color: $color-hover;
+        color: $color-hover;
+      }
+      &::-webkit-input-placeholder {
+          color: rgba($color, .5);
+      }
+      &::-moz-placeholder {
+          color: rgba($color, .5);
+      }
+      &:-ms-input-placeholder {
+          color: rgba($color, .5);
+      }
+      &:-moz-placeholder {
+          color: rgba($color, .5);
+      }
+    }
+    label {
+      color: $color;
+    }
+    .checkbox,
+    .radio,
+    .switch {
+      [type="checkbox"] + label ,
+      [type="radio"] + label {
+        color: $color;
+        &::before {
+          border-color: $color;
+        }
+      }
+      [type="checkbox"]:checked + label ,
+      [type="radio"]:checked + label {
+        color: $color-hover;
+        &::before {
+          background: $color-hover;
+          border-color: $color-hover;
+        }
+      }
+    }
+  }
+  .label-#{$name} {
+    color: $color;
+  }
+  [type="date"].input-#{$name},
+  [type="datetime"].input-#{$name},
+  [type="datetime-local"].input-#{$name},
+  [type="email"].input-#{$name},
+  [type="file"].input-#{$name},
+  [type="month"].input-#{$name},
+  [type="number"].input-#{$name},
+  [type="password"].input-#{$name},
+  [type="search"].input-#{$name},
+  [type="tel"].input-#{$name},
+  [type="text"].input-#{$name},
+  [type="time"].input-#{$name},
+  [type="url"].input-#{$name},
+  [type="week"].input-#{$name},
+  .textarea-#{$name},
+  .select-#{$name} {
+    border-color: $color;
+    color: $color;
+    &.hover,
+    &:hover,
+    &:focus {
+      border-color: $color-hover;
+      color: $color-hover;
+    }
+    &::-webkit-input-placeholder {
+        color: rgba($color, .5);
+    }
+    &::-moz-placeholder {
+        color: rgba($color, .5);
+    }
+    &:-ms-input-placeholder {
+        color: rgba($color, .5);
+    }
+    &:-moz-placeholder {
+        color: rgba($color, .5);
+    }
+  }
+  .checkbox-#{$name},
+  .radio-#{$name},
+  .switch-#{$name} {
+    [type="checkbox"] + label ,
+    [type="radio"] + label {
+      color: $color;
+      &::before {
         border-color: $color;
+      }
+    }
+    [type="checkbox"]:checked + label ,
+    [type="radio"]:checked + label {
+      color: $color-hover;
+      &::before {
+        background: $color-hover;
+        border-color: $color-hover;
       }
     }
   }

@@ -39,32 +39,38 @@
           background: rgba(0,0,0,.1);
           height: 192px;
           width: 192px;
-          margin: 0 0 20px;
-          overflow: hidden;
+          margin: 20px 20px 20px 0;
+          display: inline-block;
+          vertical-align: top;
+          position: relative;
+        }
+        .img-container code {
+          position: absolute;
+          bottom: -20px;
         }
       </style>
-      <code>img</code>
       <div class="img-container">
+        <code>img</code>
         <img src="http://flkt.mx/bg.jpg" class="none" alt="img" width="192px" height="108px">
       </div>
-      <code>img.img-contain</code>
       <div class="img-container">
+        <code>img.img-contain</code>
         <img src="http://flkt.mx/bg.jpg" class="img-contain" alt="img">
       </div>
-      <code>img.img-cover</code>
       <div class="img-container">
+        <code>img.img-cover</code>
         <img src="http://flkt.mx/bg.jpg" class="img-cover" alt="img">
       </div>
-      <code>img.img-fill</code>
       <div class="img-container">
+        <code>img.img-fill</code>
         <img src="http://flkt.mx/bg.jpg" class="img-fill">
       </div>
-      <code>img.img-fill-height</code>
       <div class="img-container">
+        <code>img.img-fill-height</code>
         <img src="http://flkt.mx/bg.jpg" class="img-fill-height">
       </div>
-      <code>img.img-fill-width</code>
       <div class="img-container">
+        <code>img.img-fill-width</code>
         <img src="http://flkt.mx/bg.jpg" class="img-fill-width">
       </div>
       <p>
@@ -153,33 +159,29 @@
       <p class="word-wrap-break">.word-wrap-break<br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
       <br><br>
-      <p>
+      <style>
+        .space > * {
+          margin-right: 20px;
+        }
+      </style>
+      <p class="space">
         <a href="#">link</a>
         <span class="link" class="hover">span.link.hover</span>
       </p>
-      <p>
+      <p class="space">
         <a href="#" class="link-underline">.link-underline</a>
         <span class="link-underline hover">span.link-underline.hover</span>
       </p>
-      <p>
+      <p class="space">
         <a href="#" class="link-r-underline">.link-r-underline</a>
         <a class="link-r-underline hover">.link-r-underline.hover</a>
       </p>
-      <p>
+      <p class="space"><br>
         <a href="#" class="link-primary">.link-primary</a>
         <a href="#" class="link-secondary">.link-secondary</a>
         <a href="#" class="link-accent">.link-accent</a>
+        <a href="#" class="link-note">.link-note</a>
       </p>
-      <p>
-        <a href="#" class="link-underline link-success">.link-underline .link-success</a>
-        <a href="#" class="link-underline link-warning">.link-underline .link-warning</a>
-        <a href="#" class="link-underline link-error">.link-underline .link-error</a>
-      </p>
-      <p>
-        <a href="#" class="link-r-underline link-info">.link-r-underline .link-info</a>
-        <a href="#" class="link-r-underline link-muted">.link-r-underline .link-muted</a>
-      </p>
-
       <br><br>
       <form>
         <fieldset>
@@ -200,7 +202,9 @@
         <input type="text" class="readonly" placeholder="readonly" value="readonly">
         <label for="">bussy</label>
         <input type="text" class="bussy" placeholder="bussy">
-        <input type="reset" name="" value="input reset">
+        <label for=""></label>
+        <input type="text" class="input-error" value=".input-error">
+        <input type="reset" class="btn-accent" value="input.btn-accent">
         <button type="button" name="button">button</button>
       </form>
       <br><p class="sub-title">.form-inline .form-secondary</p>
@@ -270,13 +274,12 @@
           <input type="text" placeholder=".input-primary" class="input-primary">
           <input type="text" placeholder=".input-secondary" class="input-secondary">
           <input type="text" placeholder=".input-accent" class="input-accent">
+          <input type="text" placeholder=".input-note" class="input-note">
         </div>
         <div class="form-inline">
           <input type="text" placeholder=".input-success" class="input-success">
           <input type="text" placeholder=".input-warning" class="input-warning">
           <input type="text" placeholder=".input-error" class="input-error">
-          <input type="text" placeholder=".input-info" class="input-info">
-          <input type="text" placeholder=".input-muted" class="input-muted">
         </div>
       </form>
       <br><p class="sub-title">radio colors</p>
@@ -294,6 +297,10 @@
             <input type="radio" name="radiocolors" id="radio-accent" value="accent">
             <label for="radio-accent">.radio .radio-accent</label>
           </div>
+          <div class="radio radio-note">
+            <input type="radio" name="radiocolors" id="radio-note" value="accent">
+            <label for="radio-note">.radio .radio-note</label>
+          </div>
         </div>
         <div class="form-inline">
           <div class="radio radio-success">
@@ -307,14 +314,6 @@
           <div class="radio radio-error">
             <input type="radio" name="radiocolors" id="radio-error" value="error">
             <label for="radio-error">.radio .radio-error</label>
-          </div>
-          <div class="radio radio-info">
-            <input type="radio" name="radiocolors" id="radio-info" value="info">
-            <label for="radio-info">.radio .radio-info</label>
-          </div>
-          <div class="radio radio-muted">
-            <input type="radio" name="radiocolors" id="radio-muted" value="muted">
-            <label for="radio-muted">.radio .radio-muted</label>
           </div>
         </div>
       </form>
@@ -333,6 +332,10 @@
             <input type="checkbox" name="checkboxcolors" id="checkbox-accent" value="accent">
             <label for="checkbox-accent">.checkbox .checkbox-accent</label>
           </div>
+          <div class="checkbox checkbox-note">
+            <input type="checkbox" name="checkboxcolors" id="checkbox-note" value="accent">
+            <label for="checkbox-note">.checkbox .checkbox-note</label>
+          </div>
         </div>
         <div class="form-inline">
           <div class="checkbox checkbox-success">
@@ -346,14 +349,6 @@
           <div class="checkbox checkbox-error">
             <input type="checkbox" name="checkboxcolors" id="checkbox-error" value="error">
             <label for="checkbox-error">.checkbox .checkbox-error</label>
-          </div>
-          <div class="checkbox checkbox-info">
-            <input type="checkbox" name="checkboxcolors" id="checkbox-info" value="info">
-            <label for="checkbox-info">.checkbox .checkbox-info</label>
-          </div>
-          <div class="checkbox checkbox-muted">
-            <input type="checkbox" name="checkboxcolors" id="checkbox-muted" value="muted">
-            <label for="checkbox-muted">.checkbox .checkbox-muted</label>
           </div>
         </div>
       </form>
@@ -372,6 +367,10 @@
             <input type="checkbox" name="switchcolors" id="switch-accent" value="accent">
             <label for="switch-accent">.switch .switch-accent</label>
           </div>
+          <div class="switch switch-note">
+            <input type="checkbox" name="switchcolors" id="switch-note" value="accent">
+            <label for="switch-note">.switch .switch-note</label>
+          </div>
         </div>
         <div class="form-inline">
           <div class="switch switch-success">
@@ -385,14 +384,6 @@
           <div class="switch switch-error">
             <input type="checkbox" name="switchcolors" id="switch-error" value="error">
             <label for="switch-error">.switch .switch-error</label>
-          </div>
-          <div class="switch switch-info">
-            <input type="checkbox" name="switchcolors" id="switch-info" value="info">
-            <label for="switch-info">.switch .switch-info</label>
-          </div>
-          <div class="switch switch-muted">
-            <input type="checkbox" name="switchcolors" id="switch-muted" value="muted">
-            <label for="switch-muted">.switch .switch-muted</label>
           </div>
         </div>
       </form>
@@ -438,15 +429,8 @@
         <button type="button" class="btn-primary">.btn-primary</button>
         <button type="button" class="btn-secondary">.btn-secondary</button>
         <button type="button" class="btn-accent">.btn-accent</button>
+        <button type="button" class="btn-note">.btn-note</button>
       </p>
-      <p>
-        <button type="button" class="btn-success">.btn-success</button>
-        <button type="button" class="btn-warning">.btn-warning</button>
-        <button type="button" class="btn-error">.btn-error</button>
-        <button type="button" class="btn-info">.btn-info</button>
-        <button type="button" class="btn-muted">.btn-muted</button>
-      </p>
-
       <br><br>
       <dl>
         <dt>description list</dt>

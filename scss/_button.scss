@@ -94,7 +94,7 @@ input[type="reset"].btn-img,
 	padding: 0;
 }
 
-@each $name, $color, $color-hover, $font , $font-hover, $border, $border-hover in $m-actn-colors {
+@each $name, $color, $color-hover, $font , $font-hover, $border, $border-hover in $m-array-colors {
 	button.btn-#{$name},
 	input[type="button"].btn-#{$name},
 	input[type="submit"].btn-#{$name},

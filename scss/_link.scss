@@ -88,7 +88,7 @@ button.link-r-underline,
   }
 }
 
-@each $name, $color, $color-hover, $font , $font-hover, $border, $border-hover in $m-actn-colors {
+@each $name, $color, $color-hover, $font , $font-hover, $border, $border-hover in $m-array-colors {
   button.link-#{$name},
   input[type="button"].link-#{$name},
   input[type="submit"].link-#{$name},
