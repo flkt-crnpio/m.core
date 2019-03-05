@@ -15,7 +15,9 @@
 [type="week"],
 textarea,
 select {
-  border: $m-input-border;
+  border-width: $m-input-border-width;
+  border-style: $m-input-border-style;
+  border-color: $m-input-border-color;
   border-radius: $m-input-border-radius;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
@@ -25,14 +27,22 @@ select {
   &.hover,
   &:focus,
   &:hover {
-    border: $m-input-border-hover;
+    border-width: $m-input-border-width;
+    border-style: $m-input-border-style;
+    border-color: $m-input-border-color-hover;
   }
 }
 output {
+  border-color: $m-input-border-color;
   width: calc(100% - #{$m-input-padding} * 3);
   max-width: 100%;
   display: inline-flex;
   align-self: flex-end;
+  &.hover,
+  &:focus,
+  &:hover {
+    border-color: $m-input-border-color;
+  }
 }
 
 [type="checkbox"] + label,
@@ -58,7 +68,9 @@ select {
 }
 
 fieldset {
-  border: $m-table-border;
+  border-width: $m-container-border-width;
+  border-style: $m-container-border-style;
+  border-color: $m-container-border-color;
   border-radius: $m-input-border-radius;
   margin: $m-spacelement 0;
   padding: $m-spacelement * .5;
@@ -97,12 +109,12 @@ legend {
   }
   [type="checkbox"]:checked + label ,
   [type="radio"]:checked + label {
-    color: darken($m-input-color-active, 5);
+    color: darken($m-checkbox-color-active, 5);
     &::before {
-      border-color: $m-input-color-active;
+      border-color: $m-checkbox-color-active;
     }
     &::after {
-      border-color: $m-input-color-active;
+      border-color: $m-checkbox-color-active;
     }
   }
 }
@@ -118,7 +130,9 @@ legend {
       width: $m-checkbox-height;
     }
     &::before {
-      border: $m-checkbox-border;
+      border-width: $m-checkbox-border-width;
+      border-style: $m-checkbox-border-style;
+      border-color: $m-input-border-color;
       border-radius: $m-input-border-radius;
       height: $m-checkbox-height;
       width: $m-checkbox-height;
@@ -140,11 +154,11 @@ legend {
   [type="checkbox"]:checked + label ,
   [type="radio"]:checked + label {
     &::before {
-      background: $m-input-color-active;
-      border-color: $m-input-color-active;
+      background: $m-checkbox-color-active;
+      border-color: $m-checkbox-color-active;
     }
     &::after {
-      border-color: $m-input-after-active;
+      border-color: $m-checkbox-after-active;
     }
   }
 }
@@ -160,7 +174,9 @@ legend {
       width: $m-checkbox-height;
     }
     &::before {
-      border: $m-checkbox-border;
+      border-width: $m-checkbox-border-width;
+      border-style: $m-checkbox-border-style;
+      border-color: $m-input-border-color;
       border-radius: 50%;
       height: $m-checkbox-height;
       width: $m-checkbox-height;
@@ -176,11 +192,11 @@ legend {
   }
   [type="radio"]:checked + label {
     &::before {
-      background: $m-input-color-active;
-      border-color: $m-input-color-active;
+      background: $m-checkbox-color-active;
+      border-color: $m-checkbox-color-active;
     }
     &::after {
-      background: $m-input-after-active;
+      background: $m-checkbox-after-active;
     }
   }
 }

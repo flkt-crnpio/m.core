@@ -4,7 +4,9 @@ table {
   width: 100%;
   tbody tr,
   tfoot tr {
-    border-top: $m-table-border;
+    border-top-width: $m-container-border-width;
+    border-top-style: $m-container-border-style;
+    border-top-color: $m-container-border-color;
   }
   thead tr th {
     vertical-align: bottom;
@@ -58,6 +60,8 @@ table {
 }
 
 .table-box {
-  border: $m-table-border;
+  border-width: $m-container-border-width;
+  border-style: $m-container-border-style;
+  border-color: $m-container-border-color;
   box-shadow: $m-shadow;
 }
