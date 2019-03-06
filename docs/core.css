@@ -321,6 +321,7 @@ select:hover {
 output {
   background: transparent;
   border-bottom: 1px solid rgba(34, 32, 41, 0.5);
+  cursor: text;
   display: inline-block;
   vertical-align: bottom;
 }
