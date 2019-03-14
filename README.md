@@ -113,6 +113,12 @@ $m-array-colors:
   (accent, $m-accent, mix($m-accent, $m-primary, 90%), $m-background, $m-background, $m-accent, mix($m-accent, $m-primary, 85%)),
   (note, $m-note, darken($m-note, 10), lighten($m-note, 40), lighten($m-note, 80), $m-note, darken($m-note, 15));
 
+$m-link-colors:
+  (primary,   $m-actn-color,  $m-actn-color-hover,                $m-color, $m-background),
+  (secondary, $m-secondary,   mix($m-secondary, $m-accent, 80%),  $m-color, $m-background),
+  (accent,    $m-accent,      mix($m-accent, $m-primary, 90%),    $m-color, $m-background),
+  (note,      $m-note,        darken($m-note, 10),                $m-color, $m-background);
+
 $m-array-form-color-validations:
   (success, $m-success, $m-success-hover),
   (warning, $m-warning, $m-warning-hover),
@@ -138,4 +144,4 @@ $m-spacelement:             20px;
 
 ## Problemas conocidos
 
-ヾ( ￣O￣)ツ Para el input type button, submit y reset no existe la clase `.link-underline` ni `.link-r-underline` porque la etiqueta de input no tiene ::after elements y es con lo que se anima la línea debado del texto en esas clases. Utiliza la etiqueta de botón si necesitas crear un botón que parezca link.
+ヾ( ￣O￣)ツ Las clases `.link-underline`, `.link-r-underline`, `.link-line-up` ni `.link-bg-up` no funcionan para elementos que no puedan tener ::after elements.

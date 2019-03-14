@@ -9,14 +9,14 @@
   font-weight: normal;
   margin: 0;
   padding: 0;
-  text-decoration: none;
+  text-decoration: underline;
 }
 %m-link-hover-base {
   background-color: transparent;
   border: none;
   box-shadow: none;
   color: $m-actn-color-hover;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a,
@@ -37,8 +37,10 @@ input[type="reset"].link,
 
 button.link-underline,
 .link-underline {
+  @extend %m-interact-base;
   @extend %m-link-base;
   position: relative;
+  text-decoration: none;
   &::after {
     background: $m-actn-color;
     transition: $m-transition;
@@ -55,6 +57,7 @@ button.link-underline,
   &:focus {
     @extend %m-link-hover-base;
     position: relative;
+    text-decoration: none;
     &::after {
       background: $m-actn-color-hover;
       width: 100%;
@@ -63,8 +66,10 @@ button.link-underline,
 }
 button.link-r-underline,
 .link-r-underline {
+  @extend %m-interact-base;
   @extend %m-link-base;
   position: relative;
+  text-decoration: none;
   &::after {
     background: $m-actn-color;
     transition: $m-transition;
@@ -81,6 +86,7 @@ button.link-r-underline,
   &:focus {
     @extend %m-link-hover-base;
     position: relative;
+    text-decoration: none;
     &::after {
       background: $m-actn-color-hover;
       width: $m-spacelement * .4;
@@ -88,7 +94,71 @@ button.link-r-underline,
   }
 }
 
-@each $name, $color, $color-hover, $font , $font-hover, $border, $border-hover in $m-array-colors {
+button.link-line-up,
+.link-line-up {
+  @extend %m-interact-base;
+  @extend %m-link-base;
+  position: relative;
+  text-decoration: none;
+  &::after {
+    background: $m-actn-color;
+    transition: $m-transition;
+    height: $m-a-underline;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: $m-spacelement * .4;
+    width: $m-spacelement * .4;
+    z-index: -1;
+  }
+  &.hover,
+  &:hover,
+  &:active,
+  &:focus {
+    @extend %m-link-hover-base;
+    color: $m-color;
+    position: relative;
+    text-decoration: none;
+    &::after {
+      background: $m-actn-color;
+      height: $m-font-size;
+      width: 100%;
+    }
+  }
+}
+button.link-bg-up,
+.link-bg-up {
+  @extend %m-interact-base;
+  @extend %m-link-base;
+  position: relative;
+  text-decoration: none;
+  &::after {
+    background: $m-actn-color;
+    transition: $m-transition;
+    height: $m-a-underline;
+    content: "";
+    position: absolute;
+    bottom: -#{$m-line-height * .1};
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  &.hover,
+  &:hover,
+  &:active,
+  &:focus {
+    @extend %m-link-hover-base;
+    color: $m-background;
+    position: relative;
+    text-decoration: none;
+    &::after {
+      background: $m-actn-color;
+      height: $m-line-height * 1.1;
+    }
+  }
+}
+
+@each $name, $color, $color-hover, $font-hover-line, $font-hover-background in $m-link-colors {
   button.link-#{$name},
   input[type="button"].link-#{$name},
   input[type="submit"].link-#{$name},
@@ -107,6 +177,7 @@ button.link-r-underline,
   .link-underline.link-#{$name},
   button.link-r-underline.link-#{$name},
   .link-r-underline.link-#{$name} {
+    color: $color;
     &::after {
       background: $color;
     }
@@ -114,10 +185,44 @@ button.link-r-underline,
     &:hover,
     &:active,
     &:focus {
+      color: $color-hover;
       &::after {
         background: $color-hover;
       }
     }
   }
 
+  button.link-line-up.link-#{$name},
+  .link-line-up.link-#{$name} {
+    color: $color;
+    &::after {
+      background: $color;
+    }
+    &.hover,
+    &:hover,
+    &:active,
+    &:focus {
+      color: $font-hover-line;
+      &::after {
+        background: $color;
+      }
+    }
+  }
+
+  button.link-bg-up.link-#{$name},
+  .link-bg-up.link-#{$name} {
+    color: $color;
+    &::after {
+      background: $color;
+    }
+    &.hover,
+    &:hover,
+    &:active,
+    &:focus {
+      color: $font-hover-background;
+      &::after {
+        background: $color;
+      }
+    }
+  }
 }
