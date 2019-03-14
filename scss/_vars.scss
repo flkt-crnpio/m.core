@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|PT+Serif');
+
 // normalize
 $m-background:  			#fff;
 $m-color:       			#222029;
-$m-primary:						#FA7062;
-$m-secondary:   			#FCA4B1;
-$m-accent:      			#16729A;
+$m-primary:						#112;
 
 $m-actn-color: 			  $m-primary;
-$m-actn-color-hover:  mix($m-primary, $m-accent, 80%);
-$m-actn-font:         $m-background;
+$m-actn-color-hover:  mix($m-primary, $m-background, 80%);
+$m-actn-font:         $m-primary;
 $m-actn-font-hover:   $m-background;
+$m-actn-transition:   all .35s cubic-bezier(0.310, -0.105, 0.430, 1.590);
 
 $m-font-serif: 				'PT Serif', serif;
 $m-font-family: 			'Open Sans', sans-serif;
@@ -28,12 +28,13 @@ $m-h-weight: 					600;
 $m-h-style:  					normal;
 $m-h-transform:  			normal;
 
-// $m-transition:				all 0.3s cubic-bezier(0.465, -0.240, 0.370, 1.125);
-$m-transition:        all .35s cubic-bezier(0.310, -0.105, 0.430, 1.590);
-
 // core
+$m-primary:						#FA7062;
+$m-secondary:   			#FCA4B1;
+$m-accent:      			#16729A;
 $m-shadow:                  0 0 0 0 rgba(0, 0, 0, 0);
 
+$m-transition:				all 0.3s cubic-bezier(0.465, -0.240, 0.370, 1.125);
 $m-a-underline:             1px;
 
 $m-input-height:            40px;

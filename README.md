@@ -144,4 +144,4 @@ $m-spacelement:             20px;
 
 ## Problemas conocidos
 
-ヾ( ￣O￣)ツ Las clases `.link-underline`, `.link-r-underline`, `.link-line-up` ni `.link-bg-up` no funcionan para elementos que no puedan tener ::after elements.
+ヾ( ￣O￣)ツ Las clases de link no funcionarán para elementos que no puedan tener el pseudo-element ::after
