@@ -172,6 +172,11 @@ button.link-bg-up,
   }
 }
 
+.link-image {
+  margin-top: $m-spacelement * .4;
+  margin-left: $m-spacelement * .4;
+}
+
 @each $name, $color, $color-hover, $font-hover-line, $font-hover-background in $m-link-colors {
   button.link-#{$name},
   input[type="button"].link-#{$name},

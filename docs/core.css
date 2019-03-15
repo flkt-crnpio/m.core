@@ -3561,41 +3561,14 @@ select:-webkit-autofill {
 }
 
 .img-link {
-  max-height: 16px;
-  vertical-align: baseline;
+  margin-top: -8px;
+  margin-left: -8px;
+  margin-right: 8px;
+  mix-blend-mode: multiply;
 }
 
 .img-btn {
-  height: 40px;
-  width: 40px;
-  object-fit: cover;
-  border-radius: 1px;
-}
-
-.img-btn + * {
-  margin: 0 10.5px 0 7px;
-}
-
-.img-btn-sm {
-  height: 30px;
-  width: 30px;
-  object-fit: cover;
-  border-radius: 1px;
-}
-
-.img-btn-sm + * {
-  margin: 0 7px;
-}
-
-.img-btn-lg {
-  height: 60px;
-  width: 60px;
-  object-fit: cover;
-  border-radius: 1px;
-}
-
-.img-btn-lg + * {
-  margin: 0 21px 0 7px;
+  mix-blend-mode: multiply;
 }
 
 .img-cover {
@@ -3867,6 +3840,11 @@ button.link-bg-up.hover::after, button.link-bg-up:hover::after, button.link-bg-u
 .link-bg-up:focus::after {
   background: #FA7062;
   height: 1.65em;
+}
+
+.link-image {
+  margin-top: 8px;
+  margin-left: 8px;
 }
 
 button.link-primary,
@@ -4609,17 +4587,33 @@ input[type=reset]:hover,
 }
 
 .btn-img {
-  display: inline-flex;
-  align-items: center;
-  padding: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 7px;
 }
 
+button,
+input[type=button],
+input[type=submit],
+input[type=reset],
 [class^=btn].btn-primary {
   border-color: #FA7062;
   color: #FA7062;
   background-image: linear-gradient(90deg, #FA7062 50%, transparent 50%);
 }
-[class^=btn].btn-primary.hover, [class^=btn].btn-primary:hover, [class^=btn].btn-primary:focus {
+button.hover, button:hover, button:focus,
+input[type=button].hover,
+input[type=button]:hover,
+input[type=button]:focus,
+input[type=submit].hover,
+input[type=submit]:hover,
+input[type=submit]:focus,
+input[type=reset].hover,
+input[type=reset]:hover,
+input[type=reset]:focus,
+[class^=btn].btn-primary.hover,
+[class^=btn].btn-primary:hover,
+[class^=btn].btn-primary:focus {
   border-color: #FA7062;
   color: #fff;
 }
@@ -4661,12 +4655,28 @@ input[type=reset]:hover,
   color: #fff;
 }
 
+button,
+input[type=button],
+input[type=submit],
+input[type=reset],
 [class^=btn].btn-secondary {
   border-color: #FCA4B1;
   color: #FCA4B1;
   background-image: linear-gradient(90deg, #FCA4B1 50%, transparent 50%);
 }
-[class^=btn].btn-secondary.hover, [class^=btn].btn-secondary:hover, [class^=btn].btn-secondary:focus {
+button.hover, button:hover, button:focus,
+input[type=button].hover,
+input[type=button]:hover,
+input[type=button]:focus,
+input[type=submit].hover,
+input[type=submit]:hover,
+input[type=submit]:focus,
+input[type=reset].hover,
+input[type=reset]:hover,
+input[type=reset]:focus,
+[class^=btn].btn-secondary.hover,
+[class^=btn].btn-secondary:hover,
+[class^=btn].btn-secondary:focus {
   border-color: #FCA4B1;
   color: #fff;
 }
@@ -4708,12 +4718,28 @@ input[type=reset]:hover,
   color: #fff;
 }
 
+button,
+input[type=button],
+input[type=submit],
+input[type=reset],
 [class^=btn].btn-accent {
   border-color: #16729A;
   color: #16729A;
   background-image: linear-gradient(90deg, #16729A 50%, transparent 50%);
 }
-[class^=btn].btn-accent.hover, [class^=btn].btn-accent:hover, [class^=btn].btn-accent:focus {
+button.hover, button:hover, button:focus,
+input[type=button].hover,
+input[type=button]:hover,
+input[type=button]:focus,
+input[type=submit].hover,
+input[type=submit]:hover,
+input[type=submit]:focus,
+input[type=reset].hover,
+input[type=reset]:hover,
+input[type=reset]:focus,
+[class^=btn].btn-accent.hover,
+[class^=btn].btn-accent:hover,
+[class^=btn].btn-accent:focus {
   border-color: #16729A;
   color: #fff;
 }
@@ -4755,12 +4781,28 @@ input[type=reset]:hover,
   color: #fff;
 }
 
+button,
+input[type=button],
+input[type=submit],
+input[type=reset],
 [class^=btn].btn-note {
   border-color: #b2a4a3;
   color: #b2a4a3;
   background-image: linear-gradient(90deg, #b2a4a3 50%, transparent 50%);
 }
-[class^=btn].btn-note.hover, [class^=btn].btn-note:hover, [class^=btn].btn-note:focus {
+button.hover, button:hover, button:focus,
+input[type=button].hover,
+input[type=button]:hover,
+input[type=button]:focus,
+input[type=submit].hover,
+input[type=submit]:hover,
+input[type=submit]:focus,
+input[type=reset].hover,
+input[type=reset]:hover,
+input[type=reset]:focus,
+[class^=btn].btn-note.hover,
+[class^=btn].btn-note:hover,
+[class^=btn].btn-note:focus {
   border-color: #b2a4a3;
   color: #fff;
 }

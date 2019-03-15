@@ -90,12 +90,16 @@ input[type="reset"],
 }
 
 .btn-img {
-	display: inline-flex;
-	align-items: center;
-	padding: 0;
+	display: flex;
+	align-items: flex-end;
+	padding: $m-input-padding;
 }
 
 @each $name, $color, $font-hover in $m-button-colors {
+	button,
+	input[type="button"],
+	input[type="submit"],
+	input[type="reset"],
 	[class^="btn"].btn-#{$name} {
 		border-color: $color;
 		color: $color;
