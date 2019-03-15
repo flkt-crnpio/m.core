@@ -6,21 +6,19 @@ input[type="reset"],
 .btn {
 	@extend %m-font-base;
 	@extend %m-interact-base;
-	background: $m-actn-color;
+	background-size: 220% 100%;
+  background-image: linear-gradient(90deg, $m-actn-color 50%, transparent 50%);
+  background-position: 99% 0;
 	border: $m-btn-border-width $m-btn-border-style $m-actn-border-color;
-	border-radius: $m-btn-border-radius;
-	box-shadow: $m-btn-shadow;
 	color: $m-actn-font;
+	display: inline-block;
 	padding: $m-input-padding $m-input-padding * 1.5;
-	text-decoration: none;
 	&.hover,
 	&:focus,
 	&:hover {
-		text-decoration: none;
-		background: $m-actn-color-hover;
-		border: $m-btn-border-width $m-btn-border-style $m-actn-border-color-hover;
-		box-shadow: $m-btn-shadow-hover;
-		color: $m-actn-font-hover;
+		background-position: 0 0;
+		border: $m-btn-border-width $m-btn-border-style $m-actn-border-color;
+		color: $m-background;
 	}
 }
 
@@ -94,20 +92,19 @@ input[type="reset"].btn-img,
 	padding: 0;
 }
 
-@each $name, $color, $color-hover, $font , $font-hover, $border, $border-hover in $m-array-colors {
+@each $name, $color, $font-hover in $m-button-colors {
 	button.btn-#{$name},
 	input[type="button"].btn-#{$name},
 	input[type="submit"].btn-#{$name},
 	input[type="reset"].btn-#{$name},
 	.btn-#{$name} {
-		background: $color;
-		border-color: $border;
-		color: $font;
+		border-color: $color;
+		color: $color;
+		background-image: linear-gradient(90deg, $color 50%, transparent 50%);
 		&.hover,
 		&:hover,
 		&:focus {
-			background: $color-hover;
-			border-color: $border-hover;
+			border-color: $color;
 			color: $font-hover;
 		}
 	}

@@ -67,9 +67,9 @@ mol.core/
 
 #### Variables específicas del core
 ```text
-$m-shadow:                  0 0 0 0 rgba(0, 0, 0, 0);
+$m-container-shadow:                  0 0 0 0 rgba(0, 0, 0, 0);
 
-$m-a-underline:             1px;
+$m-link-underline:             1px;
 
 $m-container-border-width:  1px;
 $m-container-border-style:  solid;
