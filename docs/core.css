@@ -41,7 +41,7 @@ output, summary, a {
   cursor: pointer;
   touch-action: manipulation;
   -ms-touch-action: manipulation;
-  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.6s cubic-bezier(0.31, -0.105, 0.43, 1.59);
   text-rendering: optimizeLegibility;
 }
 .btn:active,
@@ -3732,7 +3732,7 @@ button.link-underline,
 button.link-underline::after,
 .link-underline::after {
   background: #FA7062;
-  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.6s cubic-bezier(0.31, -0.105, 0.43, 1.59);
   height: 1px;
   content: "";
   position: absolute;
@@ -3767,7 +3767,7 @@ button.link-r-underline,
 button.link-r-underline::after,
 .link-r-underline::after {
   background: #FA7062;
-  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.6s cubic-bezier(0.31, -0.105, 0.43, 1.59);
   height: 1px;
   content: "";
   position: absolute;
@@ -3802,7 +3802,7 @@ button.link-line-up,
 button.link-line-up::after,
 .link-line-up::after {
   background: #FA7062;
-  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.6s cubic-bezier(0.31, -0.105, 0.43, 1.59);
   height: 1px;
   content: "";
   position: absolute;
@@ -3840,7 +3840,7 @@ button.link-bg-up,
 button.link-bg-up::after,
 .link-bg-up::after {
   background: #FA7062;
-  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.6s cubic-bezier(0.31, -0.105, 0.43, 1.59);
   height: 1px;
   content: "";
   position: absolute;
@@ -4542,179 +4542,262 @@ input[type=reset]:hover,
   color: #fff;
 }
 
-button.btn-sm,
-input[type=button].btn-sm,
-input[type=submit].btn-sm,
-input[type=reset].btn-sm,
 .btn-sm {
   font-size: 12px;
   padding: 3.5px 7px;
+  transition-duration: 0.4s;
+  box-shadow: inset 0 0 0 0 #FA7062;
+}
+.btn-sm.hover, .btn-sm:focus, .btn-sm:hover {
+  box-shadow: inset 0 0 0 4px #FA7062;
 }
 
-button.btn-lg,
-input[type=button].btn-lg,
-input[type=submit].btn-lg,
-input[type=reset].btn-lg,
 .btn-lg {
   font-size: 24px;
   padding: 14px 28px;
+  transition-duration: 0.8s;
+  box-shadow: 0 0 0 0 #FA7062;
+}
+.btn-lg.hover, .btn-lg:focus, .btn-lg:hover {
+  box-shadow: 0 0 0 4px #FA7062;
 }
 
-button.btn-block,
-input[type=button].btn-block,
-input[type=submit].btn-block,
-input[type=reset].btn-block,
 .btn-block {
   display: block;
   width: 100%;
+  transition-duration: 0.8s;
+  box-shadow: inset 0 0 0 0 #FA7062, 0 0 0 0 #FA7062;
+}
+.btn-block.hover, .btn-block:focus, .btn-block:hover {
+  box-shadow: inset 0 0 0 40px #FA7062, 0 0 0 4px #FA7062;
 }
 
-button.btn-circle,
-input[type=button].btn-circle,
-input[type=submit].btn-circle,
-input[type=reset].btn-circle,
-.btn-circle {
+.btn-circle,
+.btn-circle-sm,
+.btn-circle-lg {
   border-radius: 50%;
+  box-shadow: inset 0 0 0 0 #FA7062, 0 0 0 0 #FA7062;
   padding: 0;
+  transition-duration: 0.4s;
+}
+.btn-circle.hover, .btn-circle:focus, .btn-circle:hover,
+.btn-circle-sm.hover,
+.btn-circle-sm:focus,
+.btn-circle-sm:hover,
+.btn-circle-lg.hover,
+.btn-circle-lg:focus,
+.btn-circle-lg:hover {
+  box-shadow: inset 0 0 0 40px #FA7062, 0 0 0 4px #FA7062;
+}
+
+.btn-circle {
   height: 40px;
   width: 44px;
 }
 
-button.btn-circle-sm,
-input[type=button].btn-circle-sm,
-input[type=submit].btn-circle-sm,
-input[type=reset].btn-circle-sm,
 .btn-circle-sm {
-  border-radius: 50%;
   font-size: 12px;
-  padding: 0;
   height: 30px;
   width: 32px;
 }
 
-button.btn-circle-lg,
-input[type=button].btn-circle-lg,
-input[type=submit].btn-circle-lg,
-input[type=reset].btn-circle-lg,
 .btn-circle-lg {
-  border-radius: 50%;
   font-size: 24px;
-  padding: 0;
   height: 60px;
   width: 64px;
 }
 
-button.btn-img,
-input[type=button].btn-img,
-input[type=submit].btn-img,
-input[type=reset].btn-img,
 .btn-img {
   display: inline-flex;
   align-items: center;
   padding: 0;
 }
 
-button.btn-primary,
-input[type=button].btn-primary,
-input[type=submit].btn-primary,
-input[type=reset].btn-primary,
-.btn-primary {
+[class^=btn].btn-primary {
   border-color: #FA7062;
   color: #FA7062;
   background-image: linear-gradient(90deg, #FA7062 50%, transparent 50%);
 }
-button.btn-primary.hover, button.btn-primary:hover, button.btn-primary:focus,
-input[type=button].btn-primary.hover,
-input[type=button].btn-primary:hover,
-input[type=button].btn-primary:focus,
-input[type=submit].btn-primary.hover,
-input[type=submit].btn-primary:hover,
-input[type=submit].btn-primary:focus,
-input[type=reset].btn-primary.hover,
-input[type=reset].btn-primary:hover,
-input[type=reset].btn-primary:focus,
-.btn-primary.hover,
-.btn-primary:hover,
-.btn-primary:focus {
+[class^=btn].btn-primary.hover, [class^=btn].btn-primary:hover, [class^=btn].btn-primary:focus {
   border-color: #FA7062;
   color: #fff;
 }
 
-button.btn-secondary,
-input[type=button].btn-secondary,
-input[type=submit].btn-secondary,
-input[type=reset].btn-secondary,
-.btn-secondary {
+.btn-sm.btn-primary {
+  box-shadow: inset 0 0 0 0 #FA7062;
+}
+.btn-sm.btn-primary.hover, .btn-sm.btn-primary:focus, .btn-sm.btn-primary:hover {
+  box-shadow: inset 0 0 0 4px #FA7062;
+}
+
+.btn-lg.btn-primary {
+  box-shadow: 0 0 0 0 #FA7062;
+}
+.btn-lg.btn-primary.hover, .btn-lg.btn-primary:focus, .btn-lg.btn-primary:hover {
+  box-shadow: 0 0 0 4px #FA7062;
+}
+
+.btn-block.btn-primary,
+.btn-circle.btn-primary,
+.btn-circle-sm.btn-primary,
+.btn-circle-lg.btn-primary {
+  background-image: linear-gradient(90deg, #FA7062 50%, transparent 50%);
+  border-color: #FA7062;
+  box-shadow: inset 0 0 0 0 #FA7062, 0 0 0 0 #FA7062;
+}
+.btn-block.btn-primary.hover, .btn-block.btn-primary:focus, .btn-block.btn-primary:hover,
+.btn-circle.btn-primary.hover,
+.btn-circle.btn-primary:focus,
+.btn-circle.btn-primary:hover,
+.btn-circle-sm.btn-primary.hover,
+.btn-circle-sm.btn-primary:focus,
+.btn-circle-sm.btn-primary:hover,
+.btn-circle-lg.btn-primary.hover,
+.btn-circle-lg.btn-primary:focus,
+.btn-circle-lg.btn-primary:hover {
+  border-color: #FA7062;
+  box-shadow: inset 0 0 0 40px #FA7062, 0 0 0 4px #FA7062;
+  color: #fff;
+}
+
+[class^=btn].btn-secondary {
   border-color: #FCA4B1;
   color: #FCA4B1;
   background-image: linear-gradient(90deg, #FCA4B1 50%, transparent 50%);
 }
-button.btn-secondary.hover, button.btn-secondary:hover, button.btn-secondary:focus,
-input[type=button].btn-secondary.hover,
-input[type=button].btn-secondary:hover,
-input[type=button].btn-secondary:focus,
-input[type=submit].btn-secondary.hover,
-input[type=submit].btn-secondary:hover,
-input[type=submit].btn-secondary:focus,
-input[type=reset].btn-secondary.hover,
-input[type=reset].btn-secondary:hover,
-input[type=reset].btn-secondary:focus,
-.btn-secondary.hover,
-.btn-secondary:hover,
-.btn-secondary:focus {
+[class^=btn].btn-secondary.hover, [class^=btn].btn-secondary:hover, [class^=btn].btn-secondary:focus {
   border-color: #FCA4B1;
   color: #fff;
 }
 
-button.btn-accent,
-input[type=button].btn-accent,
-input[type=submit].btn-accent,
-input[type=reset].btn-accent,
-.btn-accent {
+.btn-sm.btn-secondary {
+  box-shadow: inset 0 0 0 0 #FCA4B1;
+}
+.btn-sm.btn-secondary.hover, .btn-sm.btn-secondary:focus, .btn-sm.btn-secondary:hover {
+  box-shadow: inset 0 0 0 4px #FCA4B1;
+}
+
+.btn-lg.btn-secondary {
+  box-shadow: 0 0 0 0 #FCA4B1;
+}
+.btn-lg.btn-secondary.hover, .btn-lg.btn-secondary:focus, .btn-lg.btn-secondary:hover {
+  box-shadow: 0 0 0 4px #FCA4B1;
+}
+
+.btn-block.btn-secondary,
+.btn-circle.btn-secondary,
+.btn-circle-sm.btn-secondary,
+.btn-circle-lg.btn-secondary {
+  background-image: linear-gradient(90deg, #FCA4B1 50%, transparent 50%);
+  border-color: #FCA4B1;
+  box-shadow: inset 0 0 0 0 #FCA4B1, 0 0 0 0 #FCA4B1;
+}
+.btn-block.btn-secondary.hover, .btn-block.btn-secondary:focus, .btn-block.btn-secondary:hover,
+.btn-circle.btn-secondary.hover,
+.btn-circle.btn-secondary:focus,
+.btn-circle.btn-secondary:hover,
+.btn-circle-sm.btn-secondary.hover,
+.btn-circle-sm.btn-secondary:focus,
+.btn-circle-sm.btn-secondary:hover,
+.btn-circle-lg.btn-secondary.hover,
+.btn-circle-lg.btn-secondary:focus,
+.btn-circle-lg.btn-secondary:hover {
+  border-color: #FCA4B1;
+  box-shadow: inset 0 0 0 40px #FCA4B1, 0 0 0 4px #FCA4B1;
+  color: #fff;
+}
+
+[class^=btn].btn-accent {
   border-color: #16729A;
   color: #16729A;
   background-image: linear-gradient(90deg, #16729A 50%, transparent 50%);
 }
-button.btn-accent.hover, button.btn-accent:hover, button.btn-accent:focus,
-input[type=button].btn-accent.hover,
-input[type=button].btn-accent:hover,
-input[type=button].btn-accent:focus,
-input[type=submit].btn-accent.hover,
-input[type=submit].btn-accent:hover,
-input[type=submit].btn-accent:focus,
-input[type=reset].btn-accent.hover,
-input[type=reset].btn-accent:hover,
-input[type=reset].btn-accent:focus,
-.btn-accent.hover,
-.btn-accent:hover,
-.btn-accent:focus {
+[class^=btn].btn-accent.hover, [class^=btn].btn-accent:hover, [class^=btn].btn-accent:focus {
   border-color: #16729A;
   color: #fff;
 }
 
-button.btn-note,
-input[type=button].btn-note,
-input[type=submit].btn-note,
-input[type=reset].btn-note,
-.btn-note {
+.btn-sm.btn-accent {
+  box-shadow: inset 0 0 0 0 #16729A;
+}
+.btn-sm.btn-accent.hover, .btn-sm.btn-accent:focus, .btn-sm.btn-accent:hover {
+  box-shadow: inset 0 0 0 4px #16729A;
+}
+
+.btn-lg.btn-accent {
+  box-shadow: 0 0 0 0 #16729A;
+}
+.btn-lg.btn-accent.hover, .btn-lg.btn-accent:focus, .btn-lg.btn-accent:hover {
+  box-shadow: 0 0 0 4px #16729A;
+}
+
+.btn-block.btn-accent,
+.btn-circle.btn-accent,
+.btn-circle-sm.btn-accent,
+.btn-circle-lg.btn-accent {
+  background-image: linear-gradient(90deg, #16729A 50%, transparent 50%);
+  border-color: #16729A;
+  box-shadow: inset 0 0 0 0 #16729A, 0 0 0 0 #16729A;
+}
+.btn-block.btn-accent.hover, .btn-block.btn-accent:focus, .btn-block.btn-accent:hover,
+.btn-circle.btn-accent.hover,
+.btn-circle.btn-accent:focus,
+.btn-circle.btn-accent:hover,
+.btn-circle-sm.btn-accent.hover,
+.btn-circle-sm.btn-accent:focus,
+.btn-circle-sm.btn-accent:hover,
+.btn-circle-lg.btn-accent.hover,
+.btn-circle-lg.btn-accent:focus,
+.btn-circle-lg.btn-accent:hover {
+  border-color: #16729A;
+  box-shadow: inset 0 0 0 40px #16729A, 0 0 0 4px #16729A;
+  color: #fff;
+}
+
+[class^=btn].btn-note {
   border-color: #b2a4a3;
   color: #b2a4a3;
   background-image: linear-gradient(90deg, #b2a4a3 50%, transparent 50%);
 }
-button.btn-note.hover, button.btn-note:hover, button.btn-note:focus,
-input[type=button].btn-note.hover,
-input[type=button].btn-note:hover,
-input[type=button].btn-note:focus,
-input[type=submit].btn-note.hover,
-input[type=submit].btn-note:hover,
-input[type=submit].btn-note:focus,
-input[type=reset].btn-note.hover,
-input[type=reset].btn-note:hover,
-input[type=reset].btn-note:focus,
-.btn-note.hover,
-.btn-note:hover,
-.btn-note:focus {
+[class^=btn].btn-note.hover, [class^=btn].btn-note:hover, [class^=btn].btn-note:focus {
   border-color: #b2a4a3;
+  color: #fff;
+}
+
+.btn-sm.btn-note {
+  box-shadow: inset 0 0 0 0 #b2a4a3;
+}
+.btn-sm.btn-note.hover, .btn-sm.btn-note:focus, .btn-sm.btn-note:hover {
+  box-shadow: inset 0 0 0 4px #b2a4a3;
+}
+
+.btn-lg.btn-note {
+  box-shadow: 0 0 0 0 #b2a4a3;
+}
+.btn-lg.btn-note.hover, .btn-lg.btn-note:focus, .btn-lg.btn-note:hover {
+  box-shadow: 0 0 0 4px #b2a4a3;
+}
+
+.btn-block.btn-note,
+.btn-circle.btn-note,
+.btn-circle-sm.btn-note,
+.btn-circle-lg.btn-note {
+  background-image: linear-gradient(90deg, #b2a4a3 50%, transparent 50%);
+  border-color: #b2a4a3;
+  box-shadow: inset 0 0 0 0 #b2a4a3, 0 0 0 0 #b2a4a3;
+}
+.btn-block.btn-note.hover, .btn-block.btn-note:focus, .btn-block.btn-note:hover,
+.btn-circle.btn-note.hover,
+.btn-circle.btn-note:focus,
+.btn-circle.btn-note:hover,
+.btn-circle-sm.btn-note.hover,
+.btn-circle-sm.btn-note:focus,
+.btn-circle-sm.btn-note:hover,
+.btn-circle-lg.btn-note.hover,
+.btn-circle-lg.btn-note:focus,
+.btn-circle-lg.btn-note:hover {
+  border-color: #b2a4a3;
+  box-shadow: inset 0 0 0 40px #b2a4a3, 0 0 0 4px #b2a4a3;
   color: #fff;
 }
 

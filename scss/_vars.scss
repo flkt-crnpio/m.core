@@ -9,7 +9,7 @@ $m-actn-color: 			  $m-primary;
 $m-actn-color-hover:  mix($m-primary, $m-background, 80%);
 $m-actn-font:         $m-primary;
 $m-actn-font-hover:   $m-background;
-$m-actn-transition:   all .35s cubic-bezier(0.310, -0.105, 0.430, 1.590);
+$m-actn-transition:   all .6s cubic-bezier(0.310, -0.105, 0.430, 1.590);
 
 $m-font-serif: 				'PT Serif', serif;
 $m-font-family: 			'Open Sans', sans-serif;
@@ -56,17 +56,16 @@ $m-switch-background-on:    $m-checkbox-color-active;
 $m-switch-color-off:        $m-background;
 $m-switch-color-on:         $m-background;
 
-$m-btn-shadow:              0 1px 3px rgba(0,0,0,0), 0 1px 2px rgba(0,0,0,0);
-$m-btn-shadow-hover:        0 14px 28px rgba(0,0,0,0.05), 0 5px 5px rgba(0,0,0,0.1);
-
 $m-btn-border-radius:       1px;
 $m-btn-border-width:        1px;
 $m-btn-border-style:        solid;
 
 $m-actn-border-color:       $m-primary;
 $m-actn-border-color-hover: mix($m-primary, $m-accent, 95%);
+
 $m-striped-odd:             rgba($m-color, .05);
 $m-striped-even:            rgba($m-color, .1);
+
 $m-block-hover:             rgba($m-secondary, .1);
 
 $m-note:                    mix(#aaa, $m-primary, 90%);
