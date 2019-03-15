@@ -41,7 +41,7 @@ output, summary, a {
   cursor: pointer;
   touch-action: manipulation;
   -ms-touch-action: manipulation;
-  transition: all 0.6s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
   text-rendering: optimizeLegibility;
 }
 .btn:active,
@@ -3646,6 +3646,7 @@ input[type=reset].link,
   margin: 0;
   padding: 0;
   text-decoration: none;
+  transition-duration: 0.35s;
 }
 
 button.link-bg-up.hover, button.link-bg-up:hover, button.link-bg-up:active, button.link-bg-up:focus,
@@ -3732,7 +3733,7 @@ button.link-underline,
 button.link-underline::after,
 .link-underline::after {
   background: #FA7062;
-  transition: all 0.6s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
   height: 1px;
   content: "";
   position: absolute;
@@ -3767,7 +3768,7 @@ button.link-r-underline,
 button.link-r-underline::after,
 .link-r-underline::after {
   background: #FA7062;
-  transition: all 0.6s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
   height: 1px;
   content: "";
   position: absolute;
@@ -3802,7 +3803,7 @@ button.link-line-up,
 button.link-line-up::after,
 .link-line-up::after {
   background: #FA7062;
-  transition: all 0.6s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
   height: 1px;
   content: "";
   position: absolute;
@@ -3840,7 +3841,7 @@ button.link-bg-up,
 button.link-bg-up::after,
 .link-bg-up::after {
   background: #FA7062;
-  transition: all 0.6s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
   height: 1px;
   content: "";
   position: absolute;

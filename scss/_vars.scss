@@ -9,7 +9,7 @@ $m-actn-color: 			  $m-primary;
 $m-actn-color-hover:  mix($m-primary, $m-background, 80%);
 $m-actn-font:         $m-primary;
 $m-actn-font-hover:   $m-background;
-$m-actn-transition:   all .6s cubic-bezier(0.310, -0.105, 0.430, 1.590);
+$m-actn-transition:   all .35s cubic-bezier(0.310, -0.105, 0.430, 1.590);
 
 $m-font-serif: 				'PT Serif', serif;
 $m-font-family: 			'Open Sans', sans-serif;
@@ -35,7 +35,8 @@ $m-accent:      			#16729A;
 
 $m-transition:				all 0.3s cubic-bezier(0.465, -0.240, 0.370, 1.125);
 
-$m-link-underline:    1px;
+$m-link-underline:          1px;
+$m-link-transition-time:    .35s;
 
 $m-input-height:            40px;
 $m-input-padding:           7px;
