@@ -6,62 +6,34 @@ input[type="reset"],
 .btn {
 	@extend %m-font-base;
 	@extend %m-interact-base;
-  background: $m-primary;
-  box-shadow: inset 0 0 0 0 $m-primary, inset 0 0 0 0 $m-primary, 0 0 0 0 $m-primary, 0 0 0 0 $m-primary;
-  border: none;
-  border-radius: 0;
+	background-size: 100% 200%;
+  background-image: linear-gradient(0deg, $m-primary 50%, $m-background 50%);
+  background-position: 0 100%;
+  border: 1px solid $m-primary;
   color: $m-background;
-	display: inline-block;
 	padding: $m-input-padding $m-input-padding * 2;
 	&.hover,
 	&:focus,
 	&:hover {
-		background: $m-background;
-    box-shadow: inset -1px -1px 0 0 $m-primary, inset -2px -2px 0 0 $m-primary, 1px 1px 0 0 $m-primary, 2px 2px 0 0 $m-primary;
-    border: none;
-    border-radius: 0;
+		background-position: 0 0;
     color: $m-primary;
-		padding: $m-input-padding;
-    margin-left: $m-input-padding;
-    margin-right: $m-input-padding;
 	}
 }
 
 .btn-sm {
 	font-size: $m-font-size * .75;
 	padding: $m-input-padding * .5 $m-input-padding;
-	&.hover,
-	&:focus,
-	&:hover {
-		padding: $m-input-padding * .5;
-    margin-left: $m-input-padding * .5;
-    margin-right: $m-input-padding * .5;
-	}
 }
 
 .btn-lg {
 	font-size: $m-font-size * 1.5;
 	padding: $m-input-padding * 2 $m-input-padding * 4;
-	&.hover,
-	&:focus,
-	&:hover {
-		padding: $m-input-padding * 2;
-    margin-left: $m-input-padding * 2;
-    margin-right: $m-input-padding * 2;
-	}
 }
 
 .btn-block {
 	display: block;
 	padding: $m-input-padding * 2;
 	width: 100%;
-	&.hover,
-	&:focus,
-	&:hover {
-		padding: $m-input-padding * 2;
-		margin-left: 0;
-		margin-right: 0;
-	}
 }
 
 [class^="btn-circle"] {
@@ -73,13 +45,8 @@ input[type="reset"],
 	&.hover,
 	&:focus,
 	&:hover {
-		background: $m-primary;
-		border-radius: 50%;
 		box-shadow: 0 0 0 3px $m-primary;
 		color: $m-background;
-		padding: 0;
-		margin-left: 0;
-		margin-right: 0;
 	}
 }
 
@@ -103,26 +70,17 @@ input[type="reset"],
 .btn-img {
 	display: flex;
 	align-items: flex-end;
-	padding: $m-spacelement * .2;
-	margin: 0;
-	&.hover,
-	&:focus,
-	&:hover {
-		margin: 0;
-		padding: 0 $m-spacelement * .4 $m-spacelement * .4 0;
-	}
+	padding: $m-input-padding;
 }
 
 @each $name, $color, $font-hover in $m-button-colors {
 	.btn-#{$name} {
-		background: $color;
-	  box-shadow: inset 0 0 0 0 $color, inset 0 0 0 0 $color, 0 0 0 0 $color, 0 0 0 0 $color;
+		background-image: linear-gradient(0deg, $color 50%, $m-background 50%);
+		border: 1px solid $color;
 		color: $m-background;
 		&.hover,
 		&:hover,
 		&:focus {
-			background: $m-background;
-			box-shadow: inset -1px -1px 0 0 $color, inset -2px -2px 0 0 $color, 1px 1px 0 0 $color, 2px 2px 0 0 $color;
 			color: $color;
 		}
 	}
