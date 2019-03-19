@@ -1,21 +1,21 @@
 // link
 %m-link-base {
-  display: inline-block;
+  font-size: inherit;
+  background: none;
   border: none;
   box-shadow: none;
-  color: $m-actn-color;
-  cursor: pointer;
+  color: $m-primary;
+  display: inline-block;
   font-size: inherit;
   font-weight: normal;
   margin: 0;
   padding: 0;
   text-decoration: none;
-  transition-duration: $m-link-transition-time;
 }
 %m-link-hover-base {
   border: none;
   box-shadow: none;
-  color: $m-actn-color-hover;
+  padding: 0;
   text-decoration: none;
 }
 
@@ -28,16 +28,15 @@ input[type="reset"].link,
   @extend %m-interact-base;
   @extend %m-link-base;
   background-size: 100% 200%;
-  background-image: linear-gradient(0deg, $m-actn-color 50%, transparent 50%);
+  background-image: linear-gradient(0deg, $m-primary 50%, transparent 50%);
   background-position: 0 -1px;
-  color: $m-actn-font;
   &.hover,
   &:hover,
   &:active,
   &:focus {
     @extend %m-link-hover-base;
-    color: $m-actn-font-hover;
     background-position: 0 -100%;
+    color: $m-background;
   }
 }
 
@@ -45,12 +44,10 @@ button.link-underline,
 .link-underline {
   @extend %m-interact-base;
   @extend %m-link-base;
-  background: none;
   position: relative;
-  text-decoration: none;
   &::after {
-    background: $m-actn-color;
-    transition: $m-actn-transition;
+    background: $m-primary;
+    transition: all .35s cubic-bezier(0.310, -0.105, 0.430, 1.890);
     height: $m-link-underline;
     content: "";
     position: absolute;
@@ -63,11 +60,8 @@ button.link-underline,
   &:active,
   &:focus {
     @extend %m-link-hover-base;
-    background: none;
-    position: relative;
-    text-decoration: none;
+    color: $m-primary;
     &::after {
-      background: $m-actn-color-hover;
       width: 100%;
     }
   }
@@ -76,12 +70,10 @@ button.link-r-underline,
 .link-r-underline {
   @extend %m-interact-base;
   @extend %m-link-base;
-  background: none;
   position: relative;
-  text-decoration: none;
   &::after {
-    background: $m-actn-color;
-    transition: $m-actn-transition;
+    background: $m-primary;
+    transition: all .35s cubic-bezier(0.310, -0.105, 0.430, 1.890);
     height: $m-link-underline;
     content: "";
     position: absolute;
@@ -94,11 +86,9 @@ button.link-r-underline,
   &:active,
   &:focus {
     @extend %m-link-hover-base;
-    background: none;
-    position: relative;
-    text-decoration: none;
+    color: $m-primary;
     &::after {
-      background: $m-actn-color-hover;
+      background: $m-primary;
       width: $m-spacelement * .4;
     }
   }
@@ -108,12 +98,10 @@ button.link-line-up,
 .link-line-up {
   @extend %m-interact-base;
   @extend %m-link-base;
-  background: none;
   position: relative;
-  text-decoration: none;
   &::after {
-    background: $m-actn-color;
-    transition: $m-actn-transition;
+    background: $m-primary;
+    transition: all .35s cubic-bezier(0.310, -0.105, 0.430, 1.890);
     height: $m-link-underline;
     content: "";
     position: absolute;
@@ -127,47 +115,10 @@ button.link-line-up,
   &:active,
   &:focus {
     @extend %m-link-hover-base;
-    background: none;
     color: $m-color;
-    position: relative;
-    text-decoration: none;
     &::after {
-      background: $m-actn-color;
       height: $m-font-size;
       width: 100%;
-    }
-  }
-}
-button.link-bg-up,
-.link-bg-up {
-  @extend %m-interact-base;
-  @extend %m-link-base;
-  background: none;
-  position: relative;
-  text-decoration: none;
-  &::after {
-    background: $m-actn-color;
-    transition: $m-actn-transition;
-    height: $m-link-underline;
-    content: "";
-    position: absolute;
-    bottom: -#{$m-line-height * .1};
-    left: 0;
-    width: 100%;
-    z-index: -1;
-  }
-  &.hover,
-  &:hover,
-  &:active,
-  &:focus {
-    @extend %m-link-hover-base;
-    background: none;
-    color: $m-background;
-    position: relative;
-    text-decoration: none;
-    &::after {
-      background: $m-actn-color;
-      height: $m-line-height * 1.1;
     }
   }
 }

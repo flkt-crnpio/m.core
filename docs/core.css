@@ -24,8 +24,7 @@ output, summary, body {
 input[type=button],
 input[type=submit],
 input[type=reset],
-.btn, button.link-bg-up,
-.link-bg-up, button.link-line-up,
+.btn, button.link-line-up,
 .link-line-up, button.link-r-underline,
 .link-r-underline, button.link-underline,
 .link-underline,
@@ -41,11 +40,10 @@ output, summary, a {
   cursor: pointer;
   touch-action: manipulation;
   -ms-touch-action: manipulation;
-  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
   text-rendering: optimizeLegibility;
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.89);
 }
 .btn:active,
-.link-bg-up:active,
 .link-line-up:active,
 .link-r-underline:active,
 .link-underline:active,
@@ -55,7 +53,6 @@ textarea:active,
 select:active,
 output:active, summary:active, a:active,
 .btn:hover,
-.link-bg-up:hover,
 .link-line-up:hover,
 .link-r-underline:hover,
 .link-underline:hover,
@@ -65,7 +62,6 @@ textarea:hover,
 select:hover,
 output:hover, summary:hover, a:hover,
 .btn:focus,
-.link-bg-up:focus,
 .link-line-up:focus,
 .link-r-underline:focus,
 .link-underline:focus,
@@ -373,12 +369,11 @@ input[type=submit] {
   appearance: auto;
   -moz-appearance: button;
   -webkit-appearance: button;
-  background-size: 200% 100%;
-  background-image: linear-gradient(90deg, #FA7062 50%, transparent 50%);
-  background-position: 100% 0;
-  border: 1px solid #FA7062;
-  font-weight: normal;
-  color: #FA7062;
+  background: #FA7062;
+  box-shadow: inset 0 0 0 0 #FA7062, inset 0 0 0 0 #FA7062, 0 0 0 0 #FA7062, 0 0 0 0 #FA7062;
+  border: none;
+  border-radius: 0;
+  color: #fff;
 }
 button.hover, button:focus, button:hover,
 input[type=button].hover,
@@ -390,9 +385,15 @@ input[type=reset]:hover,
 input[type=submit].hover,
 input[type=submit]:focus,
 input[type=submit]:hover {
-  background-position: 0 0;
-  border: 1px solid #fb8d81;
-  color: #fff;
+  background: #fff;
+  box-shadow: inset -1px -1px 0 0 #FA7062, inset -2px -2px 0 0 #FA7062, 1px 1px 0 0 #FA7062, 2px 2px 0 0 #FA7062;
+  border: none;
+  border-radius: 0;
+  color: #FA7062;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  margin-left: 0.4em;
+  margin-right: 0.4em;
 }
 
 button::-moz-focus-inner,
@@ -1124,7 +1125,7 @@ select:-webkit-autofill {
 .form-primary select:hover,
 .form-primary select:focus {
   border-color: #ef7065;
-  color: #fb8d81;
+  color: #ef7065;
 }
 .form-primary [type=date]::-webkit-input-placeholder,
 .form-primary [type=datetime]::-webkit-input-placeholder,
@@ -1223,7 +1224,7 @@ select:-webkit-autofill {
 .form-primary .radio [type=radio]:checked + label,
 .form-primary .switch [type=checkbox]:checked + label,
 .form-primary .switch [type=radio]:checked + label {
-  color: #fb8d81;
+  color: #ef7065;
 }
 .form-primary .checkbox [type=checkbox]:checked + label::before,
 .form-primary .checkbox [type=radio]:checked + label::before,
@@ -1305,7 +1306,7 @@ select:-webkit-autofill {
 .select-primary:hover,
 .select-primary:focus {
   border-color: #ef7065;
-  color: #fb8d81;
+  color: #ef7065;
 }
 [type=date].input-primary::-webkit-input-placeholder,
 [type=datetime].input-primary::-webkit-input-placeholder,
@@ -1402,7 +1403,7 @@ select:-webkit-autofill {
 .radio-primary [type=radio]:checked + label,
 .switch-primary [type=checkbox]:checked + label,
 .switch-primary [type=radio]:checked + label {
-  color: #fb8d81;
+  color: #ef7065;
 }
 .checkbox-primary [type=checkbox]:checked + label::before,
 .checkbox-primary [type=radio]:checked + label::before,
@@ -1410,8 +1411,8 @@ select:-webkit-autofill {
 .radio-primary [type=radio]:checked + label::before,
 .switch-primary [type=checkbox]:checked + label::before,
 .switch-primary [type=radio]:checked + label::before {
-  background: #fb8d81;
-  border-color: #fb8d81;
+  background: #ef7065;
+  border-color: #ef7065;
 }
 
 .form-secondary [type=date],
@@ -3599,8 +3600,7 @@ select:-webkit-autofill {
   object-fit: contain;
 }
 
-button.link-bg-up,
-.link-bg-up, button.link-line-up,
+button.link-line-up,
 .link-line-up, button.link-r-underline,
 .link-r-underline, button.link-underline,
 .link-underline, a,
@@ -3609,24 +3609,20 @@ input[type=button].link,
 input[type=submit].link,
 input[type=reset].link,
 .link {
-  display: inline-block;
+  font-size: inherit;
+  background: none;
   border: none;
   box-shadow: none;
   color: #FA7062;
-  cursor: pointer;
+  display: inline-block;
   font-size: inherit;
   font-weight: normal;
   margin: 0;
   padding: 0;
   text-decoration: none;
-  transition-duration: 0.35s;
 }
 
-button.link-bg-up.hover, button.link-bg-up:hover, button.link-bg-up:active, button.link-bg-up:focus,
-.link-bg-up.hover,
-.link-bg-up:hover,
-.link-bg-up:active,
-.link-bg-up:focus, button.link-line-up.hover, button.link-line-up:hover, button.link-line-up:active, button.link-line-up:focus,
+button.link-line-up.hover, button.link-line-up:hover, button.link-line-up:active, button.link-line-up:focus,
 .link-line-up.hover,
 .link-line-up:hover,
 .link-line-up:active,
@@ -3657,7 +3653,7 @@ input[type=reset].link:focus,
 .link:focus {
   border: none;
   box-shadow: none;
-  color: #fb8d81;
+  padding: 0;
   text-decoration: none;
 }
 
@@ -3670,7 +3666,6 @@ input[type=reset].link,
   background-size: 100% 200%;
   background-image: linear-gradient(0deg, #FA7062 50%, transparent 50%);
   background-position: 0 -1px;
-  color: #FA7062;
 }
 a.hover, a:hover, a:active, a:focus,
 button.link.hover,
@@ -3693,20 +3688,18 @@ input[type=reset].link:focus,
 .link:hover,
 .link:active,
 .link:focus {
-  color: #fff;
   background-position: 0 -100%;
+  color: #fff;
 }
 
 button.link-underline,
 .link-underline {
-  background: none;
   position: relative;
-  text-decoration: none;
 }
 button.link-underline::after,
 .link-underline::after {
   background: #FA7062;
-  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.89);
   height: 1px;
   content: "";
   position: absolute;
@@ -3719,29 +3712,24 @@ button.link-underline.hover, button.link-underline:hover, button.link-underline:
 .link-underline:hover,
 .link-underline:active,
 .link-underline:focus {
-  background: none;
-  position: relative;
-  text-decoration: none;
+  color: #FA7062;
 }
 button.link-underline.hover::after, button.link-underline:hover::after, button.link-underline:active::after, button.link-underline:focus::after,
 .link-underline.hover::after,
 .link-underline:hover::after,
 .link-underline:active::after,
 .link-underline:focus::after {
-  background: #fb8d81;
   width: 100%;
 }
 
 button.link-r-underline,
 .link-r-underline {
-  background: none;
   position: relative;
-  text-decoration: none;
 }
 button.link-r-underline::after,
 .link-r-underline::after {
   background: #FA7062;
-  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.89);
   height: 1px;
   content: "";
   position: absolute;
@@ -3754,29 +3742,25 @@ button.link-r-underline.hover, button.link-r-underline:hover, button.link-r-unde
 .link-r-underline:hover,
 .link-r-underline:active,
 .link-r-underline:focus {
-  background: none;
-  position: relative;
-  text-decoration: none;
+  color: #FA7062;
 }
 button.link-r-underline.hover::after, button.link-r-underline:hover::after, button.link-r-underline:active::after, button.link-r-underline:focus::after,
 .link-r-underline.hover::after,
 .link-r-underline:hover::after,
 .link-r-underline:active::after,
 .link-r-underline:focus::after {
-  background: #fb8d81;
+  background: #FA7062;
   width: 8px;
 }
 
 button.link-line-up,
 .link-line-up {
-  background: none;
   position: relative;
-  text-decoration: none;
 }
 button.link-line-up::after,
 .link-line-up::after {
   background: #FA7062;
-  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.89);
   height: 1px;
   content: "";
   position: absolute;
@@ -3790,56 +3774,15 @@ button.link-line-up.hover, button.link-line-up:hover, button.link-line-up:active
 .link-line-up:hover,
 .link-line-up:active,
 .link-line-up:focus {
-  background: none;
   color: #222029;
-  position: relative;
-  text-decoration: none;
 }
 button.link-line-up.hover::after, button.link-line-up:hover::after, button.link-line-up:active::after, button.link-line-up:focus::after,
 .link-line-up.hover::after,
 .link-line-up:hover::after,
 .link-line-up:active::after,
 .link-line-up:focus::after {
-  background: #FA7062;
   height: 16px;
   width: 100%;
-}
-
-button.link-bg-up,
-.link-bg-up {
-  background: none;
-  position: relative;
-  text-decoration: none;
-}
-button.link-bg-up::after,
-.link-bg-up::after {
-  background: #FA7062;
-  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
-  height: 1px;
-  content: "";
-  position: absolute;
-  bottom: -0.15em;
-  left: 0;
-  width: 100%;
-  z-index: -1;
-}
-button.link-bg-up.hover, button.link-bg-up:hover, button.link-bg-up:active, button.link-bg-up:focus,
-.link-bg-up.hover,
-.link-bg-up:hover,
-.link-bg-up:active,
-.link-bg-up:focus {
-  background: none;
-  color: #fff;
-  position: relative;
-  text-decoration: none;
-}
-button.link-bg-up.hover::after, button.link-bg-up:hover::after, button.link-bg-up:active::after, button.link-bg-up:focus::after,
-.link-bg-up.hover::after,
-.link-bg-up:hover::after,
-.link-bg-up:active::after,
-.link-bg-up:focus::after {
-  background: #FA7062;
-  height: 1.65em;
 }
 
 .link-image {
@@ -3901,7 +3844,7 @@ button.link-r-underline.link-primary:focus,
 .link-r-underline.link-primary:hover,
 .link-r-underline.link-primary:active,
 .link-r-underline.link-primary:focus {
-  color: #fb8d81;
+  color: #ef7065;
   background: none;
 }
 button.link-underline.link-primary.hover::after, button.link-underline.link-primary:hover::after, button.link-underline.link-primary:active::after, button.link-underline.link-primary:focus::after,
@@ -3917,7 +3860,7 @@ button.link-r-underline.link-primary:focus::after,
 .link-r-underline.link-primary:hover::after,
 .link-r-underline.link-primary:active::after,
 .link-r-underline.link-primary:focus::after {
-  background: #fb8d81;
+  background: #ef7065;
 }
 
 button.link-line-up.link-primary,
@@ -4499,7 +4442,7 @@ input[type=reset],
   background-image: linear-gradient(90deg, #FA7062 50%, transparent 50%);
   background-position: 99% 0;
   border: 1px solid #FA7062;
-  color: #FA7062;
+  color: #fff;
   display: inline-block;
   padding: 7px 10.5px;
 }

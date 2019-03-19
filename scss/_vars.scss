@@ -1,15 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|PT+Serif');
 
-// normalize
 $m-background:  			#fff;
 $m-color:       			#222029;
-$m-primary:						#FA7062;
-
-$m-actn-color: 			  $m-primary;
-$m-actn-color-hover:  mix($m-primary, $m-background, 80%);
-$m-actn-font:         $m-primary;
-$m-actn-font-hover:   $m-background;
-$m-actn-transition:   all .35s cubic-bezier(0.310, -0.105, 0.430, 1.590);
+$m-primary:						#3caea6;
 
 $m-font-serif: 				'PT Serif', serif;
 $m-font-family: 			'Open Sans', sans-serif;
@@ -61,6 +54,10 @@ $m-btn-border-radius:       1px;
 $m-btn-border-width:        1px;
 $m-btn-border-style:        solid;
 
+$m-actn-color:              $m-primary;
+$m-actn-color-hover:        mix($m-primary, $m-accent, 95%);
+$m-actn-font:               $m-background;
+$m-actn-font-hover:         $m-background;
 $m-actn-border-color:       $m-primary;
 $m-actn-border-color-hover: mix($m-primary, $m-accent, 95%);
 
