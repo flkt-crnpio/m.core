@@ -4537,12 +4537,12 @@ input[type=reset]:hover,
 .btn-img {
   display: flex;
   align-items: flex-end;
-  padding: 2px;
+  padding: 4px;
   margin: 0;
 }
 .btn-img.hover, .btn-img:focus, .btn-img:hover {
   margin: 0;
-  padding: 0 4px 4px 0;
+  padding: 0 8px 8px 0;
 }
 
 .btn-primary {
