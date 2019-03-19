@@ -6,69 +6,80 @@ input[type="reset"],
 .btn {
 	@extend %m-font-base;
 	@extend %m-interact-base;
-	background-size: 220% 100%;
-  background-image: linear-gradient(90deg, $m-actn-color 50%, transparent 50%);
-  background-position: 99% 0;
-	border: $m-btn-border-width $m-btn-border-style $m-actn-border-color;
-	color: $m-actn-font;
+  background: $m-primary;
+  box-shadow: inset 0 0 0 0 $m-primary, inset 0 0 0 0 $m-primary, 0 0 0 0 $m-primary, 0 0 0 0 $m-primary;
+  border: none;
+  border-radius: 0;
+  color: $m-background;
 	display: inline-block;
-	padding: $m-input-padding $m-input-padding * 1.5;
+	padding: $m-input-padding $m-input-padding * 2;
 	&.hover,
 	&:focus,
 	&:hover {
-		background-position: 0 0;
-		border: $m-btn-border-width $m-btn-border-style $m-actn-border-color;
-		color: $m-background;
+		background: $m-background;
+    box-shadow: inset -1px -1px 0 0 $m-primary, inset -2px -2px 0 0 $m-primary, 1px 1px 0 0 $m-primary, 2px 2px 0 0 $m-primary;
+    border: none;
+    border-radius: 0;
+    color: $m-primary;
+		padding: $m-input-padding;
+    margin-left: $m-input-padding;
+    margin-right: $m-input-padding;
 	}
 }
 
 .btn-sm {
 	font-size: $m-font-size * .75;
 	padding: $m-input-padding * .5 $m-input-padding;
-	transition-duration: .4s;
-	box-shadow: inset 0 0 0 0 $m-actn-color;
 	&.hover,
 	&:focus,
 	&:hover {
-		box-shadow: inset 0 0 0 $m-input-height*.1 $m-actn-color;
+		padding: $m-input-padding * .5;
+    margin-left: $m-input-padding * .5;
+    margin-right: $m-input-padding * .5;
 	}
 }
 
 .btn-lg {
 	font-size: $m-font-size * 1.5;
 	padding: $m-input-padding * 2 $m-input-padding * 4;
-	transition-duration: .8s;
-	box-shadow: 0 0 0 0 $m-actn-color;
 	&.hover,
 	&:focus,
 	&:hover {
-		box-shadow: 0 0 0 $m-input-height*.1 $m-actn-color;
+		padding: $m-input-padding * 2;
+    margin-left: $m-input-padding * 2;
+    margin-right: $m-input-padding * 2;
 	}
 }
 
 .btn-block {
 	display: block;
+	padding: $m-input-padding * 2;
 	width: 100%;
-	transition-duration: .8s;
-	box-shadow: inset 0 0 0 0 $m-actn-color, 0 0 0 0 $m-actn-color;
 	&.hover,
 	&:focus,
 	&:hover {
-		box-shadow: inset 0 0 0 $m-input-height $m-actn-color, 0 0 0 $m-input-height*.1 $m-actn-color;
+		padding: $m-input-padding * 2;
+		margin-left: 0;
+		margin-right: 0;
 	}
 }
 
-.btn-circle,
-.btn-circle-sm,
-.btn-circle-lg {
+[class^="btn-circle"] {
+	background: $m-primary;
 	border-radius: 50%;
-	box-shadow: inset 0 0 0 0 $m-actn-color, 0 0 0 0 $m-actn-color;
+	box-shadow: 0 0 0 0 $m-primary;
+	color: $m-background;
 	padding: 0;
-	transition-duration: .4s;
 	&.hover,
 	&:focus,
 	&:hover {
-		box-shadow: inset 0 0 0 $m-input-height $m-actn-color, 0 0 0 $m-input-height*.1 $m-actn-color;
+		background: $m-primary;
+		border-radius: 50%;
+		box-shadow: 0 0 0 3px $m-primary;
+		color: $m-background;
+		padding: 0;
+		margin-left: 0;
+		margin-right: 0;
 	}
 }
 
@@ -92,57 +103,40 @@ input[type="reset"],
 .btn-img {
 	display: flex;
 	align-items: flex-end;
-	padding: $m-input-padding;
+	padding: 2px;
+	margin: 0;
+	&.hover,
+	&:focus,
+	&:hover {
+		margin: 0;
+		padding: 0 4px 4px 0;
+	}
 }
 
 @each $name, $color, $font-hover in $m-button-colors {
-	button,
-	input[type="button"],
-	input[type="submit"],
-	input[type="reset"],
-	[class^="btn"].btn-#{$name} {
-		border-color: $color;
-		color: $color;
-		background-image: linear-gradient(90deg, $color 50%, transparent 50%);
+	.btn-#{$name} {
+		background: $color;
+	  box-shadow: inset 0 0 0 0 $color, inset 0 0 0 0 $color, 0 0 0 0 $color, 0 0 0 0 $color;
+		color: $m-background;
 		&.hover,
 		&:hover,
 		&:focus {
-			border-color: $color;
-			color: $font-hover;
+			background: $m-background;
+			box-shadow: inset -1px -1px 0 0 $color, inset -2px -2px 0 0 $color, 1px 1px 0 0 $color, 2px 2px 0 0 $color;
+			color: $color;
 		}
 	}
 
-	.btn-sm.btn-#{$name} {
-		box-shadow: inset 0 0 0 0 $color;
-		&.hover,
-		&:focus,
-		&:hover {
-			box-shadow: inset 0 0 0 $m-input-height*.1 $color;
-		}
-	}
-
-	.btn-lg.btn-#{$name} {
+	[class^="btn-circle"].btn-#{$name} {
+		background: $color;
 		box-shadow: 0 0 0 0 $color;
+		color: $m-background;
 		&.hover,
 		&:focus,
 		&:hover {
-			box-shadow: 0 0 0 $m-input-height*.1 $color;
-		}
-	}
-
-	.btn-block.btn-#{$name},
-	.btn-circle.btn-#{$name},
-	.btn-circle-sm.btn-#{$name},
-	.btn-circle-lg.btn-#{$name} {
-		background-image: linear-gradient(90deg, $color 50%, transparent 50%);
-		border-color: $color;
-		box-shadow: inset 0 0 0 0 $color, 0 0 0 0 $color;
-		&.hover,
-		&:focus,
-		&:hover {
-			border-color: $color;
-			box-shadow: inset 0 0 0 $m-input-height $color, 0 0 0 $m-input-height*.1 $color;
-			color: $font-hover;
+			background: $color;
+			box-shadow: 0 0 0 3px $color;
+			color: $m-background;
 		}
 	}
 }
