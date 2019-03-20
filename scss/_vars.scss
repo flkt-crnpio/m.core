@@ -29,7 +29,6 @@ $m-accent:      			#16729A;
 $m-transition:				all 0.3s cubic-bezier(0.465, -0.240, 0.370, 1.125);
 
 $m-link-underline:          1px;
-$m-link-transition-time:    .35s;
 
 $m-input-height:            40px;
 $m-input-padding:           7px;
@@ -54,13 +53,6 @@ $m-btn-border-radius:       1px;
 $m-btn-border-width:        1px;
 $m-btn-border-style:        solid;
 
-$m-actn-color:              $m-primary;
-$m-actn-color-hover:        mix($m-primary, $m-accent, 95%);
-$m-actn-font:               $m-background;
-$m-actn-font-hover:         $m-background;
-$m-actn-border-color:       $m-primary;
-$m-actn-border-color-hover: mix($m-primary, $m-accent, 95%);
-
 $m-striped-odd:             rgba($m-color, .05);
 $m-striped-even:            rgba($m-color, .1);
 
@@ -76,21 +68,21 @@ $m-success-hover:           mix(#0f0, $m-primary, 60%);
 $m-warning-hover:           mix(#ff0, $m-primary, 60%);
 
 $m-array-colors: //(nombre, fondo, fondo-hover, fuente, fuente-hover, borde, borde-hover)
-  (primary, $m-actn-color, $m-actn-color-hover, $m-actn-font, $m-actn-font-hover, $m-actn-border-color, $m-actn-border-color-hover),
+  (primary, $m-primary, mix($m-primary, $m-accent, 80%), $m-background, $m-background, $m-primary, mix($m-primary, $m-accent, 75%)),
   (secondary, $m-secondary, mix($m-secondary, $m-accent, 80%), $m-background, $m-background, $m-secondary, mix($m-secondary, $m-accent, 75%)),
   (accent, $m-accent, mix($m-accent, $m-primary, 90%), $m-background, $m-background, $m-accent, mix($m-accent, $m-primary, 85%)),
   (note, $m-note, darken($m-note, 10), lighten($m-note, 40), lighten($m-note, 80), $m-note, darken($m-note, 15));
 
 $m-button-colors:
 //(nombre,    color,          font-hover)
-  (primary,   $m-actn-color,  $m-background),
+  (primary,   $m-primary,  $m-background),
   (secondary, $m-secondary,   $m-background),
   (accent,    $m-accent,      $m-background),
   (note,      $m-note,        $m-background);
 
 $m-link-colors:
 //(nombre,    color,          color-hover,                        font-hover-line,  font-hover-background)
-  (primary,   $m-actn-color,  $m-actn-color-hover,                $m-color,         $m-background),
+  (primary,   $m-primary,     $m-primary,                         $m-color,         $m-background),
   (secondary, $m-secondary,   mix($m-secondary, $m-accent, 80%),  $m-color,         $m-background),
   (accent,    $m-accent,      mix($m-accent, $m-primary, 90%),    $m-color,         $m-background),
   (note,      $m-note,        darken($m-note, 10),                $m-color,         $m-background);

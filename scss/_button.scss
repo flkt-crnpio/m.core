@@ -1,17 +1,23 @@
 // button
+%m-button-base {
+	@extend %m-interact-base;
+	@extend %m-font-base;
+	display: inline-block;
+	padding: $m-input-padding $m-input-padding * 2;
+}
+
 button,
 input[type="button"],
 input[type="submit"],
 input[type="reset"],
+a.btn,
 .btn {
-	@extend %m-font-base;
-	@extend %m-interact-base;
+	@extend %m-button-base;
 	background-size: 100% 200%;
   background-image: linear-gradient(0deg, $m-primary 50%, $m-background 50%);
   background-position: 0 100%;
   border: 1px solid $m-primary;
   color: $m-background;
-	padding: $m-input-padding $m-input-padding * 2;
 	&.hover,
 	&:focus,
 	&:hover {
@@ -19,54 +25,157 @@ input[type="reset"],
     color: $m-primary;
 	}
 }
+button.btn-line,
+input[type="button"].btn-line,
+input[type="submit"].btn-line,
+input[type="reset"].btn-line,
+a.btn-line,
+.btn-line {
+	@extend %m-button-base;
+	background-size: 100% 200%;
+  background-image: linear-gradient(0deg, $m-primary 50%, $m-background 50%);
+  background-position: 0 0;
+  border: 1px solid $m-primary;
+  color: $m-primary;
+	&.hover,
+	&:focus,
+	&:hover {
+		background-position: 0 100%;
+    color: $m-background;
+	}
+}
 
+button.btn-sm,
+input[type="button"].btn-sm,
+input[type="submit"].btn-sm,
+input[type="reset"].btn-sm,
+a.btn-sm,
 .btn-sm {
 	font-size: $m-font-size * .75;
 	padding: $m-input-padding * .5 $m-input-padding;
 }
-
+button.btn-lg,
+input[type="button"].btn-lg,
+input[type="submit"].btn-lg,
+input[type="reset"].btn-lg,
+a.btn-lg,
 .btn-lg {
-	font-size: $m-font-size * 1.5;
+	font-size: $m-font-size * 1.2;
 	padding: $m-input-padding * 2 $m-input-padding * 4;
 }
-
+button.btn-block,
+input[type="button"].btn-block,
+input[type="submit"].btn-block,
+input[type="reset"].btn-block,
+a.btn-block,
 .btn-block {
 	display: block;
 	padding: $m-input-padding * 2;
 	width: 100%;
 }
 
+button[class^="btn-circle"],
+input[type="button"][class^="btn-circle"],
+input[type="submit"][class^="btn-circle"],
+input[type="reset"][class^="btn-circle"],
+a[class^="btn-circle"],
 [class^="btn-circle"] {
+	@extend %m-interact-base;
+	@extend %m-font-base;
 	background: $m-primary;
+	border-width: 0;
 	border-radius: 50%;
 	box-shadow: 0 0 0 0 $m-primary;
 	color: $m-background;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 	padding: 0;
+	transition: all .33s cubic-bezier(0.310, -0.205, 0.430, 2.890);
 	&.hover,
 	&:focus,
 	&:hover {
+		background: $m-primary;
 		box-shadow: 0 0 0 3px $m-primary;
-		color: $m-background;
 	}
 }
-
+button.btn-circle,
+input[type="button"].btn-circle,
+input[type="submit"].btn-circle,
+input[type="reset"].btn-circle,
+a.btn-circle,
 .btn-circle {
 	height: $m-input-height;
 	width: $m-input-height * 1.1;
 }
-
+button.btn-circle-sm,
+input[type="button"].btn-circle-sm,
+input[type="submit"].btn-circle-sm,
+input[type="reset"].btn-circle-sm,
+a.btn-circle-sm,
 .btn-circle-sm {
 	font-size: $m-font-size * .75;
 	height: $m-input-height * .75;
 	width: $m-input-height * .80;
 }
-
+button.btn-circle-lg,
+input[type="button"].btn-circle-lg,
+input[type="submit"].btn-circle-lg,
+input[type="reset"].btn-circle-lg,
+a.btn-circle-lg,
 .btn-circle-lg {
-	font-size: $m-font-size * 1.5;
+	font-size: $m-font-size * 1.2;
 	height: $m-input-height * 1.5;
 	width: $m-input-height * 1.6;
 }
 
+button.btn-side,
+input[type="button"].btn-side,
+input[type="submit"].btn-side,
+input[type="reset"].btn-side,
+a.btn-side,
+.btn-side {
+	@extend %m-button-base;
+	background-size: 222% 100%;
+  background-image: linear-gradient(270deg, $m-primary 50%, $m-color 50%);
+  background-position: 99% 0;
+	border-width: 0;
+	color: $m-background;
+	padding-top: $m-input-padding + 2px;
+	padding-bottom: $m-input-padding + 2px;
+	padding-left: $m-input-padding * 2 + 2px;
+	padding-right: $m-input-padding * 2 + 2px;
+	transition: all .27s cubic-bezier(0.310, 0.105, 0.430, 0.890);
+	&.hover,
+	&:focus,
+	&:hover {
+		background-position: 0 0;
+	}
+}
+
+button.btn-side-line,
+input[type="button"].btn-side-line,
+input[type="submit"].btn-side-line,
+input[type="reset"].btn-side-line,
+a.btn-side-line,
+.btn-side-line {
+	@extend %m-button-base;
+	background-size: 202% 100%;
+  background-image: linear-gradient(270deg, transparent 50%, $m-primary 50%);
+  background-position: 100% 0;
+	border: 1px solid $m-primary;
+	color: $m-primary;
+	transition: all .27s cubic-bezier(0.310, 0.105, 0.430, 0.890);
+	&.hover,
+	&:focus,
+	&:hover {
+		background-position: 0 0;
+    color: $m-background;
+	}
+}
+
+button.btn-img,
+a.btn-img,
 .btn-img {
 	display: flex;
 	align-items: flex-end;
@@ -75,6 +184,7 @@ input[type="reset"],
 
 @each $name, $color, $font-hover in $m-button-colors {
 	.btn-#{$name} {
+
 		background-image: linear-gradient(0deg, $color 50%, $m-background 50%);
 		border: 1px solid $color;
 		color: $m-background;
@@ -85,6 +195,11 @@ input[type="reset"],
 		}
 	}
 
+	button[class^="btn-circle"].btn-#{$name},
+	input[type="button"][class^="btn-circle"].btn-#{$name},
+	input[type="submit"][class^="btn-circle"].btn-#{$name},
+	input[type="reset"][class^="btn-circle"].btn-#{$name},
+	a[class^="btn-circle"].btn-#{$name},
 	[class^="btn-circle"].btn-#{$name} {
 		background: $color;
 		box-shadow: 0 0 0 0 $color;
