@@ -16,7 +16,8 @@ a.btn,
 	background-size: 100% 200%;
   background-image: linear-gradient(0deg, $m-primary 50%, $m-background 50%);
   background-position: 0 100%;
-  border: 1px solid $m-primary;
+  border: $m-btn-border-width $m-btn-border-style $m-primary;
+	border-radius: $m-btn-border-radius;
   color: $m-background;
 	&.hover,
 	&:focus,
@@ -25,6 +26,7 @@ a.btn,
     color: $m-primary;
 	}
 }
+
 button.btn-line,
 input[type="button"].btn-line,
 input[type="submit"].btn-line,
@@ -35,12 +37,61 @@ a.btn-line,
 	background-size: 100% 200%;
   background-image: linear-gradient(0deg, $m-primary 50%, $m-background 50%);
   background-position: 0 0;
-  border: 1px solid $m-primary;
+  border: $m-btn-border-width $m-btn-border-style $m-primary;
+	border-radius: $m-btn-border-radius;
   color: $m-primary;
 	&.hover,
 	&:focus,
 	&:hover {
 		background-position: 0 100%;
+    color: $m-background;
+	}
+}
+
+button.btn-side,
+input[type="button"].btn-side,
+input[type="submit"].btn-side,
+input[type="reset"].btn-side,
+a.btn-side,
+.btn-side {
+	@extend %m-button-base;
+	background-size: 222% 100%;
+  background-image: linear-gradient(270deg, $m-primary 50%, $m-color 50%);
+  background-position: 99% 0;
+	border-width: 0;
+	border-radius: $m-btn-border-radius;
+	color: $m-background;
+	padding-top: $m-input-padding + $m-btn-border-width * 2;
+	padding-bottom: $m-input-padding + $m-btn-border-width * 2;
+	padding-left: $m-input-padding * 2 + $m-btn-border-width * 2;
+	padding-right: $m-input-padding * 2 + $m-btn-border-width * 2;
+	transition: all .27s cubic-bezier(0.310, 0.105, 0.430, 0.890);
+	&.hover,
+	&:focus,
+	&:hover {
+		background-position: 0 0;
+		color: $m-background;
+	}
+}
+
+button.btn-side-line,
+input[type="button"].btn-side-line,
+input[type="submit"].btn-side-line,
+input[type="reset"].btn-side-line,
+a.btn-side-line,
+.btn-side-line {
+	@extend %m-button-base;
+	background-size: 202% 100%;
+  background-image: linear-gradient(270deg, transparent 50%, $m-primary 50%);
+  background-position: 100% 0;
+	border: $m-btn-border-width $m-btn-border-style $m-primary;
+	border-radius: $m-btn-border-radius;
+	color: $m-primary;
+	transition: all .27s cubic-bezier(0.310, 0.105, 0.430, 0.890);
+	&.hover,
+	&:focus,
+	&:hover {
+		background-position: 0 0;
     color: $m-background;
 	}
 }
@@ -54,6 +105,7 @@ a.btn-sm,
 	font-size: $m-font-size * .75;
 	padding: $m-input-padding * .5 $m-input-padding;
 }
+
 button.btn-lg,
 input[type="button"].btn-lg,
 input[type="submit"].btn-lg,
@@ -63,6 +115,7 @@ a.btn-lg,
 	font-size: $m-font-size * 1.2;
 	padding: $m-input-padding * 2 $m-input-padding * 4;
 }
+
 button.btn-block,
 input[type="button"].btn-block,
 input[type="submit"].btn-block,
@@ -99,6 +152,7 @@ a[class^="btn-circle"],
 		box-shadow: 0 0 0 3px $m-primary;
 	}
 }
+
 button.btn-circle,
 input[type="button"].btn-circle,
 input[type="submit"].btn-circle,
@@ -108,6 +162,7 @@ a.btn-circle,
 	height: $m-input-height;
 	width: $m-input-height * 1.1;
 }
+
 button.btn-circle-sm,
 input[type="button"].btn-circle-sm,
 input[type="submit"].btn-circle-sm,
@@ -118,6 +173,7 @@ a.btn-circle-sm,
 	height: $m-input-height * .75;
 	width: $m-input-height * .80;
 }
+
 button.btn-circle-lg,
 input[type="button"].btn-circle-lg,
 input[type="submit"].btn-circle-lg,
@@ -129,51 +185,6 @@ a.btn-circle-lg,
 	width: $m-input-height * 1.6;
 }
 
-button.btn-side,
-input[type="button"].btn-side,
-input[type="submit"].btn-side,
-input[type="reset"].btn-side,
-a.btn-side,
-.btn-side {
-	@extend %m-button-base;
-	background-size: 222% 100%;
-  background-image: linear-gradient(270deg, $m-primary 50%, $m-color 50%);
-  background-position: 99% 0;
-	border-width: 0;
-	color: $m-background;
-	padding-top: $m-input-padding + 2px;
-	padding-bottom: $m-input-padding + 2px;
-	padding-left: $m-input-padding * 2 + 2px;
-	padding-right: $m-input-padding * 2 + 2px;
-	transition: all .27s cubic-bezier(0.310, 0.105, 0.430, 0.890);
-	&.hover,
-	&:focus,
-	&:hover {
-		background-position: 0 0;
-	}
-}
-
-button.btn-side-line,
-input[type="button"].btn-side-line,
-input[type="submit"].btn-side-line,
-input[type="reset"].btn-side-line,
-a.btn-side-line,
-.btn-side-line {
-	@extend %m-button-base;
-	background-size: 202% 100%;
-  background-image: linear-gradient(270deg, transparent 50%, $m-primary 50%);
-  background-position: 100% 0;
-	border: 1px solid $m-primary;
-	color: $m-primary;
-	transition: all .27s cubic-bezier(0.310, 0.105, 0.430, 0.890);
-	&.hover,
-	&:focus,
-	&:hover {
-		background-position: 0 0;
-    color: $m-background;
-	}
-}
-
 button.btn-img,
 a.btn-img,
 .btn-img {
@@ -182,16 +193,67 @@ a.btn-img,
 	padding: $m-input-padding;
 }
 
-@each $name, $color, $font-hover in $m-button-colors {
-	.btn-#{$name} {
-
+@each $name, $color in $m-array-button-colors {
+	button.btn-#{$name},
+	input[type="button"].btn-#{$name},
+	input[type="submit"].btn-#{$name},
+	input[type="reset"].btn-#{$name},
+	a.btn.btn-#{$name},
+	.btn.btn-#{$name} {
 		background-image: linear-gradient(0deg, $color 50%, $m-background 50%);
-		border: 1px solid $color;
+		border-color: $color;
 		color: $m-background;
 		&.hover,
 		&:hover,
 		&:focus {
 			color: $color;
+		}
+	}
+
+	button.btn-line.btn-#{$name},
+	input[type="button"].btn-line.btn-#{$name},
+	input[type="submit"].btn-line.btn-#{$name},
+	input[type="reset"].btn-line.btn-#{$name},
+	a.btn-line.btn-#{$name},
+	.btn-line.btn-#{$name} {
+		background-image: linear-gradient(0deg, $color 50%, $m-background 50%);
+		border-color: $color;
+		color: $color;
+		&.hover,
+		&:hover,
+		&:focus {
+			color: $m-background;
+		}
+	}
+
+	button.btn-side.btn-#{$name},
+	input[type="button"].btn-side.btn-#{$name},
+	input[type="submit"].btn-side.btn-#{$name},
+	input[type="reset"].btn-side.btn-#{$name},
+	a.btn-side.btn-#{$name},
+	.btn-side.btn-#{$name} {
+	  background-image: linear-gradient(270deg, $color 50%, $m-color 50%);
+		border-width: 0;
+		&.hover,
+		&:focus,
+		&:hover {
+			color: $m-background;
+		}
+	}
+
+	button.btn-side-line.btn-#{$name},
+	input[type="button"].btn-side-line.btn-#{$name},
+	input[type="submit"].btn-side-line.btn-#{$name},
+	input[type="reset"].btn-side-line.btn-#{$name},
+	a.btn-side-line.btn-#{$name},
+	.btn-side-line.btn-#{$name} {
+	  background-image: linear-gradient(270deg, transparent 50%, $color 50%);
+		border-color: $color;
+		color: $color;
+		&.hover,
+		&:focus,
+		&:hover {
+	    color: $m-background;
 		}
 	}
 

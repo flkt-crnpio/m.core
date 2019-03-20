@@ -120,19 +120,19 @@ button.link-line-up,
   margin-left: $m-spacelement * .4;
 }
 
-@each $name, $color, $color-hover, $font-hover-line, $font-hover-background in $m-link-colors {
+@each $name, $color in $m-array-link-colors {
   button.link-#{$name},
   input[type="button"].link-#{$name},
   input[type="submit"].link-#{$name},
   input[type="reset"].link-#{$name},
   .link-#{$name} {
-    color: $color;
     background-image: linear-gradient(0deg, $color 50%, transparent 50%);
+    color: $color;
     &.hover,
     &:hover,
     &:active,
     &:focus {
-      color: $font-hover-background;
+      color: $m-background;
     }
   }
 
@@ -140,8 +140,8 @@ button.link-line-up,
   .link-underline.link-#{$name},
   button.link-r-underline.link-#{$name},
   .link-r-underline.link-#{$name} {
-    color: $color;
     background: none;
+    color: $color;
     &::after {
       background: $color;
     }
@@ -149,18 +149,18 @@ button.link-line-up,
     &:hover,
     &:active,
     &:focus {
-      color: $color-hover;
       background: none;
+      color: $color;
       &::after {
-        background: $color-hover;
+        background: $color;
       }
     }
   }
 
   button.link-line-up.link-#{$name},
   .link-line-up.link-#{$name} {
-    color: $color;
     background: none;
+    color: $color;
     &::after {
       background: $color;
     }
@@ -168,8 +168,8 @@ button.link-line-up,
     &:hover,
     &:active,
     &:focus {
-      color: $font-hover-line;
       background: none;
+      color: $m-color;
       &::after {
         background: $color;
       }
@@ -178,8 +178,8 @@ button.link-line-up,
 
   button.link-bg-up.link-#{$name},
   .link-bg-up.link-#{$name} {
-    color: $color;
     background: none;
+    color: $color;
     &::after {
       background: $color;
     }
@@ -187,8 +187,8 @@ button.link-line-up,
     &:hover,
     &:active,
     &:focus {
-      color: $font-hover-background;
       background: none;
+      color: $m-background;
       &::after {
         background: $color;
       }
