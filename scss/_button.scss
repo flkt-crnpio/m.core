@@ -193,85 +193,88 @@ a.btn-img,
 	padding: $m-input-padding;
 }
 
-@each $name, $color in $m-array-button-colors {
+@each $name, $bg, $bg-hover, $color, $color-hover in $m-array-updown-button-colors {
 	button.btn-#{$name},
 	input[type="button"].btn-#{$name},
 	input[type="submit"].btn-#{$name},
 	input[type="reset"].btn-#{$name},
 	a.btn.btn-#{$name},
 	.btn.btn-#{$name} {
-		background-image: linear-gradient(0deg, $color 50%, $m-background 50%);
-		border-color: $color;
-		color: $m-background;
+		background-image: linear-gradient(0deg, $bg 50%, $bg-hover 50%);
+		border-color: $bg;
+		color: $color;
 		&.hover,
 		&:hover,
 		&:focus {
-			color: $color;
+			color: $color-hover;
 		}
 	}
-
 	button.btn-line.btn-#{$name},
 	input[type="button"].btn-line.btn-#{$name},
 	input[type="submit"].btn-line.btn-#{$name},
 	input[type="reset"].btn-line.btn-#{$name},
 	a.btn-line.btn-#{$name},
 	.btn-line.btn-#{$name} {
-		background-image: linear-gradient(0deg, $color 50%, $m-background 50%);
-		border-color: $color;
-		color: $color;
+		background-image: linear-gradient(0deg, $bg 50%, $bg-hover 50%);
+		border-color: $bg;
+		color: $color-hover;
 		&.hover,
 		&:hover,
 		&:focus {
-			color: $m-background;
+			color: $color;
 		}
 	}
+}
 
+@each $name, $bg, $bg-hover, $color, $color-hover in $m-array-side-button-colors {
 	button.btn-side.btn-#{$name},
 	input[type="button"].btn-side.btn-#{$name},
 	input[type="submit"].btn-side.btn-#{$name},
 	input[type="reset"].btn-side.btn-#{$name},
 	a.btn-side.btn-#{$name},
 	.btn-side.btn-#{$name} {
-	  background-image: linear-gradient(270deg, $color 50%, $m-color 50%);
+	  background-image: linear-gradient(270deg, $bg 50%, $bg-hover 50%);
 		border-width: 0;
+		color: $color;
 		&.hover,
 		&:focus,
 		&:hover {
-			color: $m-background;
+			color: $color-hover;
 		}
 	}
-
 	button.btn-side-line.btn-#{$name},
 	input[type="button"].btn-side-line.btn-#{$name},
 	input[type="submit"].btn-side-line.btn-#{$name},
 	input[type="reset"].btn-side-line.btn-#{$name},
 	a.btn-side-line.btn-#{$name},
 	.btn-side-line.btn-#{$name} {
-	  background-image: linear-gradient(270deg, transparent 50%, $color 50%);
-		border-color: $color;
-		color: $color;
+	  background-image: linear-gradient(270deg, transparent 50%, $bg 50%);
+		border-color: $bg;
+		color: $bg;
 		&.hover,
 		&:focus,
 		&:hover {
-	    color: $m-background;
+	    color: $color;
 		}
 	}
+}
 
+@each $name, $bg, $bg-hover, $color, $color-hover in $m-array-circle-button-colors {
 	button[class^="btn-circle"].btn-#{$name},
 	input[type="button"][class^="btn-circle"].btn-#{$name},
 	input[type="submit"][class^="btn-circle"].btn-#{$name},
 	input[type="reset"][class^="btn-circle"].btn-#{$name},
 	a[class^="btn-circle"].btn-#{$name},
 	[class^="btn-circle"].btn-#{$name} {
-		background: $color;
-		box-shadow: 0 0 0 0 $color;
-		color: $m-background;
+		background: $bg;
+		box-shadow: 0 0 0 0 $bg;
+		color: $color;
 		&.hover,
 		&:focus,
 		&:hover {
-			background: $color;
-			box-shadow: 0 0 0 3px $color;
-			color: $m-background;
+			background: $bg-hover;
+			box-shadow: 0 0 0 3px $bg-hover;
+			color: $color-hover;
 		}
 	}
 }

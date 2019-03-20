@@ -64,11 +64,23 @@ $m-error:                   mix(#f00, $m-primary, 40%);
 $m-success:                 mix(#0f0, $m-primary, 50%);
 $m-warning:                 mix(#ff0, $m-primary, 40%);
 
-$m-array-button-colors:
-//(nombre,    color        )
-  (primary,   $m-primary   ),
-  (secondary, $m-secondary ),
-  (accent,    $m-accent    );
+$m-array-updown-button-colors:
+//(nombre,    bg,           bg-hover,       color,          color-hover )
+  (primary,   $m-primary,   $m-background,  $m-background,  $m-primary  ),
+  (secondary, $m-secondary, $m-background,  $m-background,  $m-secondary),
+  (accent,    $m-accent,    $m-background,  $m-background,  $m-accent   );
+
+$m-array-side-button-colors:
+//(nombre,    bg,           bg-hover,   color,          color-hover   )
+  (primary,   $m-primary,   $m-color,   $m-background,  $m-background ),
+  (secondary, $m-secondary, $m-color,   $m-background,  $m-background ),
+  (accent,    $m-accent,    $m-color,   $m-background,  $m-background );
+
+$m-array-circle-button-colors:
+//(nombre,    bg,           bg-hover,       color,          color-hover   )
+  (primary,   $m-primary,   $m-primary,     $m-background,  $m-background ),
+  (secondary, $m-secondary, $m-secondary,   $m-background,  $m-background ),
+  (accent,    $m-accent,    $m-accent,      $m-background,  $m-background );
 
 $m-array-link-colors:
 //(nombre,    color         )

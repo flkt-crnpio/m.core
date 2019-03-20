@@ -4529,94 +4529,6 @@ a.btn-line.btn-primary:focus,
   color: #fff;
 }
 
-button.btn-side.btn-primary,
-input[type=button].btn-side.btn-primary,
-input[type=submit].btn-side.btn-primary,
-input[type=reset].btn-side.btn-primary,
-a.btn-side.btn-primary,
-.btn-side.btn-primary {
-  background-image: linear-gradient(270deg, #32bdc6 50%, #222029 50%);
-  border-width: 0;
-}
-button.btn-side.btn-primary.hover, button.btn-side.btn-primary:focus, button.btn-side.btn-primary:hover,
-input[type=button].btn-side.btn-primary.hover,
-input[type=button].btn-side.btn-primary:focus,
-input[type=button].btn-side.btn-primary:hover,
-input[type=submit].btn-side.btn-primary.hover,
-input[type=submit].btn-side.btn-primary:focus,
-input[type=submit].btn-side.btn-primary:hover,
-input[type=reset].btn-side.btn-primary.hover,
-input[type=reset].btn-side.btn-primary:focus,
-input[type=reset].btn-side.btn-primary:hover,
-a.btn-side.btn-primary.hover,
-a.btn-side.btn-primary:focus,
-a.btn-side.btn-primary:hover,
-.btn-side.btn-primary.hover,
-.btn-side.btn-primary:focus,
-.btn-side.btn-primary:hover {
-  color: #fff;
-}
-
-button.btn-side-line.btn-primary,
-input[type=button].btn-side-line.btn-primary,
-input[type=submit].btn-side-line.btn-primary,
-input[type=reset].btn-side-line.btn-primary,
-a.btn-side-line.btn-primary,
-.btn-side-line.btn-primary {
-  background-image: linear-gradient(270deg, transparent 50%, #32bdc6 50%);
-  border-color: #32bdc6;
-  color: #32bdc6;
-}
-button.btn-side-line.btn-primary.hover, button.btn-side-line.btn-primary:focus, button.btn-side-line.btn-primary:hover,
-input[type=button].btn-side-line.btn-primary.hover,
-input[type=button].btn-side-line.btn-primary:focus,
-input[type=button].btn-side-line.btn-primary:hover,
-input[type=submit].btn-side-line.btn-primary.hover,
-input[type=submit].btn-side-line.btn-primary:focus,
-input[type=submit].btn-side-line.btn-primary:hover,
-input[type=reset].btn-side-line.btn-primary.hover,
-input[type=reset].btn-side-line.btn-primary:focus,
-input[type=reset].btn-side-line.btn-primary:hover,
-a.btn-side-line.btn-primary.hover,
-a.btn-side-line.btn-primary:focus,
-a.btn-side-line.btn-primary:hover,
-.btn-side-line.btn-primary.hover,
-.btn-side-line.btn-primary:focus,
-.btn-side-line.btn-primary:hover {
-  color: #fff;
-}
-
-button[class^=btn-circle].btn-primary,
-input[type=button][class^=btn-circle].btn-primary,
-input[type=submit][class^=btn-circle].btn-primary,
-input[type=reset][class^=btn-circle].btn-primary,
-a[class^=btn-circle].btn-primary,
-[class^=btn-circle].btn-primary {
-  background: #32bdc6;
-  box-shadow: 0 0 0 0 #32bdc6;
-  color: #fff;
-}
-button[class^=btn-circle].btn-primary.hover, button[class^=btn-circle].btn-primary:focus, button[class^=btn-circle].btn-primary:hover,
-input[type=button][class^=btn-circle].btn-primary.hover,
-input[type=button][class^=btn-circle].btn-primary:focus,
-input[type=button][class^=btn-circle].btn-primary:hover,
-input[type=submit][class^=btn-circle].btn-primary.hover,
-input[type=submit][class^=btn-circle].btn-primary:focus,
-input[type=submit][class^=btn-circle].btn-primary:hover,
-input[type=reset][class^=btn-circle].btn-primary.hover,
-input[type=reset][class^=btn-circle].btn-primary:focus,
-input[type=reset][class^=btn-circle].btn-primary:hover,
-a[class^=btn-circle].btn-primary.hover,
-a[class^=btn-circle].btn-primary:focus,
-a[class^=btn-circle].btn-primary:hover,
-[class^=btn-circle].btn-primary.hover,
-[class^=btn-circle].btn-primary:focus,
-[class^=btn-circle].btn-primary:hover {
-  background: #32bdc6;
-  box-shadow: 0 0 0 3px #32bdc6;
-  color: #fff;
-}
-
 button.btn-secondary,
 input[type=button].btn-secondary,
 input[type=submit].btn-secondary,
@@ -4672,94 +4584,6 @@ a.btn-line.btn-secondary:focus,
 .btn-line.btn-secondary.hover,
 .btn-line.btn-secondary:hover,
 .btn-line.btn-secondary:focus {
-  color: #fff;
-}
-
-button.btn-side.btn-secondary,
-input[type=button].btn-side.btn-secondary,
-input[type=submit].btn-side.btn-secondary,
-input[type=reset].btn-side.btn-secondary,
-a.btn-side.btn-secondary,
-.btn-side.btn-secondary {
-  background-image: linear-gradient(270deg, #FCA4B1 50%, #222029 50%);
-  border-width: 0;
-}
-button.btn-side.btn-secondary.hover, button.btn-side.btn-secondary:focus, button.btn-side.btn-secondary:hover,
-input[type=button].btn-side.btn-secondary.hover,
-input[type=button].btn-side.btn-secondary:focus,
-input[type=button].btn-side.btn-secondary:hover,
-input[type=submit].btn-side.btn-secondary.hover,
-input[type=submit].btn-side.btn-secondary:focus,
-input[type=submit].btn-side.btn-secondary:hover,
-input[type=reset].btn-side.btn-secondary.hover,
-input[type=reset].btn-side.btn-secondary:focus,
-input[type=reset].btn-side.btn-secondary:hover,
-a.btn-side.btn-secondary.hover,
-a.btn-side.btn-secondary:focus,
-a.btn-side.btn-secondary:hover,
-.btn-side.btn-secondary.hover,
-.btn-side.btn-secondary:focus,
-.btn-side.btn-secondary:hover {
-  color: #fff;
-}
-
-button.btn-side-line.btn-secondary,
-input[type=button].btn-side-line.btn-secondary,
-input[type=submit].btn-side-line.btn-secondary,
-input[type=reset].btn-side-line.btn-secondary,
-a.btn-side-line.btn-secondary,
-.btn-side-line.btn-secondary {
-  background-image: linear-gradient(270deg, transparent 50%, #FCA4B1 50%);
-  border-color: #FCA4B1;
-  color: #FCA4B1;
-}
-button.btn-side-line.btn-secondary.hover, button.btn-side-line.btn-secondary:focus, button.btn-side-line.btn-secondary:hover,
-input[type=button].btn-side-line.btn-secondary.hover,
-input[type=button].btn-side-line.btn-secondary:focus,
-input[type=button].btn-side-line.btn-secondary:hover,
-input[type=submit].btn-side-line.btn-secondary.hover,
-input[type=submit].btn-side-line.btn-secondary:focus,
-input[type=submit].btn-side-line.btn-secondary:hover,
-input[type=reset].btn-side-line.btn-secondary.hover,
-input[type=reset].btn-side-line.btn-secondary:focus,
-input[type=reset].btn-side-line.btn-secondary:hover,
-a.btn-side-line.btn-secondary.hover,
-a.btn-side-line.btn-secondary:focus,
-a.btn-side-line.btn-secondary:hover,
-.btn-side-line.btn-secondary.hover,
-.btn-side-line.btn-secondary:focus,
-.btn-side-line.btn-secondary:hover {
-  color: #fff;
-}
-
-button[class^=btn-circle].btn-secondary,
-input[type=button][class^=btn-circle].btn-secondary,
-input[type=submit][class^=btn-circle].btn-secondary,
-input[type=reset][class^=btn-circle].btn-secondary,
-a[class^=btn-circle].btn-secondary,
-[class^=btn-circle].btn-secondary {
-  background: #FCA4B1;
-  box-shadow: 0 0 0 0 #FCA4B1;
-  color: #fff;
-}
-button[class^=btn-circle].btn-secondary.hover, button[class^=btn-circle].btn-secondary:focus, button[class^=btn-circle].btn-secondary:hover,
-input[type=button][class^=btn-circle].btn-secondary.hover,
-input[type=button][class^=btn-circle].btn-secondary:focus,
-input[type=button][class^=btn-circle].btn-secondary:hover,
-input[type=submit][class^=btn-circle].btn-secondary.hover,
-input[type=submit][class^=btn-circle].btn-secondary:focus,
-input[type=submit][class^=btn-circle].btn-secondary:hover,
-input[type=reset][class^=btn-circle].btn-secondary.hover,
-input[type=reset][class^=btn-circle].btn-secondary:focus,
-input[type=reset][class^=btn-circle].btn-secondary:hover,
-a[class^=btn-circle].btn-secondary.hover,
-a[class^=btn-circle].btn-secondary:focus,
-a[class^=btn-circle].btn-secondary:hover,
-[class^=btn-circle].btn-secondary.hover,
-[class^=btn-circle].btn-secondary:focus,
-[class^=btn-circle].btn-secondary:hover {
-  background: #FCA4B1;
-  box-shadow: 0 0 0 3px #FCA4B1;
   color: #fff;
 }
 
@@ -4821,6 +4645,122 @@ a.btn-line.btn-accent:focus,
   color: #fff;
 }
 
+button.btn-side.btn-primary,
+input[type=button].btn-side.btn-primary,
+input[type=submit].btn-side.btn-primary,
+input[type=reset].btn-side.btn-primary,
+a.btn-side.btn-primary,
+.btn-side.btn-primary {
+  background-image: linear-gradient(270deg, #32bdc6 50%, #222029 50%);
+  border-width: 0;
+  color: #fff;
+}
+button.btn-side.btn-primary.hover, button.btn-side.btn-primary:focus, button.btn-side.btn-primary:hover,
+input[type=button].btn-side.btn-primary.hover,
+input[type=button].btn-side.btn-primary:focus,
+input[type=button].btn-side.btn-primary:hover,
+input[type=submit].btn-side.btn-primary.hover,
+input[type=submit].btn-side.btn-primary:focus,
+input[type=submit].btn-side.btn-primary:hover,
+input[type=reset].btn-side.btn-primary.hover,
+input[type=reset].btn-side.btn-primary:focus,
+input[type=reset].btn-side.btn-primary:hover,
+a.btn-side.btn-primary.hover,
+a.btn-side.btn-primary:focus,
+a.btn-side.btn-primary:hover,
+.btn-side.btn-primary.hover,
+.btn-side.btn-primary:focus,
+.btn-side.btn-primary:hover {
+  color: #fff;
+}
+
+button.btn-side-line.btn-primary,
+input[type=button].btn-side-line.btn-primary,
+input[type=submit].btn-side-line.btn-primary,
+input[type=reset].btn-side-line.btn-primary,
+a.btn-side-line.btn-primary,
+.btn-side-line.btn-primary {
+  background-image: linear-gradient(270deg, transparent 50%, #32bdc6 50%);
+  border-color: #32bdc6;
+  color: #32bdc6;
+}
+button.btn-side-line.btn-primary.hover, button.btn-side-line.btn-primary:focus, button.btn-side-line.btn-primary:hover,
+input[type=button].btn-side-line.btn-primary.hover,
+input[type=button].btn-side-line.btn-primary:focus,
+input[type=button].btn-side-line.btn-primary:hover,
+input[type=submit].btn-side-line.btn-primary.hover,
+input[type=submit].btn-side-line.btn-primary:focus,
+input[type=submit].btn-side-line.btn-primary:hover,
+input[type=reset].btn-side-line.btn-primary.hover,
+input[type=reset].btn-side-line.btn-primary:focus,
+input[type=reset].btn-side-line.btn-primary:hover,
+a.btn-side-line.btn-primary.hover,
+a.btn-side-line.btn-primary:focus,
+a.btn-side-line.btn-primary:hover,
+.btn-side-line.btn-primary.hover,
+.btn-side-line.btn-primary:focus,
+.btn-side-line.btn-primary:hover {
+  color: #fff;
+}
+
+button.btn-side.btn-secondary,
+input[type=button].btn-side.btn-secondary,
+input[type=submit].btn-side.btn-secondary,
+input[type=reset].btn-side.btn-secondary,
+a.btn-side.btn-secondary,
+.btn-side.btn-secondary {
+  background-image: linear-gradient(270deg, #FCA4B1 50%, #222029 50%);
+  border-width: 0;
+  color: #fff;
+}
+button.btn-side.btn-secondary.hover, button.btn-side.btn-secondary:focus, button.btn-side.btn-secondary:hover,
+input[type=button].btn-side.btn-secondary.hover,
+input[type=button].btn-side.btn-secondary:focus,
+input[type=button].btn-side.btn-secondary:hover,
+input[type=submit].btn-side.btn-secondary.hover,
+input[type=submit].btn-side.btn-secondary:focus,
+input[type=submit].btn-side.btn-secondary:hover,
+input[type=reset].btn-side.btn-secondary.hover,
+input[type=reset].btn-side.btn-secondary:focus,
+input[type=reset].btn-side.btn-secondary:hover,
+a.btn-side.btn-secondary.hover,
+a.btn-side.btn-secondary:focus,
+a.btn-side.btn-secondary:hover,
+.btn-side.btn-secondary.hover,
+.btn-side.btn-secondary:focus,
+.btn-side.btn-secondary:hover {
+  color: #fff;
+}
+
+button.btn-side-line.btn-secondary,
+input[type=button].btn-side-line.btn-secondary,
+input[type=submit].btn-side-line.btn-secondary,
+input[type=reset].btn-side-line.btn-secondary,
+a.btn-side-line.btn-secondary,
+.btn-side-line.btn-secondary {
+  background-image: linear-gradient(270deg, transparent 50%, #FCA4B1 50%);
+  border-color: #FCA4B1;
+  color: #FCA4B1;
+}
+button.btn-side-line.btn-secondary.hover, button.btn-side-line.btn-secondary:focus, button.btn-side-line.btn-secondary:hover,
+input[type=button].btn-side-line.btn-secondary.hover,
+input[type=button].btn-side-line.btn-secondary:focus,
+input[type=button].btn-side-line.btn-secondary:hover,
+input[type=submit].btn-side-line.btn-secondary.hover,
+input[type=submit].btn-side-line.btn-secondary:focus,
+input[type=submit].btn-side-line.btn-secondary:hover,
+input[type=reset].btn-side-line.btn-secondary.hover,
+input[type=reset].btn-side-line.btn-secondary:focus,
+input[type=reset].btn-side-line.btn-secondary:hover,
+a.btn-side-line.btn-secondary.hover,
+a.btn-side-line.btn-secondary:focus,
+a.btn-side-line.btn-secondary:hover,
+.btn-side-line.btn-secondary.hover,
+.btn-side-line.btn-secondary:focus,
+.btn-side-line.btn-secondary:hover {
+  color: #fff;
+}
+
 button.btn-side.btn-accent,
 input[type=button].btn-side.btn-accent,
 input[type=submit].btn-side.btn-accent,
@@ -4829,6 +4769,7 @@ a.btn-side.btn-accent,
 .btn-side.btn-accent {
   background-image: linear-gradient(270deg, #16729A 50%, #222029 50%);
   border-width: 0;
+  color: #fff;
 }
 button.btn-side.btn-accent.hover, button.btn-side.btn-accent:focus, button.btn-side.btn-accent:hover,
 input[type=button].btn-side.btn-accent.hover,
@@ -4875,6 +4816,68 @@ a.btn-side-line.btn-accent:hover,
 .btn-side-line.btn-accent.hover,
 .btn-side-line.btn-accent:focus,
 .btn-side-line.btn-accent:hover {
+  color: #fff;
+}
+
+button[class^=btn-circle].btn-primary,
+input[type=button][class^=btn-circle].btn-primary,
+input[type=submit][class^=btn-circle].btn-primary,
+input[type=reset][class^=btn-circle].btn-primary,
+a[class^=btn-circle].btn-primary,
+[class^=btn-circle].btn-primary {
+  background: #32bdc6;
+  box-shadow: 0 0 0 0 #32bdc6;
+  color: #fff;
+}
+button[class^=btn-circle].btn-primary.hover, button[class^=btn-circle].btn-primary:focus, button[class^=btn-circle].btn-primary:hover,
+input[type=button][class^=btn-circle].btn-primary.hover,
+input[type=button][class^=btn-circle].btn-primary:focus,
+input[type=button][class^=btn-circle].btn-primary:hover,
+input[type=submit][class^=btn-circle].btn-primary.hover,
+input[type=submit][class^=btn-circle].btn-primary:focus,
+input[type=submit][class^=btn-circle].btn-primary:hover,
+input[type=reset][class^=btn-circle].btn-primary.hover,
+input[type=reset][class^=btn-circle].btn-primary:focus,
+input[type=reset][class^=btn-circle].btn-primary:hover,
+a[class^=btn-circle].btn-primary.hover,
+a[class^=btn-circle].btn-primary:focus,
+a[class^=btn-circle].btn-primary:hover,
+[class^=btn-circle].btn-primary.hover,
+[class^=btn-circle].btn-primary:focus,
+[class^=btn-circle].btn-primary:hover {
+  background: #32bdc6;
+  box-shadow: 0 0 0 3px #32bdc6;
+  color: #fff;
+}
+
+button[class^=btn-circle].btn-secondary,
+input[type=button][class^=btn-circle].btn-secondary,
+input[type=submit][class^=btn-circle].btn-secondary,
+input[type=reset][class^=btn-circle].btn-secondary,
+a[class^=btn-circle].btn-secondary,
+[class^=btn-circle].btn-secondary {
+  background: #FCA4B1;
+  box-shadow: 0 0 0 0 #FCA4B1;
+  color: #fff;
+}
+button[class^=btn-circle].btn-secondary.hover, button[class^=btn-circle].btn-secondary:focus, button[class^=btn-circle].btn-secondary:hover,
+input[type=button][class^=btn-circle].btn-secondary.hover,
+input[type=button][class^=btn-circle].btn-secondary:focus,
+input[type=button][class^=btn-circle].btn-secondary:hover,
+input[type=submit][class^=btn-circle].btn-secondary.hover,
+input[type=submit][class^=btn-circle].btn-secondary:focus,
+input[type=submit][class^=btn-circle].btn-secondary:hover,
+input[type=reset][class^=btn-circle].btn-secondary.hover,
+input[type=reset][class^=btn-circle].btn-secondary:focus,
+input[type=reset][class^=btn-circle].btn-secondary:hover,
+a[class^=btn-circle].btn-secondary.hover,
+a[class^=btn-circle].btn-secondary:focus,
+a[class^=btn-circle].btn-secondary:hover,
+[class^=btn-circle].btn-secondary.hover,
+[class^=btn-circle].btn-secondary:focus,
+[class^=btn-circle].btn-secondary:hover {
+  background: #FCA4B1;
+  box-shadow: 0 0 0 3px #FCA4B1;
   color: #fff;
 }
 
