@@ -15,6 +15,7 @@
 [type="week"],
 textarea,
 select {
+  background-color: transparent;
   border-width: $m-input-border-width;
   border-style: $m-input-border-style;
   border-color: $m-input-border-color;
@@ -27,11 +28,38 @@ select {
   &.hover,
   &:focus,
   &:hover {
-    border-width: $m-input-border-width;
-    border-style: $m-input-border-style;
     border-color: $m-input-border-color-hover;
   }
 }
+
+.form-line {
+  [type="date"],
+  [type="datetime"],
+  [type="datetime-local"],
+  [type="email"],
+  [type="file"],
+  [type="month"],
+  [type="number"],
+  [type="password"],
+  [type="search"],
+  [type="tel"],
+  [type="text"],
+  [type="time"],
+  [type="url"],
+  [type="week"],
+  textarea,
+  select {
+    border-width: 0;
+    border-bottom-width: $m-input-border-width;
+    border-radius: 0;
+    padding: $m-input-padding 0;
+    width: 100%;
+  }
+  label {
+    font-size: .7em;
+  }
+}
+
 output {
   border-color: $m-input-border-color;
   width: calc(100% - #{$m-input-padding} * 3);
@@ -91,6 +119,7 @@ legend {
   }
   [type="checkbox"] + label,
   [type="radio"] + label {
+    font-size: 1em;
     display: inline-block;
     white-space: nowrap;
     position: relative;
