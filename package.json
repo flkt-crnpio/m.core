@@ -1,7 +1,7 @@
 {
   "name": "mol.core",
-  "version": "1.0.0",
-  "description": "Core file for Mol Framework",
+  "version": "3.0.0",
+  "description": "core file module for mol project",
   "scripts": {
     "dist": "sass scss/core.scss:dist/core.min.css --style compressed",
     "docs": "npm run scss | npm run start",
@@ -10,7 +10,7 @@
   },
   "keywords": [
     "mol",
-    "mol-framework",
+    "mol-project",
     "css",
     "sass",
     "scss",
@@ -18,15 +18,15 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MolFramework/mol.core.git"
+    "url": "git+https://github.com/mol-project/mol.core.git"
   },
   "author": "flkt <flkt.crnpio@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MolFramework/mol.core/issues"
+    "url": "https://github.com/mol-project/mol.core/issues"
   },
   "devDependencies": {
     "browser-sync": "^2.26.3",
-    "mol.normalize": "git+https://github.com/MolFramework/mol.normalize.git"
+    "mol.normalize": "git+https://github.com/mol-project/mol.normalize.git#v.2.0.1"
   }
 }
