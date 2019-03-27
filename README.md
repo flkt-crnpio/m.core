@@ -67,64 +67,64 @@ mol.core/
 ```text
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|PT+Serif');
 
-$m-background:  			#fff;
-$m-color:       			#222029;
-$m-primary:						#32bdc6;
+$m-background: 		#fff;
+$m-color: 		#222029;
+$m-primary: 		#32bdc6;
 
-$m-font-serif: 				'PT Serif', serif;
-$m-font-family: 			'Open Sans', sans-serif;
+$m-font-serif: 		'PT Serif', serif;
+$m-font-family: 	'Open Sans', sans-serif;
 $m-font-size:       	16px;
 $m-font-weight:     	400;
 $m-letter-spacing:  	normal;
 $m-line-height:     	1.5em;
 
-$m-code-family: 			monospace;
+$m-code-family: 	monospace;
 
-$m-h-family: 					'Josefin Sans', sans-serif;
-$m-h-size:   					23px;
-$m-h-height: 					1em;
-$m-h-spacing:					normal;
-$m-h-weight: 					600;
-$m-h-style:  					normal;
-$m-h-transform:  			normal;
+$m-h-family: 		'Josefin Sans', sans-serif;
+$m-h-size: 		23px;
+$m-h-height: 		1em;
+$m-h-spacing: 		normal;
+$m-h-weight: 		600;
+$m-h-style: 		normal;
+$m-h-transform: 	normal;
 
-$m-secondary:               #009DCE;
-$m-accent:                  #7175CB;
-$m-note:                    mix(#aaa, $m-primary, 90%);
-$m-error:                   mix(#f10, $m-primary, 80%);
-$m-success:                 mix(#1e1, $m-primary, 70%);
-$m-warning:                 mix(#fa3, $m-primary, 95%);
+$m-secondary: 		#009DCE;
+$m-accent: 		#7175CB;
+$m-note: 		mix(#aaa, $m-primary, 90%);
+$m-error: 		mix(#f10, $m-primary, 80%);
+$m-success: 		mix(#1e1, $m-primary, 70%);
+$m-warning: 		mix(#fa3, $m-primary, 95%);
 
 $m-container-border-width:  1px;
 $m-container-border-style:  solid;
 
-$m-link-underline:            1px;
+$m-link-underline: 	1px;
 
-$m-input-height:              40px;
-$m-input-padding:             7px;
-$m-input-border-width:        1px;
-$m-input-border-style:        solid;
-$m-input-border-radius:       0;
-$m-input-border-color:        rgba($m-color, .3);
-$m-input-border-color-hover:  rgba($m-color, .5);
+$m-input-height: 		40px;
+$m-input-padding: 		7px;
+$m-input-border-width: 		1px;
+$m-input-border-style: 		solid;
+$m-input-border-radius: 	0;
+$m-input-border-color: 		rgba($m-color, .3);
+$m-input-border-color-hover: 	rgba($m-color, .5);
 
-$m-checkbox-height:           20px;
-$m-checkbox-border-width:     1px;
-$m-checkbox-border-style:     solid;
-$m-checkbox-color-active:     $m-primary;
-$m-checkbox-after-active:     $m-background;
+$m-checkbox-height: 		20px;
+$m-checkbox-border-width: 	1px;
+$m-checkbox-border-style: 	solid;
+$m-checkbox-color-active: 	$m-primary;
+$m-checkbox-after-active: 	$m-background;
 
-$m-switch-background-off:     rgba($m-color, .2);
-$m-switch-background-on:      $m-checkbox-color-active;
-$m-switch-color-off:          $m-background;
-$m-switch-color-on:           $m-background;
+$m-switch-background-off: 	rgba($m-color, .2);
+$m-switch-background-on: 	$m-checkbox-color-active;
+$m-switch-color-off: 		$m-background;
+$m-switch-color-on: 		$m-background;
 
-$m-btn-border-radius:         0;
-$m-btn-border-width:          1px;
-$m-btn-border-style:          solid;
+$m-btn-border-radius: 	0;
+$m-btn-border-width: 	1px;
+$m-btn-border-style: 	solid;
 
-$m-striped-odd:               rgba($m-color, .05);
-$m-striped-even:              rgba($m-color, .1);
+$m-striped-odd: 	rgba($m-color, .05);
+$m-striped-even: 	rgba($m-color, .1);
 
 $m-array-updown-button-colors:
   (primary,   $m-primary,   $m-background,  $m-background,  $m-primary  ),
@@ -158,11 +158,11 @@ $m-array-form-colors:
 $m-container-border-color:  rgba($m-color,.1);
 $m-container-shadow:        0 0 0 0 rgba(0, 0, 0, 0);
 
-$m-block-hover:             rgba($m-secondary, .1);
+$m-block-hover: rgba($m-secondary, .1);
 
-$m-transition:				      all 0.3s cubic-bezier(0.465, -0.240, 0.370, 1.125);
+$m-transition: 	all 0.3s cubic-bezier(0.465, -0.240, 0.370, 1.125);
 
-$m-spacelement:             20px;
+$m-spacelement: 20px;
 ```
 
 
