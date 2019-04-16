@@ -215,10 +215,24 @@ a.btn-block,
 button.btn-img,
 a.btn-img,
 .btn-img {
-	display: flex;
-	align-items: flex-end;
-	padding: $m-input-padding;
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: $m-spacelement * .2;
+  img {
+		margin: 0;
+		transition: all .27s ease-in-out;
+  }
+  &.hover,
+  &:hover,
+  &:active,
+  &:focus {
+    img {
+      opacity: .8;
+    }
+  }
 }
+// btn img end
 
 @each $name, $bg, $bg-hover, $color, $color-hover in $m-array-button-colors {
 	button.btn-#{$name},
