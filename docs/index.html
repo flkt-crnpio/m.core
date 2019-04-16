@@ -75,15 +75,10 @@
       </div>
       <p>
         <button class="btn-img" type="button">
-          <img src="http://flkt.mx/bg.jpg" class="img-btn" width="192px">
+          <img src="http://flkt.mx/bg.jpg" width="192px">
         </button>
-        <button class="btn-img btn-line" type="button">
-          <img src="http://flkt.mx/bg.jpg" class="img-btn" width="192px">
-        </button>
-      </p>
-      <p>
-        <a href="#" class="link-image">
-          <img src="http://flkt.mx/bg.jpg" class="img-link" width="192px">
+        <a href="#" class="link-img">
+          <img src="http://flkt.mx/bg.jpg" width="192px">
         </a>
       </p>
 
@@ -108,12 +103,12 @@
       <h6 class="font-body">h6.font-body</h6>
       <h6 class="font-code">h6.font-code</h6>
       <h6 class="font-heading">h6.font-heading</h6>
-      <h6 class="font-serif">h6.font-serif</h6>
+      <h6 class="font-em">h6.font-em</h6>
       <p>
         <span class="font-body">span.font-body</span><br>
         <span class="font-code">span.font-code</span><br>
         <span class="font-heading">span.font-heading</span><br>
-        <span class="font-serif">span.font-serif</span>
+        <span class="font-em">span.font-em</span>
       </p>
       <blockquote cite="http://es.lipsum.com/">
         cita larga Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus velit nulla, scelerisque quis aliquam eget, rhoncus tincidunt lacus. Aliquam blandit est lacinia fringilla pulvinar. Morbi sodales eros leo, sed ultrices nunc rutrum et. Morbi at magna ante. Pellentesque tincidunt lectus a pharetra sodales. Phasellus ullamcorper elementum metus, ut consectetur libero lobortis eget. Nam mattis eros in ante tristique dignissim. Mauris elementum tempus dolor, eu luctus dolor consequat ac. Nullam et libero ac nibh rutrum faucibus quis gravida lectus.
@@ -159,6 +154,7 @@
       </style>
       <p class="space">
         <a href="#">link</a>
+        <a href="#" class="hover">link.hover</a>
         <span class="link">span.link</span>
         <button class="link">button.link</button>
       </p>
@@ -169,7 +165,16 @@
         <a href="#" class="link-note">.link-note</a>
       </p>
       <p class="space">
+        <a href="#" class="link-bg-up">.link-bg-up</a>
+        <a href="#" class="link-bg-up hover">.link-bg-up.hover</a>
+        <a href="#" class="link-bg-up link-primary">.link-primary</a>
+        <a href="#" class="link-bg-up link-secondary">.link-secondary</a>
+        <a href="#" class="link-bg-up link-accent">.link-accent</a>
+        <a href="#" class="link-bg-up link-note">.link-note</a>
+      </p>
+      <p class="space">
         <a href="#" class="link-underline">.link-underline</a>
+        <a href="#" class="link-underline hover">.link-underline.hover</a>
         <a href="#" class="link-underline link-primary">.link-primary</a>
         <a href="#" class="link-underline link-secondary">.link-secondary</a>
         <a href="#" class="link-underline link-accent">.link-accent</a>
@@ -177,6 +182,7 @@
       </p>
       <p class="space">
         <a href="#" class="link-r-underline">.link-r-underline</a>
+        <a href="#" class="link-r-underline hover">.link-r-underline.hover</a>
         <a href="#" class="link-r-underline link-primary">.link-primary</a>
         <a href="#" class="link-r-underline link-secondary">.link-secondary</a>
         <a href="#" class="link-r-underline link-accent">.link-accent</a>
@@ -429,12 +435,6 @@
         <input type="button" class="btn btn-accent" value=".btn-accent">
         <span class="btn btn-note">.btn-note</span>
       </p>
-      <p>
-        <button type="button" class="btn-line btn-primary">button.btn-line</button>
-        <a href="#" class="btn-line btn-secondary">a.btn-line</a>
-        <input type="button" class="btn-line btn-accent" value="input.btn-line">
-        <span class="btn-line btn-note">span.btn-line</span>
-      </p>
       <br>
       <p>
         <button type="button" class="btn-sm">button.btn-sm</button>
@@ -444,27 +444,47 @@
       </p>
       <br>
       <p>
+        <button type="button" class="btn-bg-up">.btn-bg-up</button>
+        <button type="button" class="btn-bg-up hover">.btn-bg-up.hover</button>
+        <button type="button" class="btn-bg-up btn-primary">button.btn-primary</button>
+        <a href="#" class="btn-bg-up btn-secondary">a.btn-secondary</a>
+        <input type="button" class="btn-bg-up btn-accent" value="input.btn-accent">
+        <span class="btn-bg-up btn-note">span.btn-note</span>
+      </p>
+      <p>
+        <button type="button" class="btn-bg-down">.btn-bg-down</button>
+        <button type="button" class="btn-bg-down hover">.btn-bg-down.hover</button>
+        <button type="button" class="btn-bg-down btn-primary">button.btn-primary</button>
+        <a href="#" class="btn-bg-down btn-secondary">a.btn-secondary</a>
+        <input type="button" class="btn-bg-down btn-accent" value="input.btn-accent">
+        <span class="btn-bg-down btn-note">span.btn-note</span>
+      </p>
+      <br>
+      <p>
+        <button type="button" class="btn-bg-side">.btn-bg-side</button>
+        <button type="button" class="btn-bg-side hover">.btn-bg-side.hover</button>
+        <button type="button" class="btn-bg-side btn-primary">button.btn-bg-side</button>
+        <a href="#" class="btn-bg-side btn-secondary">a.btn-secondary</a>
+        <input type="button" class="btn-bg-side btn-accent" value="input.btn-accent">
+        <span class="btn-bg-side btn-note">span.btn-note</span>
+      </p>
+      <br>
+      <p>
+        <button type="button" class="btn-solid-side">.btn-solid-side</button>
+        <button type="button" class="btn-solid-side hover">.btn-solid-side.hover</button>
+        <span type="button" class="btn-solid-side btn-primary">span.btn-primary</span>
+        <a href="#" class="btn-solid-side btn-secondary">a.btn-secondary</a>
+        <input type="button" class="btn-solid-side btn-accent" value="input.btn-accent">
+      </p>
+      <br>
+      <p>
         <button type="button" class="btn-circle-sm">btn</button>
         <a href="#" class="btn-circle">link</a>
         <input type="button" class="btn-circle-lg" value="input">
-      </p>
-      <p>
-        <button type="button" class="btn-circle btn-primary">btn</button>
-        <span class="btn-circle btn-secondary">span</span>
-        <a href="#" class="btn-circle btn-accent">a</a>
-        <input type="button" class="btn-circle btn-note" value="input">
-      </p>
-      <p>
-        <button type="button" class="btn-side btn-primary">button.btn-side</button>
-        <a href="#" class="btn-side btn-secondary">a.btn-side</a>
-        <input type="button" class="btn-side btn-accent" value="input.btn-side">
-        <span class="btn-side btn-note">span.btn-side</span>
-      </p>
-      <p>
-        <button type="button" class="btn-side-line btn-primary">button.btn-side-line</button>
-        <a href="#" class="btn-side-line btn-secondary">a.btn-side-line</a>
-        <input type="button" class="btn-side-line btn-accent" value="input.btn-side-line">
-        <span class="btn-side-line btn-note">span.btn-side-line</span>
+        -
+        <span class="btn-circle btn-primary">1r</span>
+        <a href="#" class="btn-circle btn-secondary">2s</a>
+        <input type="button" class="btn-circle btn-accent" value="3a">
       </p>
       <br><br>
       <dl>
