@@ -1,4 +1,11 @@
 // form
+textarea,
+select,
+input,
+button {
+  outline: none;
+}
+
 [type="date"],
 [type="datetime"],
 [type="datetime-local"],
