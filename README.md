@@ -35,15 +35,15 @@ mol.core/
 │   └── index.html
 └── scss/
     ├── _button.scss
-		├── _form.scss
-		├── _heading.scss
-		├── _image.scss
-		├── _link.scss
-		├── _list.scss
-		├── _core.scss
+    ├── _form.scss
+    ├── _heading.scss
+    ├── _image.scss
+    ├── _link.scss
+    ├── _list.scss
+    ├── _core.scss
     ├── _table.scss
-		├── _typography.scss
-		├── _vars.scss
+    ├── _typography.scss
+    ├── _vars.scss
     └── core.scss
 ```
 
