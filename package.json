@@ -1,7 +1,7 @@
 {
   "name": "mol.core",
-  "version": "3.1.0",
-  "description": "core file module for mol project",
+  "version": "3.1.1",
+  "description": "lab core file module for mol project",
   "scripts": {
     "start": "npm run scss | npm run bowsersync",
     "bowsersync": "browser-sync start --server 'docs' --files 'docs'",
@@ -11,10 +11,10 @@
   "keywords": [
     "mol",
     "mol-project",
-    "css",
+    "mol-core",
     "sass",
     "scss",
-    "scss-module"
+    "lab"
   ],
   "repository": {
     "type": "git",
