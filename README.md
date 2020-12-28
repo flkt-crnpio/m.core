@@ -1,50 +1,35 @@
 # Mol Core
-Administra el estilo de las etiquetas de html y clases generales
-__
-*Este proyecto utiliza [mol.normalize](https://github.com/mol-project/mol.normalize)*
+
+Este proyecto inicio como idea para generar la base de la libreria, pero con el tiempo ha crecido mucho mas a lo modular, asi que termino por ser un ejemplo de extención o uso.
 
 
-
-## Uso e instalación
-Para utilizar este archivo en tu proyecto, puedes installarlo con [npm](https://www.npmjs.com/)
-```sh
-npm install https://github.com/mol-project/mol.core.git
-```
-importa el archivo principal
-```sh
-@import '~mol.core/scss/_core.scss';
-```
-y crea un archivo que contenga las mismas variables que las que se encuentran en
-el archivo de `~mol.core/scss/_vars.scss`
-
-ó si no tienes tiempo, importa el archivo minificado en tu hoja de estilos principal
-```sh
-@import '~mol.core/dist/core.min.css';
-```
-
-
-## Dev
-Clona el repositorio
+## Pa jugar
+Clona el repositorio. Edita los archivos dentro de la carpeta de **scss**
 ```sh
 git clone https://github.com/mol-project/mol.core.git
-cd mol.core/
+cd mol.core
 npm install
 ```
-Edita los archivos dentro de la carpeta de **scss**
 
+Levanta un servidor local que se autorefresca con los cambios que se ejecuten en los archivos **scss** y actualiza los archivos de **docs**
+```sh
+npm start
+```
 
-#### Scripts
-- `npm run dist` Actualiza los archivos minificados de la carpeta de distribución **dist**
-- `npm run docs` Levanta un servidor local que se autorefresca con los cambios que se ejecuten en los archivos **scss** y actualiza los archivos de **docs**
+Actualiza los archivos minificados de la carpeta de distribución **dist**
+```sh
+npm run dist
+```
 
-
-#### Archivos
+## Archivos
 ``` text
 mol.core/
 ├── dist/
 │   ├── core.min.css
 │   └── core.min.css.map
 ├── docs/
+│   ├── assets
+│   │   └── esparragus-elelelelperrito-2016.jpg
 │   ├── core.css
 │   ├── core.css.map
 │   └── index.html

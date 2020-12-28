@@ -3,10 +3,10 @@
   "version": "3.1.0",
   "description": "core file module for mol project",
   "scripts": {
-    "dist": "sass scss/core.scss:dist/core.min.css --style compressed",
-    "docs": "npm run scss | npm run start",
-    "start": "browser-sync start --server 'docs' --files 'docs'",
-    "scss": "sass --watch scss/core.scss:docs/core.css --style expanded"
+    "start": "npm run scss | npm run bowsersync",
+    "bowsersync": "browser-sync start --server 'docs' --files 'docs'",
+    "scss": "sass --watch scss/core.scss:docs/core.css --style expanded",
+    "dist": "sass scss/core.scss:dist/core.min.css --style compressed"
   },
   "keywords": [
     "mol",
@@ -26,7 +26,7 @@
     "url": "https://github.com/mol-project/mol.core/issues"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.13",
     "mol.normalize": "git+https://github.com/mol-project/mol.normalize.git#v.2.0.3"
   }
 }
