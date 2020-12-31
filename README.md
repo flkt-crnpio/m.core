@@ -1,6 +1,6 @@
 # Mol Core
 
-Este proyecto inicio como idea para generar la base de la libreria, pero con el tiempo ha crecido mucho mas a lo modular, asi que termino por ser un ejemplo de extención o uso.
+Este proyecto inicio como idea para generar la base de la libreria, pero con el tiempo, Mol ha crecido mucho mas modular. Al final termino siendo un bonito ejemplo de uso. Revisen el link de la documentacion para ver los estilos.
 
 
 ## Pa jugar
